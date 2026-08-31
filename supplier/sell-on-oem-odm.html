@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sell on insightmarketplac — 供应商入驻 · OEM / ODM / OBM 合作</title>
+<meta name="description" content="insightmarketplac — 美国渠道公司，供应商入驻：从中国工厂到美国主流零售货架，OEM / ODM / OBM 三种合作模式，一站式平台入驻、联合运营与物流对接。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0E13'/%3E%3Ctext x='16' y='21' font-family='Consolas,monospace' font-size='13' font-weight='700' fill='%23E8A33D' text-anchor='middle'%3Eim%3C/text%3E%3C/svg%3E">
+<link rel="alternate" hreflang="en" href="sell-on-oem-odm-en.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sell on insightmarketplac — 供应商入驻 · OEM / ODM / OBM 合作">
+<meta property="og:description" content="美国渠道公司 · 从中国工厂到美国主流零售货架。OEM / ODM / OBM 三种合作模式，买断式采购、20+ 全球渠道、端到端仓配履约。">
+<style>
+:root{
+  --bg:#0B0E13;
+  --bg-2:#10141B;
+  --ink:#F2EEE6;
+  --ink-dim:#A7ADB8;
+  --ink-faint:#6E7683;
+  --accent:#E8A33D;
+  --accent-hi:#F4BA60;
+  --hairline:rgba(242,238,230,.12);
+  --hairline-soft:rgba(242,238,230,.07);
+  --sans:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --mono:"SF Mono","Cascadia Code",Consolas,"Courier New",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent);color:#14100a}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+
+/* ---------- eyebrow / headings ---------- */
+.eyebrow{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  color:var(--accent);
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent);flex:none}
+h2{
+  font-size:clamp(32px,4.4vw,54px);
+  font-weight:600;
+  line-height:1.18;
+  letter-spacing:.01em;
+  margin:22px 0 18px;
+}
+.section-lead{
+  color:var(--ink-dim);
+  font-size:17px;
+  max-width:560px;
+}
+
+/* ---------- nav ---------- */
+header{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:50;
+  transition:background .35s ease,border-color .35s ease,padding .35s ease;
+  border-bottom:1px solid transparent;
+  padding:22px 0;
+}
+header.scrolled{
+  background:rgba(11,14,19,.88);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom-color:var(--hairline-soft);
+  padding:14px 0;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{
+  font-family:var(--mono);
+  font-size:19px;
+  font-weight:700;
+  letter-spacing:.02em;
+  color:var(--ink);
+  display:flex;align-items:baseline;gap:10px;
+}
+.brand em{font-style:normal;color:var(--accent)}
+.nav-links{display:flex;gap:34px;font-size:14px;color:var(--ink-dim)}
+.nav-links a{transition:color .25s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{
+  font-family:var(--mono);
+  font-size:13px;
+  letter-spacing:.14em;
+  padding:11px 22px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  background:none;
+  transition:background .25s,color .25s;
+  white-space:nowrap;
+}
+.nav-cta:hover{background:var(--accent);color:#14100a}
+.nav-right{display:flex;align-items:center;gap:12px}
+.lang-toggle{
+  font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+  color:var(--ink-dim);border:1px solid var(--hairline);
+  padding:10px 13px;
+  transition:color .25s,border-color .25s;
+}
+.lang-toggle:hover{color:var(--accent);border-color:var(--accent)}
+@media(max-width:920px){.nav-links{display:none}}
+@media(max-width:480px){
+  .brand{font-size:15px}
+  .nav-cta{padding:9px 14px;font-size:12px}
+  .lang-toggle{padding:8px 10px}
+  .wrap{padding:0 22px}
+}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;
+  inset:-12% 0 0 0;
+  z-index:0;
+}
+.hero-bg img{width:100%;height:112%;object-fit:cover;filter:saturate(.82) contrast(1.05)}
+.hero-shade{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(180deg,rgba(11,14,19,.55) 0%,rgba(11,14,19,.25) 34%,rgba(11,14,19,.82) 68%,var(--bg) 96%),
+    linear-gradient(90deg,rgba(11,14,19,.72) 0%,rgba(11,14,19,.15) 62%);
+}
+.hero-inner{
+  position:relative;z-index:2;
+  padding:170px 0 0;
+}
+.hero .eyebrow{animation:rise .9s .1s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{
+  animation:rise 1s .22s cubic-bezier(.2,.7,.2,1) both;
+  margin-top:26px;
+  line-height:.96;
+}
+.hero h1 .sell-on{
+  display:block;
+  font-size:clamp(24px,3vw,40px);
+  font-weight:400;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  margin-bottom:14px;
+}
+.hero h1 .wordmark{
+  display:block;
+  font-family:var(--mono);
+  font-size:min(96px,max(24px,calc((100vw - 64px)/11)));
+  font-weight:700;
+  letter-spacing:-.02em;
+  color:var(--ink);
+}
+.hero h1 .wordmark em{font-style:normal;color:var(--accent)}
+.hero-sub{
+  animation:rise 1s .34s cubic-bezier(.2,.7,.2,1) both;
+  margin-top:30px;
+  font-size:clamp(17px,1.6vw,21px);
+  color:var(--ink-dim);
+  max-width:620px;
+}
+.hero-sub strong{color:var(--ink);font-weight:600}
+.hero-actions{
+  animation:rise 1s .46s cubic-bezier(.2,.7,.2,1) both;
+  display:flex;flex-wrap:wrap;gap:16px;margin-top:40px;
+}
+.btn-primary,.btn-ghost{
+  font-family:var(--mono);
+  font-size:14px;
+  letter-spacing:.12em;
+  padding:16px 34px;
+  display:inline-flex;align-items:center;gap:12px;
+  transition:transform .25s,background .25s,color .25s,border-color .25s;
+}
+.btn-primary{background:var(--accent);color:#14100a;border:1px solid var(--accent);font-weight:700}
+.btn-primary:hover{background:var(--accent-hi);border-color:var(--accent-hi);transform:translateY(-2px)}
+.btn-primary .arr{transition:transform .25s}
+.btn-primary:hover .arr{transform:translateX(5px)}
+.btn-ghost{background:none;color:var(--ink);border:1px solid var(--hairline)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.hero-stats{
+  animation:rise 1s .58s cubic-bezier(.2,.7,.2,1) both;
+  margin-top:84px;
+  border-top:1px solid var(--hairline);
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:32px;
+  padding:34px 0 44px;
+}
+.stat .num{
+  font-family:var(--mono);
+  font-size:clamp(26px,2.6vw,36px);
+  font-weight:700;
+  color:var(--ink);
+}
+.stat .num i{font-style:normal;color:var(--accent);font-size:.72em;margin-left:2px}
+.stat .lbl{
+  font-size:13px;color:var(--ink-faint);
+  letter-spacing:.06em;margin-top:4px;
+}
+@media(max-width:820px){.hero-stats{grid-template-columns:repeat(2,1fr);gap:22px}}
+
+/* ---------- sections ---------- */
+section{padding:130px 0}
+.sec-head{margin-bottom:64px}
+
+/* ---------- models ---------- */
+#models{border-top:1px solid var(--hairline-soft)}
+.models-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
+  border-left:1px solid var(--hairline);
+}
+.model{
+  padding:44px 38px 54px;
+  border-right:1px solid var(--hairline);
+  position:relative;
+  transition:background .35s;
+}
+.model:hover{background:var(--bg-2)}
+.model::before{
+  content:"";position:absolute;top:0;left:0;
+  width:0;height:2px;background:var(--accent);
+  transition:width .5s cubic-bezier(.2,.7,.2,1);
+}
+.model:hover::before{width:100%}
+.model-code{
+  font-family:var(--mono);
+  font-size:56px;
+  font-weight:700;
+  letter-spacing:-.01em;
+  color:var(--ink);
+  transition:color .35s;
+}
+.model:hover .model-code{color:var(--accent)}
+.model-full{
+  font-family:var(--mono);
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-faint);margin-top:6px;
+}
+.model h3{font-size:23px;font-weight:600;margin:26px 0 10px}
+.model-desc{color:var(--ink-dim);font-size:15px;min-height:78px}
+.model dl{
+  margin-top:28px;border-top:1px solid var(--hairline-soft);
+  display:grid;gap:0;
+}
+.model dl > div{
+  display:grid;grid-template-columns:88px 1fr;
+  padding:11px 0;border-bottom:1px solid var(--hairline-soft);
+  font-size:13.5px;
+}
+.model dt{color:var(--ink-faint);font-family:var(--mono);letter-spacing:.04em}
+.model dd{color:var(--ink)}
+.model-note{
+  margin-top:56px;
+  font-family:var(--mono);font-size:13px;color:var(--ink-dim);
+  border-left:2px solid var(--accent);
+  padding:6px 0 6px 20px;
+  max-width:720px;
+}
+.model-note b{color:var(--ink);font-weight:600}
+@media(max-width:960px){
+  .models-grid{grid-template-columns:1fr;border-left:none}
+  .model{border-right:none;border-bottom:1px solid var(--hairline);padding:34px 0}
+  .model-desc{min-height:0}
+}
+
+/* ---------- services ---------- */
+#services{background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)}
+.services-grid{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+.services-fig{position:sticky;top:110px}
+.services-fig img{width:100%;aspect-ratio:4/4.6;object-fit:cover;filter:saturate(.85)}
+.services-fig figcaption{
+  font-family:var(--mono);font-size:11px;letter-spacing:.2em;
+  color:var(--ink-faint);margin-top:14px;text-transform:uppercase;
+}
+.svc-list{list-style:none}
+.svc-item{
+  display:grid;grid-template-columns:76px 1fr;gap:28px;
+  padding:34px 0;border-bottom:1px solid var(--hairline-soft);
+  transition:transform .3s;
+}
+.svc-item:first-child{padding-top:6px}
+.svc-num{
+  font-family:var(--mono);font-size:15px;color:var(--accent);
+  letter-spacing:.1em;padding-top:5px;
+}
+.svc-item h3{font-size:21px;font-weight:600;margin-bottom:8px}
+.svc-item p{color:var(--ink-dim);font-size:15px}
+.svc-item .en{
+  font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink-faint);margin-left:14px;font-weight:400;
+}
+@media(max-width:920px){
+  .services-grid{grid-template-columns:1fr;gap:48px}
+  .services-fig{position:static}
+  .services-fig img{aspect-ratio:16/10}
+}
+
+/* ---------- channels ---------- */
+.channels-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
+.marquee{
+  overflow:hidden;
+  margin-top:58px;
+  border-top:1px solid var(--hairline);
+  border-bottom:1px solid var(--hairline);
+  padding:30px 0;
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.marquee-track{
+  display:flex;gap:0;width:max-content;
+  animation:scroll-x 38s linear infinite;
+}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span{
+  font-family:var(--mono);
+  font-size:clamp(22px,2.6vw,32px);
+  font-weight:700;
+  letter-spacing:.06em;
+  color:var(--ink-dim);
+  padding:0 34px;
+  white-space:nowrap;
+  transition:color .3s;
+}
+.marquee-track span:hover{color:var(--accent)}
+.marquee-track span::after{content:"·";margin-left:68px;color:var(--ink-faint)}
+@keyframes scroll-x{to{transform:translateX(-50%)}}
+.channels-foot{
+  font-family:var(--mono);font-size:12px;color:var(--ink-faint);
+  margin-top:22px;letter-spacing:.06em;
+}
+
+/* ---------- global regions ---------- */
+.us-partners{
+  margin-top:58px;
+  border:1px solid var(--hairline);
+  padding:12px;
+}
+.us-partners img{width:100%}
+.us-partners figcaption{
+  font-family:var(--mono);font-size:11px;letter-spacing:.2em;
+  color:var(--ink-faint);margin-top:12px;text-transform:uppercase;
+}
+.regions{margin-top:80px}
+.region{
+  display:grid;grid-template-columns:230px 1fr;gap:36px;
+  padding:28px 0;border-top:1px solid var(--hairline);
+}
+.region:last-child{border-bottom:1px solid var(--hairline)}
+.region-name{font-size:20px;font-weight:600;color:var(--ink)}
+.region-en{
+  display:block;font-family:var(--mono);font-size:11px;
+  letter-spacing:.18em;color:var(--accent);
+  text-transform:uppercase;margin-top:6px;
+}
+.region-channels{
+  font-family:var(--mono);font-size:14px;letter-spacing:.03em;
+  color:var(--ink-dim);line-height:2.15;
+}
+@media(max-width:820px){
+  .region{grid-template-columns:1fr;gap:10px;padding:24px 0}
+}
+
+/* ---------- seller entries ---------- */
+#entries{background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)}
+.entries{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--hairline);border-left:1px solid var(--hairline);
+}
+.entry{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:26px;
+  border-right:1px solid var(--hairline);
+  border-bottom:1px solid var(--hairline);
+  transition:background .3s;
+}
+.entry:hover{background:var(--bg)}
+.entry-main{display:grid;gap:6px;min-width:0}
+.entry-name{
+  font-family:var(--mono);font-size:18px;font-weight:700;
+  letter-spacing:.02em;color:var(--ink);transition:color .3s;
+}
+.entry:hover .entry-name{color:var(--accent)}
+.entry-meta{
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-faint);
+}
+.entry-arr{
+  font-family:var(--mono);font-size:18px;color:var(--ink-faint);
+  transition:transform .3s,color .3s;flex:none;
+}
+.entry:hover .entry-arr{transform:translateX(6px);color:var(--accent)}
+@media(max-width:960px){.entries{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.entries{grid-template-columns:1fr}}
+
+/* ---------- meet ---------- */
+#meet{background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)}
+.meet-grid{display:grid;grid-template-columns:7fr 5fr;gap:80px;align-items:start}
+.meet-side{border-top:1px solid var(--hairline);padding-top:30px}
+.meet-side h3{font-size:20px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.meet-steps{margin-top:20px}
+.meet-steps .ms{
+  display:grid;grid-template-columns:46px 1fr;gap:18px;
+  padding:16px 0;border-bottom:1px solid var(--hairline);
+}
+.meet-steps .ms:last-child{border-bottom:none}
+.meet-steps .idx{
+  font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+  color:var(--accent);padding-top:3px;
+}
+.meet-steps strong{display:block;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:3px}
+.meet-steps span{font-size:13.5px;color:var(--ink-dim);line-height:1.7}
+.meet-note{
+  margin-top:26px;font-family:var(--mono);font-size:11.5px;line-height:1.9;
+  letter-spacing:.04em;color:var(--ink-faint);
+  border:1px solid var(--hairline);padding:16px 18px;
+}
+.meet-actions{grid-column:1/-1;display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+.meet-actions .btn-primary,.meet-actions .btn-ghost{padding:12px 22px;font-size:13px;cursor:pointer}
+@media(max-width:920px){.meet-grid{grid-template-columns:1fr;gap:48px}}
+
+/* ---------- band ---------- */
+.band{
+  position:relative;
+  height:52vh;min-height:380px;
+  overflow:hidden;
+  display:flex;align-items:center;
+}
+.band-bg{position:absolute;inset:-10% 0}
+.band-bg img{width:100%;height:120%;object-fit:cover;filter:saturate(.7)}
+.band::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,var(--bg) 0%,rgba(11,14,19,.35) 30%,rgba(11,14,19,.35) 70%,var(--bg) 100%);
+}
+.band-inner{position:relative;z-index:2;text-align:center;width:100%}
+.band-inner .mono-kicker{
+  font-family:var(--mono);font-size:12px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--accent);
+}
+.band-inner h3{
+  font-size:clamp(28px,4vw,46px);
+  font-weight:600;line-height:1.3;margin-top:20px;
+  text-shadow:0 2px 30px rgba(0,0,0,.5);
+}
+
+/* ---------- process ---------- */
+#process .sec-head{margin-bottom:80px}
+.steps{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:36px;
+}
+.steps-line{
+  position:absolute;top:7px;left:0;right:0;
+  height:1px;background:var(--hairline);
+}
+.steps-line i{
+  display:block;height:1px;width:0;
+  background:var(--accent);
+  transition:width 2.4s cubic-bezier(.25,.6,.2,1),height 2.4s cubic-bezier(.25,.6,.2,1);
+}
+.steps.played .steps-line i{width:100%}
+.step{position:relative;padding-top:38px}
+.step-dot{
+  position:absolute;top:0;left:0;
+  width:15px;height:15px;
+  border-radius:50%;
+  border:1px solid var(--ink-faint);
+  background:var(--bg);
+  transition:border-color .4s,background .4s;
+}
+.step.on .step-dot{border-color:var(--accent);background:var(--accent)}
+.step-idx{
+  font-family:var(--mono);font-size:12px;
+  letter-spacing:.2em;color:var(--ink-faint);
+}
+.step h3{font-size:19px;font-weight:600;margin:10px 0 8px}
+.step p{font-size:14px;color:var(--ink-dim)}
+@media(max-width:960px){
+  .steps{grid-template-columns:1fr;gap:0;margin-left:7px}
+  .steps-line{top:0;bottom:0;left:0;right:auto;width:1px;height:auto}
+  .steps-line i{width:1px;height:0}
+  .steps.played .steps-line i{height:100%}
+  .step{padding:0 0 44px 36px}
+  .step:last-child{padding-bottom:0}
+  .step-dot{top:4px}
+}
+
+/* ---------- success ---------- */
+#success{border-top:1px solid var(--hairline-soft)}
+.success-metrics{
+  display:flex;flex-wrap:wrap;gap:28px 88px;
+  margin-bottom:70px;
+}
+.sm .num{
+  font-family:var(--mono);
+  font-size:clamp(42px,5.2vw,64px);
+  font-weight:700;color:var(--ink);
+}
+.sm .num i{font-style:normal;color:var(--accent);font-size:.58em;margin-left:3px}
+.sm .lbl{font-size:13px;color:var(--ink-faint);letter-spacing:.06em;margin-top:4px}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:0 76px}
+.quote{border-top:1px solid var(--hairline);padding:36px 0 10px}
+.quote blockquote{font-size:clamp(18px,1.8vw,22px);line-height:1.66;font-weight:500;color:var(--ink)}
+.quote blockquote::before{
+  content:"“";display:block;
+  font-family:var(--mono);font-size:36px;line-height:1;
+  color:var(--accent);margin-bottom:12px;
+}
+.quote figcaption{margin-top:22px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.quote .who{font-weight:600;font-size:15px}
+.quote .role{font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em}
+@media(max-width:820px){.quotes{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+#faq{background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)}
+.faq-wrap{max-width:860px}
+.faq-item{border-bottom:1px solid var(--hairline)}
+.faq-q{
+  width:100%;
+  background:none;border:none;color:var(--ink);
+  text-align:left;
+  font-family:var(--sans);
+  font-size:17.5px;font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;gap:24px;
+  padding:26px 0;
+  transition:color .25s;
+}
+.faq-q:hover{color:var(--accent)}
+.faq-q .fx{
+  font-family:var(--mono);font-size:20px;color:var(--accent);
+  transition:transform .35s;flex:none;line-height:1;
+}
+.faq-item.open .fx{transform:rotate(45deg)}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height .45s cubic-bezier(.2,.7,.2,1);
+}
+.faq-a p{
+  color:var(--ink-dim);font-size:15.5px;
+  padding:0 40px 28px 0;
+}
+.faq-a b{color:var(--ink);font-weight:600}
+
+/* ---------- apply ---------- */
+.apply-grid{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+.apply-side p{color:var(--ink-dim);margin-top:8px}
+.apply-contact{
+  margin-top:48px;border-top:1px solid var(--hairline);
+  padding-top:32px;display:grid;gap:22px;
+}
+.apply-contact .row{display:grid;gap:4px}
+.apply-contact .k{
+  font-family:var(--mono);font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--ink-faint);
+}
+.apply-contact .v{font-size:16px;color:var(--ink)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:34px 28px}
+.field{display:grid;gap:10px}
+.field.full{grid-column:1/-1}
+.field label{
+  font-family:var(--mono);font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-dim);
+}
+.field label b{color:var(--accent);font-weight:400}
+.field input,.field select,.field textarea{
+  background:none;border:none;border-bottom:1px solid var(--hairline);
+  color:var(--ink);
+  font-family:var(--sans);font-size:16px;
+  padding:10px 2px 12px;
+  outline:none;
+  transition:border-color .3s;
+  border-radius:0;
+  width:100%;
+}
+.field select{cursor:pointer;appearance:none;-webkit-appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--ink-faint) 50%),linear-gradient(135deg,var(--ink-faint) 50%,transparent 50%);
+  background-position:calc(100% - 16px) 55%,calc(100% - 11px) 55%;
+  background-size:5px 5px,5px 5px;background-repeat:no-repeat;
+}
+.field select option{background:var(--bg-2);color:var(--ink)}
+.field textarea{resize:vertical;min-height:88px;line-height:1.6}
+.field input:focus,.field select:focus,.field textarea:focus{border-bottom-color:var(--accent)}
+.mode-picker{display:flex;flex-wrap:wrap;gap:12px}
+.mode-picker input{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+.mode-picker label.mode-chip{
+  font-family:var(--mono);font-size:13px;letter-spacing:.1em;
+  border:1px solid var(--hairline);
+  color:var(--ink-dim);
+  padding:11px 22px;
+  cursor:pointer;
+  transition:border-color .25s,color .25s,background .25s;
+  user-select:none;
+}
+.mode-picker input:checked + .mode-chip{
+  border-color:var(--accent);color:var(--accent);background:rgba(232,163,61,.08);
+}
+.form-foot{grid-column:1/-1;display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-top:8px}
+.form-hint{font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.04em}
+.form-success{
+  grid-column:1/-1;
+  border:1px solid var(--accent);
+  padding:44px 40px;
+  display:none;
+}
+.form-success.show{display:block;animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+.form-success .ok{
+  font-family:var(--mono);font-size:13px;letter-spacing:.24em;
+  color:var(--accent);text-transform:uppercase;
+}
+.form-success h3{font-size:26px;font-weight:600;margin:16px 0 10px}
+.form-success p{color:var(--ink-dim);font-size:15px}
+.form-success .ref{
+  font-family:var(--mono);font-size:14px;color:var(--ink);
+  margin-top:22px;display:inline-block;
+  border:1px dashed var(--hairline);padding:10px 18px;
+}
+@media(max-width:920px){
+  .apply-grid{grid-template-columns:1fr;gap:56px}
+  form{grid-template-columns:1fr}
+}
+
+/* ---------- footer ---------- */
+footer{
+  border-top:1px solid var(--hairline-soft);
+  padding:64px 0 40px;
+}
+.foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start}
+.foot-brand{
+  font-family:var(--mono);font-size:22px;font-weight:700;
+}
+.foot-brand em{font-style:normal;color:var(--accent)}
+.foot-tag{color:var(--ink-faint);font-size:13.5px;margin-top:10px;max-width:340px;line-height:1.8}
+.foot-nav{display:flex;gap:64px}
+.foot-col h4{
+  font-family:var(--mono);font-size:11px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ink-faint);
+  margin-bottom:18px;font-weight:400;
+}
+.foot-col a{display:block;color:var(--ink-dim);font-size:14px;padding:5px 0;transition:color .25s}
+.foot-col a:hover{color:var(--accent)}
+.foot-base{
+  margin-top:64px;padding-top:26px;border-top:1px solid var(--hairline-soft);
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.05em;
+}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}.rv-d3{transition-delay:.3s}
+
+@keyframes rise{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a class="brand" href="#top">insight<em>marketplac</em></a>
+    <nav class="nav-links">
+      <a href="#models">合作模式</a>
+      <a href="#services">服务体系</a>
+      <a href="#channels">渠道网络</a>
+      <a href="#entries">卖家入口</a>
+      <a href="#process">入驻流程</a>
+      <a href="#success">成功案例</a>
+      <a href="#faq">常见问题</a>
+      <a href="#meet">预约会议</a>
+    </nav>
+    <div class="nav-right">
+      <a class="lang-toggle" href="sell-on-oem-odm-en.html" title="English version">EN</a>
+      <a class="nav-cta" href="#apply">申请入驻</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" style="padding:0">
+  <div class="hero-bg" id="heroBg">
+    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20container%20port%20at%20dusk%2C%20towering%20gantry%20cranes%20and%20stacked%20shipping%20containers%2C%20deep%20navy%20twilight%20sky%2C%20warm%20amber%20terminal%20lights%20reflecting%20on%20wet%20ground%2C%20cinematic%20wide%20shot%2C%20moody%20industrial%20atmosphere%2C%20high%20detail&image_size=landscape_16_9" alt="黄昏下的集装箱码头与龙门吊">
+  </div>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Supplier Onboarding · 供应商入驻通道</p>
+    <h1>
+      <span class="sell-on">Sell on</span>
+      <span class="wordmark">insight<em>marketplac</em></span>
+    </h1>
+    <p class="hero-sub">
+      以美国为主场、覆盖五大洲的渠道网络。我们<strong>买下你的库存、扩张你的渠道、端到端负责仓配履约</strong>——平台入驻、联合运营、账号安全维护、品牌推广，一个屋顶下全部搞定。
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#apply">申请入驻 <span class="arr">→</span></a>
+      <a class="btn-ghost" href="#models">查看 OEM / ODM / OBM 合作模式</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">40<i>%</i></div><div class="lbl">品牌首年平均销售增长</div></div>
+      <div class="stat"><div class="num">99.8<i>%</i></div><div class="lbl">订单当日出库</div></div>
+      <div class="stat"><div class="num">85<i>%</i></div><div class="lbl">美国次日达覆盖</div></div>
+      <div class="stat"><div class="num">97<i>%</i></div><div class="lbl">常备库存现货率</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODELS ================= -->
+<section id="models">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Cooperation Models</p>
+      <h2>三种合作模式<br>从代工到自有品牌</h2>
+      <p class="section-lead">无论你是图纸完备的成熟工厂，还是想借渠道把设计变成生意的品牌方，都能在这里找到合适的起点。</p>
+    </div>
+
+    <div class="models-grid">
+      <article class="model rv rv-d1">
+        <div class="model-code">OEM</div>
+        <div class="model-full">Original Equipment Manufacturer</div>
+        <h3>来图代工</h3>
+        <p class="model-desc">海外买家来图来样下单，你专注生产与品控；国际物流、报关与交付履约由我司全程负责。</p>
+        <dl>
+          <div><dt>设计权属</dt><dd>买方提供图纸规格</dd></div>
+          <div><dt>物流责任</dt><dd>我司负责国际物流</dd></div>
+          <div><dt>海外仓</dt><dd>无需提前备货</dd></div>
+          <div><dt>适合谁</dt><dd>产能稳定、品控成熟的工厂</dd></div>
+        </dl>
+      </article>
+
+      <article class="model rv rv-d2">
+        <div class="model-code">ODM</div>
+        <div class="model-full">Original Design Manufacturer</div>
+        <h3>选款贴牌</h3>
+        <p class="model-desc">你自有设计与货盘，经平台直达海外买家，按订单完成贴牌与履约，赚取设计与制造的双重利润。</p>
+        <dl>
+          <div><dt>设计权属</dt><dd>供应商自有设计</dd></div>
+          <div><dt>物流责任</dt><dd>海外仓直接发货</dd></div>
+          <div><dt>海外仓</dt><dd>需提前备货</dd></div>
+          <div><dt>适合谁</dt><dd>有产品开发能力的品牌工厂</dd></div>
+        </dl>
+      </article>
+
+      <article class="model rv rv-d3">
+        <div class="model-code">OBM</div>
+        <div class="model-full">Original Brand Manufacturer</div>
+        <h3>品牌出海</h3>
+        <p class="model-desc">自有品牌直达海外消费者，平台提供渠道、联合运营与品牌推广，把制造红利升级为品牌溢价。</p>
+        <dl>
+          <div><dt>设计权属</dt><dd>自有品牌全链路</dd></div>
+          <div><dt>物流责任</dt><dd>平台协同仓配网络</dd></div>
+          <div><dt>海外仓</dt><dd>备货 + 品牌授权</dd></div>
+          <div><dt>适合谁</dt><dd>追求品牌溢价的成熟供应商</dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <p class="model-note rv">
+      库存买断：对验证通过的优质货盘，我们以大额批发采购订单（PO）一次性买断——<b>你先收款，我们开工</b>，零售端的库存与价格风险由我们承担。
+      物流须知：<b>OEM 合作模式由我司负责国际物流，工厂交货即可</b>；ODM / OBM 合作模式需要供应商在海外仓有货。
+    </p>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Full-Stack Service</p>
+      <h2>一站式出海服务</h2>
+      <p class="section-lead">你负责产品，剩下的交给平台。五个环节，一条链路打通。</p>
+    </div>
+
+    <div class="services-grid">
+      <figure class="services-fig rv">
+        <img loading="lazy" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20modern%20furniture%20workshop%2C%20craftsman%20hands%20assembling%20a%20wooden%20chair%2C%20warm%20workshop%20lighting%2C%20sawdust%20in%20air%2C%20shallow%20depth%20of%20field%2C%20premium%20industrial%20craftsmanship&image_size=portrait_4_3" alt="木作家具工坊中的工匠组装">
+        <figcaption>Workshop · 把制造能力变成出海生意</figcaption>
+      </figure>
+
+      <ul class="svc-list">
+        <li class="svc-item rv rv-d1">
+          <span class="svc-num">01</span>
+          <div>
+            <h3>平台入驻<span class="en">Onboarding</span></h3>
+            <p>20+ 渠道账号开设、资质对接与店铺搭建，覆盖北美、欧洲、中东、亚太、澳新与俄语区，最快 7 天完成首批渠道上线。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d1">
+          <span class="svc-num">02</span>
+          <div>
+            <h3>联合运营<span class="en">Co-Operating</span></h3>
+            <p>数据选品、定价策略与营销日历同步执行，让每个 SKU 都踩在需求节奏上。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d2">
+          <span class="svc-num">03</span>
+          <div>
+            <h3>物流对接<span class="en">Logistics</span></h3>
+            <p>头程运输、美国海外仓储与尾程派送一体打通，99.8% 当日出库、85% 次日达覆盖，OEM 模式下工厂交货即可。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d2">
+          <span class="svc-num">04</span>
+          <div>
+            <h3>账号安全维护<span class="en">Compliance</span></h3>
+            <p>合规审查、风控预警与异常处理，账号健康度全天候监控。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d3">
+          <span class="svc-num">05</span>
+          <div>
+            <h3>品牌推广<span class="en">Branding</span></h3>
+            <p>站内广告、内容种草与渠道曝光组合投放，为 OBM 模式积累品牌资产。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHANNELS ================= -->
+<section id="channels">
+  <div class="wrap">
+    <div class="channels-head rv">
+      <div>
+        <p class="eyebrow">Global Channel Network</p>
+        <h2>深耕美国 · 覆盖全球</h2>
+      </div>
+      <p class="section-lead">以美国主流零售为主场，欧洲、中东、亚太、澳新与俄语区渠道并行——一个团队，管全部渠道的 listing、广告与定价。</p>
+    </div>
+
+    <figure class="us-partners rv">
+      <img loading="lazy" src="assets/us-retail-partners.png" alt="美国主流零售合作伙伴 logo 墙">
+      <figcaption>US Retail Partners · 美国主流零售合作伙伴（部分）</figcaption>
+    </figure>
+
+    <div class="marquee rv" aria-label="全球渠道列表">
+      <div class="marquee-track">
+        <span>AMAZON</span><span>WALMART</span><span>ZALANDO</span><span>OTTO</span><span>BOL</span><span>ALLEGRO</span><span>NOON</span><span>TRENDYOL</span><span>SHOPEE</span><span>LAZADA</span><span>TIKTOK SHOP</span><span>RAKUTEN</span><span>KOGAN</span><span>WILDBERRIES</span><span>OZON</span>
+        <span>AMAZON</span><span>WALMART</span><span>ZALANDO</span><span>OTTO</span><span>BOL</span><span>ALLEGRO</span><span>NOON</span><span>TRENDYOL</span><span>SHOPEE</span><span>LAZADA</span><span>TIKTOK SHOP</span><span>RAKUTEN</span><span>KOGAN</span><span>WILDBERRIES</span><span>OZON</span>
+      </div>
+    </div>
+
+    <div class="regions">
+      <div class="region rv">
+        <div class="region-head">
+          <span class="region-name">北美</span>
+          <span class="region-en">North America · 核心主场</span>
+        </div>
+        <div class="region-channels">Amazon · Walmart · Target · Home Depot · Lowe's · Wayfair · Overstock · Costco · eBay · Macy's · Kohl's · Best Buy</div>
+      </div>
+      <div class="region rv">
+        <div class="region-head">
+          <span class="region-name">欧洲</span>
+          <span class="region-en">Europe</span>
+        </div>
+        <div class="region-channels">Amazon · Zalando · Otto · bol · Allegro · Cdiscount · ASOS · Carrefour · Fnac · Tesco · MediaMarkt · El Corte Inglés</div>
+      </div>
+      <div class="region rv">
+        <div class="region-head">
+          <span class="region-name">中东 / 土耳其 / 非洲</span>
+          <span class="region-en">META</span>
+        </div>
+        <div class="region-channels">Amazon · noon · Trendyol · YOOX · Namshi</div>
+      </div>
+      <div class="region rv">
+        <div class="region-head">
+          <span class="region-name">亚太</span>
+          <span class="region-en">Asia Pacific</span>
+        </div>
+        <div class="region-channels">Shopee · Lazada · TikTok Shop · Rakuten · LINE</div>
+      </div>
+      <div class="region rv">
+        <div class="region-head">
+          <span class="region-name">澳大利亚 / 新西兰</span>
+          <span class="region-en">Australia / NZ</span>
+        </div>
+        <div class="region-channels">Kogan · MyDeal</div>
+      </div>
+      <div class="region rv">
+        <div class="region-head">
+          <span class="region-name">俄语区 / 独联体</span>
+          <span class="region-en">Russia &amp; CIS</span>
+        </div>
+        <div class="region-channels">Wildberries · Ozon</div>
+      </div>
+    </div>
+
+    <p class="channels-foot rv">* 渠道清单为示意，实际合作渠道以洽谈签约为准。</p>
+  </div>
+</section>
+
+<!-- ================= SELLER ENTRIES ================= -->
+<section id="entries">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Direct Seller Entries</p>
+      <h2>直达平台卖家入口</h2>
+      <p class="section-lead">想先自己开个店试试？36 个平台的官方卖家入口，一张网直达。货盘就绪后回来找我们——一份货盘，铺进全部渠道。</p>
+    </div>
+
+    <div class="entries">
+      <a class="entry rv" href="https://sellercentral.amazon.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Amazon</span><span class="entry-meta">Seller Central · 全球</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.ebay.com/sellercenter/selling" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">eBay</span><span class="entry-meta">Start Selling · 全球</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://marketplace.walmart.com/sell" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Walmart</span><span class="entry-meta">Marketplace · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://seller-us.tiktok.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">TikTok Shop</span><span class="entry-meta">Seller Center · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://partner.target.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Target+</span><span class="entry-meta">Partner Portal · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://sell.wayfair.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Wayfair</span><span class="entry-meta">Sell with Wayfair · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://supplierhub-prospective.homedepot.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Home Depot</span><span class="entry-meta">Supplier Hub · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.bestbuy.com/seller/signup" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Best Buy</span><span class="entry-meta">Sell on Marketplace · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.lowes.com/l/about/lowes-marketplace" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Lowe's</span><span class="entry-meta">Marketplace · 邀请制</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.bedbathandbeyond.com/partner" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Overstock / BBB</span><span class="entry-meta">Partner Program · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.costco.com/f/-/supplier-diversity" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Costco</span><span class="entry-meta">Supplier · 买手制</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.macysinc.com/work-with-us/vendors/Become-a-Vendor-Partner/default.aspx" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Macy's</span><span class="entry-meta">Vendor Partner · 申请制</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.kohlssuppliers.com/become-a-supplier" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Kohl's</span><span class="entry-meta">Supplier Portal · 美国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://partner.zalando.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Zalando</span><span class="entry-meta">Partner Program · 欧洲</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.otto.market/en/howitworks/registration.html" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">OTTO</span><span class="entry-meta">OTTO Market · 德国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://partnerplatform.bol.com/nl/cdp/verkopen-via-bol" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">bol</span><span class="entry-meta">Partner Platform · 荷兰</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://allegro.pl/rejestracja/konto-firmowe/nowe-konto?lang=en-US" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Allegro</span><span class="entry-meta">Seller Registration · 波兰</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://marketplace.cdiscount.com/lancez-votre-boutique/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Cdiscount</span><span class="entry-meta">Marketplace · 法国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.carrefour.fr/services/carrefour-marketplace-vendeurs" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Carrefour</span><span class="entry-meta">Marketplace · 法国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://fnacdartymarketplace.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Fnac</span><span class="entry-meta">Seller Portal · 法国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://marketplace.asos.com/sell" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">ASOS</span><span class="entry-meta">Marketplace · 英国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://toolkit.tesco.com/seller/apply-to-sell/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Tesco</span><span class="entry-meta">Marketplace · 英国</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://sell.mediamarktsaturn.com/de-ES/registration-and-shop-setup/1-registration" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">MediaMarkt</span><span class="entry-meta">Marketplace · 欧洲</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://marketplace.elcorteingles.es" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">El Corte Inglés</span><span class="entry-meta">Marketplace · 西班牙</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.yoox.com/brand-partnership" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">YOOX</span><span class="entry-meta">Brand Partner · 意大利</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://sell.noon.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">noon</span><span class="entry-meta">Sell with noon · 中东</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://help.namshi.com/portal/en/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Namshi</span><span class="entry-meta">Seller Support · 中东</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://partner.trendyol.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Trendyol</span><span class="entry-meta">Seller Center · 土耳其</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://seller.shopee.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Shopee</span><span class="entry-meta">Seller Centre · 东南亚</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://sellercenter.lazada.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Lazada</span><span class="entry-meta">Seller Center · 东南亚</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://marketplace.rakuten.net/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Rakuten</span><span class="entry-meta">Marketplace · 日本</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://lineshoppingseller.com/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">LINE Shopping</span><span class="entry-meta">Seller Portal · 日本/东南亚</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://www.kogan.com/au/kogan-marketplace/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Kogan</span><span class="entry-meta">Marketplace · 澳大利亚</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://portal.mydeal.com.au/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">MyDeal</span><span class="entry-meta">Seller Portal · 澳大利亚</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://seller.ozon.ru/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Ozon</span><span class="entry-meta">Seller Portal · 俄语区</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+      <a class="entry rv" href="https://seller.wildberries.ru/" target="_blank" rel="noopener noreferrer">
+        <span class="entry-main"><span class="entry-name">Wildberries</span><span class="entry-meta">Seller Portal · 俄语区</span></span>
+        <span class="entry-arr">→</span>
+      </a>
+    </div>
+
+    <p class="channels-foot rv">* 入口均为各平台官方卖家 / 供应商站点；入驻资质、佣金与政策以各平台实际为准。美国部分零售渠道（Costco、Macy's、Lowe's 等）为买手制 / 邀请制，入口为其官方供应商申请页。Ozon / Wildberries 入口为俄语界面。</p>
+  </div>
+</section>
+
+<!-- ================= BAND ================= -->
+<div class="band" id="band">
+  <div class="band-bg" id="bandBg">
+    <img loading="lazy" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20modern%20fulfillment%20warehouse%20interior%2C%20tall%20racks%20of%20home%20furnishing%20products%2C%20a%20worker%20checking%20a%20pallet%2C%20dramatic%20overhead%20industrial%20lighting%2C%20clean%20professional%20logistics%20atmosphere&image_size=landscape_16_9" alt="海外仓储物流中心">
+  </div>
+  <div class="band-inner wrap">
+    <p class="mono-kicker">Factory to US Shelf</p>
+    <h3>从中国工厂，到美国主流零售货架。</h3>
+  </div>
+</div>
+
+<!-- ================= PROCESS ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Onboarding Process</p>
+      <h2>五步完成入驻</h2>
+      <p class="section-lead">从提交申请到首单交付，平均 4 周跑通全链路。</p>
+    </div>
+
+    <div class="steps" id="steps">
+      <div class="steps-line"><i id="stepsFill"></i></div>
+      <div class="step">
+        <span class="step-dot"></span>
+        <div class="step-idx">STEP 01</div>
+        <h3>提交申请</h3>
+        <p>在线填写企业与货盘信息，约 5 分钟完成。</p>
+      </div>
+      <div class="step">
+        <span class="step-dot"></span>
+        <div class="step-idx">STEP 02</div>
+        <h3>资质审核</h3>
+        <p>1–3 个工作日完成企业与产品初审。</p>
+      </div>
+      <div class="step">
+        <span class="step-dot"></span>
+        <div class="step-idx">STEP 03</div>
+        <h3>签署协议</h3>
+        <p>确认合作模式与结算条款，线上签署。</p>
+      </div>
+      <div class="step">
+        <span class="step-dot"></span>
+        <div class="step-idx">STEP 04</div>
+        <h3>选品上架</h3>
+        <p>数据团队锁定首批 SKU，完成渠道分发。</p>
+      </div>
+      <div class="step">
+        <span class="step-dot"></span>
+        <div class="step-idx">STEP 05</div>
+        <h3>首单交付</h3>
+        <p>进入常态化运营、结算与复购节奏。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUCCESS ================= -->
+<section id="success">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Sell Success</p>
+      <h2>成功案例</h2>
+      <p class="section-lead">把货盘交给我们之后，发生的事。</p>
+    </div>
+
+    <div class="success-metrics rv">
+      <div class="sm">
+        <div class="num">40<i>%</i></div>
+        <div class="lbl">品牌伙伴首年平均销售增长</div>
+      </div>
+      <div class="sm">
+        <div class="num">70<i>+</i></div>
+        <div class="lbl">品牌伙伴净推荐值 NPS</div>
+      </div>
+      <div class="sm">
+        <div class="num">9<i>座</i></div>
+        <div class="lbl">全美仓配中心</div>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <figure class="quote rv rv-d1">
+        <blockquote>大件重货也能做到次日达时效——这让我们下了决心；真正留住我们的，是广告投放、账户管理和运营每个环节的服务水准。</blockquote>
+        <figcaption><span class="who">Simon Y.</span><span class="role">户外遮阳品牌 · CEO</span></figcaption>
+      </figure>
+      <figure class="quote rv rv-d2">
+        <blockquote>定价、扩品、内容优化、Buy Box 占比……几乎每天都有人在和我们聊怎么把生意做大。这支团队把我们的生意当成自己的生意。</blockquote>
+        <figcaption><span class="who">Renee P.</span><span class="role">厨卫五金品牌 · 首席产品官</span></figcaption>
+      </figure>
+      <figure class="quote rv rv-d1">
+        <blockquote>我们是四十年的老厂，放弃了数百万美元的 1P 生意转到他们的渠道网络，没有一天后悔过。</blockquote>
+        <figcaption><span class="who">Steve J.</span><span class="role">收纳五金品牌 · 联合创始人</span></figcaption>
+      </figure>
+      <figure class="quote rv rv-d2">
+        <blockquote>合作第一年销售增长六成，成本反而降了——仓储与物流的整合效应，是实实在在的。</blockquote>
+        <figcaption><span class="who">Paul R.</span><span class="role">动力设备品牌 · COO</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">FAQ</p>
+      <h2>常见问题</h2>
+    </div>
+
+    <div class="faq-wrap">
+      <div class="faq-item rv">
+        <button class="faq-q">你们是哪里的公司？<span class="fx">+</span></button>
+        <div class="faq-a"><p>我们是一家<b>美国渠道公司</b>，建有深圳运营团队与全美仓配网络，以美国主流零售为主场，同时在欧洲、中东、亚太、澳新与俄语区布局渠道，把中国家居供应链卖向全球。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">可以买断式合作吗？<span class="fx">+</span></button>
+        <div class="faq-a"><p>可以。对验证通过的优质货盘，我们以大额批发采购订单（PO）一次性买断库存：<b>你先收款，我们开工</b>——库存归我们，零售端的库存与价格风险由我们承担。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">需要把货物提前寄到国外吗？<span class="fx">+</span></button>
+        <div class="faq-a"><p>取决于合作模式：<b>ODM / OBM 合作模式需要供应商在海外仓有货</b>；<b>OEM 合作模式可以由我司负责国际物流</b>，工厂交货即可。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">营业执照地址需要与发货地址一致吗？<span class="fx">+</span></button>
+        <div class="faq-a"><p>目前暂无此要求。营业执照地址或联系地址<b>无需与货物发货地址一致</b>。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">没有出口资质可以入驻吗？<span class="fx">+</span></button>
+        <div class="faq-a"><p>可以。平台可协助通过具备出口资质的合作通道完成报关与收结汇，工厂只需专注生产交付。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">结算周期是多久？<span class="fx">+</span></button>
+        <div class="faq-a"><p>按平台统一结算周期执行，提供 <b>T+15 / T+30</b> 两种结算方案，支持美元或人民币结算。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">最小起订量（MOQ）有要求吗？<span class="fx">+</span></button>
+        <div class="faq-a"><p>不同渠道与品类要求不同，具体以选品阶段出具的数据报告为准，签约前会逐项确认。</p></div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">可以同时用 OEM 和 ODM 两种模式吗？<span class="fx">+</span></button>
+        <div class="faq-a"><p>可以。签约后可在不同货盘上<b>并行使用多种合作模式</b>，按渠道分别结算。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEET ================= -->
+<section id="meet">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Book a Meeting</p>
+      <h2>预约一次 30 分钟线上会议</h2>
+      <p class="section-lead">不用先准备整套资料。挑个时间，把货盘和渠道当面聊清楚，当场判断合不合适。</p>
+    </div>
+
+    <div class="meet-grid">
+      <form id="meetForm" novalidate>
+        <div class="field">
+          <label for="t-name">联系人 <b>*</b></label>
+          <input id="t-name" name="name" type="text" required placeholder="姓名">
+        </div>
+        <div class="field">
+          <label for="t-company">公司 / 品牌 <b>*</b></label>
+          <input id="t-company" name="company" type="text" required placeholder="如：×× 家居">
+        </div>
+        <div class="field">
+          <label for="t-email">邮箱 <b>*</b></label>
+          <input id="t-email" name="email" type="email" required placeholder="用于发送会议链接">
+        </div>
+        <div class="field">
+          <label for="t-topic">会议主题</label>
+          <select id="t-topic" name="topic">
+            <option value="OEM 合作">OEM 合作</option>
+            <option value="ODM 合作">ODM 合作</option>
+            <option value="OBM 品牌出海">OBM 品牌出海</option>
+            <option value="渠道分销 / 货盘买断">渠道分销 / 货盘买断</option>
+            <option value="仓储物流方案">仓储物流方案</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="t-date">期望日期 <b>*</b></label>
+          <input id="t-date" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="t-slot">期望时段</label>
+          <select id="t-slot" name="slot">
+            <option value="上午 09:00–12:00">上午 09:00–12:00</option>
+            <option value="下午 14:00–18:00" selected>下午 14:00–18:00</option>
+            <option value="晚间 19:00–22:00">晚间 19:00–22:00</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="t-tz">时区</label>
+          <select id="t-tz" name="tz">
+            <option value="北京时间 GMT+8" selected>北京时间 GMT+8</option>
+            <option value="美东时间 GMT-5">美东时间 GMT-5</option>
+            <option value="美西时间 GMT-8">美西时间 GMT-8</option>
+            <option value="伦敦时间 GMT+0">伦敦时间 GMT+0</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="t-notes">备注</label>
+          <textarea id="t-notes" name="notes" placeholder="想重点聊的问题（选填）"></textarea>
+        </div>
+        <div class="form-foot">
+          <button class="btn-primary" type="submit">生成预约邮件 <span class="arr">→</span></button>
+          <span class="form-hint">预约内容在你的邮件客户端中生成，直接发往招商邮箱</span>
+        </div>
+        <div class="form-success" id="meetSuccess">
+          <p class="ok">Meeting Request Drafted</p>
+          <h3>预约邮件已生成</h3>
+          <p>我们已尝试打开你的邮件客户端。若未自动打开，可点击下方按钮重试，或复制预约内容手动发送至 haidong.zhou@outlook.com。收到后 1 个工作日内回复确认会议时间。</p>
+          <span class="ref" id="meetRef">REF: MTG-2026-0000</span>
+          <div class="meet-actions">
+            <button class="btn-primary" type="button" id="meetResend">重新打开邮件</button>
+            <button class="btn-ghost" type="button" id="meetCopy">复制预约内容</button>
+            <button class="btn-ghost" type="button" id="meetIcs">下载日历提醒 .ics</button>
+          </div>
+        </div>
+      </form>
+
+      <aside class="meet-side rv">
+        <h3>预约之后会发生什么</h3>
+        <div class="meet-steps">
+          <div class="ms">
+            <span class="idx">01</span>
+            <div><strong>发送预约邮件</strong><span>表单在你自己的邮件客户端中生成邮件，由你直接发送。</span></div>
+          </div>
+          <div class="ms">
+            <span class="idx">02</span>
+            <div><strong>邮件确认时间</strong><span>1 个工作日内回复，敲定会议时间与视频链接。</span></div>
+          </div>
+          <div class="ms">
+            <span class="idx">03</span>
+            <div><strong>30 分钟线上会议</strong><span>腾讯会议 / Zoom。带上货盘即可，无需准备演示材料。</span></div>
+          </div>
+          <div class="ms">
+            <span class="idx">04</span>
+            <div><strong>会后渠道建议</strong><span>48 小时内给出结论：哪些渠道能进、按什么模式进。</span></div>
+          </div>
+        </div>
+        <p class="meet-note">本站为纯静态页面：预约信息不经过任何第三方服务器，仅在浏览器内生成邮件，由你直接发送到招商邮箱。</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPLY ================= -->
+<section id="apply">
+  <div class="wrap">
+    <div class="apply-grid">
+      <div class="apply-side rv">
+        <p class="eyebrow">Start Selling</p>
+        <h2>今天开始<br>把货卖向全球</h2>
+        <p class="section-lead" style="margin-top:8px">提交申请后，招商团队将在 1–3 个工作日内与你联系，完成资质初审与选品沟通。</p>
+        <div class="apply-contact">
+          <div class="row">
+            <span class="k">Email 招商邮箱</span>
+            <span class="v">haidong.zhou@outlook.com</span>
+          </div>
+          <div class="row">
+            <span class="k">Tel 招商热线</span>
+            <span class="v">+86 755 8888 0000</span>
+          </div>
+          <div class="row">
+            <span class="k">Office 办公地址</span>
+            <span class="v">深圳运营中心 · 美国海外仓配中心</span>
+          </div>
+        </div>
+      </div>
+
+      <form id="applyForm" novalidate>
+        <div class="field">
+          <label for="f-company">公司名称 <b>*</b></label>
+          <input id="f-company" name="company" type="text" required placeholder="如：深圳 ×× 家居有限公司">
+        </div>
+        <div class="field">
+          <label for="f-name">联系人 <b>*</b></label>
+          <input id="f-name" name="name" type="text" required placeholder="姓名">
+        </div>
+        <div class="field">
+          <label for="f-phone">联系电话 <b>*</b></label>
+          <input id="f-phone" name="phone" type="tel" required placeholder="手机号 / 微信">
+        </div>
+        <div class="field">
+          <label for="f-cat">主营品类</label>
+          <select id="f-cat" name="category">
+            <option value="家居家具">家居家具</option>
+            <option value="照明灯具">照明灯具</option>
+            <option value="家纺布艺">家纺布艺</option>
+            <option value="厨卫用品">厨卫用品</option>
+            <option value="户外园艺">户外园艺</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>合作意向模式</label>
+          <div class="mode-picker">
+            <input type="radio" id="m-oem" name="mode" value="OEM" checked><label class="mode-chip" for="m-oem">OEM 来图代工</label>
+            <input type="radio" id="m-odm" name="mode" value="ODM"><label class="mode-chip" for="m-odm">ODM 选款贴牌</label>
+            <input type="radio" id="m-obm" name="mode" value="OBM"><label class="mode-chip" for="m-obm">OBM 品牌出海</label>
+            <input type="radio" id="m-tbd" name="mode" value="待定"><label class="mode-chip" for="m-tbd">待定 / 需要建议</label>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="f-msg">补充说明</label>
+          <textarea id="f-msg" name="message" placeholder="货盘规模、年产值、目标渠道…（选填）"></textarea>
+        </div>
+        <div class="form-foot">
+          <button class="btn-primary" type="submit">提交入驻申请 <span class="arr">→</span></button>
+          <span class="form-hint">提交即视为同意平台入驻条款 · 信息仅用于资质审核</span>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <p class="ok">Application Received</p>
+          <h3>申请已提交</h3>
+          <p>招商团队将在 1–3 个工作日内与你联系。请保持电话畅通，并提前准备营业执照与货盘资料。</p>
+          <span class="ref" id="refCode">REF: IM-2026-0000</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">insight<em>marketplac</em></div>
+        <p class="foot-tag">美国渠道公司 · 家居供应链直供零售网络。平台入驻 · 联合运营 · 物流对接 · 账号安全维护 · 品牌推广。</p>
+      </div>
+      <div class="foot-nav">
+        <div class="foot-col">
+          <h4>合作</h4>
+          <a href="#models">合作模式</a>
+          <a href="#process">入驻流程</a>
+          <a href="#apply">申请入驻</a>
+          <a href="#meet">预约会议</a>
+        </div>
+        <div class="foot-col">
+          <h4>平台</h4>
+          <a href="#services">服务体系</a>
+          <a href="#channels">渠道网络</a>
+          <a href="#entries">卖家入口</a>
+          <a href="#success">成功案例</a>
+          <a href="#faq">常见问题</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 insightmarketplac. All rights reserved.</span>
+      <span>OEM / ODM / OBM · Supplier Onboarding Page</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- nav state ---------- */
+  var header=document.getElementById("siteHeader");
+  function onScrollNav(){header.classList.toggle("scrolled",window.scrollY>40)}
+  window.addEventListener("scroll",onScrollNav,{passive:true});
+  onScrollNav();
+
+  /* ---------- reveal on scroll ---------- */
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}
+    });
+  },{threshold:.12});
+  document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+
+  /* ---------- hero + band parallax ---------- */
+  var heroBg=document.getElementById("heroBg");
+  var bandBg=document.getElementById("bandBg");
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!reduce){
+    window.addEventListener("scroll",function(){
+      var y=window.scrollY;
+      if(y<window.innerHeight*1.2){heroBg.style.transform="translateY("+(y*.14)+"px)"}
+      var r=bandBg.getBoundingClientRect();
+      if(r.bottom>0&&r.top<window.innerHeight){
+        bandBg.style.transform="translateY("+((r.top-window.innerHeight*.5)*-.06)+"px)";
+      }
+    },{passive:true});
+  }
+
+  /* ---------- steps sequence ---------- */
+  var steps=document.getElementById("steps");
+  var stepEls=Array.prototype.slice.call(steps.querySelectorAll(".step"));
+  var stepsPlayed=false;
+  var stepsIO=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting&&!stepsPlayed){
+        stepsPlayed=true;
+        steps.classList.add("played");
+        stepEls.forEach(function(s,i){
+          setTimeout(function(){s.classList.add("on")},450*(i+1));
+        });
+        stepsIO.disconnect();
+      }
+    });
+  },{threshold:.35});
+  stepsIO.observe(steps);
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll(".faq-item").forEach(function(item){
+    var q=item.querySelector(".faq-q");
+    var a=item.querySelector(".faq-a");
+    q.addEventListener("click",function(){
+      var isOpen=item.classList.contains("open");
+      document.querySelectorAll(".faq-item.open").forEach(function(other){
+        if(other!==item){
+          other.classList.remove("open");
+          other.querySelector(".faq-a").style.maxHeight="0px";
+        }
+      });
+      if(isOpen){
+        item.classList.remove("open");
+        a.style.maxHeight="0px";
+      }else{
+        item.classList.add("open");
+        a.style.maxHeight=a.scrollHeight+"px";
+      }
+    });
+  });
+
+  /* ---------- form ---------- */
+  var form=document.getElementById("applyForm");
+  var success=document.getElementById("formSuccess");
+  form.addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var required=form.querySelectorAll("[required]");
+    for(var i=0;i<required.length;i++){
+      if(!required[i].value.trim()){
+        required[i].focus();
+        required[i].style.borderBottomColor="#E8A33D";
+        return;
+      }
+    }
+    var ref="IM-2026-"+String(Math.floor(1000+Math.random()*9000));
+    document.getElementById("refCode").textContent="REF: "+ref;
+    Array.prototype.forEach.call(form.children,function(child){
+      if(child!==success){child.style.display="none"}
+    });
+    success.classList.add("show");
+    success.scrollIntoView({behavior:"smooth",block:"center"});
+  });
+
+  /* ---------- meeting booking (static, mailto only) ---------- */
+  var meetForm=document.getElementById("meetForm");
+  var meetSuccess=document.getElementById("meetSuccess");
+  var meetData=null;
+  var MEET_MAIL="haidong.zhou@outlook.com";
+
+  var dateInput=document.getElementById("t-date");
+  if(dateInput){
+    var now=new Date();
+    dateInput.min=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
+  }
+
+  function slotStart(slot){
+    if(slot.indexOf("上午")===0){return "090000"}
+    if(slot.indexOf("下午")===0){return "140000"}
+    return "190000";
+  }
+  function buildBody(d){
+    var lines=[
+      "您好，我想预约一次 30 分钟线上会议。",
+      "",
+      "会议主题："+d.topic,
+      "期望时间："+d.date+" "+d.slot+"（"+d.tz+"）",
+      "联系人："+d.name,
+      "公司 / 品牌："+d.company,
+      "联系邮箱："+d.email
+    ];
+    if(d.notes){lines.push("备注："+d.notes)}
+    lines.push("");
+    lines.push("预约编号："+d.ref);
+    lines.push("（本邮件由 insightmarketplac 官网预约表单生成）");
+    return lines.join("\n");
+  }
+  function mailtoHref(d){
+    return "mailto:"+MEET_MAIL+
+      "?subject="+encodeURIComponent("会议预约｜"+d.company+"｜"+d.date+" "+d.slot)+
+      "&body="+encodeURIComponent(buildBody(d));
+  }
+  function openMail(d){window.location.href=mailtoHref(d)}
+  function fallbackCopy(text){
+    var ta=document.createElement("textarea");
+    ta.value=text;
+    ta.style.position="fixed";
+    ta.style.opacity="0";
+    document.body.appendChild(ta);
+    ta.select();
+    try{document.execCommand("copy")}catch(e){}
+    document.body.removeChild(ta);
+  }
+
+  meetForm.addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var required=meetForm.querySelectorAll("[required]");
+    for(var i=0;i<required.length;i++){
+      if(!required[i].value.trim()){
+        required[i].focus();
+        required[i].style.borderBottomColor="#E8A33D";
+        return;
+      }
+    }
+    var d={
+      name:document.getElementById("t-name").value.trim(),
+      company:document.getElementById("t-company").value.trim(),
+      email:document.getElementById("t-email").value.trim(),
+      topic:document.getElementById("t-topic").value,
+      date:document.getElementById("t-date").value,
+      slot:document.getElementById("t-slot").value,
+      tz:document.getElementById("t-tz").value,
+      notes:document.getElementById("t-notes").value.trim(),
+      ref:"MTG-2026-"+String(Math.floor(1000+Math.random()*9000))
+    };
+    meetData=d;
+    document.getElementById("meetRef").textContent="REF: "+d.ref;
+    Array.prototype.forEach.call(meetForm.children,function(child){
+      if(child!==meetSuccess){child.style.display="none"}
+    });
+    meetSuccess.classList.add("show");
+    openMail(d);
+    meetSuccess.scrollIntoView({behavior:"smooth",block:"center"});
+  });
+
+  document.getElementById("meetResend").addEventListener("click",function(){
+    if(meetData){openMail(meetData)}
+  });
+
+  document.getElementById("meetCopy").addEventListener("click",function(){
+    if(!meetData){return}
+    var self=this;
+    var text=buildBody(meetData)+"\n收件邮箱："+MEET_MAIL;
+    var done=function(){
+      self.textContent="已复制 ✓";
+      setTimeout(function(){self.textContent="复制预约内容"},2000);
+    };
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done,function(){fallbackCopy(text);done()});
+    }else{
+      fallbackCopy(text);done();
+    }
+  });
+
+  document.getElementById("meetIcs").addEventListener("click",function(){
+    if(!meetData){return}
+    var d=meetData;
+    var dt=d.date.replace(/-/g,"")+"T"+slotStart(d.slot);
+    var stamp=new Date().toISOString().replace(/[-:]/g,"").split(".")[0]+"Z";
+    var ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//insightmarketplac//Meeting Booking//CN","BEGIN:VEVENT",
+      "UID:"+d.ref+"@insightmarketplac",
+      "DTSTAMP:"+stamp,
+      "DTSTART:"+dt,
+      "DURATION:PT30M",
+      "SUMMARY:insightmarketplac 线上会议（待邮件确认）",
+      "DESCRIPTION:"+buildBody(d).replace(/\n/g,"\\n"),
+      "END:VEVENT","END:VCALENDAR"].join("\r\n");
+    var blob=new Blob([ics],{type:"text/calendar;charset=utf-8"});
+    var a=document.createElement("a");
+    a.href=URL.createObjectURL(blob);
+    a.download=d.ref+".ics";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href);document.body.removeChild(a)},1000);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>insightmarketplac — Supplier Onboarding · OEM / ODM / OBM</title>
+<meta name="description" content="insightmarketplac — US channel company. Supplier onboarding: from the factory floor to America's retail shelves. OEM / ODM / OBM partnerships, inventory buyout, 20+ channels.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0E13'/%3E%3Ctext x='16' y='21' font-family='Consolas,monospace' font-size='13' font-weight='700' fill='%23E8A33D' text-anchor='middle'%3Eim%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0B0E13;
+  --ink:#F2EEE6;
+  --ink-dim:#A7ADB8;
+  --accent:#E8A33D;
+  --hairline:rgba(242,238,230,.12);
+  --sans:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:"SF Mono","Cascadia Code",Consolas,"Courier New",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:var(--bg);color:var(--ink);font-family:var(--sans);
+  padding:32px;
+}
+.gate{width:100%;max-width:640px;text-align:center}
+.mark{
+  font-family:var(--mono);font-size:clamp(30px,6vw,46px);font-weight:700;
+  letter-spacing:.02em;
+}
+.mark em{font-style:normal;color:var(--accent)}
+.kicker{
+  font-family:var(--mono);font-size:12px;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--accent);margin-top:18px;
+}
+.desc{color:var(--ink-dim);font-size:15px;line-height:1.8;margin-top:10px}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:44px}
+.choice{
+  display:block;padding:26px 20px;border:1px solid var(--hairline);
+  background:rgba(242,238,230,.02);transition:background .3s,border-color .3s;
+}
+.choice:hover{background:rgba(242,238,230,.06);border-color:var(--accent)}
+.choice .lang{
+  font-family:var(--mono);font-size:17px;font-weight:700;color:var(--ink);
+}
+.choice:hover .lang{color:var(--accent)}
+.choice .sub{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-dim);margin-top:8px;display:block;
+}
+.auto{
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-dim);
+  letter-spacing:.06em;margin-top:34px;line-height:1.9;
+}
+.auto b{color:var(--accent);font-weight:600}
+.foot{
+  font-family:var(--mono);font-size:11px;color:var(--ink-dim);
+  letter-spacing:.1em;margin-top:44px;padding-top:22px;
+  border-top:1px solid var(--hairline);
+}
+@media(max-width:560px){
+  .choices{grid-template-columns:1fr}
+  body{padding:20px}
+}
+</style>
+</head>
+<body>
+<div class="gate">
+  <div class="mark">insight<em>marketplac</em></div>
+  <p class="kicker">Supplier Onboarding</p>
+  <p class="desc">从中国工厂，到美国主流零售货架。<br>From the factory floor to America's retail shelves.</p>
+
+  <div class="choices">
+    <a class="choice" id="link-zh" href="sell-on-oem-odm.html">
+      <span class="lang">中文</span>
+      <span class="sub">OEM / ODM / OBM 入驻</span>
+    </a>
+    <a class="choice" id="link-en" href="sell-on-oem-odm-en.html">
+      <span class="lang">English</span>
+      <span class="sub">Sell on Marketplace</span>
+    </a>
+  </div>
+
+  <p class="auto">正在检测语言，<b><span id="countdown">3</span></b> 秒后自动进入 <b id="target">中文版</b>。点击上方任一语言可立即进入。</p>
+
+  <p class="foot">© 2026 insightmarketplac · 美国渠道公司 · US Channel Company</p>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var ZH="sell-on-oem-odm.html",EN="sell-on-oem-odm-en.html";
+  var lang=(navigator.language||navigator.userLanguage||"zh").toLowerCase();
+  var target=lang.indexOf("zh")===0?ZH:EN;
+  document.getElementById("target").textContent=target===ZH?"中文版":"English";
+
+  var n=3,cd=document.getElementById("countdown");
+  var timer=setInterval(function(){
+    n--;
+    if(n<=0){clearInterval(timer);window.location.href=target;return}
+    cd.textContent=String(n);
+  },1000);
+
+  document.addEventListener("click",function(ev){
+    var a=ev.target.closest("a.choice");
+    if(a){clearInterval(timer)}
+  },true);
+})();
+</script>
+</body>
+</html>
