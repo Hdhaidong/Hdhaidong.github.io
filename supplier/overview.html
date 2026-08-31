@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全局业务地图 · 产品线与七大服务线 | insightmarketplac</title>
-<meta name="description" content="insightmarketplac 全局业务总览：产品层——AI Agent 硬件、业务 Agent 工具与私有系统；服务层——渠道入驻、数据洞察（数据 token）、系统工具、品牌增长、众筹分销、合规企业、展会服务七大业务线。">
+<title>一个系统的进化 · 四层架构与七大服务线 | insightmarketplac</title>
+<meta name="description" content="insightmarketplac 是一套自底向上生长的四层系统：硬件层、智能体层、系统层、服务层。服务层含七大业务线：渠道入驻、数据洞察（数据 token）、系统工具、品牌增长、众筹分销、合规企业、展会服务。">
 <meta name="keywords" content="insightmarketplac 业务, 品牌出海服务, 渠道入驻, 数据分析服务, 数据token, ERP WMS CRM, AI Agent 定制, 红人营销, AI短剧定制, 众筹分销, 公司注册 商标 VAT, 展会服务">
 <link rel="canonical" href="https://hdhaidong.github.io/supplier/overview.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="全局业务总览 · 七大业务线 | insightmarketplac">
+<meta property="og:title" content="一个系统的进化 · 四层架构 | insightmarketplac">
 <meta property="og:description" content="渠道、数据、内容三位一体——七大业务线一张图看懂。">
 <meta property="og:url" content="https://hdhaidong.github.io/supplier/overview.html">
 <meta name="robots" content="index, follow">
@@ -61,6 +61,25 @@ h2{font-size:clamp(1.15rem,2.2vw,1.5rem);font-weight:700}
 .biz .go{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .biz .go a{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--accent);border:1px solid rgba(232,163,61,.3);border-radius:20px;padding:4px 12px}
 .biz .go a:hover{background:rgba(232,163,61,.1);text-decoration:none}
+.stack{margin-top:2px}
+.layer{display:grid;grid-template-columns:190px 1fr;border:1px solid var(--hairline-soft);border-radius:12px;background:var(--bg-2);overflow:hidden;transition:border-color .2s}
+.layer:hover{border-color:rgba(232,163,61,.4)}
+.layer .lh{padding:20px;border-right:1px solid var(--hairline-soft);background:var(--bg-3);display:flex;flex-direction:column;justify-content:center}
+.layer .ln{font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;color:var(--accent);text-transform:uppercase}
+.layer h3{font-size:1.02rem;font-weight:700;margin-top:5px}
+.layer .le{font-family:var(--mono);font-size:.62rem;color:var(--ink-faint);letter-spacing:.06em;margin-top:3px}
+.layer .lb{padding:20px 24px}
+.layer .lb p{font-size:.86rem;color:var(--ink-dim)}
+.layer .lb ul{list-style:none;margin-top:8px}
+.layer .lb li{font-size:.82rem;color:var(--ink-dim);padding:3px 0 3px 18px;position:relative}
+.layer .lb li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+.layer .lb li b{color:var(--ink);font-weight:600}
+.layer .go{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.layer .go a{font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--accent);border:1px solid rgba(232,163,61,.3);border-radius:20px;padding:4px 12px}
+.layer .go a:hover{background:rgba(232,163,61,.1);text-decoration:none}
+.lconn{display:flex;justify-content:center;align-items:center;gap:10px;padding:6px 0}
+.lconn .cap{font-family:var(--mono);font-size:.62rem;color:var(--ink-faint);letter-spacing:.1em;text-transform:uppercase}
+.lconn .ar{color:var(--accent);font-family:var(--mono);font-size:.95rem;line-height:1}
 .path{border:1px solid var(--hairline-soft);border-radius:12px;background:var(--bg-2);padding:24px;margin-bottom:14px}
 .path .pt{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
 .path .pn{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;color:#141414;background:var(--accent);border-radius:4px;padding:3px 9px;font-weight:700}
@@ -90,7 +109,7 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
 .f-links .fk{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:8px}
 .f-links a{display:block;font-size:.8rem;color:var(--ink-dim);padding:2px 0}
 .f-links a:hover{color:var(--accent)}
-@media (max-width:800px){.tri{grid-template-columns:1fr}.biz-grid{grid-template-columns:1fr}.rel-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:800px){.tri{grid-template-columns:1fr}.biz-grid{grid-template-columns:1fr}.rel-grid{grid-template-columns:1fr 1fr}.layer{grid-template-columns:1fr}.layer .lh{border-right:0;border-bottom:1px solid var(--hairline-soft);padding:15px 20px;flex-direction:row;align-items:baseline;gap:10px;flex-wrap:wrap}.layer h3{margin-top:0}.layer .le{margin-top:0}}
 @media (max-width:560px){.wrap{padding:0 16px}.rel-grid{grid-template-columns:1fr}.cta-band{padding:28px 18px}.f-links{text-align:left}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -109,11 +128,11 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
 </div></div>
 
 <div class="hero"><div class="wrap">
-  <div class="eyebrow">Business Overview</div>
-  <h1>全局业务地图，<span class="hl">一张图看懂</span></h1>
-  <p class="hero-sub">insightmarketplac 的业务分两层：<b>产品层</b>——AI Agent 硬件、业务 Agent 工具与私有系统（见根站 hdhaidong.github.io）；<b>服务层</b>——七大业务线，把中国的供给能力接进美国的渠道与内容生态。产品与服务共用同一套底层：渠道、数据、内容。</p>
+  <div class="eyebrow">System Architecture</div>
+  <h1>一个持续进化的<span class="hl">系统</span>，一图看懂</h1>
+  <p class="hero-sub">insightmarketplac 不是一个项目集合，而是一套自底向上生长的系统：<b>硬件层</b>提供算力与物理边界，<b>智能体层</b>生产洞察，<b>系统层</b>沉淀为平台，<b>服务层</b>把能力交付到客户手里——把中国的供给能力接进美国的渠道与内容生态。四层共享同一套底层：渠道、数据、内容。</p>
   <div class="cta-row">
-    <a class="btn btn-p" href="#products">产品与系统线</a>
+    <a class="btn btn-p" href="#products">系统架构</a>
     <a class="btn btn-s" href="#biz">七大服务线</a>
   </div>
   <div class="tri">
@@ -123,82 +142,70 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
   </div>
 </div></div>
 
-<!-- ================= 产品与系统线 ================= -->
+<!-- ================= 系统架构 ================= -->
 <div class="sec" id="products"><div class="wrap">
   <div class="sec-head">
-    <h2>产品与系统线</h2>
-    <p>根站 hdhaidong.github.io 上的产品生态——开源线做影响力和技术底座，私有线做商业交付；服务层的系统能力（ERP / WMS / CRM / Agent）由这条产品线供给。</p>
+    <h2>一个系统的进化</h2>
+    <p>自底向上生长的四层架构——硬件提供算力与物理边界，智能体生产洞察，系统层沉淀为平台，服务层把能力交付到客户手里。四层不是四个产品，是一套系统的四次进化。</p>
   </div>
-  <div class="biz-grid">
 
-    <article class="biz">
-      <span class="no">Product Line 01 · Open Source</span>
-      <h3>AI Agent 硬件</h3>
-      <span class="en">AGENT HARDWARE</span>
-      <p>给 AI 智能体造身体：工业与无线网关让 Agent 触碰真实设备，每一次写入都过物理 Approve 门。</p>
-      <ul>
-        <li><b>OpenWorker Deck：</b>桌面 Agent 控制台 + 工业网关（Modbus / CAN / BLE / LoRa），本地模型与可拔插加密隐私卡</li>
-        <li><b>Grok Deck：</b>同栈 Grok 版——端侧 NPU 沙箱 + 云超算过物理门禁，离网 Starlink 回传</li>
-        <li><b>定位：</b>MIT 固件开源，算力存算分离——拔卡即带走全部历史</li>
-      </ul>
-      <div class="go">
-        <a href="https://hdhaidong.github.io/openworker-deck/">OpenWorker Deck</a>
-        <a href="https://hdhaidong.github.io/grok-deck/">Grok Deck</a>
-      </div>
-    </article>
+  <div class="stack">
 
-    <article class="biz">
-      <span class="no">Product Line 02 · Open Source</span>
-      <h3>业务 Agent 工具</h3>
-      <span class="en">BUSINESS AGENT TOOLS</span>
-      <p>替人跑研究腿的智能体——选品发现、竞品情报、社交聆听，长在真实电商工作流上。</p>
-      <ul>
-        <li><b>Amazon Product Scout：</b>细分市场研究、产品开发与竞品跟踪</li>
-        <li><b>Reddit Radar Workbench：</b>痛点、购买信号、竞品情报与自动报告</li>
-        <li><b>SupaNuxt SaaS：</b>生产级 SaaS 底座——所有平台构建的地基</li>
-      </ul>
-      <div class="go">
-        <a href="https://hdhaidong.github.io/amazon-product-scout/">Product Scout</a>
-        <a href="https://hdhaidong.github.io/reddit-radar-workbench/">Reddit Radar</a>
-        <a href="https://hdhaidong.github.io/supanuxt-saas/">SupaNuxt SaaS</a>
+    <div class="layer">
+      <div class="lh"><span class="ln">Layer 04 · 交付</span><h3>服务层</h3><span class="le">SERVICES</span></div>
+      <div class="lb">
+        <p>系统面向客户的交付形态——七大业务线，每条可独立交付，按客户阶段组合成解决方案。</p>
+        <ul>
+          <li><b>七条业务线：</b>渠道入驻 · 数据洞察 · 系统工具 · 品牌增长 · 众筹分销 · 合规企业 · 展会服务</li>
+          <li><b>交付物：</b>入驻方案、数据结论与 token、系统部署、内容与增长、展期执行</li>
+        </ul>
+        <div class="go"><a href="#biz">看七大服务线 ↓</a></div>
       </div>
-    </article>
+    </div>
 
-    <article class="biz">
-      <span class="no">Product Line 03 · Private</span>
-      <h3>私有系统</h3>
-      <span class="en">PRIVATE BUILDS</span>
-      <p>代理运营、品牌管理与边缘智能的闭源产品线——代码私有，这里只介绍它们做什么。</p>
-      <ul>
-        <li><b>insightmarketplac：</b>品牌运营市场平台——12 业务分区、62 页面，覆盖客户全生命周期</li>
-        <li><b>Agency CRM：</b>代理运营客户关系系统——客户管线、触点与续约信号</li>
-        <li><b>PI 口袋智能：</b>便携边缘 AI 伴侣——本地推理、物理同意控制、可拔隐私存储</li>
-        <li><b>Agent Browser：</b>围绕 Agent 而非标签页构建的浏览器——自动化研究与会话捕获</li>
-      </ul>
-      <div class="go">
-        <a href="https://hdhaidong.github.io/insightmarketplac/">insightmarketplac</a>
-        <a href="https://hdhaidong.github.io/agency-crm/">Agency CRM</a>
-        <a href="https://hdhaidong.github.io/pi/">PI</a>
-        <a href="https://hdhaidong.github.io/agent-browser/">Agent Browser</a>
-      </div>
-    </article>
+    <div class="lconn"><span class="ar">↑</span><span class="cap">服务交付</span></div>
 
-    <article class="biz">
-      <span class="no">产品 × 服务</span>
-      <h3>两层业务怎么咬合</h3>
-      <span class="en">HOW THEY INTERLOCK</span>
-      <p>产品线供弹药，服务线打战场——同一套底层能力，两种交付形态。</p>
-      <ul>
-        <li><b>Scout / Radar → 数据洞察：</b>研究型 Agent 是洞察中心与数据 token 的产能来源</li>
-        <li><b>私有系统 → 系统工具：</b>insightmarketplac 与 Agency CRM 是 ERP / WMS / CRM 交付的底座</li>
-        <li><b>Agent 硬件 → 边缘交付：</b>需要数据不出域的客户，分析跑在端侧硬件上</li>
-      </ul>
-      <div class="go">
-        <a href="#biz">看服务线 ↓</a>
+    <div class="layer">
+      <div class="lh"><span class="ln">Layer 03 · 平台</span><h3>系统层</h3><span class="le">PLATFORM</span></div>
+      <div class="lb">
+        <p>自有商业平台——业务在系统里沉淀为客户资产，而不是散落在工具与表格之间。</p>
+        <ul>
+          <li><b>平台规模：</b>12 个业务分区、62 个页面，覆盖客户全生命周期</li>
+          <li><b>系统底座：</b>ERP / WMS / CRM 与智能体交付，都跑在这一层之上</li>
+        </ul>
       </div>
-    </article>
+    </div>
+
+    <div class="lconn"><span class="ar">↑</span><span class="cap">平台沉淀</span></div>
+
+    <div class="layer">
+      <div class="lh"><span class="ln">Layer 02 · 产能</span><h3>智能体层</h3><span class="le">AGENTS</span></div>
+      <div class="lb">
+        <p>研究与运营智能体——替人跑研究腿：选品发现、竞品情报、社交聆听、自动报告，长在真实电商工作流上。</p>
+        <ul>
+          <li><b>产能去向：</b>数据洞察业务线的分析结论与数据 token 由这一层生产</li>
+          <li><b>工作方式：</b>多源采集 + 交叉验证 + 人工研判，每个结论可复核</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lconn"><span class="ar">↑</span><span class="cap">智能体产能</span></div>
+
+    <div class="layer">
+      <div class="lh"><span class="ln">Layer 01 · 底座</span><h3>硬件层</h3><span class="le">EDGE · HARDWARE</span></div>
+      <div class="lb">
+        <p>Agent 硬件与边缘算力——给智能体造身体，给数据上锁。</p>
+        <ul>
+          <li><b>能力：</b>工业与无线网关（Modbus / CAN / BLE / LoRa），端侧本地推理</li>
+          <li><b>边界：</b>物理 Approve 门禁，每一次写入都过真实开关；可拔插加密隐私卡，拔卡即带走全部历史</li>
+          <li><b>用途：</b>数据不出域的客户场景，分析直接跑在端侧</li>
+        </ul>
+      </div>
+    </div>
 
   </div>
+
+  <div class="note"><b>能力流向（自下而上）：</b>硬件算力 → 智能体产能 → 平台沉淀 → 服务交付。每一层只依赖下一层、为上一层供给——同一套数据与流程贯穿四层，这也是各业务线的结论能互相咬合的原因。</div>
 </div></div>
 
 <!-- ================= 七大服务线 ================= -->
@@ -393,8 +400,6 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
     <h2>全部入口</h2>
   </div>
   <div class="rel-grid">
-    <a class="rel" href="https://hdhaidong.github.io/"><span class="rn">根站 · 产品总览</span><span class="rz">hdhaidong.github.io</span></a>
-    <a class="rel" href="https://hdhaidong.github.io/insightmarketplac/"><span class="rn">insightmarketplac 平台</span><span class="rz">12 分区 · 62 页面</span></a>
     <a class="rel" href="overview-en.html"><span class="rn">Business Overview（EN）</span><span class="rz">英文版业务总览</span></a>
     <a class="rel" href="sell-on/"><span class="rn">76 个平台入驻</span><span class="rz">线上渠道目录</span></a>
     <a class="rel" href="sell-on-oem-odm-en.html"><span class="rn">English Main Page</span><span class="rz">SELL ON + OEM/ODM</span></a>
