@@ -694,6 +694,214 @@ footer{
   font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.05em;
 }
 
+/* ---------- models extra (agent / erp) ---------- */
+.models-extra{margin-top:72px}
+.mx2-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:var(--accent);text-transform:uppercase;margin-bottom:16px}
+.mx2-title{font-size:22px;font-weight:600;color:var(--ink)}
+.mx2-title span{color:var(--ink-faint);font-weight:400;font-size:15px}
+.mx2-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:24px}
+.mx2{border:1px solid var(--hairline);background:var(--bg-2);padding:36px 34px;position:relative;overflow:hidden;transition:border-color .35s}
+.mx2::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.mx2:hover::before{width:100%}
+.mx2:hover{border-color:rgba(232,163,61,.35)}
+.mx2-code{font-family:var(--mono);font-size:30px;font-weight:700;letter-spacing:-.01em;color:var(--ink);transition:color .35s}
+.mx2:hover .mx2-code{color:var(--accent)}
+.mx2-en{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+.mx2 h3{font-size:22px;font-weight:600;margin:20px 0 8px}
+.mx2 > p{color:var(--ink-dim);font-size:14px}
+.mx2 ul{list-style:none;margin-top:18px;border-top:1px solid var(--hairline-soft);padding-top:16px;display:grid;gap:9px}
+.mx2 li{font-size:13px;color:var(--ink-dim);padding-left:16px;position:relative}
+.mx2 li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:1px;background:var(--accent)}
+@media(max-width:760px){.mx2-grid{grid-template-columns:1fr}}
+
+/* ---------- influencer ---------- */
+.ins-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.ins-card{border:1px solid var(--hairline);background:var(--bg-2);padding:38px 34px;position:relative;overflow:hidden;transition:border-color .35s}
+.ins-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.ins-card:hover::before{width:100%}
+.ins-card:hover{border-color:rgba(232,163,61,.35)}
+.ins-no{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+.ins-card h3{font-size:25px;font-weight:600;margin:14px 0 4px}
+.ins-en{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:16px}
+.ins-card > p:not(.ins-en){color:var(--ink-dim);font-size:14.5px}
+.ins-card ul{list-style:none;margin-top:20px;border-top:1px solid var(--hairline-soft);padding-top:18px;display:grid;gap:11px}
+.ins-card li{font-size:13.5px;color:var(--ink-dim);padding-left:18px;position:relative}
+.ins-card li::before{content:"";position:absolute;left:0;top:.66em;width:7px;height:1px;background:var(--accent)}
+@media(max-width:960px){.ins-grid{grid-template-columns:1fr}}
+
+/* ---------- marketing ---------- */
+.mkt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.mkt-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+.mkt-card{border:1px solid var(--hairline);background:var(--bg-2);padding:34px 32px;position:relative;overflow:hidden;transition:border-color .35s,transform .35s}
+.mkt-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.mkt-card:hover::before{width:100%}
+.mkt-card:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.mkt-card h3{font-size:22px;font-weight:600;margin:12px 0 8px}
+.mkt-card > p{color:var(--ink-dim);font-size:14px}
+.mkt-card ul{list-style:none;margin-top:16px;border-top:1px solid var(--hairline-soft);padding-top:14px;display:grid;gap:9px}
+.mkt-card li{font-size:13px;color:var(--ink-dim);padding-left:16px;position:relative}
+.mkt-card li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:1px;background:var(--accent)}
+@media(max-width:860px){.mkt-grid{grid-template-columns:1fr}}
+.pub-cta{margin-top:44px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.pub-cta .reg-note{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.04em}
+
+/* ---------- marketing outcome chain ---------- */
+.mkt-chain{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--hairline-soft);background:var(--bg-2);margin:0 0 14px}
+.mc-node{padding:24px 20px 22px;border-right:1px solid var(--hairline-soft);position:relative;transition:background .3s}
+.mc-node:last-child{border-right:none}
+.mc-node:hover{background:rgba(232,163,61,.05)}
+.mc-node::after{content:"→";position:absolute;top:24px;right:-8px;color:var(--ink-faint);font-size:13px;background:var(--bg-2);z-index:2;line-height:1}
+.mc-node:last-child::after{display:none}
+.mc-no{font-family:var(--mono);font-size:9.5px;color:var(--accent);letter-spacing:.22em;display:block}
+.mc-node h4{font-size:17px;font-weight:600;margin:10px 0 7px;letter-spacing:.01em}
+.mc-node p{font-size:12px;color:var(--ink-faint);line-height:1.65}
+.mc-via{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:10px;color:var(--ink-dim);letter-spacing:.06em;border:1px solid var(--hairline-soft);padding:4px 9px;border-radius:3px}
+.mkt-chain-cap{display:flex;align-items:center;gap:14px;margin:44px 0 16px}
+.mkt-chain-cap .cap-k{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+.mkt-chain-cap .cap-line{flex:1;height:1px;background:var(--hairline-soft)}
+.mkt-chain-cap .cap-r{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);white-space:nowrap}
+@media(max-width:1020px){
+  .mkt-chain{grid-template-columns:repeat(2,1fr)}
+  .mc-node{border-bottom:1px solid var(--hairline-soft)}
+  .mc-node:nth-child(2n){border-right:none}
+  .mc-node:nth-child(5){border-right:none}
+  .mc-node::after{display:none}
+}
+@media(max-width:560px){.mkt-chain{grid-template-columns:1fr}.mc-node{border-right:none}.mkt-chain-cap{flex-wrap:wrap}}
+
+/* ---------- pricing (two-tier) ---------- */
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.price-card{border:1px solid var(--hairline);background:var(--bg-2);padding:38px 34px;position:relative;display:flex;flex-direction:column}
+.price-card.hot{border-color:rgba(232,163,61,.5);background:linear-gradient(180deg,rgba(232,163,61,.07),var(--bg-2) 46%)}
+.pc-tag{position:absolute;top:-12px;right:22px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;background:var(--accent);color:#14100a;padding:5px 12px;text-transform:uppercase;font-weight:600}
+.pc-name{font-size:19px;font-weight:600}
+.pc-en{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);letter-spacing:.2em;display:block;margin-top:3px;text-transform:uppercase}
+.pc-price{margin:24px 0 4px;font-size:42px;font-weight:600;letter-spacing:-.02em;line-height:1}
+.pc-price small{font-size:14px;color:var(--ink-dim);font-weight:400;letter-spacing:0}
+.pc-fee{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.04em;margin-bottom:12px}
+.pc-desc{color:var(--ink-dim);font-size:13.5px;line-height:1.75;margin-top:4px}
+.pc-list{list-style:none;margin:22px 0 28px;border-top:1px solid var(--hairline-soft);padding-top:18px;display:grid;gap:11px}
+.pc-list li{font-size:13px;color:var(--ink-dim);padding-left:20px;position:relative}
+.pc-list li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-size:12px}
+.pc-list li b{color:var(--ink);font-weight:600}
+.price-card .btn-primary,.price-card .btn-ghost{justify-content:center;margin-top:auto}
+.incl-cap{display:flex;align-items:center;gap:14px;margin:58px 0 0}
+.incl-cap .cap-k{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+.incl-cap .cap-line{flex:1;height:1px;background:var(--hairline-soft)}
+.incl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.incl{border:1px solid var(--hairline-soft);background:var(--bg-2);padding:20px 20px 18px}
+.incl h4{font-size:14.5px;font-weight:600;margin-bottom:6px}
+.incl p{font-size:12.5px;color:var(--ink-faint);line-height:1.65}
+.price-note{margin-top:22px;font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.03em;text-align:center;line-height:1.9}
+@media(max-width:860px){.price-grid{grid-template-columns:1fr}.incl-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.incl-grid{grid-template-columns:1fr}}
+
+/* ---------- content gate (registration) ---------- */
+.gated{position:relative}
+body:not(.registered) .gated > .wrap{display:none}
+body:not(.registered) .gated{padding:0}
+.gate-veil{display:none;min-height:440px;align-items:center;justify-content:center;padding:90px 28px;position:relative;overflow:hidden}
+body:not(.registered) .gated .gate-veil{display:flex}
+.gate-veil::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(640px 300px at 72% 18%,rgba(232,163,61,.07),transparent 62%),
+  repeating-linear-gradient(135deg,transparent 0 22px,rgba(242,238,230,.016) 22px 44px);pointer-events:none}
+.gv-box{position:relative;max-width:600px;text-align:center}
+.gv-lock{width:54px;height:54px;margin:0 auto 20px;border:1px solid rgba(232,163,61,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent)}
+.gv-lock svg{width:22px;height:22px;fill:currentColor}
+.gv-k{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--accent);text-transform:uppercase}
+.gv-box h3{font-size:26px;font-weight:600;margin:12px 0 10px}
+.gv-box > p{color:var(--ink-dim);font-size:14.5px;max-width:480px;margin:0 auto}
+.gv-list{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:24px 0 28px;max-width:520px;margin-left:auto;margin-right:auto}
+.gv-list span{font-family:var(--mono);font-size:11px;color:var(--ink-faint);border:1px solid var(--hairline-soft);padding:5px 12px;border-radius:3px}
+.gv-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.gv-hint{margin-top:18px;font-size:12px;color:var(--ink-faint)}
+.gv-hint b{color:var(--ink-dim);font-weight:500}
+
+/* ---------- nav register ---------- */
+.nav-links a.gated-link::after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-left:5px;vertical-align:2px;opacity:.85}
+.nav-reg{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent);border:1px solid rgba(232,163,61,.4);padding:8px 14px;border-radius:3px;transition:.25s;cursor:pointer;background:none}
+.nav-reg:hover{background:rgba(232,163,61,.12);border-color:var(--accent)}
+.nav-user{display:none;font-size:12px;color:var(--ink-dim);border:1px solid var(--hairline);padding:8px 12px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;background:none}
+body.registered .nav-user{display:inline-block}
+body.registered .nav-reg{display:none}
+
+/* ---------- register modal ---------- */
+.modal-bg{position:fixed;inset:0;z-index:200;background:rgba(5,7,10,.8);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:24px}
+.modal-bg.open{display:flex}
+.modal{width:min(600px,100%);max-height:92vh;overflow-y:auto;background:var(--bg-2);border:1px solid var(--hairline);padding:44px 46px 38px;position:relative;animation:rise .45s cubic-bezier(.2,.7,.2,1) both}
+.modal-x{position:absolute;top:12px;right:10px;background:none;border:none;color:var(--ink-faint);font-size:24px;cursor:pointer;padding:6px 10px;line-height:1}
+.modal-x:hover{color:var(--ink)}
+.modal h3{font-size:27px;font-weight:600;margin:12px 0 10px;letter-spacing:-.01em}
+.modal > p.mod-sub{color:var(--ink-dim);font-size:14.5px;max-width:440px}
+.rgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 18px;margin-top:28px}
+.rfield{display:grid;gap:8px}
+.rfield.full{grid-column:1/-1}
+.rfield label{font-size:12.5px;color:var(--ink-dim);letter-spacing:.04em}
+.rfield label b{color:var(--accent);font-weight:400}
+.rfield input,.rfield select{background:var(--bg);border:none;border-bottom:1px solid var(--hairline);color:var(--ink);font:inherit;font-size:14.5px;padding:10px 2px;outline:none;border-radius:0;width:100%}
+.rfield select{cursor:pointer;appearance:none;-webkit-appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--ink-faint) 50%),linear-gradient(135deg,var(--ink-faint) 50%,transparent 50%);
+  background-position:calc(100% - 14px) 55%,calc(100% - 9px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+.rfield select option{background:var(--bg-2);color:var(--ink)}
+.rfield input:focus,.rfield select:focus{border-bottom-color:var(--accent)}
+.rfoot{grid-column:1/-1;margin-top:10px}
+.rfoot .btn-primary{width:100%;justify-content:center;padding:15px}
+.rhint{margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.9;letter-spacing:.03em}
+.rsuccess{display:none}
+.rsuccess.show{display:block}
+.rsuccess .ok-tag{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:#3ecf8e;text-transform:uppercase}
+.rsuccess h4{font-size:24px;font-weight:600;margin:12px 0 10px}
+.rsuccess p{color:var(--ink-dim);font-size:14px}
+.rpayload{margin-top:18px;border:1px dashed var(--hairline);padding:14px 16px;font-family:var(--mono);font-size:11.5px;line-height:1.9;color:var(--ink-faint);word-break:break-all;background:var(--bg)}
+.rsuccess .btn-row{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+@media(max-width:560px){.modal{padding:34px 26px 30px}.rgrid{grid-template-columns:1fr}}
+
+/* ---------- agent chat widget ---------- */
+.aiw{position:fixed;right:22px;bottom:22px;z-index:150}
+.aiw-fab{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-hi));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(232,163,61,.32);transition:transform .25s}
+.aiw-fab:hover{transform:scale(1.07)}
+.aiw-fab svg{width:26px;height:26px;fill:#14100a}
+.aiw-badge{position:absolute;top:-4px;right:-4px;background:#14100a;color:var(--accent);border:1px solid var(--accent);font-family:var(--mono);font-size:9px;letter-spacing:.1em;padding:3px 7px;border-radius:20px}
+.aiw-panel{position:absolute;right:0;bottom:70px;width:min(384px,calc(100vw - 44px));height:min(580px,74vh);background:var(--bg-2);border:1px solid var(--hairline);display:none;flex-direction:column;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.55)}
+.aiw-panel.open{display:flex;animation:rise .35s cubic-bezier(.2,.7,.2,1) both}
+.aiw-head{padding:14px 18px;border-bottom:1px solid var(--hairline-soft);display:flex;align-items:center;gap:10px;background:var(--bg)}
+.aiw-dot{width:8px;height:8px;border-radius:50%;background:#3ecf8e;box-shadow:0 0 0 3px rgba(62,207,142,.14);flex:none}
+.aiw-head .t{font-size:14px;font-weight:600}
+.aiw-head .s{font-family:var(--mono);font-size:10px;color:var(--ink-faint);letter-spacing:.08em;display:block;margin-top:1px}
+.aiw-msgs{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px}
+.msg{max-width:84%;padding:10px 14px;font-size:13.5px;line-height:1.7}
+.msg.bot{align-self:flex-start;background:var(--bg);border:1px solid var(--hairline-soft)}
+.msg.user{align-self:flex-end;background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.28)}
+.msg a{color:var(--accent);text-decoration:underline;cursor:pointer}
+.msg b{color:var(--ink);font-weight:600}
+.msg.typing{display:flex;gap:5px;align-items:center;padding:12px 16px}
+.msg.typing i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--ink-faint);animation:aityp 1s infinite}
+.msg.typing i:nth-child(2){animation-delay:.16s}
+.msg.typing i:nth-child(3){animation-delay:.32s}
+@keyframes aityp{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-4px);opacity:1}}
+.aiw-chips{display:flex;gap:8px;overflow-x:auto;padding:10px 14px;border-top:1px solid var(--hairline-soft);scrollbar-width:none}
+.aiw-chips::-webkit-scrollbar{display:none}
+.aiw-chips button{flex:none;background:none;border:1px solid var(--hairline);color:var(--ink-dim);font:inherit;font-size:12px;padding:6px 13px;border-radius:20px;cursor:pointer;transition:.25s;white-space:nowrap}
+.aiw-chips button:hover{border-color:var(--accent);color:var(--accent)}
+.aiw-input{display:flex;gap:10px;padding:12px 14px;border-top:1px solid var(--hairline-soft)}
+.aiw-input input{flex:1;background:var(--bg);border:1px solid var(--hairline);color:var(--ink);font:inherit;font-size:13.5px;padding:10px 14px;outline:none;border-radius:4px;min-width:0}
+.aiw-input input:focus{border-color:var(--accent)}
+.aiw-input button{background:var(--accent);border:none;color:#14100a;width:44px;border-radius:4px;cursor:pointer;font-size:17px;flex:none;transition:.25s}
+.aiw-input button:hover{background:var(--accent-hi)}
+.aiw-foot{padding:8px 14px 11px;font-family:var(--mono);font-size:9.5px;color:var(--ink-faint);letter-spacing:.05em;text-align:center}
+@media(max-width:560px){.aiw{right:14px;bottom:14px}}
+
+/* ---------- service matrix (mx) ---------- */
+.mx{padding:84px 0;background:var(--bg-2)}
+.mx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
+.mx-card{display:block;border:1px solid var(--hairline-soft);border-radius:12px;padding:22px 18px;background:var(--bg);color:inherit;text-decoration:none;transition:transform .2s,border-color .25s}
+.mx-card:hover{transform:translateY(-3px);border-color:rgba(232,163,61,.35);text-decoration:none}
+.mx-card .mt{font-size:.66rem;letter-spacing:.14em;font-family:var(--mono);text-transform:uppercase;color:var(--accent)}
+.mx-card h3{font-size:1rem;margin:8px 0 6px;color:var(--ink)}
+.mx-card p{font-size:.8rem;color:var(--ink-faint);line-height:1.55}
+@media(max-width:1000px){.mx-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.mx-grid{grid-template-columns:1fr}}
+
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -708,6 +916,17 @@ footer{
   .rv{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+.dim-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dim{border:1px solid var(--hairline);background:var(--bg-2);padding:30px 26px;transition:border-color .35s,transform .35s}
+.dim:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.dim-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+.dim h3{font-size:21px;font-weight:600;margin:11px 0 8px}
+.dim p{color:var(--ink-dim);font-size:13px;line-height:1.65}
+.dim-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.dim-tags span{font-family:var(--mono);font-size:11px;color:var(--ink-faint);border:1px solid var(--hairline-soft);padding:4px 10px;border-radius:3px}
+@media(max-width:960px){.dim-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.dim-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -717,20 +936,20 @@ footer{
   <div class="wrap nav">
     <a class="brand" href="#top">insight<em>marketplac</em></a>
     <nav class="nav-links">
-      <a href="overview-en.html">Overview</a>
       <a href="#models">Models</a>
-      <a href="#services">Services</a>
       <a href="#channels">Channels</a>
-      <a href="#entries">Seller Entries</a>
-      <a href="insights.html">Brand Insights</a>
-      <a href="data-platforms.html">Data Subscriptions</a>
-      <a href="#process">Process</a>
-      <a href="#success">Stories</a>
-      <a href="#faq">FAQ</a>
+      <a href="#marketing">Marketing</a>
+      <a href="#influencer">Influencer</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#services" class="gated-link">Services</a>
+      <a href="#insights" class="gated-link">Insights</a>
+      <a href="#data" class="gated-link">Data</a>
       <a href="#meet">Book a Meeting</a>
     </nav>
     <div class="nav-right">
       <a class="lang-toggle" href="sell-on-oem-odm.html" title="中文版">中文</a>
+      <button class="nav-user" id="navUser" title="Click to log out"></button>
+      <button class="nav-reg" id="navReg">Register to Unlock</button>
       <a class="nav-cta" href="#apply">Apply to Sell</a>
     </div>
   </div>
@@ -853,62 +1072,36 @@ footer{
       Logistics: <b>OEM partners deliver at the factory</b> — we handle international freight; ODM / OBM partners need stock in overseas warehouses.
       The path is not one-way: most partners start at OEM, add ODM programs as their development matures, and graduate to OBM when the brand is ready — same channels, deeper margin at every step.
     </p>
-  </div>
-</section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <p class="eyebrow">Full-Stack Service</p>
-      <h2>Everything Under One Roof</h2>
-      <p class="section-lead">You focus on the product. We handle the rest — five links, one chain.</p>
+    <div class="models-extra rv">
+      <p class="mx2-kicker">Beyond the Models</p>
+      <h3 class="mx2-title">Two Custom-Build Capabilities<span> — run the business on systems, not spreadsheets</span></h3>
+      <div class="mx2-grid">
+        <article class="mx2">
+          <div class="mx2-code">AI Agent</div>
+          <div class="mx2-en">Agent Customization</div>
+          <h3>Agent Custom Builds</h3>
+          <p>AI agents custom-built for your business: support, assortment, ad operations, data reporting — hand the repetitive work to agents and keep humans for judgment calls.</p>
+          <ul>
+            <li><b>Use cases:</b> smart support · assortment assistant · ad management · weekly data reports</li>
+            <li><b>Delivery:</b> private or cloud deployment, wired into your existing ERP / CRM</li>
+            <li><b>Best for:</b> brands ready to trade labor cost for an automated production line</li>
+          </ul>
+        </article>
+        <article class="mx2">
+          <div class="mx2-code">ERP</div>
+          <div class="mx2-en">ERP Customization</div>
+          <h3>ERP Custom Builds</h3>
+          <p>Order, inventory, and finance in one custom ERP — natively integrated with the channel network, every platform order managed from a single back office.</p>
+          <ul>
+            <li><b>Modules:</b> orders · inventory · purchasing · finance reconciliation · multi-warehouse</li>
+            <li><b>Integration:</b> wired into the 20+ channel account system, WMS / CRM</li>
+            <li><b>Best for:</b> factories and brands shipping across channels, outgrowing manual spreadsheets</li>
+          </ul>
+        </article>
+      </div>
     </div>
 
-    <div class="services-grid">
-      <figure class="services-fig rv">
-        <img loading="lazy" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20modern%20furniture%20workshop%2C%20craftsman%20hands%20assembling%20a%20wooden%20chair%2C%20warm%20workshop%20lighting%2C%20sawdust%20in%20air%2C%20shallow%20depth%20of%20field%2C%20premium%20industrial%20craftsmanship&image_size=portrait_4_3" alt="Craftsman assembling a wooden chair in a workshop">
-        <figcaption>Workshop · Turning manufacturing muscle into a US business</figcaption>
-      </figure>
-
-      <ul class="svc-list">
-        <li class="svc-item rv rv-d1">
-          <span class="svc-num">01</span>
-          <div>
-            <h3>Platform Onboarding</h3>
-            <p>20+ channel accounts, compliance, and storefront setup across North America, Europe, META, APAC, ANZ, and the CIS — first channels live in as little as 7 days.</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d1">
-          <span class="svc-num">02</span>
-          <div>
-            <h3>Channel Operations</h3>
-            <p>Data-driven assortment, pricing strategy, and marketing calendars executed in sync — every SKU on the demand rhythm.</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d2">
-          <span class="svc-num">03</span>
-          <div>
-            <h3>Logistics &amp; Fulfillment</h3>
-            <p>First-mile freight, US warehousing, and last-mile delivery in one pipe — 99.8% same-day ship, 85% next-day coverage. OEM partners deliver at factory.</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d2">
-          <span class="svc-num">04</span>
-          <div>
-            <h3>Account Security &amp; Compliance</h3>
-            <p>Compliance review, risk alerts, and exception handling — account health monitored around the clock.</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d3">
-          <span class="svc-num">05</span>
-          <div>
-            <h3>Brand Marketing</h3>
-            <p>In-platform ads, content seeding, and channel exposure — compounding brand equity for OBM partners.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -986,8 +1179,303 @@ footer{
   </div>
 </section>
 
+<!-- ================= MARKETING (public) ================= -->
+<section id="marketing">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Growth Engine</p>
+      <h2>Marketing</h2>
+      <p class="section-lead">Six in-house capabilities — Social · Influencers · Content · Channels · Agents · Data assets — delivering five outcomes: brand operations, website, social, channel expansion, and after-sales optimization. From building the brand to driving repeat purchase, one closed loop that turns manufacturing margin into brand equity.</p>
+    </div>
+    <div class="mkt-chain-cap rv">
+      <span class="cap-k">Five Outcomes</span>
+      <span class="cap-line"></span>
+      <span class="cap-r">Each outcome is tagged with the in-house capabilities that deliver it</span>
+    </div>
+    <div class="mkt-chain rv" role="list" aria-label="Five outcomes chain">
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 01</span>
+        <h4>Brand Operations</h4>
+        <p>Positioning · content assets · operating rhythm — the day-to-day work of taking a brand from 0 to 1</p>
+        <span class="mc-via">Data Assets × Influencers</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 02</span>
+        <h4>Website</h4>
+        <p>Brand DTC site and storefront builds, SEO and conversion optimization — the brand's home turf</p>
+        <span class="mc-via">Content × Agents</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 03</span>
+        <h4>Social</h4>
+        <p>Account matrix operations, content seeding, traffic amplification, and audience building</p>
+        <span class="mc-via">Social × Influencers × Content</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 04</span>
+        <h4>Channel Expansion</h4>
+        <p>New platform onboarding, retail channel connections, and continuous regional market growth</p>
+        <span class="mc-via">Channels × Data Assets</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 05</span>
+        <h4>After-Sales Optimization</h4>
+        <p>Customer service, review management, repurchase and loyalty — turning new buyers into repeat buyers</p>
+        <span class="mc-via">Agents × Data Assets</span>
+      </div>
+    </div>
+    <div class="mkt-grid">
+      <article class="mkt-card rv">
+        <span class="mkt-k">01 · Social</span>
+        <h3>Social</h3>
+        <p>TikTok / Instagram / YouTube / Facebook brand account matrix operations — social is the traffic upstream for your DTC site and platform stores.</p>
+        <ul>
+          <li><b>Content:</b> account positioning · content calendar · templated volume production</li>
+          <li><b>Amplify:</b> paid traffic scales up the posts where organic gains traction</li>
+          <li><b>Sync:</b> social seeding → DTC site / platform stores capture the conversion</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv rv-d1">
+        <span class="mkt-k">02 · Influencer</span>
+        <h3>Influencers</h3>
+        <p>US influencers matched by category: top-tier for reach, mid-tier for conversion, long-tail for content volume — our in-house talent pool means controllable schedules and rates.</p>
+        <ul>
+          <li><b>Formats:</b> reviews and seeding · unboxings · livestream clips · affiliate selling</li>
+          <li><b>Talent:</b> signed and incubated in-house creators, a stable supply</li>
+          <li><b>Payment:</b> flat fee / commission / hybrid</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv">
+        <span class="mkt-k">03 · Content</span>
+        <h3>Content</h3>
+        <p>Custom web-series / AI short-drama production line — brand story woven into plot, not hard ads; low cost, fast iteration.</p>
+        <ul>
+          <li><b>Live-action series:</b> brand-custom storylines, professional production crews</li>
+          <li><b>AI short dramas:</b> one script, many cuts · multilingual distribution · rapid A/B</li>
+          <li><b>UGC:</b> an evergreen asset library, reused across site / ads / social</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv rv-d1">
+        <span class="mkt-k">04 · Channel</span>
+        <h3>Channels</h3>
+        <p>The marketing firepower of a 20+ channel network: in-platform ads, event-slot scheduling, and continuous new-channel expansion.</p>
+        <ul>
+          <li><b>In-platform:</b> platform ads · cart attachments · event-slot scheduling</li>
+          <li><b>Expansion:</b> new platform onboarding · retail connections · regional growth</li>
+          <li><b>Rhythm:</b> peak-season scheduling · new-product launches · extending bestsellers</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv">
+        <span class="mkt-k">05 · Agent</span>
+        <h3>Agents</h3>
+        <p>AI agents take over the repetitive work: support, assortment, ad operations, weekly data reports — humans just make the calls.</p>
+        <ul>
+          <li><b>Use cases:</b> smart support · assortment assistant · ad management · weekly reports</li>
+          <li><b>Delivery:</b> private or cloud deployment, wired into your existing systems</li>
+          <li><b>This site:</b> the support chat you're browsing right now is Agent-staffed</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv rv-d1">
+        <span class="mkt-k">06 · Data Assets</span>
+        <h3>Data Assets</h3>
+        <p>Six business data subscription lines, delivered as data tokens / reports — data accumulates as your asset, not a one-off service.</p>
+        <ul>
+          <li><b>Lines:</b> assortment · pricing · consumers · competitors · crowdfunding · brand voice</li>
+          <li><b>Delivery:</b> data tokens · recurring data packs · subscription reports</li>
+          <li><b>Integrate:</b> plugs straight into your ERP / CRM / dashboards</li>
+        </ul>
+      </article>
+    </div>
+    <div class="pub-cta rv">
+      <a class="btn-ghost" href="#" data-reg-open>Register to unlock the full service catalog →</a>
+      <a class="btn-ghost" href="#meet">Book a meeting directly →</a>
+      <span class="reg-note">Free registration · follow-up within 1 business day</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFLUENCER (public) ================= -->
+<section id="influencer" style="background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Influencer Marketing</p>
+      <h2>Influencer Marketing</h2>
+      <p class="section-lead">US influencers matched by category: top-tier for reach, mid-tier for conversion, long-tail for content volume — fully managed from selection, brief, and launch to review.</p>
+    </div>
+    <div class="ins-grid">
+      <article class="ins-card rv">
+        <span class="ins-no">Line 01</span>
+        <h3>Influencer Campaigns</h3>
+        <p class="ins-en">INFLUENCER CAMPAIGNS</p>
+        <p>Triple-filtered by category fit × audience overlap × historical conversion data, deployed in tiered combinations.</p>
+        <ul>
+          <li><b>Selection:</b> top-tier for reach · mid-tier for conversion · long-tail for volume</li>
+          <li><b>Formats:</b> reviews and seeding, unboxings, livestream clips, affiliate</li>
+          <li><b>Payment:</b> flat fee / commission / hybrid</li>
+        </ul>
+      </article>
+      <article class="ins-card rv rv-d1">
+        <span class="ins-no">Line 02</span>
+        <h3>Talent × UGC</h3>
+        <p class="ins-en">TALENT × UGC ASSETS</p>
+        <p>Signed, incubated in-house creators forming a stable, controllable content pool; native UGC assets reused across your site, ads, and social.</p>
+        <ul>
+          <li><b>Incubation:</b> positioning design · content planning · data-driven account growth</li>
+          <li><b>Assets:</b> a UGC library reused continuously, amortizing campaign costs</li>
+          <li><b>Control:</b> in-house pool = priority scheduling + controllable rates</li>
+        </ul>
+      </article>
+    </div>
+    <div class="pub-cta rv">
+      <a class="btn-ghost" href="#meet">Book an influencer-strategy call →</a>
+      <span class="reg-note">Bring your catalog — we'll map the right play on the spot</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING (public) ================= -->
+<section id="pricing" style="border-top:1px solid var(--hairline-soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Pricing</p>
+      <h2>Pricing</h2>
+      <p class="section-lead">Two simple tiers that switch as you scale — monthly engagement, no long-term lock-in. Share revenue after you sell, or one flat fee for everything. Your call.</p>
+    </div>
+    <div class="price-grid">
+      <article class="price-card rv">
+        <h3 class="pc-name">Revenue Share</h3>
+        <span class="pc-en">Flexible</span>
+        <div class="pc-price">$0<small> base monthly fee</small></div>
+        <p class="pc-fee">+ share of sales · rate assessed by category</p>
+        <p class="pc-desc">Lowest barrier to start: get on channels and selling first, share after it sells — the friendliest cost structure for your launch phase.</p>
+        <ul class="pc-list">
+          <li><b>Zero base fee:</b> pass the catalog review and you're live</li>
+          <li><b>Shared risk:</b> we run your channels like our own business</li>
+          <li><b>Upgrade anytime:</b> switch to the flat tier once monthly sales stabilize</li>
+        </ul>
+        <a class="btn-ghost" href="#meet">Assess my catalog →</a>
+      </article>
+      <article class="price-card hot rv rv-d1">
+        <span class="pc-tag">Recommended</span>
+        <h3 class="pc-name">Flat Rate</h3>
+        <span class="pc-en">Flat Rate</span>
+        <div class="pc-price">$499<small> /month</small></div>
+        <p class="pc-fee">No revenue share · no per-order cut</p>
+        <p class="pc-desc">Predictable cost: built for stable brands doing $5k+ monthly, fully managed end to end — the more you sell, the thinner the marginal cost.</p>
+        <ul class="pc-list">
+          <li><b>One price, everything:</b> channels + operations + marketing + support</li>
+          <li><b>Priority resources:</b> first in line for influencer slots, event placement, and data lines</li>
+          <li><b>No peak-season spikes:</b> the flat fee doesn't move with holiday traffic</li>
+        </ul>
+        <a class="btn-primary" href="#meet">Free strategy call →</a>
+      </article>
+    </div>
+    <div class="incl-cap rv">
+      <span class="cap-k">Included on All Plans</span>
+      <span class="cap-line"></span>
+    </div>
+    <div class="incl-grid">
+      <div class="incl rv"><h4>20+ Channel Accounts Opened</h4><p>North America, Europe, META, APAC, ANZ, and CIS accounts and storefronts — first channels live in as little as 7 days.</p></div>
+      <div class="incl rv"><h4>Joint Operations</h4><p>Data-driven assortment, pricing strategy, and marketing calendars executed in sync.</p></div>
+      <div class="incl rv"><h4>End-to-End Fulfillment</h4><p>First-mile freight, overseas warehousing, and last-mile delivery in one pipe.</p></div>
+      <div class="incl rv"><h4>Agent Support Desk</h4><p>24/7 customer inquiries handled, after-sales issues auto-triaged and resolved.</p></div>
+      <div class="incl rv"><h4>Account Security</h4><p>Compliance review, risk alerts, and exception handling monitored around the clock.</p></div>
+      <div class="incl rv"><h4>Weekly Data Reports</h4><p>Assortment, pricing, and competitor updates pushed every week — decisions with receipts.</p></div>
+      <div class="incl rv"><h4>Influencer Matching</h4><p>Category-matched US influencer pool — campaigns and talent representation both on the table.</p></div>
+      <div class="incl rv"><h4>Content Asset Library</h4><p>Product images, video, and native UGC reused continuously.</p></div>
+      <div class="incl rv"><h4>Dedicated Contact</h4><p>Response within 1 business day; monthly reviews set the next month's rhythm.</p></div>
+    </div>
+    <p class="price-note rv">OEM inventory buyout carries no service fee — PO settlement, you're paid on delivery at the factory.<br>The two tiers above apply to ODM / OBM / joint operations and marketing services.</p>
+  </div>
+</section>
+
+<!-- ================= SERVICES (gated) ================= -->
+<section id="services" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: One-Stop Overseas Services</h3>
+      <p>You own the product; the platform runs the rest — full service detail, delivery standards, and response mechanisms for all five links.</p>
+      <div class="gv-list"><span>Onboarding</span><span>Joint Operations</span><span>Fulfillment</span><span>Account Security</span><span>Brand Marketing</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Full-Stack Service</p>
+      <h2>Everything Under One Roof</h2>
+      <p class="section-lead">You focus on the product. We handle the rest — five links, one chain.</p>
+    </div>
+
+    <div class="services-grid">
+      <figure class="services-fig rv">
+        <img loading="lazy" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20modern%20furniture%20workshop%2C%20craftsman%20hands%20assembling%20a%20wooden%20chair%2C%20warm%20workshop%20lighting%2C%20sawdust%20in%20air%2C%20shallow%20depth%20of%20field%2C%20premium%20industrial%20craftsmanship&image_size=portrait_4_3" alt="Craftsman assembling a wooden chair in a workshop">
+        <figcaption>Workshop · Turning manufacturing muscle into a US business</figcaption>
+      </figure>
+
+      <ul class="svc-list">
+        <li class="svc-item rv rv-d1">
+          <span class="svc-num">01</span>
+          <div>
+            <h3>Platform Onboarding</h3>
+            <p>20+ channel accounts, compliance, and storefront setup across North America, Europe, META, APAC, ANZ, and the CIS — first channels live in as little as 7 days.</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d1">
+          <span class="svc-num">02</span>
+          <div>
+            <h3>Channel Operations</h3>
+            <p>Data-driven assortment, pricing strategy, and marketing calendars executed in sync — every SKU on the demand rhythm.</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d2">
+          <span class="svc-num">03</span>
+          <div>
+            <h3>Logistics &amp; Fulfillment</h3>
+            <p>First-mile freight, US warehousing, and last-mile delivery in one pipe — 99.8% same-day ship, 85% next-day coverage. OEM partners deliver at factory.</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d2">
+          <span class="svc-num">04</span>
+          <div>
+            <h3>Account Security &amp; Compliance</h3>
+            <p>Compliance review, risk alerts, and exception handling — account health monitored around the clock.</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d3">
+          <span class="svc-num">05</span>
+          <div>
+            <h3>Brand Marketing</h3>
+            <p>In-platform ads, content seeding, and channel exposure — compounding brand equity for OBM partners.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ================= SELLER ENTRIES ================= -->
-<section id="entries">
+<section id="entries" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: Direct Platform Seller Entries</h3>
+      <p>Account setup paths, qualification requirements, and launch cadence for 20+ channels — after registering, a matched entry list for your category.</p>
+      <div class="gv-list"><span>North America</span><span>Europe</span><span>META</span><span>APAC</span><span>ANZ</span><span>CIS</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Sell On — Direct Seller Entries</p>
@@ -1165,8 +1653,128 @@ footer{
   </div>
 </div>
 
+<!-- ================= INSIGHTS (gated) ================= -->
+<section id="insights" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: Brand Insights</h3>
+      <p>The full product detail, delivery samples, and subscription options for the Creator × Brand × Content intelligence and the global crowdfunding product radar.</p>
+      <div class="gv-list"><span>Three-way insights</span><span>Crowdfunding radar</span><span>Insight reports</span><span>Data tokens</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Brand Insights</p>
+      <h2>Brand Insights</h2>
+      <p class="section-lead">Two product lines serving two decisions: let content build equity for your brand IP, and catch new-product signals before anyone else. Delivered as analysis reports or data tokens — you get conclusions and data, never the sources.</p>
+    </div>
+    <div class="ins-grid">
+      <article class="ins-card rv">
+        <span class="ins-no">Line 01</span>
+        <h3>Creator × Brand × Content</h3>
+        <p class="ins-en">CREATOR × BRAND × CONTENT</p>
+        <p>Three-way cross intelligence: which creators match the brand IP, what content accumulates brand equity, and the real return of a given partnership — powering creator-crafted content that moves the brand.</p>
+        <ul>
+          <li><b>Creator matching:</b> audience profile × brand tone × past campaign performance</li>
+          <li><b>Content strategy:</b> topic cards, script directions, and posting-rhythm advice</li>
+          <li><b>Post-campaign review:</b> views, engagement, conversion, and brand-equity movement</li>
+        </ul>
+      </article>
+      <article class="ins-card rv rv-d1">
+        <span class="ins-no">Line 02</span>
+        <h3>Crowdfunding Tech Radar</h3>
+        <p class="ins-en">CROWDFUNDING RADAR</p>
+        <p>New-product signal monitoring across global crowdfunding platforms — spot the products worth noticing the moment they launch, fueling content topics, assortment calls, and product development.</p>
+        <ul>
+          <li><b>Discovery:</b> tech category launches captured on day one, no manual scrolling</li>
+          <li><b>Momentum signals:</b> funding progress, backer growth, comment sentiment</li>
+          <li><b>Output:</b> talking-point ammunition and development-direction reference</li>
+        </ul>
+      </article>
+    </div>
+    <div class="sec-cta rv">
+      <a class="btn-ghost" href="insights.html">Full Brand Insights service page →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DATA (gated) ================= -->
+<section id="data" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: Data Subscriptions</h3>
+      <p>The full catalog of six subscription lines × three delivery formats, segmentation dimensions, and integration options — slice by category, platform, price band, and country.</p>
+      <div class="gv-list"><span>Assortment</span><span>Pricing</span><span>Consumers</span><span>Competitors</span><span>Crowdfunding</span><span>Brand voice</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Data Subscriptions</p>
+      <h2>Data Subscriptions</h2>
+      <p class="section-lead">Subscribe to conclusions, not sources. Six subscription lines × four segmentation dimensions — a data supply shaped to your business scope, plugged straight into your dashboards and workflows.</p>
+    </div>
+    <div class="dim-grid">
+      <div class="dim rv">
+        <span class="dim-k">Dimension 01</span>
+        <h3>Category</h3>
+        <p>Scope monitoring to your lane — subscribe only to the data of your own category.</p>
+        <div class="dim-tags"><span>Home</span><span>Outdoor</span><span>Consumer electronics</span><span>Baby &amp; kids</span><span>Beauty</span><span>Apparel</span></div>
+      </div>
+      <div class="dim rv rv-d1">
+        <span class="dim-k">Dimension 02</span>
+        <h3>Platform</h3>
+        <p>Track performance per platform; compare across platforms to see the landscape.</p>
+        <div class="dim-tags"><span>Amazon</span><span>Walmart</span><span>eBay</span><span>Temu</span><span>SHEIN</span></div>
+      </div>
+      <div class="dim rv rv-d2">
+        <span class="dim-k">Dimension 03</span>
+        <h3>Price Band</h3>
+        <p>Slice analysis by price band — locate your true competitive segment.</p>
+        <div class="dim-tags"><span>$0–25</span><span>$25–100</span><span>$100–500</span><span>$500+</span></div>
+      </div>
+      <div class="dim rv rv-d3">
+        <span class="dim-k">Dimension 04</span>
+        <h3>Country</h3>
+        <p>Subscribe market by market — keep each country's rhythm in a separate view.</p>
+        <div class="dim-tags"><span>US</span><span>Canada</span><span>UK</span><span>Germany</span><span>Japan</span></div>
+      </div>
+    </div>
+    <div class="sec-cta rv">
+      <a class="btn-ghost" href="data-platforms.html">Full Data Subscriptions service page →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= PROCESS ================= -->
-<section id="process">
+<section id="process" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: Onboarding Process</h3>
+      <p>The full timeline from application to first channels live, with the documents each step requires and its acceptance milestones.</p>
+      <div class="gv-list"><span>Qualification review</span><span>Assortment talk</span><span>Plan sign-off</span><span>Channels live</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Onboarding Process</p>
@@ -1211,7 +1819,21 @@ footer{
 </section>
 
 <!-- ================= SUCCESS ================= -->
-<section id="success">
+<section id="success" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: Case Studies</h3>
+      <p>Real partnerships broken down by category — the data review and execution rhythm from catalog to channels live.</p>
+      <div class="gv-list"><span>Category cases</span><span>Data reviews</span><span>Channel rhythm</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Sell Success</p>
@@ -1256,7 +1878,21 @@ footer{
 </section>
 
 <!-- ================= FAQ ================= -->
-<section id="faq">
+<section id="faq" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: FAQ</h3>
+      <p>How to pick a model, how fees work, who owns inventory and logistics — the full answers, question by question, after registration.</p>
+      <div class="gv-list"><span>Partnership models</span><span>Fees & settlement</span><span>Inventory & logistics</span><span>Account security</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">FAQ</p>
@@ -1478,6 +2114,64 @@ footer{
   </div>
 </section>
 
+<!-- ================= SERVICE MATRIX ================= -->
+<style>
+.mx{padding:84px 0;background:var(--bg-2)}
+.mx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
+.mx-card{display:block;border:1px solid var(--hairline-soft);border-radius:12px;padding:22px 18px;background:var(--bg);color:inherit;text-decoration:none;transition:transform .2s,border-color .25s}
+.mx-card:hover{transform:translateY(-3px);border-color:rgba(232,163,61,.35);text-decoration:none}
+.mx-card .mt{font-size:.66rem;letter-spacing:.14em;font-family:var(--mono);text-transform:uppercase;color:var(--accent)}
+.mx-card h3{font-size:1rem;margin:8px 0 6px;color:var(--ink)}
+.mx-card p{font-size:.8rem;color:var(--ink-faint);line-height:1.55}
+@media(max-width:1000px){.mx-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.mx-grid{grid-template-columns:1fr}}
+</style>
+<section class="mx gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>Unlock: Extended Service Matrix</h3>
+      <p>The second half of the journey, from onboarding to brand — entry points to four extended lines: brand growth, compliance &amp; enterprise, systems, and trade shows.</p>
+      <div class="gv-list"><span>Brand Growth</span><span>Compliance</span><span>Systems</span><span>Trade Shows</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>Register Free & Unlock →</button>
+        <a class="btn-ghost" href="#meet">Book a Meeting First</a>
+      </div>
+      <p class="gv-hint">Free to register · <b>follow-up within 1 business day</b> · data used for business matching only</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Beyond Onboarding</p>
+      <h2>Extended Services: From Onboarding to Brand</h2>
+      <p class="section-lead">Onboarding is just the start. Three main lines — channels, data, and content — split into seven service lines carrying the second half of the brand journey.<a href="overview-en.html" style="color:var(--accent);font-weight:600">See the full business map →</a></p>
+    </div>
+    <div class="mx-grid">
+      <a class="mx-card rv" href="brand-growth.html">
+        <span class="mt">Growth</span>
+        <h3>Brand Growth Services</h3>
+        <p>Influencer marketing, custom web series and AI short dramas, talent representation, social matrix, and three-way matchmaking.</p>
+      </a>
+      <a class="mx-card rv" href="compliance.html">
+        <span class="mt">Compliance</span>
+        <h3>Compliance &amp; Entity Services</h3>
+        <p>Company registration, trademark and domain portfolio, VAT, customs bond, tax, and EPR.</p>
+      </a>
+      <a class="mx-card rv" href="systems.html">
+        <span class="mt">Systems</span>
+        <h3>Systems &amp; Tools Services</h3>
+        <p>Custom ERP / WMS / CRM / AI agents — orders, inventory, customers, and automation in one pipe.</p>
+      </a>
+      <a class="mx-card rv" href="exhibitions.html">
+        <span class="mt">Trade Shows</span>
+        <h3>Trade Show Services</h3>
+        <p>Show selection, booth builds, sample logistics, buyer outreach, and post-show follow-up — the offline channel's face-time engine.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
@@ -1499,7 +2193,8 @@ footer{
           <a href="#services">Services</a>
           <a href="#channels">Channels</a>
           <a href="#entries">Seller Entries</a>
-          <a href="data-platforms.html">Data Subscriptions</a>
+          <a href="#insights">Insights</a>
+          <a href="#data">Data</a>
           <a href="#success">Stories</a>
           <a href="#faq">FAQ</a>
         </div>
@@ -1507,6 +2202,7 @@ footer{
           <h4>More Services</h4>
           <a href="overview-en.html">Business Overview</a>
           <a href="insights.html">Brand Insights</a>
+          <a href="data-platforms.html">Data Subscriptions</a>
           <a href="brand-growth.html">Brand Growth Services</a>
           <a href="compliance.html">Compliance &amp; Entity</a>
           <a href="systems.html">Systems: ERP / WMS / CRM</a>
@@ -1520,6 +2216,102 @@ footer{
     </div>
   </div>
 </footer>
+
+<!-- ================= REGISTER MODAL ================= -->
+<div class="modal-bg" id="regModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="regTitle">
+    <button class="modal-x" id="regClose" aria-label="Close">×</button>
+    <div id="regFormWrap">
+      <span class="gv-k">Free Registration</span>
+      <h3 id="regTitle">Register to Unlock the Full Service Catalog</h3>
+      <p class="mod-sub">Public pages show the capabilities; registration reveals the details: services, seller entries, brand insights, data subscriptions, process, and case studies. Free, with follow-up within 1 business day.</p>
+      <form id="regForm" novalidate>
+        <div class="rgrid">
+          <div class="rfield">
+            <label for="r-name">Name <b>*</b></label>
+            <input id="r-name" name="name" type="text" required autocomplete="name" placeholder="How should we address you">
+          </div>
+          <div class="rfield">
+            <label for="r-email">Email <b>*</b></label>
+            <input id="r-email" name="email" type="email" required autocomplete="email" placeholder="name@company.com">
+          </div>
+          <div class="rfield full">
+            <label for="r-company">Company / Brand</label>
+            <input id="r-company" name="company" type="text" autocomplete="organization" placeholder="Factory, brand, or team name">
+          </div>
+          <div class="rfield">
+            <label for="r-role">Your Role</label>
+            <select id="r-role" name="role">
+              <option value="Factory / Supplier">Factory / Supplier</option>
+              <option value="Brand Owner">Brand Owner</option>
+              <option value="Creator / Influencer">Creator / Influencer</option>
+              <option value="Service Provider / Peer">Service Provider / Peer</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="rfield">
+            <label for="r-intent">Interested In</label>
+            <select id="r-intent" name="intent">
+              <option value="OEM Contract Manufacturing">OEM Contract Manufacturing</option>
+              <option value="ODM White Label">ODM White Label</option>
+              <option value="OBM Brand Building">OBM Brand Building</option>
+              <option value="Marketing / Influencer Services">Marketing / Influencer Services</option>
+              <option value="Data Subscriptions">Data Subscriptions</option>
+              <option value="Agent / ERP Custom Builds">Agent / ERP Custom Builds</option>
+              <option value="Just Exploring">Just Exploring</option>
+            </select>
+          </div>
+          <div class="rfoot">
+            <button class="btn-primary" type="submit">Register Free & Unlock →</button>
+            <p class="rhint">By registering you agree to the platform terms · your info is used for business matching only and never shared with third parties<br>CRM integration in progress — registration data is stored locally for now, with one-click sync to our BD mailbox</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="rsuccess" id="regSuccess">
+      <span class="ok-tag">Unlocked</span>
+      <h4>Registration complete — the service catalog is unlocked</h4>
+      <p>Services, Brand Insights, Data Subscriptions, Stories, and FAQ in the navigation are now fully expanded. Your registration reference:</p>
+      <div class="rpayload" id="regPayload"></div>
+      <div class="btn-row">
+        <a class="btn-primary" id="regMail" href="#">Sync to BD mailbox →</a>
+        <button class="btn-ghost" id="regCopy">Copy registration info</button>
+        <button class="btn-ghost" id="regDone">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= AGENT CHAT WIDGET ================= -->
+<div class="aiw" id="aiw">
+  <button class="aiw-fab" id="aiwFab" aria-label="Open Agent support">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a1 1 0 0 1 1 1v1.05A7.5 7.5 0 0 1 19.5 11v4.5l1.7 2.55a1 1 0 0 1-.83 1.55H3.63a1 1 0 0 1-.83-1.55L4.5 15.5V11a7.5 7.5 0 0 1 6.5-7.45V3a1 1 0 0 1 1-1zm0 20a3 3 0 0 1-2.83-2h5.66A3 3 0 0 1 12 22z"/></svg>
+    <span class="aiw-badge" id="aiwBadge">1</span>
+  </button>
+  <div class="aiw-panel" id="aiwPanel" aria-hidden="true">
+    <div class="aiw-head">
+      <span class="aiw-dot"></span>
+      <div>
+        <span class="t">insightmarketplac Support Agent</span>
+        <span class="s">AI on duty · 24/7 · instant replies</span>
+      </div>
+    </div>
+    <div class="aiw-msgs" id="aiwMsgs"></div>
+    <div class="aiw-chips" id="aiwChips">
+      <button type="button" data-q="I want to onboard — how do I start?">Onboarding</button>
+      <button type="button" data-q="How does pricing work?">Pricing</button>
+      <button type="button" data-q="What is the difference between OEM / ODM / OBM?">Model differences</button>
+      <button type="button" data-q="How does influencer marketing work?">Influencer</button>
+      <button type="button" data-q="What does registration unlock?">Registration</button>
+      <button type="button" data-q="How do I book a meeting?">Book a meeting</button>
+    </div>
+    <form class="aiw-input" id="aiwForm">
+      <input id="aiwText" type="text" placeholder="Ask about channels, models, pricing, influencers…" autocomplete="off" aria-label="Type your message">
+      <button type="submit" aria-label="Send">→</button>
+    </form>
+    <div class="aiw-foot">Support on this site is staffed by an AI Agent · complex questions escalate to humans (1 business day)</div>
+  </div>
+</div>
 
 <script>
 (function(){
@@ -1747,5 +2539,204 @@ footer{
   });
 })();
 </script>
+<script>
+(function(){
+  "use strict";
+
+  /* ================= registration gate ================= */
+  var REG_KEY="im_reg_v1",LEADS_KEY="im_leads_v1";
+  var MEET_MAIL="haidong.zhou@outlook.com";
+  var modal=document.getElementById("regModal");
+  var formWrap=document.getElementById("regFormWrap");
+  var successBox=document.getElementById("regSuccess");
+  var form=document.getElementById("regForm");
+  var navReg=document.getElementById("navReg");
+  var navUser=document.getElementById("navUser");
+
+  function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+  function readReg(){try{return JSON.parse(localStorage.getItem(REG_KEY)||"null")}catch(e){return null}}
+
+  function applyReg(){
+    var reg=readReg();
+    if(reg&&reg.name){
+      document.body.classList.add("registered");
+      navUser.textContent=reg.company||reg.name;
+      navUser.title="Registered: "+reg.name+" · click to log out";
+    }else{
+      document.body.classList.remove("registered");
+      navUser.textContent="";
+    }
+  }
+  applyReg();
+
+  function mailBody(reg){
+    return "insightmarketplac website registration\n\nReference: "+reg.ref+"\nName: "+reg.name+"\nEmail: "+reg.email+
+      "\nCompany / Brand: "+(reg.company||"—")+"\nRole: "+reg.role+"\nInterested in: "+reg.intent+
+      "\nRegistered at: "+reg.ts+"\nPage: "+(reg.page||"sell-on-oem-odm-en.html");
+  }
+  function showSuccess(reg){
+    document.getElementById("regPayload").textContent=reg.ref+" · "+reg.email;
+    document.getElementById("regMail").href="mailto:"+MEET_MAIL+
+      "?subject="+encodeURIComponent("Website registration | "+(reg.company||reg.name)+" | "+reg.ref)+
+      "&body="+encodeURIComponent(mailBody(reg));
+    formWrap.style.display="none";
+    successBox.classList.add("show");
+  }
+
+  function openModal(){
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    var reg=readReg();
+    if(reg&&reg.ref){showSuccess(reg)}
+    else{
+      formWrap.style.display="";
+      successBox.classList.remove("show");
+      setTimeout(function(){var f=document.getElementById("r-name");if(f)f.focus()},80);
+    }
+  }
+  function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true")}
+
+  navReg.addEventListener("click",openModal);
+  document.addEventListener("click",function(e){
+    var t=e.target&&e.target.closest?e.target.closest("[data-reg-open]"):null;
+    if(t){e.preventDefault();openModal()}
+  });
+  document.getElementById("regClose").addEventListener("click",closeModal);
+  modal.addEventListener("click",function(e){if(e.target===modal)closeModal()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")closeModal()});
+
+  navUser.addEventListener("click",function(){
+    if(!readReg())return;
+    if(window.confirm("Log out? The page will return to the unregistered view and the service catalog will re-lock.")){
+      localStorage.removeItem(REG_KEY);
+      applyReg();
+    }
+  });
+
+  form.addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var name=document.getElementById("r-name").value.trim();
+    var email=document.getElementById("r-email").value.trim();
+    if(!name){document.getElementById("r-name").focus();return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){document.getElementById("r-email").focus();return}
+    var reg={
+      ref:"REG-2026-"+String(Math.floor(1000+Math.random()*9000)),
+      name:name,
+      email:email,
+      company:document.getElementById("r-company").value.trim(),
+      role:document.getElementById("r-role").value,
+      intent:document.getElementById("r-intent").value,
+      ts:new Date().toISOString(),
+      page:(location.pathname.split("/").pop()||"sell-on-oem-odm-en.html")
+    };
+    localStorage.setItem(REG_KEY,JSON.stringify(reg));
+    try{
+      var leads=JSON.parse(localStorage.getItem(LEADS_KEY)||"[]");
+      leads.push(reg);
+      localStorage.setItem(LEADS_KEY,JSON.stringify(leads));
+    }catch(e){}
+    applyReg();
+    showSuccess(reg);
+  });
+
+  document.getElementById("regDone").addEventListener("click",closeModal);
+  document.getElementById("regCopy").addEventListener("click",function(){
+    var reg=readReg();if(!reg)return;
+    var text=mailBody(reg);
+    var self=this;
+    function done(){self.textContent="Copied ✓";setTimeout(function(){self.textContent="Copy registration info"},2000)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,done)}else{done()}
+  });
+
+  window.__imExportLeads=function(){try{return JSON.parse(localStorage.getItem(LEADS_KEY)||"[]")}catch(e){return []}};
+
+  /* ================= agent chat ================= */
+  var fab=document.getElementById("aiwFab");
+  var panel=document.getElementById("aiwPanel");
+  var badge=document.getElementById("aiwBadge");
+  var msgs=document.getElementById("aiwMsgs");
+  var chatForm=document.getElementById("aiwForm");
+  var chatInput=document.getElementById("aiwText");
+  var greeted=false;
+
+  function addMsg(role,html){
+    var d=document.createElement("div");
+    d.className="msg "+role;
+    d.innerHTML=html;
+    msgs.appendChild(d);
+    msgs.scrollTop=msgs.scrollHeight;
+    return d;
+  }
+  function botReply(html){
+    var t=addMsg("bot typing","<i></i><i></i><i></i>");
+    setTimeout(function(){t.classList.remove("typing");t.innerHTML=html;msgs.scrollTop=msgs.scrollHeight},620+Math.random()*520);
+  }
+  function link(anchor,text){return '<a href="'+anchor+'">'+text+'</a>'}
+
+  var KB=[
+    {k:["onboard","start","begin","apply","sell with","合作","入驻"],
+     a:function(){return "Onboarding runs in three steps: <b>①</b> prepare your business license and catalog; <b>②</b> submit the <b>Apply to Sell</b> form at the bottom of this page; <b>③</b> our BD team reaches out within 1–3 business days for qualification review and assortment talk. You can also "+link("#meet","book a 30-minute meeting")+" right away."}},
+    {k:["price","pricing","cost","fee","charge","how much","收费","价格"],
+     a:function(){return "Two tiers, monthly engagement, no long-term lock-in: <b>Revenue Share</b> ($0 base fee + a share of sales — friendliest for launch phase) and <b>Flat Rate</b> ($499/month all-in, no per-order cut, built for stable brands doing $5k+ monthly). OEM inventory buyout carries no service fee — PO settlement, paid on delivery. See "+link("#pricing","Pricing")+"."}},
+    {k:["oem","odm","obm","model","difference","white label","private label","模式"],
+     a:function(){return "The three models in one line each: <b>OEM</b> — build to your prints, your specs; paid at the factory on delivery. <b>ODM</b> — your design + our overseas warehouse stock; earn design + manufacturing margin. <b>OBM</b> — your own brand direct to consumers; earn manufacturing + brand premium. The path is progressive: start OEM, upgrade when ready. See "+link("#models","Models")+"."}},
+    {k:["channel","platform","walmart","amazon","target","costco","store","retail","shelf","渠道"],
+     a:function(){return "A 20+ channel network: US mainstream retail as home ground (Walmart, Target, Costco, Best Buy and more), with Europe, META, APAC, ANZ, and the CIS running in parallel. One team runs listing, ads, and pricing across every channel. See "+link("#channels","Channel Acceleration")+"."}},
+    {k:["influencer","creator","kol","ugc","social","tiktok","instagram","youtube","marketing","content","drama","series","红人"],
+     a:function(){return "Influencer marketing matches US creators by category: top-tier for reach, mid-tier for conversion, long-tail for content volume — with an in-house talent pool for controllable scheduling and rates. The marketing engine delivers five outcomes from six in-house capabilities: brand operations, website, social, channel expansion, after-sales optimization. See "+link("#influencer","Influencer Marketing")+" and "+link("#marketing","Marketing")+"."}},
+    {k:["data","subscription","report","token","insight","intelligence","数据"],
+     a:function(){return "Data subscriptions run six lines: assortment & markets, pricing & promotions, consumers & reviews, competitor moves, crowdfunding signals, and brand voice — sliced by category / platform / price band / country, delivered as data tokens, recurring packs, or reports. The full catalog opens after registration at "+link("#data","Data Subscriptions")+"."}},
+    {k:["agent","ai","bot","erp","wms","crm","system","software","custom","智能体"],
+     a:function(){return "Two custom-build capabilities: <b>Agent builds</b> — smart support, assortment assistant, ad management, weekly data reports; private or cloud deployment. <b>ERP builds</b> — orders, inventory, and finance in one back office, natively integrated with the 20+ channel accounts. The chat you're using right now is our Agent support. See "+link("#models","Agent / ERP Custom Builds")+"."}},
+    {k:["register","registration","unlock","member","login","account","注册","解锁"],
+     a:function(){return "Registration is free and unlocks the full service catalog: services, seller entries, brand insights, data subscriptions, process, case studies, and FAQ. Click <b>Register to Unlock</b> in the nav or the button on any locked section — someone follows up within 1 business day."}},
+    {k:["meeting","book","call","demo","contact","email","phone","会议","预约"],
+     a:function(){return "Book a 30-minute online meeting: the <b>Book a Meeting</b> form lower on this page generates the email and calendar invite automatically once submitted. BD mailbox: haidong.zhou@outlook.com, response within 1 business day. "+link("#meet","Go book →")+"."}},
+    {k:["logistics","warehouse","fulfillment","shipping","delivery","freight","supply chain","inventory","stock","物流"],
+     a:function(){return "End-to-end fulfillment: first-mile freight, US warehousing, and last-mile delivery in one pipe — 99.8% same-day ship, 85% next-day coverage. OEM partners deliver at the factory; ODM / OBM partners hold stock in overseas warehouses. See "+link("#services","Services")+" (after registration)."}},
+    {k:["trade show","exhibition","expo","展会"],
+     a:function(){return "Trade show services cover show selection, booth builds, sample logistics, buyer outreach, and post-show follow-up — the offline channel's face-time engine, with 12 major shows on the calendar. Details open in Extended Services after registration."}}
+  ];
+  var FALLBACK="I've noted that one down — you can "+link("#meet","book a 30-minute meeting")+" for a human answer, or "+link("#apply","submit an onboarding application")+" and the BD team will follow up within 1–3 business days.";
+
+  function answer(q){
+    var s=q.toLowerCase();
+    for(var i=0;i<KB.length;i++){
+      for(var j=0;j<KB[i].k.length;j++){
+        var kw=KB[i].k[j].toLowerCase();
+        if(s.indexOf(kw)>-1||q.indexOf(kw)>-1){return KB[i].a()}
+      }
+    }
+    return FALLBACK;
+  }
+  function send(q){
+    if(!q.trim())return;
+    addMsg("user",esc(q));
+    botReply(answer(q));
+  }
+
+  fab.addEventListener("click",function(){
+    var open=panel.classList.toggle("open");
+    panel.setAttribute("aria-hidden",open?"false":"true");
+    if(badge){badge.style.display="none"}
+    if(open&&!greeted){
+      greeted=true;
+      botReply("Hi, I'm the <b>insightmarketplac Support Agent</b>. Channel onboarding, OEM / ODM / OBM, pricing, influencer marketing — ask me anything, or tap a quick question below.");
+    }
+    if(open){setTimeout(function(){chatInput.focus()},120)}
+  });
+
+  document.getElementById("aiwChips").addEventListener("click",function(e){
+    var b=e.target&&e.target.closest?e.target.closest("button[data-q]"):null;
+    if(b){send(b.getAttribute("data-q"))}
+  });
+  chatForm.addEventListener("submit",function(ev){
+    ev.preventDefault();
+    send(chatInput.value);
+    chatInput.value="";
+  });
+})();
+</script>
+
 </body>
 </html>

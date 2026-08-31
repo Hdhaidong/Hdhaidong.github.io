@@ -698,6 +698,216 @@ footer{
   font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.05em;
 }
 
+/* ---------- insights & data sections ---------- */
+#insights,#data{border-top:1px solid var(--hairline-soft)}
+.ins-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.ins-card{border:1px solid var(--hairline);background:var(--bg-2);padding:38px 34px;position:relative;overflow:hidden;transition:border-color .35s}
+.ins-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.ins-card:hover::before{width:100%}
+.ins-card:hover{border-color:rgba(232,163,61,.35)}
+.ins-no{font-family:var(--mono);font-size:11px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+.ins-card h3{font-size:25px;font-weight:600;margin:14px 0 4px}
+.ins-en{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:16px}
+.ins-card > p:not(.ins-en){color:var(--ink-dim);font-size:14.5px}
+.ins-card ul{list-style:none;margin-top:20px;border-top:1px solid var(--hairline-soft);padding-top:18px;display:grid;gap:11px}
+.ins-card li{font-size:13.5px;color:var(--ink-dim);padding-left:18px;position:relative}
+.ins-card li::before{content:"";position:absolute;left:0;top:.66em;width:7px;height:1px;background:var(--accent)}
+.dim-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dim{border:1px solid var(--hairline);background:var(--bg-2);padding:30px 26px;transition:border-color .35s,transform .35s}
+.dim:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.dim-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+.dim h3{font-size:21px;font-weight:600;margin:11px 0 8px}
+.dim p{color:var(--ink-dim);font-size:13px;line-height:1.65}
+.dim-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.dim-tags span{font-family:var(--mono);font-size:11px;color:var(--ink-faint);border:1px solid var(--hairline-soft);padding:4px 10px;border-radius:3px}
+.sec-cta{margin-top:44px;display:flex;gap:14px;flex-wrap:wrap}
+@media(max-width:960px){.ins-grid{grid-template-columns:1fr}.dim-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.dim-grid{grid-template-columns:1fr}}
+
+/* ---------- models extra (agent / erp) ---------- */
+.models-extra{margin-top:72px}
+.mx2-kicker{font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:var(--accent);text-transform:uppercase;margin-bottom:16px}
+.mx2-title{font-size:22px;font-weight:600;color:var(--ink)}
+.mx2-title span{color:var(--ink-faint);font-weight:400;font-size:15px}
+.mx2-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:24px}
+.mx2{border:1px solid var(--hairline);background:var(--bg-2);padding:36px 34px;position:relative;overflow:hidden;transition:border-color .35s}
+.mx2::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.mx2:hover::before{width:100%}
+.mx2:hover{border-color:rgba(232,163,61,.35)}
+.mx2-code{font-family:var(--mono);font-size:30px;font-weight:700;letter-spacing:-.01em;color:var(--ink);transition:color .35s}
+.mx2:hover .mx2-code{color:var(--accent)}
+.mx2-en{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+.mx2 h3{font-size:22px;font-weight:600;margin:20px 0 8px}
+.mx2 > p{color:var(--ink-dim);font-size:14px}
+.mx2 ul{list-style:none;margin-top:18px;border-top:1px solid var(--hairline-soft);padding-top:16px;display:grid;gap:9px}
+.mx2 li{font-size:13px;color:var(--ink-dim);padding-left:16px;position:relative}
+.mx2 li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:1px;background:var(--accent)}
+.mx2 .sec-cta{margin-top:24px}
+@media(max-width:760px){.mx2-grid{grid-template-columns:1fr}}
+
+/* ---------- marketing & influencer (public) ---------- */
+#marketing,#influencer{border-top:1px solid var(--hairline-soft)}
+.mkt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.mkt-card{border:1px solid var(--hairline);background:var(--bg-2);padding:34px 32px;position:relative;overflow:hidden;transition:border-color .35s,transform .35s}
+.mkt-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.mkt-card:hover::before{width:100%}
+.mkt-card:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.mkt-k{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}
+.mkt-card h3{font-size:22px;font-weight:600;margin:12px 0 8px}
+.mkt-card > p{color:var(--ink-dim);font-size:14px}
+.mkt-card ul{list-style:none;margin-top:16px;border-top:1px solid var(--hairline-soft);padding-top:14px;display:grid;gap:9px}
+.mkt-card li{font-size:13px;color:var(--ink-dim);padding-left:16px;position:relative}
+.mkt-card li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:1px;background:var(--accent)}
+@media(max-width:860px){.mkt-grid{grid-template-columns:1fr}}
+.pub-cta{margin-top:44px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.pub-cta .reg-note{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);letter-spacing:.04em}
+
+/* ---------- marketing outcome chain ---------- */
+.mkt-chain{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--hairline-soft);background:var(--bg-2);margin:0 0 14px}
+.mc-node{padding:24px 20px 22px;border-right:1px solid var(--hairline-soft);position:relative;transition:background .3s}
+.mc-node:last-child{border-right:none}
+.mc-node:hover{background:rgba(232,163,61,.05)}
+.mc-node::after{content:"→";position:absolute;top:24px;right:-8px;color:var(--ink-faint);font-size:13px;background:var(--bg-2);z-index:2;line-height:1}
+.mc-node:last-child::after{display:none}
+.mc-no{font-family:var(--mono);font-size:9.5px;color:var(--accent);letter-spacing:.22em;display:block}
+.mc-node h4{font-size:17px;font-weight:600;margin:10px 0 7px;letter-spacing:.01em}
+.mc-node p{font-size:12px;color:var(--ink-faint);line-height:1.65}
+.mc-via{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:10px;color:var(--ink-dim);letter-spacing:.06em;border:1px solid var(--hairline-soft);padding:4px 9px;border-radius:3px}
+.mkt-chain-cap{display:flex;align-items:center;gap:14px;margin:44px 0 16px}
+.mkt-chain-cap .cap-k{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+.mkt-chain-cap .cap-line{flex:1;height:1px;background:var(--hairline-soft)}
+.mkt-chain-cap .cap-r{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);white-space:nowrap}
+@media(max-width:1020px){
+  .mkt-chain{grid-template-columns:repeat(2,1fr)}
+  .mc-node{border-bottom:1px solid var(--hairline-soft)}
+  .mc-node:nth-child(2n){border-right:none}
+  .mc-node:nth-child(5){border-right:none}
+  .mc-node::after{display:none}
+}
+@media(max-width:560px){.mkt-chain{grid-template-columns:1fr}.mc-node{border-right:none}.mkt-chain-cap{flex-wrap:wrap}}
+
+/* ---------- pricing (two-tier) ---------- */
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.price-card{border:1px solid var(--hairline);background:var(--bg-2);padding:38px 34px;position:relative;display:flex;flex-direction:column}
+.price-card.hot{border-color:rgba(232,163,61,.5);background:linear-gradient(180deg,rgba(232,163,61,.07),var(--bg-2) 46%)}
+.pc-tag{position:absolute;top:-12px;right:22px;font-family:var(--mono);font-size:10px;letter-spacing:.18em;background:var(--accent);color:#14100a;padding:5px 12px;text-transform:uppercase;font-weight:600}
+.pc-name{font-size:19px;font-weight:600}
+.pc-en{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);letter-spacing:.2em;display:block;margin-top:3px;text-transform:uppercase}
+.pc-price{margin:24px 0 4px;font-size:42px;font-weight:600;letter-spacing:-.02em;line-height:1}
+.pc-price small{font-size:14px;color:var(--ink-dim);font-weight:400;letter-spacing:0}
+.pc-fee{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.04em;margin-bottom:12px}
+.pc-desc{color:var(--ink-dim);font-size:13.5px;line-height:1.75;margin-top:4px}
+.pc-list{list-style:none;margin:22px 0 28px;border-top:1px solid var(--hairline-soft);padding-top:18px;display:grid;gap:11px}
+.pc-list li{font-size:13px;color:var(--ink-dim);padding-left:20px;position:relative}
+.pc-list li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-size:12px}
+.pc-list li b{color:var(--ink);font-weight:600}
+.price-card .btn-primary,.price-card .btn-ghost{justify-content:center;margin-top:auto}
+.incl-cap{display:flex;align-items:center;gap:14px;margin:58px 0 0}
+.incl-cap .cap-k{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+.incl-cap .cap-line{flex:1;height:1px;background:var(--hairline-soft)}
+.incl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.incl{border:1px solid var(--hairline-soft);background:var(--bg-2);padding:20px 20px 18px}
+.incl h4{font-size:14.5px;font-weight:600;margin-bottom:6px}
+.incl p{font-size:12.5px;color:var(--ink-faint);line-height:1.65}
+.price-note{margin-top:22px;font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.03em;text-align:center;line-height:1.9}
+@media(max-width:860px){.price-grid{grid-template-columns:1fr}.incl-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.incl-grid{grid-template-columns:1fr}}
+
+/* ---------- content gate (registration) ---------- */
+.gated{position:relative}
+body:not(.registered) .gated > .wrap{display:none}
+body:not(.registered) .gated{padding:0}
+.gate-veil{display:none;min-height:440px;align-items:center;justify-content:center;padding:90px 28px;position:relative;overflow:hidden}
+body:not(.registered) .gated .gate-veil{display:flex}
+.gate-veil::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(640px 300px at 72% 18%,rgba(232,163,61,.07),transparent 62%),
+  repeating-linear-gradient(135deg,transparent 0 22px,rgba(242,238,230,.016) 22px 44px);pointer-events:none}
+.gv-box{position:relative;max-width:600px;text-align:center}
+.gv-lock{width:54px;height:54px;margin:0 auto 20px;border:1px solid rgba(232,163,61,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent)}
+.gv-lock svg{width:22px;height:22px;fill:currentColor}
+.gv-k{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--accent);text-transform:uppercase}
+.gv-box h3{font-size:26px;font-weight:600;margin:12px 0 10px}
+.gv-box > p{color:var(--ink-dim);font-size:14.5px;max-width:480px;margin:0 auto}
+.gv-list{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:24px 0 28px;max-width:520px;margin-left:auto;margin-right:auto}
+.gv-list span{font-family:var(--mono);font-size:11px;color:var(--ink-faint);border:1px solid var(--hairline-soft);padding:5px 12px;border-radius:3px}
+.gv-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.gv-hint{margin-top:18px;font-size:12px;color:var(--ink-faint)}
+.gv-hint b{color:var(--ink-dim);font-weight:500}
+
+/* ---------- nav register ---------- */
+.nav-links a.gated-link::after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-left:5px;vertical-align:2px;opacity:.85}
+.nav-reg{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent);border:1px solid rgba(232,163,61,.4);padding:8px 14px;border-radius:3px;transition:.25s;cursor:pointer;background:none}
+.nav-reg:hover{background:rgba(232,163,61,.12);border-color:var(--accent)}
+.nav-user{display:none;font-size:12px;color:var(--ink-dim);border:1px solid var(--hairline);padding:8px 12px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;background:none}
+body.registered .nav-user{display:inline-block}
+body.registered .nav-reg{display:none}
+
+/* ---------- register modal ---------- */
+.modal-bg{position:fixed;inset:0;z-index:200;background:rgba(5,7,10,.8);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:24px}
+.modal-bg.open{display:flex}
+.modal{width:min(600px,100%);max-height:92vh;overflow-y:auto;background:var(--bg-2);border:1px solid var(--hairline);padding:44px 46px 38px;position:relative;animation:rise .45s cubic-bezier(.2,.7,.2,1) both}
+.modal-x{position:absolute;top:12px;right:10px;background:none;border:none;color:var(--ink-faint);font-size:24px;cursor:pointer;padding:6px 10px;line-height:1}
+.modal-x:hover{color:var(--ink)}
+.modal h3{font-size:27px;font-weight:600;margin:12px 0 10px;letter-spacing:-.01em}
+.modal > p.mod-sub{color:var(--ink-dim);font-size:14.5px;max-width:440px}
+.rgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 18px;margin-top:28px}
+.rfield{display:grid;gap:8px}
+.rfield.full{grid-column:1/-1}
+.rfield label{font-size:12.5px;color:var(--ink-dim);letter-spacing:.04em}
+.rfield label b{color:var(--accent);font-weight:400}
+.rfield input,.rfield select{background:var(--bg);border:none;border-bottom:1px solid var(--hairline);color:var(--ink);font:inherit;font-size:14.5px;padding:10px 2px;outline:none;border-radius:0;width:100%}
+.rfield select{cursor:pointer;appearance:none;-webkit-appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--ink-faint) 50%),linear-gradient(135deg,var(--ink-faint) 50%,transparent 50%);
+  background-position:calc(100% - 14px) 55%,calc(100% - 9px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+.rfield select option{background:var(--bg-2);color:var(--ink)}
+.rfield input:focus,.rfield select:focus{border-bottom-color:var(--accent)}
+.rfoot{grid-column:1/-1;margin-top:10px}
+.rfoot .btn-primary{width:100%;justify-content:center;padding:15px}
+.rhint{margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.9;letter-spacing:.03em}
+.rsuccess{display:none}
+.rsuccess.show{display:block}
+.rsuccess .ok-tag{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:#3ecf8e;text-transform:uppercase}
+.rsuccess h4{font-size:24px;font-weight:600;margin:12px 0 10px}
+.rsuccess p{color:var(--ink-dim);font-size:14px}
+.rpayload{margin-top:18px;border:1px dashed var(--hairline);padding:14px 16px;font-family:var(--mono);font-size:11.5px;line-height:1.9;color:var(--ink-faint);word-break:break-all;background:var(--bg)}
+.rsuccess .btn-row{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+@media(max-width:560px){.modal{padding:34px 26px 30px}.rgrid{grid-template-columns:1fr}}
+
+/* ---------- agent chat widget ---------- */
+.aiw{position:fixed;right:22px;bottom:22px;z-index:150}
+.aiw-fab{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-hi));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(232,163,61,.32);transition:transform .25s}
+.aiw-fab:hover{transform:scale(1.07)}
+.aiw-fab svg{width:26px;height:26px;fill:#14100a}
+.aiw-badge{position:absolute;top:-4px;right:-4px;background:#14100a;color:var(--accent);border:1px solid var(--accent);font-family:var(--mono);font-size:9px;letter-spacing:.1em;padding:3px 7px;border-radius:20px}
+.aiw-panel{position:absolute;right:0;bottom:70px;width:min(384px,calc(100vw - 44px));height:min(580px,74vh);background:var(--bg-2);border:1px solid var(--hairline);display:none;flex-direction:column;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.55)}
+.aiw-panel.open{display:flex;animation:rise .35s cubic-bezier(.2,.7,.2,1) both}
+.aiw-head{padding:14px 18px;border-bottom:1px solid var(--hairline-soft);display:flex;align-items:center;gap:10px;background:var(--bg)}
+.aiw-dot{width:8px;height:8px;border-radius:50%;background:#3ecf8e;box-shadow:0 0 0 3px rgba(62,207,142,.14);flex:none}
+.aiw-head .t{font-size:14px;font-weight:600}
+.aiw-head .s{font-family:var(--mono);font-size:10px;color:var(--ink-faint);letter-spacing:.08em;display:block;margin-top:1px}
+.aiw-msgs{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px}
+.msg{max-width:84%;padding:10px 14px;font-size:13.5px;line-height:1.7}
+.msg.bot{align-self:flex-start;background:var(--bg);border:1px solid var(--hairline-soft)}
+.msg.user{align-self:flex-end;background:rgba(232,163,61,.12);border:1px solid rgba(232,163,61,.28)}
+.msg a{color:var(--accent);text-decoration:underline;cursor:pointer}
+.msg b{color:var(--ink);font-weight:600}
+.msg.typing{display:flex;gap:5px;align-items:center;padding:12px 16px}
+.msg.typing i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--ink-faint);animation:aityp 1s infinite}
+.msg.typing i:nth-child(2){animation-delay:.16s}
+.msg.typing i:nth-child(3){animation-delay:.32s}
+@keyframes aityp{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-4px);opacity:1}}
+.aiw-chips{display:flex;gap:8px;overflow-x:auto;padding:10px 14px;border-top:1px solid var(--hairline-soft);scrollbar-width:none}
+.aiw-chips::-webkit-scrollbar{display:none}
+.aiw-chips button{flex:none;background:none;border:1px solid var(--hairline);color:var(--ink-dim);font:inherit;font-size:12px;padding:6px 13px;border-radius:20px;cursor:pointer;transition:.25s;white-space:nowrap}
+.aiw-chips button:hover{border-color:var(--accent);color:var(--accent)}
+.aiw-input{display:flex;gap:10px;padding:12px 14px;border-top:1px solid var(--hairline-soft)}
+.aiw-input input{flex:1;background:var(--bg);border:1px solid var(--hairline);color:var(--ink);font:inherit;font-size:13.5px;padding:10px 14px;outline:none;border-radius:4px;min-width:0}
+.aiw-input input:focus{border-color:var(--accent)}
+.aiw-input button{background:var(--accent);border:none;color:#14100a;width:44px;border-radius:4px;cursor:pointer;font-size:17px;flex:none;transition:.25s}
+.aiw-input button:hover{background:var(--accent-hi)}
+.aiw-foot{padding:8px 14px 11px;font-family:var(--mono);font-size:9.5px;color:var(--ink-faint);letter-spacing:.05em;text-align:center}
+@media(max-width:560px){.aiw{right:14px;bottom:14px}}
+
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -722,18 +932,19 @@ footer{
     <a class="brand" href="#top">insight<em>marketplac</em></a>
     <nav class="nav-links">
       <a href="#models">合作模式</a>
-      <a href="#services">服务体系</a>
-      <a href="#channels">渠道网络</a>
-      <a href="#entries">卖家入口</a>
-      <a href="insights.html">品牌洞察</a>
-      <a href="data-platforms.html">数据订阅</a>
-      <a href="#process">入驻流程</a>
-      <a href="#success">成功案例</a>
-      <a href="#faq">常见问题</a>
+      <a href="#channels">渠道加速</a>
+      <a href="#marketing">营销</a>
+      <a href="#influencer">红人营销</a>
+      <a href="#pricing">收费</a>
+      <a href="#services" class="gated-link">服务体系</a>
+      <a href="#insights" class="gated-link">品牌洞察</a>
+      <a href="#data" class="gated-link">数据订阅</a>
       <a href="#meet">预约会议</a>
     </nav>
     <div class="nav-right">
       <a class="lang-toggle" href="sell-on-oem-odm-en.html" title="English version">EN</a>
+      <button class="nav-user" id="navUser" title="点击退出登录"></button>
+      <button class="nav-reg" id="navReg">注册解锁</button>
       <a class="nav-cta" href="#apply">申请入驻</a>
     </div>
   </div>
@@ -856,61 +1067,34 @@ footer{
       物流须知：<b>OEM 合作模式由我司负责国际物流，工厂交货即可</b>；ODM / OBM 合作模式需要供应商在海外仓有货。
       路径不是单向的：多数伙伴从 OEM 起步，产品开发成熟后叠加 ODM 方案，品牌准备就绪再升级 OBM——同一张渠道网络，每一步利润更深。
     </p>
-  </div>
-</section>
 
-<!-- ================= SERVICES ================= -->
-<section id="services">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <p class="eyebrow">Full-Stack Service</p>
-      <h2>一站式出海服务</h2>
-      <p class="section-lead">你负责产品，剩下的交给平台。五个环节，一条链路打通。</p>
-    </div>
-
-    <div class="services-grid">
-      <figure class="services-fig rv">
-        <img loading="lazy" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20modern%20furniture%20workshop%2C%20craftsman%20hands%20assembling%20a%20wooden%20chair%2C%20warm%20workshop%20lighting%2C%20sawdust%20in%20air%2C%20shallow%20depth%20of%20field%2C%20premium%20industrial%20craftsmanship&image_size=portrait_4_3" alt="木作家具工坊中的工匠组装">
-        <figcaption>Workshop · 把制造能力变成出海生意</figcaption>
-      </figure>
-
-      <ul class="svc-list">
-        <li class="svc-item rv rv-d1">
-          <span class="svc-num">01</span>
-          <div>
-            <h3>平台入驻<span class="en">Onboarding</span></h3>
-            <p>20+ 渠道账号开设、资质对接与店铺搭建，覆盖北美、欧洲、中东、亚太、澳新与俄语区，最快 7 天完成首批渠道上线。</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d1">
-          <span class="svc-num">02</span>
-          <div>
-            <h3>联合运营<span class="en">Co-Operating</span></h3>
-            <p>数据选品、定价策略与营销日历同步执行，让每个 SKU 都踩在需求节奏上。</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d2">
-          <span class="svc-num">03</span>
-          <div>
-            <h3>物流对接<span class="en">Logistics</span></h3>
-            <p>头程运输、美国海外仓储与尾程派送一体打通，99.8% 当日出库、85% 次日达覆盖，OEM 模式下工厂交货即可。</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d2">
-          <span class="svc-num">04</span>
-          <div>
-            <h3>账号安全维护<span class="en">Compliance</span></h3>
-            <p>合规审查、风控预警与异常处理，账号健康度全天候监控。</p>
-          </div>
-        </li>
-        <li class="svc-item rv rv-d3">
-          <span class="svc-num">05</span>
-          <div>
-            <h3>品牌推广<span class="en">Branding</span></h3>
-            <p>站内广告、内容种草与渠道曝光组合投放，为 OBM 模式积累品牌资产。</p>
-          </div>
-        </li>
-      </ul>
+    <div class="models-extra rv">
+      <p class="mx2-kicker">Beyond the Models</p>
+      <h3 class="mx2-title">模式之外，两项定制能力<span>——把生意搬到系统上跑</span></h3>
+      <div class="mx2-grid">
+        <article class="mx2">
+          <div class="mx2-code">AI Agent</div>
+          <div class="mx2-en">Agent Customization</div>
+          <h3>Agent 定制</h3>
+          <p>为你的业务定制 AI 智能体：客服、选品、投放、数据分析——把重复劳动交给 Agent，人只做判断。</p>
+          <ul>
+            <li><b>场景：</b>智能客服 · 选品助手 · 广告投放 · 数据周报</li>
+            <li><b>交付：</b>私有部署或云端，接入你现有的 ERP / CRM</li>
+            <li><b>适合谁：</b>想把人力成本换成自动化产线的品牌方</li>
+          </ul>
+        </article>
+        <article class="mx2">
+          <div class="mx2-code">ERP</div>
+          <div class="mx2-en">ERP Customization</div>
+          <h3>ERP 定制</h3>
+          <p>订单、库存、财务一体化 ERP 定制开发——与渠道网络原生集成，多平台订单一个后台全部管完。</p>
+          <ul>
+            <li><b>模块：</b>订单 · 库存 · 采购 · 财务对账 · 多仓联动</li>
+            <li><b>集成：</b>与 20+ 渠道账号体系、WMS / CRM 打通</li>
+            <li><b>适合谁：</b>多渠道出货、手工表格管不过来的工厂与品牌</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </div>
 </section>
@@ -920,10 +1104,10 @@ footer{
   <div class="wrap">
     <div class="channels-head rv">
       <div>
-        <p class="eyebrow">Global Channel Network</p>
-        <h2>深耕美国 · 覆盖全球</h2>
+        <p class="eyebrow">Channel Acceleration</p>
+        <h2>渠道加速<br>深耕美国 · 覆盖全球</h2>
       </div>
-      <p class="section-lead">以美国主流零售为主场，欧洲、中东、亚太、澳新与俄语区渠道并行——一个团队，管全部渠道的 listing、广告与定价。</p>
+      <p class="section-lead">以美国主流零售为主场，欧洲、中东、亚太、澳新与俄语区渠道并行——一个团队，管全部渠道的 listing、广告与定价。货盘就绪，直接铺进渠道。</p>
     </div>
 
     <div class="us-partners rv">
@@ -989,8 +1173,302 @@ footer{
   </div>
 </section>
 
-<!-- ================= SELLER ENTRIES ================= -->
-<section id="entries">
+<!-- ================= MARKETING (public) ================= -->
+<section id="marketing">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Growth Engine</p>
+      <h2>营销</h2>
+      <p class="section-lead">自有六项能力——社媒 · 红人 · 内容 · 渠道 · Agent · 数据资产——交付五项成果：品牌运营、网站、社媒、渠道扩张、售后优化。从建品牌到复购，一条链路闭环，把制造红利做成品牌资产。</p>
+    </div>
+    <div class="mkt-chain-cap rv">
+      <span class="cap-k">Five Outcomes</span>
+      <span class="cap-line"></span>
+      <span class="cap-r">每项成果旁标注由哪几项自有能力交付</span>
+    </div>
+    <div class="mkt-chain rv" role="list" aria-label="五项成果链">
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 01</span>
+        <h4>品牌运营</h4>
+        <p>定位 · 内容资产 · 经营节奏——品牌从 0 到 1 的日常经营</p>
+        <span class="mc-via">数据资产 × 红人</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 02</span>
+        <h4>网站</h4>
+        <p>品牌独立站与店铺搭建、SEO 与转化优化——品牌自己的主场</p>
+        <span class="mc-via">内容 × Agent</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 03</span>
+        <h4>社媒</h4>
+        <p>账号矩阵运营、内容种草、流量放大与粉丝沉淀</p>
+        <span class="mc-via">社媒 × 红人 × 内容</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 04</span>
+        <h4>渠道扩张</h4>
+        <p>新平台入驻、零售渠道对接、区域市场持续开拓</p>
+        <span class="mc-via">渠道 × 数据资产</span>
+      </div>
+      <div class="mc-node" role="listitem">
+        <span class="mc-no">Outcome 05</span>
+        <h4>售后优化</h4>
+        <p>客服、评价管理、复购与忠诚度——把新客变老客</p>
+        <span class="mc-via">Agent × 数据资产</span>
+      </div>
+    </div>
+    <div class="mkt-grid">
+      <article class="mkt-card rv">
+        <span class="mkt-k">01 · Social</span>
+        <h3>社媒</h3>
+        <p>TikTok / Instagram / YouTube / Facebook 品牌账号矩阵运营——社媒是独立站与平台店铺的流量上游。</p>
+        <ul>
+          <li><b>内容：</b>账号定位 · 内容日历 · 模板化量产</li>
+          <li><b>放大：</b>付费流量放大自然流量起势的内容</li>
+          <li><b>联动：</b>社媒种草 → 独立站 / 平台承接转化</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv rv-d1">
+        <span class="mkt-k">02 · Influencer</span>
+        <h3>红人</h3>
+        <p>按品类匹配美国红人：头部造声量、腰部做转化、尾部铺内容矩阵——自有经纪资源池，排期与价格可控。</p>
+        <ul>
+          <li><b>投放：</b>测评种草 · 开箱 · 直播切片 · 联盟带货</li>
+          <li><b>经纪：</b>签约孵化自有红人，稳定供给</li>
+          <li><b>结算：</b>固定费 / 佣金分成 / 混合模式</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv">
+        <span class="mkt-k">03 · Content</span>
+        <h3>内容</h3>
+        <p>网剧 / AI 短剧定制产线——品牌理念融入剧情而非硬广，低成本快迭代。</p>
+        <ul>
+          <li><b>真人网剧：</b>品牌定制剧情，专业制作团队</li>
+          <li><b>AI 短剧：</b>一剧多版本 · 多语种分发 · 快速 A/B</li>
+          <li><b>UGC：</b>原生素材库，网站 / 广告 / 社媒复用</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv rv-d1">
+        <span class="mkt-k">04 · Channel</span>
+        <h3>渠道</h3>
+        <p>20+ 渠道网络的营销侧火力：站内广告、活动位排期与新渠道持续开拓。</p>
+        <ul>
+          <li><b>站内：</b>平台广告 · 购物车关联 · 活动位排期</li>
+          <li><b>拓渠：</b>新平台入驻 · 零售渠道对接 · 区域扩展</li>
+          <li><b>节奏：</b>旺季排期 · 新品破冰 · 爆款续命</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv">
+        <span class="mkt-k">05 · Agent</span>
+        <h3>Agent</h3>
+        <p>AI 智能体接管重复劳动：客服、选品、投放、数据周报——人只做判断。</p>
+        <ul>
+          <li><b>场景：</b>智能客服 · 选品助手 · 投放托管 · 数据周报</li>
+          <li><b>交付：</b>私有部署或云端，接入现有系统</li>
+          <li><b>本站客服：</b>你正在浏览的网站已由 Agent 值守</li>
+        </ul>
+      </article>
+      <article class="mkt-card rv rv-d1">
+        <span class="mkt-k">06 · Data Assets</span>
+        <h3>数据资产</h3>
+        <p>六条业务数据订阅线，以数据 token / 报告交付——数据沉淀为你的资产，而非一次性服务。</p>
+        <ul>
+          <li><b>订阅：</b>选品 · 定价 · 消费者 · 竞品 · 众筹 · 声量</li>
+          <li><b>交付：</b>数据 token · 周期数据包 · 订阅报告</li>
+          <li><b>接入：</b>直接对接 ERP / CRM / 看板</li>
+        </ul>
+      </article>
+    </div>
+    <div class="pub-cta rv">
+      <a class="btn-ghost" href="#" data-reg-open>注册解锁完整服务目录 →</a>
+      <a class="btn-ghost" href="#meet">直接预约聊聊 →</a>
+      <span class="reg-note">注册免费 · 1 个工作日内跟进</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFLUENCER (public) ================= -->
+<section id="influencer" style="background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Influencer Marketing</p>
+      <h2>红人营销</h2>
+      <p class="section-lead">按品类匹配美国红人：头部造声量、腰部做转化、尾部铺内容矩阵——从选人、Brief、投放到复盘全流程托管。</p>
+    </div>
+    <div class="ins-grid">
+      <article class="ins-card rv">
+        <span class="ins-no">Line 01</span>
+        <h3>红人营销投放</h3>
+        <p class="ins-en">INFLUENCER CAMPAIGNS</p>
+        <p>类目匹配度 × 受众重合度 × 历史转化数据三重筛选，分层组合投放。</p>
+        <ul>
+          <li><b>选人：</b>头部造声量 · 腰部做转化 · 尾部铺矩阵</li>
+          <li><b>玩法：</b>测评种草、开箱、直播切片、联盟带货</li>
+          <li><b>结算：</b>固定费 / 佣金分成 / 混合模式</li>
+        </ul>
+      </article>
+      <article class="ins-card rv rv-d1">
+        <span class="ins-no">Line 02</span>
+        <h3>网红经纪 × UGC</h3>
+        <p class="ins-en">TALENT × UGC ASSETS</p>
+        <p>签约孵化自有红人，形成稳定可控的内容资源池；UGC 原生素材复用于网站、广告与社媒。</p>
+        <ul>
+          <li><b>孵化：</b>定位设计 · 内容规划 · 数据养号</li>
+          <li><b>资产：</b>UGC 素材库持续复用，摊薄投放成本</li>
+          <li><b>可控：</b>自有资源池 = 排期优先 + 价格可控</li>
+        </ul>
+      </article>
+    </div>
+    <div class="pub-cta rv">
+      <a class="btn-ghost" href="#meet">预约一次红人方案沟通 →</a>
+      <span class="reg-note">带上货盘，当场判断适配打法</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING (public) ================= -->
+<section id="pricing" style="border-top:1px solid var(--hairline-soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Pricing</p>
+      <h2>收费模式</h2>
+      <p class="section-lead">简单两档，随生意规模切换——按月合作，不签长约。卖出去再分，或固定费全包，由你选。</p>
+    </div>
+    <div class="price-grid">
+      <article class="price-card rv">
+        <h3 class="pc-name">分成档</h3>
+        <span class="pc-en">Flexible</span>
+        <div class="pc-price">$0<small> 基础月费</small></div>
+        <p class="pc-fee">+ 按销售额分成 · 比例按品类评估</p>
+        <p class="pc-desc">低门槛启动：先上渠道、先出单，卖出去才分——起步期成本最友好。</p>
+        <ul class="pc-list">
+          <li><b>零基础费：</b>货盘评估通过即可启动</li>
+          <li><b>风险共担：</b>我们把你的渠道当自己的生意运营</li>
+          <li><b>随时升级：</b>月销稳定后切固定档，成本更可控</li>
+        </ul>
+        <a class="btn-ghost" href="#meet">评估我的货盘 →</a>
+      </article>
+      <article class="price-card hot rv rv-d1">
+        <span class="pc-tag">推荐</span>
+        <h3 class="pc-name">固定档</h3>
+        <span class="pc-en">Flat Rate</span>
+        <div class="pc-price">$499<small> /月起</small></div>
+        <p class="pc-fee">无销售分成 · 无订单抽成</p>
+        <p class="pc-desc">成本可预测：适合月销 $5k+ 的稳定品牌，全托管推进，卖得越多边际越薄。</p>
+        <ul class="pc-list">
+          <li><b>一口价全包：</b>渠道 + 运营 + 营销 + 客服</li>
+          <li><b>优先资源：</b>红人排期、活动位与数据线优先</li>
+          <li><b>旺季不涨：</b>固定费不随大促流量波动</li>
+        </ul>
+        <a class="btn-primary" href="#meet">免费方案沟通 →</a>
+      </article>
+    </div>
+    <div class="incl-cap rv">
+      <span class="cap-k">Included on All Plans</span>
+      <span class="cap-line"></span>
+    </div>
+    <div class="incl-grid">
+      <div class="incl rv"><h4>20+ 渠道账号开设</h4><p>北美、欧洲、中东、亚太账号开设与店铺搭建，最快 7 天首批上线。</p></div>
+      <div class="incl rv"><h4>联合运营</h4><p>数据选品、定价策略与营销日历同步执行。</p></div>
+      <div class="incl rv"><h4>端到端仓配履约</h4><p>头程运输、海外仓储与尾程派送一体打通。</p></div>
+      <div class="incl rv"><h4>Agent 智能客服</h4><p>24/7 客户咨询值守，售后问题自动分流处理。</p></div>
+      <div class="incl rv"><h4>账号安全维护</h4><p>合规审查、风控预警与异常处理全天候监控。</p></div>
+      <div class="incl rv"><h4>数据周报</h4><p>选品、定价与竞品动态每周推送，决策有据。</p></div>
+      <div class="incl rv"><h4>红人资源对接</h4><p>按品类匹配美国红人池，投放与经纪均可谈。</p></div>
+      <div class="incl rv"><h4>内容素材库</h4><p>产品图、视频与 UGC 原生素材持续复用。</p></div>
+      <div class="incl rv"><h4>专属对接人</h4><p>1 个工作日内响应，月度复盘定下月节奏。</p></div>
+    </div>
+    <p class="price-note rv">OEM 库存买断合作不收任何服务费——PO 结算，工厂交货即收款。<br>两档收费适用于 ODM / OBM / 联合运营与营销服务。</p>
+  </div>
+</section>
+
+<!-- ================= SERVICES (gated) ================= -->
+<section id="services" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：一站式出海服务</h3>
+      <p>你负责产品、剩下的交给平台——五个环节的完整服务详情、交付标准与响应机制。</p>
+      <div class="gv-list"><span>平台入驻</span><span>联合运营</span><span>物流对接</span><span>账号安全</span><span>品牌推广</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Full-Stack Service</p>
+      <h2>一站式出海服务</h2>
+      <p class="section-lead">你负责产品，剩下的交给平台。五个环节，一条链路打通。</p>
+    </div>
+
+    <div class="services-grid">
+      <figure class="services-fig rv">
+        <img loading="lazy" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20modern%20furniture%20workshop%2C%20craftsman%20hands%20assembling%20a%20wooden%20chair%2C%20warm%20workshop%20lighting%2C%20sawdust%20in%20air%2C%20shallow%20depth%20of%20field%2C%20premium%20industrial%20craftsmanship&image_size=portrait_4_3" alt="木作家具工坊中的工匠组装">
+        <figcaption>Workshop · 把制造能力变成出海生意</figcaption>
+      </figure>
+
+      <ul class="svc-list">
+        <li class="svc-item rv rv-d1">
+          <span class="svc-num">01</span>
+          <div>
+            <h3>平台入驻<span class="en">Onboarding</span></h3>
+            <p>20+ 渠道账号开设、资质对接与店铺搭建，覆盖北美、欧洲、中东、亚太、澳新与俄语区，最快 7 天完成首批渠道上线。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d1">
+          <span class="svc-num">02</span>
+          <div>
+            <h3>联合运营<span class="en">Co-Operating</span></h3>
+            <p>数据选品、定价策略与营销日历同步执行，让每个 SKU 都踩在需求节奏上。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d2">
+          <span class="svc-num">03</span>
+          <div>
+            <h3>物流对接<span class="en">Logistics</span></h3>
+            <p>头程运输、美国海外仓储与尾程派送一体打通，99.8% 当日出库、85% 次日达覆盖，OEM 模式下工厂交货即可。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d2">
+          <span class="svc-num">04</span>
+          <div>
+            <h3>账号安全维护<span class="en">Compliance</span></h3>
+            <p>合规审查、风控预警与异常处理，账号健康度全天候监控。</p>
+          </div>
+        </li>
+        <li class="svc-item rv rv-d3">
+          <span class="svc-num">05</span>
+          <div>
+            <h3>品牌推广<span class="en">Branding</span></h3>
+            <p>站内广告、内容种草与渠道曝光组合投放，为 OBM 模式积累品牌资产。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SELLER ENTRIES (gated) ================= -->
+<section id="entries" class="gated" style="background:var(--bg-2)">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：直达平台卖家入口</h3>
+      <p>20+ 渠道的账号开设路径、资质要求与开店节奏——注册后按品类给你匹配好的入口清单。</p>
+      <div class="gv-list"><span>北美</span><span>欧洲</span><span>中东</span><span>亚太</span><span>澳新</span><span>俄语区</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Direct Seller Entries</p>
@@ -1168,8 +1646,128 @@ footer{
   </div>
 </div>
 
-<!-- ================= PROCESS ================= -->
-<section id="process">
+<!-- ================= INSIGHTS (gated) ================= -->
+<section id="insights" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：品牌洞察</h3>
+      <p>红人 × 品牌 × 内容三方洞察与全球众筹新品雷达的完整产品说明、交付样例与订阅方式。</p>
+      <div class="gv-list"><span>三方洞察</span><span>众筹雷达</span><span>洞察报告</span><span>数据 token</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Brand Insights</p>
+      <h2>品牌洞察</h2>
+      <p class="section-lead">两条产品线，服务两种决策：让内容对品牌 IP 积累资产，让新品信号先人一步。以数据分析报告或数据 token 交付——拿到的是结论与数据，不是数据源头。</p>
+    </div>
+    <div class="ins-grid">
+      <article class="ins-card rv">
+        <span class="ins-no">Line 01</span>
+        <h3>红人 × 品牌 × 内容</h3>
+        <p class="ins-en">CREATOR × BRAND × CONTENT</p>
+        <p>三方交叉洞察：哪个红人与品牌 IP 匹配、什么内容对品牌积累资产、一次合作的真实回报——为网红定制对品牌影响力大的内容。</p>
+        <ul>
+          <li><b>红人匹配：</b>粉丝画像 × 品牌调性 × 历史合作效果</li>
+          <li><b>内容策略：</b>选题卡、脚本方向、发布节奏建议</li>
+          <li><b>效果复盘：</b>播放、互动、转化与品牌资产变化</li>
+        </ul>
+      </article>
+      <article class="ins-card rv rv-d1">
+        <span class="ins-no">Line 02</span>
+        <h3>众筹科技产品雷达</h3>
+        <p class="ins-en">CROWDFUNDING RADAR</p>
+        <p>全球众筹平台新品信号监测——第一时间发现值得注意的新品，为口播选题、选品判断与产品开发提供弹药。</p>
+        <ul>
+          <li><b>新品发现：</b>科技品类上线即捕获，不靠人工刷</li>
+          <li><b>热度信号：</b>筹款进度、支持者增长、评论风向</li>
+          <li><b>选题输出：</b>口播弹药与开发方向参考</li>
+        </ul>
+      </article>
+    </div>
+    <div class="sec-cta rv">
+      <a class="btn-ghost" href="insights.html">品牌洞察完整服务页 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DATA (gated) ================= -->
+<section id="data" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：业务数据订阅</h3>
+      <p>六条订阅线 × 三种交付形态的完整目录、细分维度与接入方式——按类目、平台、价格、国家取数。</p>
+      <div class="gv-list"><span>选品</span><span>定价</span><span>消费者</span><span>竞品</span><span>众筹信号</span><span>品牌声量</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Data Subscriptions</p>
+      <h2>数据订阅</h2>
+      <p class="section-lead">订阅结论，不碰源头。六条订阅线 × 四个细分维度——按你的生意范围定制数据供给，直接接入你的看板与流程。</p>
+    </div>
+    <div class="dim-grid">
+      <div class="dim rv">
+        <span class="dim-k">Dimension 01</span>
+        <h3>类目</h3>
+        <p>按品类圈定监测范围，只订阅自己赛道的数据。</p>
+        <div class="dim-tags"><span>家居</span><span>户外</span><span>3C 数码</span><span>母婴</span><span>美妆</span><span>服饰</span></div>
+      </div>
+      <div class="dim rv rv-d1">
+        <span class="dim-k">Dimension 02</span>
+        <h3>平台</h3>
+        <p>按平台追踪表现，多平台对比看格局。</p>
+        <div class="dim-tags"><span>Amazon</span><span>Walmart</span><span>eBay</span><span>Temu</span><span>SHEIN</span></div>
+      </div>
+      <div class="dim rv rv-d2">
+        <span class="dim-k">Dimension 03</span>
+        <h3>价格</h3>
+        <p>按价格带切片分析，找准自己的竞争段位。</p>
+        <div class="dim-tags"><span>$0–25</span><span>$25–100</span><span>$100–500</span><span>$500+</span></div>
+      </div>
+      <div class="dim rv rv-d3">
+        <span class="dim-k">Dimension 04</span>
+        <h3>国家</h3>
+        <p>按市场分别订阅，不同国家的节奏分开看。</p>
+        <div class="dim-tags"><span>美国</span><span>加拿大</span><span>英国</span><span>德国</span><span>日本</span></div>
+      </div>
+    </div>
+    <div class="sec-cta rv">
+      <a class="btn-ghost" href="data-platforms.html">数据订阅完整服务页 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS (gated) ================= -->
+<section id="process" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：入驻流程</h3>
+      <p>从提交申请到首批渠道上线的完整时间线、各环节所需材料与验收节点。</p>
+      <div class="gv-list"><span>资质初审</span><span>选品沟通</span><span>方案确认</span><span>渠道上线</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Onboarding Process</p>
@@ -1213,8 +1811,22 @@ footer{
   </div>
 </section>
 
-<!-- ================= SUCCESS ================= -->
-<section id="success">
+<!-- ================= SUCCESS (gated) ================= -->
+<section id="success" class="gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：成功案例</h3>
+      <p>按品类拆解的真实合作案例——从货盘到渠道上线的数据复盘与节奏还原。</p>
+      <div class="gv-list"><span>品类案例</span><span>数据复盘</span><span>渠道节奏</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Sell Success</p>
@@ -1258,8 +1870,22 @@ footer{
   </div>
 </section>
 
-<!-- ================= FAQ ================= -->
-<section id="faq">
+<!-- ================= FAQ (gated) ================= -->
+<section id="faq" class="gated" style="background:var(--bg-2)">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：常见问题</h3>
+      <p>合作模式怎么选、费用怎么算、库存与物流谁负责——注册后逐条看完整解答。</p>
+      <div class="gv-list"><span>合作模式</span><span>费用结算</span><span>库存物流</span><span>账号安全</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">FAQ</p>
@@ -1483,29 +2109,38 @@ footer{
 
 <!-- ================= SERVICE MATRIX ================= -->
 <style>
-.mx{padding:84px 0;background:var(--bg-soft,#F6F3EC)}
+.mx{padding:84px 0;background:var(--bg-2)}
 .mx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
-.mx-card{display:block;border:1px solid rgba(20,20,20,.1);border-radius:12px;padding:22px 18px;background:#fff;color:inherit;text-decoration:none;transition:transform .2s,box-shadow .2s}
-.mx-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(20,20,20,.1);text-decoration:none}
-.mx-card .mt{font-size:.66rem;letter-spacing:.14em;font-family:ui-monospace,monospace;text-transform:uppercase;color:#B07A1E}
-.mx-card h3{font-size:1rem;margin:8px 0 6px}
-.mx-card p{font-size:.8rem;color:rgba(20,20,20,.55);line-height:1.55}
+.mx-card{display:block;border:1px solid var(--hairline-soft);border-radius:12px;padding:22px 18px;background:var(--bg);color:inherit;text-decoration:none;transition:transform .2s,border-color .25s}
+.mx-card:hover{transform:translateY(-3px);border-color:rgba(232,163,61,.35);text-decoration:none}
+.mx-card .mt{font-size:.66rem;letter-spacing:.14em;font-family:var(--mono);text-transform:uppercase;color:var(--accent)}
+.mx-card h3{font-size:1rem;margin:8px 0 6px;color:var(--ink)}
+.mx-card p{font-size:.8rem;color:var(--ink-faint);line-height:1.55}
 @media(max-width:1000px){.mx-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.mx-grid{grid-template-columns:1fr}}
 </style>
-<section class="mx">
+<section class="mx gated">
+  <div class="gate-veil">
+    <div class="gv-box">
+      <div class="gv-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-1V6a5 5 0 0 0-5-5zm-3 8V6a3 3 0 0 1 6 0v3H9zm3 4a2 2 0 0 1 1 3.73V19a1 1 0 0 1-2 0v-2.27A2 2 0 0 1 12 13z"/></svg></div>
+      <span class="gv-k">Members Only</span>
+      <h3>注册后解锁：延伸服务矩阵</h3>
+      <p>从入驻到品牌的下半场——品牌增长、合规企业、系统工具与展会服务四条延伸业务线入口。</p>
+      <div class="gv-list"><span>品牌增长</span><span>合规企业</span><span>系统工具</span><span>展会服务</span></div>
+      <div class="gv-btns">
+        <button class="btn-primary" data-reg-open>免费注册解锁 →</button>
+        <a class="btn-ghost" href="#meet">先预约聊聊</a>
+      </div>
+      <p class="gv-hint">注册免费 · <b>1 个工作日内跟进</b> · 信息仅用于业务对接</p>
+    </div>
+  </div>
   <div class="wrap">
     <div class="sec-head rv">
       <p class="eyebrow">Beyond Onboarding</p>
       <h2>从入驻到品牌的延伸服务</h2>
-      <p class="section-lead">入驻只是起点。渠道、数据、内容三条主线，拆成七条业务线撑起品牌出海的下半场。<a href="overview.html" style="color:#B4560F;font-weight:600">看全局业务地图 →</a></p>
+      <p class="section-lead">入驻只是起点。渠道、数据、内容三条主线，拆成七条业务线撑起品牌出海的下半场。<a href="overview.html" style="color:var(--accent);font-weight:600">看全局业务地图 →</a></p>
     </div>
     <div class="mx-grid">
-      <a class="mx-card rv" href="insights.html">
-        <span class="mt">Insights</span>
-        <h3>品牌洞察</h3>
-        <p>红人×品牌×内容三方洞察 + 众筹科技产品雷达，为口播与选品供弹药。</p>
-      </a>
       <a class="mx-card rv" href="brand-growth.html">
         <span class="mt">Growth</span>
         <h3>品牌增长服务</h3>
@@ -1525,11 +2160,6 @@ footer{
         <span class="mt">Trade Shows</span>
         <h3>展会服务</h3>
         <p>选展规划、展位搭建、样品物流、买家邀约与展后跟进——线下渠道的见面引擎。</p>
-      </a>
-      <a class="mx-card rv" href="data-platforms.html">
-        <span class="mt">Data</span>
-        <h3>业务数据订阅</h3>
-        <p>六条订阅线：选品与市场、定价促销、消费者评论、竞品动态、众筹信号、品牌声量。</p>
       </a>
     </div>
   </div>
@@ -1556,6 +2186,8 @@ footer{
           <a href="#services">服务体系</a>
           <a href="#channels">渠道网络</a>
           <a href="#entries">卖家入口</a>
+          <a href="#insights">品牌洞察</a>
+          <a href="#data">数据订阅</a>
           <a href="#success">成功案例</a>
           <a href="#faq">常见问题</a>
         </div>
@@ -1577,6 +2209,102 @@ footer{
     </div>
   </div>
 </footer>
+
+<!-- ================= REGISTER MODAL ================= -->
+<div class="modal-bg" id="regModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="regTitle">
+    <button class="modal-x" id="regClose" aria-label="关闭">×</button>
+    <div id="regFormWrap">
+      <span class="gv-k">Free Registration</span>
+      <h3 id="regTitle">注册解锁完整服务目录</h3>
+      <p class="mod-sub">公开页面看能力，注册后看细节：服务体系、卖家入口、品牌洞察、数据订阅、入驻流程与成功案例。免费，1 个工作日内跟进。</p>
+      <form id="regForm" novalidate>
+        <div class="rgrid">
+          <div class="rfield">
+            <label for="r-name">姓名 <b>*</b></label>
+            <input id="r-name" name="name" type="text" required autocomplete="name" placeholder="怎么称呼你">
+          </div>
+          <div class="rfield">
+            <label for="r-email">邮箱 <b>*</b></label>
+            <input id="r-email" name="email" type="email" required autocomplete="email" placeholder="name@company.com">
+          </div>
+          <div class="rfield full">
+            <label for="r-company">公司 / 品牌</label>
+            <input id="r-company" name="company" type="text" autocomplete="organization" placeholder="工厂、品牌方或团队名称">
+          </div>
+          <div class="rfield">
+            <label for="r-role">你的角色</label>
+            <select id="r-role" name="role">
+              <option value="工厂 / 供应商">工厂 / 供应商</option>
+              <option value="品牌方">品牌方</option>
+              <option value="红人 / 创作者">红人 / 创作者</option>
+              <option value="服务商 / 同行">服务商 / 同行</option>
+              <option value="其他">其他</option>
+            </select>
+          </div>
+          <div class="rfield">
+            <label for="r-intent">意向方向</label>
+            <select id="r-intent" name="intent">
+              <option value="OEM 来图代工">OEM 来图代工</option>
+              <option value="ODM 选款贴牌">ODM 选款贴牌</option>
+              <option value="OBM 品牌出海">OBM 品牌出海</option>
+              <option value="营销 / 红人服务">营销 / 红人服务</option>
+              <option value="数据订阅">数据订阅</option>
+              <option value="Agent / ERP 定制">Agent / ERP 定制</option>
+              <option value="先了解">先了解</option>
+            </select>
+          </div>
+          <div class="rfoot">
+            <button class="btn-primary" type="submit">免费注册，立即解锁 →</button>
+            <p class="rhint">注册即视为同意平台条款 · 信息仅用于业务对接，不向第三方传输<br>CRM 账号体系接入中——当前注册信息暂存本地，可一键同步招商邮箱</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="rsuccess" id="regSuccess">
+      <span class="ok-tag">Unlocked</span>
+      <h4>注册完成，服务目录已解锁</h4>
+      <p>导航栏的服务体系、品牌洞察、数据订阅、成功案例与常见问题已全部展开。你的专属注册编号：</p>
+      <div class="rpayload" id="regPayload"></div>
+      <div class="btn-row">
+        <a class="btn-primary" id="regMail" href="#">同步给招商邮箱 →</a>
+        <button class="btn-ghost" id="regCopy">复制注册信息</button>
+        <button class="btn-ghost" id="regDone">完成</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= AGENT CHAT WIDGET ================= -->
+<div class="aiw" id="aiw">
+  <button class="aiw-fab" id="aiwFab" aria-label="打开 Agent 客服">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a1 1 0 0 1 1 1v1.05A7.5 7.5 0 0 1 19.5 11v4.5l1.7 2.55a1 1 0 0 1-.83 1.55H3.63a1 1 0 0 1-.83-1.55L4.5 15.5V11a7.5 7.5 0 0 1 6.5-7.45V3a1 1 0 0 1 1-1zm0 20a3 3 0 0 1-2.83-2h5.66A3 3 0 0 1 12 22z"/></svg>
+    <span class="aiw-badge" id="aiwBadge">1</span>
+  </button>
+  <div class="aiw-panel" id="aiwPanel" aria-hidden="true">
+    <div class="aiw-head">
+      <span class="aiw-dot"></span>
+      <div>
+        <span class="t">insightmarketplac 客服 Agent</span>
+        <span class="s">AI 值守 · 24/7 在线 · 秒回</span>
+      </div>
+    </div>
+    <div class="aiw-msgs" id="aiwMsgs"></div>
+    <div class="aiw-chips" id="aiwChips">
+      <button type="button" data-q="我想入驻，怎么开始？">我想入驻</button>
+      <button type="button" data-q="收费模式是怎样的？">收费模式</button>
+      <button type="button" data-q="OEM / ODM / OBM 有什么区别？">合作模式区别</button>
+      <button type="button" data-q="红人营销怎么合作？">红人营销</button>
+      <button type="button" data-q="注册解锁有什么用？">注册解锁</button>
+      <button type="button" data-q="怎么预约会议？">预约会议</button>
+    </div>
+    <form class="aiw-input" id="aiwForm">
+      <input id="aiwText" type="text" placeholder="问渠道、模式、收费、红人…" autocomplete="off" aria-label="输入消息">
+      <button type="submit" aria-label="发送">→</button>
+    </form>
+    <div class="aiw-foot">本站客服由 AI Agent 值守 · 复杂问题转人工（1 个工作日）</div>
+  </div>
+</div>
 
 <script>
 (function(){
@@ -1793,6 +2521,205 @@ footer{
     document.body.appendChild(a);
     a.click();
     setTimeout(function(){URL.revokeObjectURL(a.href);document.body.removeChild(a)},1000);
+  });
+})();
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ================= registration gate ================= */
+  var REG_KEY="im_reg_v1",LEADS_KEY="im_leads_v1";
+  var MEET_MAIL="haidong.zhou@outlook.com";
+  var modal=document.getElementById("regModal");
+  var formWrap=document.getElementById("regFormWrap");
+  var successBox=document.getElementById("regSuccess");
+  var form=document.getElementById("regForm");
+  var navReg=document.getElementById("navReg");
+  var navUser=document.getElementById("navUser");
+
+  function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+  function readReg(){try{return JSON.parse(localStorage.getItem(REG_KEY)||"null")}catch(e){return null}}
+
+  function applyReg(){
+    var reg=readReg();
+    if(reg&&reg.name){
+      document.body.classList.add("registered");
+      navUser.textContent=reg.company||reg.name;
+      navUser.title="已注册："+reg.name+" · 点击退出登录";
+    }else{
+      document.body.classList.remove("registered");
+      navUser.textContent="";
+    }
+  }
+  applyReg();
+
+  function mailBody(reg){
+    return "insightmarketplac 网站注册\n\n注册编号："+reg.ref+"\n姓名："+reg.name+"\n邮箱："+reg.email+
+      "\n公司 / 品牌："+(reg.company||"—")+"\n角色："+reg.role+"\n意向方向："+reg.intent+
+      "\n注册时间："+reg.ts+"\n页面："+(reg.page||"sell-on-oem-odm.html");
+  }
+  function showSuccess(reg){
+    document.getElementById("regPayload").textContent=reg.ref+" · "+reg.email;
+    document.getElementById("regMail").href="mailto:"+MEET_MAIL+
+      "?subject="+encodeURIComponent("网站注册｜"+(reg.company||reg.name)+"｜"+reg.ref)+
+      "&body="+encodeURIComponent(mailBody(reg));
+    formWrap.style.display="none";
+    successBox.classList.add("show");
+  }
+
+  function openModal(){
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    var reg=readReg();
+    if(reg&&reg.ref){showSuccess(reg)}
+    else{
+      formWrap.style.display="";
+      successBox.classList.remove("show");
+      setTimeout(function(){var f=document.getElementById("r-name");if(f)f.focus()},80);
+    }
+  }
+  function closeModal(){modal.classList.remove("open");modal.setAttribute("aria-hidden","true")}
+
+  navReg.addEventListener("click",openModal);
+  document.addEventListener("click",function(e){
+    var t=e.target&&e.target.closest?e.target.closest("[data-reg-open]"):null;
+    if(t){e.preventDefault();openModal()}
+  });
+  document.getElementById("regClose").addEventListener("click",closeModal);
+  modal.addEventListener("click",function(e){if(e.target===modal)closeModal()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")closeModal()});
+
+  navUser.addEventListener("click",function(){
+    if(!readReg())return;
+    if(window.confirm("退出登录？页面将回到未注册视图，服务目录重新上锁。")){
+      localStorage.removeItem(REG_KEY);
+      applyReg();
+    }
+  });
+
+  form.addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var name=document.getElementById("r-name").value.trim();
+    var email=document.getElementById("r-email").value.trim();
+    if(!name){document.getElementById("r-name").focus();return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){document.getElementById("r-email").focus();return}
+    var reg={
+      ref:"REG-2026-"+String(Math.floor(1000+Math.random()*9000)),
+      name:name,
+      email:email,
+      company:document.getElementById("r-company").value.trim(),
+      role:document.getElementById("r-role").value,
+      intent:document.getElementById("r-intent").value,
+      ts:new Date().toISOString(),
+      page:(location.pathname.split("/").pop()||"sell-on-oem-odm.html")
+    };
+    localStorage.setItem(REG_KEY,JSON.stringify(reg));
+    try{
+      var leads=JSON.parse(localStorage.getItem(LEADS_KEY)||"[]");
+      leads.push(reg);
+      localStorage.setItem(LEADS_KEY,JSON.stringify(leads));
+    }catch(e){}
+    applyReg();
+    showSuccess(reg);
+  });
+
+  document.getElementById("regDone").addEventListener("click",closeModal);
+  document.getElementById("regCopy").addEventListener("click",function(){
+    var reg=readReg();if(!reg)return;
+    var text=mailBody(reg);
+    var self=this;
+    function done(){self.textContent="已复制 ✓";setTimeout(function(){self.textContent="复制注册信息"},2000)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,done)}else{done()}
+  });
+
+  window.__imExportLeads=function(){try{return JSON.parse(localStorage.getItem(LEADS_KEY)||"[]")}catch(e){return []}};
+
+  /* ================= agent chat ================= */
+  var fab=document.getElementById("aiwFab");
+  var panel=document.getElementById("aiwPanel");
+  var badge=document.getElementById("aiwBadge");
+  var msgs=document.getElementById("aiwMsgs");
+  var chatForm=document.getElementById("aiwForm");
+  var chatInput=document.getElementById("aiwText");
+  var greeted=false;
+
+  function addMsg(role,html){
+    var d=document.createElement("div");
+    d.className="msg "+role;
+    d.innerHTML=html;
+    msgs.appendChild(d);
+    msgs.scrollTop=msgs.scrollHeight;
+    return d;
+  }
+  function botReply(html){
+    var t=addMsg("bot typing","<i></i><i></i><i></i>");
+    setTimeout(function(){t.classList.remove("typing");t.innerHTML=html;msgs.scrollTop=msgs.scrollHeight},620+Math.random()*520);
+  }
+  function link(anchor,text){return '<a href="'+anchor+'">'+text+'</a>'}
+
+  var KB=[
+    {k:["入驻","开始","合作","申请","onboard","start"],
+     a:function(){return "入驻三步走：<b>①</b> 准备营业执照与货盘资料；<b>②</b> 页面底部「申请入驻」表单提交；<b>③</b> 招商团队 1–3 个工作日联系你完成资质初审与选品沟通。也可以直接 "+link("#meet","预约一次 30 分钟会议")+" 当面聊。"}},
+    {k:["收费","价格","多少钱","费用","pricing","cost"],
+     a:function(){return "两档收费，按月合作不签长约：<b>分成档</b>（$0 基础费 + 按销售额分成，起步期友好）和 <b>固定档</b>（$499/月起全包无抽成，适合月销 $5k+ 的稳定品牌）。OEM 库存买断不收服务费——PO 结算，交货即收款。详见 "+link("#pricing","收费模式")+"。"}},
+    {k:["oem","odm","obm","模式","区别","代工","贴牌","出海"],
+     a:function(){return "一句话讲清三种模式：<b>OEM</b> 来图代工——他的图纸他的规格，工厂交货即收款；<b>ODM</b> 选款贴牌——你的设计 + 海外仓备货，赚设计+制造利润；<b>OBM</b> 品牌出海——自有品牌直达消费者，赚制造+品牌溢价。路径可递进：从 OEM 起步，成熟后升级。详见 "+link("#models","合作模式")+"。"}},
+    {k:["渠道","平台","沃尔玛","walmart","amazon","亚马逊","店铺","开店","零售"],
+     a:function(){return "20+ 渠道网络：美国主流零售为主场（Walmart、Target、Costco、Best Buy 等），欧洲、中东、亚太、澳新与俄语区并行。一个团队管全部渠道的 listing、广告与定价。详见 "+link("#channels","渠道加速")+"。"}},
+    {k:["红人","网红","kol","influencer","达人","博主","营销","社媒","instagram","youtube","内容","短剧","网剧","ugc"],
+     a:function(){return "红人营销按品类匹配美国红人：头部造声量、腰部做转化、尾部铺内容矩阵，自有经纪资源池排期价格可控。营销板块用六项自有能力（社媒·红人·内容·渠道·Agent·数据资产）交付五项成果：品牌运营、网站、社媒、渠道扩张、售后优化。详见 "+link("#influencer","红人营销")+" 与 "+link("#marketing","营销板块")+"。"}},
+    {k:["数据","订阅","报告","token","情报","洞察"],
+     a:function(){return "业务数据订阅六条线：选品与市场、定价与促销、消费者与评论、竞品动态、众筹信号、品牌声量——按类目/平台/价格/国家细分，以数据 token、周期数据包或订阅报告交付。注册后可见完整目录 "+link("#data","数据订阅")+"。"}},
+    {k:["agent","智能体","机器人","erp","系统","定制","软件"],
+     a:function(){return "两项定制能力：<b>Agent 定制</b>——智能客服、选品助手、投放托管、数据周报，私有部署或云端；<b>ERP 定制</b>——订单、库存、财务一体化，与 20+ 渠道账号原生集成。你现在对话的就是我们的 Agent 客服。详见 "+link("#models","Agent / ERP 定制")+"。"}},
+    {k:["注册","解锁","会员","register","账号","login","登录"],
+     a:function(){return "注册免费，解锁完整服务目录：服务体系、卖家入口、品牌洞察、数据订阅、入驻流程、成功案例与常见问题。点导航栏「注册解锁」或门帘上的按钮即可，1 个工作日内有专人跟进。"}},
+    {k:["会议","预约","demo","见面","联系","contact","邮件","email","电话"],
+     a:function(){return "预约 30 分钟线上会议：页面下方「预约会议」表单，选好时间提交后自动生成邮件与日历邀请。招商邮箱 haidong.zhou@outlook.com，1 个工作日内响应。直接 "+link("#meet","去预约")+"。"}},
+    {k:["物流","仓库","仓储","发货","配送","尾程","头程","供应链","库存"],
+     a:function(){return "端到端仓配履约：头程运输、美国海外仓储与尾程派送一体打通，99.8% 当日出库、85% 次日达覆盖。OEM 模式工厂交货即可；ODM / OBM 需海外仓备货。详见 "+link("#services","服务体系")+"（注册后可见）。"}},
+    {k:["展会","exhibition","展览"],
+     a:function(){return "展会服务覆盖选展规划、展位搭建、样品物流、买家邀约与展后跟进——线下渠道的见面引擎，日历上已有 12 个主要展会。注册后可在延伸服务里看详情。"}}
+  ];
+  var FALLBACK="这个问题我先记下了——你可以 "+link("#meet","预约一次 30 分钟会议")+" 让真人解答，或 "+link("#apply","提交入驻申请")+" 等招商团队 1–3 个工作日跟进。";
+
+  function answer(q){
+    var s=q.toLowerCase();
+    for(var i=0;i<KB.length;i++){
+      for(var j=0;j<KB[i].k.length;j++){
+        var kw=KB[i].k[j].toLowerCase();
+        if(s.indexOf(kw)>-1||q.indexOf(kw)>-1){return KB[i].a()}
+      }
+    }
+    return FALLBACK;
+  }
+  function send(q){
+    if(!q.trim())return;
+    addMsg("user",esc(q));
+    botReply(answer(q));
+  }
+
+  fab.addEventListener("click",function(){
+    var open=panel.classList.toggle("open");
+    panel.setAttribute("aria-hidden",open?"false":"true");
+    if(badge){badge.style.display="none"}
+    if(open&&!greeted){
+      greeted=true;
+      botReply("你好，我是 <b>insightmarketplac 客服 Agent</b>。渠道入驻、OEM / ODM / OBM、收费模式、红人营销……都能问我，也可以点下方快捷提问。");
+    }
+    if(open){setTimeout(function(){chatInput.focus()},120)}
+  });
+
+  document.getElementById("aiwChips").addEventListener("click",function(e){
+    var b=e.target&&e.target.closest?e.target.closest("button[data-q]"):null;
+    if(b){send(b.getAttribute("data-q"))}
+  });
+  chatForm.addEventListener("submit",function(ev){
+    ev.preventDefault();
+    send(chatInput.value);
+    chatInput.value="";
   });
 })();
 </script>
