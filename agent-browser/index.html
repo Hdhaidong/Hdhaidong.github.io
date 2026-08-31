@@ -63,10 +63,72 @@
 
 <section>
   <div class="wrap">
+    <h2>Architecture</h2>
+    <p class="lead">The plan is the spine — pages, evidence and side effects all hang off a stated goal.</p>
+    <figure class="arch">
+    <svg viewBox="0 0 960 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agent Browser architecture — a workflow engine drives a page pool and session capture, a supervised write gate guards side effects, outputs are projections of captured sessions">
+      <defs>
+        <marker id="b1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7c5cff"/></marker>
+      </defs>
+      <rect x="30" y="20" width="900" height="48" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="480" y="42" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Goal — stated once</text>
+      <text x="480" y="60" text-anchor="middle" fill="#93a0ba" font-size="11">check these prices weekly · watch that competitor · research this</text>
+      <line x1="480" y1="68" x2="480" y2="88" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <rect x="30" y="88" width="900" height="62" rx="10" fill="#161d2e" stroke="#38e0b0"/>
+      <text x="480" y="112" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Workflow engine</text>
+      <text x="480" y="132" text-anchor="middle" fill="#93a0ba" font-size="11">plans as first-class objects — pages opened in order, toward the goal</text>
+      <line x1="250" y1="150" x2="250" y2="170" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <line x1="710" y1="150" x2="710" y2="170" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <rect x="30" y="170" width="440" height="70" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="250" y="196" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Page pool</text>
+      <text x="250" y="216" text-anchor="middle" fill="#93a0ba" font-size="10.5">pages as agent-managed resources, not tabs</text>
+      <text x="250" y="230" text-anchor="middle" fill="#93a0ba" font-size="10.5">opened and closed by the plan</text>
+      <rect x="490" y="170" width="440" height="70" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="710" y="196" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Session capture</text>
+      <text x="710" y="216" text-anchor="middle" fill="#93a0ba" font-size="10.5">what the agent saw and did, per run</text>
+      <text x="710" y="230" text-anchor="middle" fill="#93a0ba" font-size="10.5">findings trace back to pages</text>
+      <line x1="250" y1="240" x2="250" y2="260" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <line x1="710" y1="240" x2="710" y2="260" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <rect x="30" y="260" width="900" height="56" rx="10" fill="#161d2e" stroke="#ffb454"/>
+      <text x="480" y="282" text-anchor="middle" fill="#ffb454" font-size="14" font-weight="600">Supervised write gate</text>
+      <text x="480" y="302" text-anchor="middle" fill="#93a0ba" font-size="11">logins · purchases · submissions — actions with side effects pause for human confirmation</text>
+      <line x1="180" y1="316" x2="180" y2="336" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <line x1="480" y1="316" x2="480" y2="336" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <line x1="780" y1="316" x2="780" y2="336" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#b1)"/>
+      <rect x="30" y="336" width="286" height="66" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="173" y="362" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Sourced reports</text>
+      <text x="173" y="382" text-anchor="middle" fill="#93a0ba" font-size="10.5">every claim links to the</text>
+      <text x="173" y="396" text-anchor="middle" fill="#93a0ba" font-size="10.5">page it came from</text>
+      <rect x="337" y="336" width="286" height="66" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="480" y="362" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Diff-only alerts</text>
+      <text x="480" y="382" text-anchor="middle" fill="#93a0ba" font-size="10.5">recurring passes report</text>
+      <text x="480" y="396" text-anchor="middle" fill="#93a0ba" font-size="10.5">only what changed</text>
+      <rect x="644" y="336" width="286" height="66" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="787" y="362" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Session replay</text>
+      <text x="787" y="382" text-anchor="middle" fill="#93a0ba" font-size="10.5">the run, recorded —</text>
+      <text x="787" y="396" text-anchor="middle" fill="#93a0ba" font-size="10.5">auditable after the fact</text>
+    </svg>
+    <figcaption>The engine turns a goal into a plan; pages flow through the pool into the evidence store; side-effecting actions pass a human gate; outputs are projections of captured sessions.</figcaption>
+    </figure>
+    <table class="lay">
+      <tr><th>Component</th><th>Design</th></tr>
+      <tr><td>Workflow engine</td><td>Plans as first-class objects — pages opened in order, toward a goal stated once</td></tr>
+      <tr><td>Page pool</td><td>Pages are agent-managed resources, not human filing tabs; opened and closed by the plan</td></tr>
+      <tr><td>Session capture</td><td>Per-session record of what the agent saw and did — findings traceable to their pages</td></tr>
+      <tr><td>Write gate</td><td>Logins, purchases and submissions pause for human confirmation</td></tr>
+      <tr><td>Research passes</td><td>Scheduled recurring checks that report only what changed</td></tr>
+      <tr><td>Pairing</td><td>Research ends of the same workflow live in <a href="/reddit-radar-workbench/">Reddit Radar Workbench</a> and <a href="/amazon-product-scout/">Amazon Product Scout</a></td></tr>
+      <tr><td>Disclosure</td><td>Principle-level description — source code stays unpublished</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>Why it matters</h2>
     <p class="lead">The browser is where agents meet the real world. Right now they borrow ours.</p>
     <p style="color:var(--dim);max-width:720px">Today's agents operate through tools bolted onto a human browser — fighting captchas, layouts and sessions designed for eyes. Agent Browser starts from the other end: the web as an API surface for supervised agents, with the human keeping the wheel. It pairs with <a href="/reddit-radar-workbench/">Reddit Radar Workbench</a> and <a href="/amazon-product-scout/">Amazon Product Scout</a>, which automate the research ends of the same workflow.</p>
-    <div class="note-priv">Private concept — introduced by positioning only. Source code is not published.</div>
+    <div class="note-priv">Private concept — architecture described at principle level. Source code is not published.</div>
   </div>
 </section>
 
