@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>haidong zhou — AI hardware &amp; agent systems · Shenzhen</title>
+<meta name="description" content="Portfolio of haidong zhou: open-source AI-agent hardware (OpenWorker Deck, Grok Deck), business agent tools, and private platform builds. Shenzhen, AI hardware development.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hdhaidong.github.io/">
+<meta property="og:title" content="haidong zhou — AI hardware &amp; agent systems">
+<meta property="og:description" content="Building bodies for AI agents, and the systems brands run on. Open-source hardware + private platform builds.">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#0d1119;--bg2:#111623;--card:#161d2e;--line:#232c44;--txt:#e8edf7;--dim:#93a0ba;--acc:#7c5cff;--acc2:#38e0b0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{padding:96px 0 64px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#101527 0%,var(--bg) 100%)}
+.hero .badge{display:inline-block;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--acc2);border:1px solid rgba(56,224,176,.3);border-radius:99px;padding:5px 14px;margin-bottom:22px}
+.hero h1{font-size:clamp(34px,5vw,52px);line-height:1.15;letter-spacing:-.02em;font-weight:800}
+.hero h1 .hl{color:var(--acc)}
+.hero p.sub{margin-top:18px;max-width:640px;color:var(--dim);font-size:17px}
+.hero .meta{margin-top:22px;color:var(--dim);font-size:14px}
+.hero .meta b{color:var(--txt);font-weight:600}
+section{padding:56px 0}
+section h2{font-size:26px;font-weight:700;letter-spacing:-.01em;margin-bottom:6px}
+section .lead{color:var(--dim);font-size:15px;margin-bottom:28px}
+section + section{border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card .tag{display:inline-block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;border-radius:6px;padding:2px 8px;margin-bottom:12px;font-weight:600}
+.card .tag.open{color:var(--acc2);background:rgba(56,224,176,.1)}
+.card .tag.priv{color:#ffb454;background:rgba(255,180,84,.1)}
+.card .tag.hw{color:var(--acc);background:rgba(124,92,255,.12)}
+.card h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.card p{font-size:14px;color:var(--dim)}
+.card .links{margin-top:14px;font-size:13px;display:flex;gap:16px;flex-wrap:wrap}
+.card.feature{grid-column:1/-1;display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center;padding:28px}
+.card.feature .thumb{border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#0a0e18}
+.card.feature .thumb img{display:block;width:100%;height:auto}
+@media(max-width:760px){.card.feature{grid-template-columns:1fr}}
+.card ul{margin:10px 0 0;padding-left:18px;font-size:13.5px;color:var(--dim)}
+.card ul li{margin-bottom:4px}
+footer{border-top:1px solid var(--line);padding:34px 0 48px;color:var(--dim);font-size:13px}
+footer .flinks{display:flex;gap:20px;flex-wrap:wrap;margin-top:8px}
+.note-priv{font-size:12.5px;color:var(--dim);margin-top:14px;padding:10px 14px;border:1px dashed var(--line);border-radius:8px;background:rgba(255,180,84,.04)}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="badge">Shenzhen · AI Hardware Development</div>
+    <h1>haidong zhou<br><span class="hl">I build bodies for AI agents —<br>and the systems brands run on.</span></h1>
+    <p class="sub">Open-source hardware companions for AI agents, business-agent tooling for e-commerce research — plus a private line of platform builds for agency operations, brand management and edge devices. Compute where it serves you; data stays where it belongs.</p>
+    <p class="meta"><b>@haidongzhou00</b> on X · <b>Hdhaidong</b> on GitHub · bilingual (EN / 中文)</p>
+  </div>
+</div>
+
+<section id="featured">
+  <div class="wrap">
+    <h2>Flagship · Open-source agent hardware</h2>
+    <p class="lead">One production line, any brain: industrial + wireless gateways that let AI agents touch real machines — through a physical Approve gate.</p>
+    <div class="grid">
+      <div class="card feature">
+        <div>
+          <span class="tag open">Open Source · MIT Firmware</span>
+          <h3>OpenWorker Deck</h3>
+          <p>Give your AI coworker a body. A TRAE-style desk agent console + industrial gateway: Modbus (RTU/TCP), CAN/J1939, OBD-II, BLE 5.2, LoRa — smart link (MHS-native), on-device local model, detection, removable encrypted privacy cartridge. Compute-storage separation: pull the card, and the whole history leaves with it.</p>
+          <ul>
+            <li>Four pillars: smart link · local model · detection · privacy storage</li>
+            <li>Physical Approve/Deny buttons for every device-write</li>
+            <li>Companion agent to <a href="https://github.com/andrewyng/openworker" target="_blank">OpenWorker</a>, MHS-compatible</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/Hdhaidong/openworker-deck" target="_blank">GitHub →</a>
+            <a href="https://hdhaidong.github.io/openworker-deck/" target="_blank">Product page →</a>
+          </div>
+        </div>
+        <div class="thumb"><img src="https://hdhaidong.github.io/openworker-deck/img/readme-hero.jpg" alt="OpenWorker Deck family lineup"></div>
+      </div>
+
+      <div class="card feature">
+        <div>
+          <span class="tag open">Open Source · Grok Edition</span>
+          <h3>Grok Deck</h3>
+          <p>Grok thinks. Here's its body. The dedicated Grok edition of the same hardware stack: on-device NPU sandbox, xAI cloud supercompute through the physical Approve gate, Starlink backhaul off-grid, prepaid compute credit in an encrypted cold-wallet cartridge.</p>
+          <ul>
+            <li>Three compute layers, one hardware boundary</li>
+            <li>"Compute in space. Data in the card."</li>
+            <li>Independent community project — not affiliated with xAI</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/Hdhaidong/grok-deck" target="_blank">GitHub →</a>
+            <a href="https://hdhaidong.github.io/grok-deck/" target="_blank">Product page →</a>
+          </div>
+        </div>
+        <div class="thumb"><img src="https://hdhaidong.github.io/grok-deck/img/x-post-hero.jpg" alt="Grok Deck — gateway on a night ridge under a satellite train"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>Business agent tools · Open-source</h2>
+    <p class="lead">Agents that do the research legwork — niche discovery, competitor intel, social listening — built on real e-commerce workflows.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="tag open">Open Source</span>
+        <h3>Amazon Product Scout</h3>
+        <p>Amazon niche research, product development and competitor tracking — a custom business agent built on OpenWorker. From market scan to listing analysis.</p>
+        <div class="links"><a href="https://github.com/Hdhaidong/amazon-product-scout" target="_blank">GitHub →</a></div>
+      </div>
+      <div class="card">
+        <span class="tag open">Open Source</span>
+        <h3>Reddit Radar Workbench</h3>
+        <p>Reddit social research workbench — pain points, buy signals, competitor intel and auto-generated reports. Electron + OAuth desktop app.</p>
+        <div class="links"><a href="https://github.com/Hdhaidong/reddit-radar-workbench" target="_blank">GitHub →</a></div>
+      </div>
+      <div class="card">
+        <span class="tag open">Open Source</span>
+        <h3>SupaNuxt SaaS</h3>
+        <p>Production-ready SaaS boilerplate: Nuxt3, Supabase, OAuth, Prisma, tRPC, Pinia, Stripe, Tailwind, OpenAI — the base under my platform builds.</p>
+        <div class="links"><a href="https://github.com/Hdhaidong/supanuxt-saas" target="_blank">GitHub →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="private">
+  <div class="wrap">
+    <h2>Private builds · Concept introductions</h2>
+    <p class="lead">A line of closed-source products for agency operations, brand management and personal intelligence. Code stays private — this is what they do.</p>
+    <div class="grid">
+      <div class="card">
+        <span class="tag priv">Private · Desktop Platform</span>
+        <h3>insightmarketplac</h3>
+        <p>Brand-operations marketplace platform for agency teams — 12 business partitions and 62 page surfaces covering the full client lifecycle: accounts, campaign management, brand assets, reporting and operations dashboards in one desktop build.</p>
+      </div>
+      <div class="card">
+        <span class="tag priv">Private · Business System</span>
+        <h3>Agency CRM</h3>
+        <p>Customer-relationship system built for agency operations and brand management: client pipelines, contact history, campaign touchpoints and renewal signals — the spine under multi-brand account management.</p>
+      </div>
+      <div class="card">
+        <span class="tag priv">Private · Edge Hardware</span>
+        <h3>PI · Pocket Intelligence</h3>
+        <p>A pocketable edge-AI companion in the Deck family tradition: local-first inference, physical consent control, and private storage you can pull out and carry — intelligence that lives next to you, not in someone else's cloud.</p>
+      </div>
+      <div class="card">
+        <span class="tag priv">Private · Application</span>
+        <h3>Agent Browser</h3>
+        <p>A browser built around agents instead of tabs: agentic web workflows, automated research passes and session capture — the everyday surface where the agent's hands meet the open web.</p>
+      </div>
+    </div>
+    <div class="note-priv">Private builds are introduced by concept only. Source code, deployments and client data are not published. Names and scope descriptions reflect the product line, not any single client engagement.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 haidong zhou · Shenzhen</div>
+    <div class="flinks">
+      <a href="https://github.com/Hdhaidong" target="_blank">GitHub</a>
+      <a href="https://x.com/haidongzhou00" target="_blank">X / @haidongzhou00</a>
+      <a href="https://hdhaidong.github.io/openworker-deck/" target="_blank">OpenWorker Deck</a>
+      <a href="https://hdhaidong.github.io/grok-deck/" target="_blank">Grok Deck</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
