@@ -363,13 +363,19 @@ section{padding:130px 0}
 .us-partners{
   margin-top:58px;
   border:1px solid var(--hairline);
-  padding:12px;
+  padding:24px 24px 22px;
 }
-.us-partners img{width:100%}
-.us-partners figcaption{
+.pw-caption{
   font-family:var(--mono);font-size:11px;letter-spacing:.2em;
-  color:var(--ink-faint);margin-top:12px;text-transform:uppercase;
+  color:var(--ink-faint);text-transform:uppercase;margin-bottom:16px;
 }
+.pw-grid{display:flex;flex-wrap:wrap;gap:9px}
+.pw-grid span{
+  font-family:var(--mono);font-size:13px;letter-spacing:.07em;
+  color:var(--ink-dim);border:1px solid var(--hairline);
+  padding:8px 15px;border-radius:4px;transition:color .25s,border-color .25s;
+}
+.pw-grid span:hover{color:var(--accent);border-color:rgba(232,163,61,.45)}
 .regions{margin-top:80px}
 .region{
   display:grid;grid-template-columns:230px 1fr;gap:36px;
@@ -716,8 +722,8 @@ footer{
       <a href="#services">Services</a>
       <a href="#channels">Channels</a>
       <a href="#entries">Seller Entries</a>
-      <a href="insights.html">Insights</a>
-      <a href="data-platforms.html">Data Directory</a>
+      <a href="insights.html">Brand Insights</a>
+      <a href="data-platforms.html">Data Subscriptions</a>
       <a href="#process">Process</a>
       <a href="#success">Stories</a>
       <a href="#faq">FAQ</a>
@@ -917,10 +923,12 @@ footer{
       <p class="section-lead">US major retail as home turf — with channels running in parallel across Europe, META, Asia-Pacific, ANZ, and the CIS. One team runs every channel's listings, ads, and pricing.</p>
     </div>
 
-    <figure class="us-partners rv">
-      <img loading="lazy" src="assets/us-retail-partners.png" alt="Wall of US retail partner logos">
-      <figcaption>US Retail Partners · A selection of America's biggest retailers</figcaption>
-    </figure>
+    <div class="us-partners rv">
+      <div class="pw-caption">US Retail Partners · A selection of America's biggest retailers</div>
+      <div class="pw-grid" role="list" aria-label="US retail partners">
+        <span>Walmart</span><span>Sam's Club</span><span>Target</span><span>Costco</span><span>Best Buy</span><span>Macy's</span><span>Kohl's</span><span>Kroger</span><span>Publix</span><span>H-E-B</span><span>Meijer</span><span>Fred Meyer</span><span>TJ Maxx</span><span>Marshalls</span><span>JCPenney</span><span>Belk</span><span>Dollar General</span><span>Family Dollar</span><span>True Value</span><span>Walgreens</span>
+      </div>
+    </div>
 
     <div class="marquee rv" aria-label="Global channels list">
       <div class="marquee-track">
@@ -1491,14 +1499,14 @@ footer{
           <a href="#services">Services</a>
           <a href="#channels">Channels</a>
           <a href="#entries">Seller Entries</a>
-          <a href="data-platforms.html">Retail Data Directory</a>
+          <a href="data-platforms.html">Data Subscriptions</a>
           <a href="#success">Stories</a>
           <a href="#faq">FAQ</a>
         </div>
         <div class="foot-col">
           <h4>More Services</h4>
           <a href="overview-en.html">Business Overview</a>
-          <a href="insights.html">Insights Center</a>
+          <a href="insights.html">Brand Insights</a>
           <a href="brand-growth.html">Brand Growth Services</a>
           <a href="compliance.html">Compliance &amp; Entity</a>
           <a href="systems.html">Systems: ERP / WMS / CRM</a>

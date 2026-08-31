@@ -367,13 +367,19 @@ section{padding:130px 0}
 .us-partners{
   margin-top:58px;
   border:1px solid var(--hairline);
-  padding:12px;
+  padding:24px 24px 22px;
 }
-.us-partners img{width:100%}
-.us-partners figcaption{
+.pw-caption{
   font-family:var(--mono);font-size:11px;letter-spacing:.2em;
-  color:var(--ink-faint);margin-top:12px;text-transform:uppercase;
+  color:var(--ink-faint);text-transform:uppercase;margin-bottom:16px;
 }
+.pw-grid{display:flex;flex-wrap:wrap;gap:9px}
+.pw-grid span{
+  font-family:var(--mono);font-size:13px;letter-spacing:.07em;
+  color:var(--ink-dim);border:1px solid var(--hairline);
+  padding:8px 15px;border-radius:4px;transition:color .25s,border-color .25s;
+}
+.pw-grid span:hover{color:var(--accent);border-color:rgba(232,163,61,.45)}
 .regions{margin-top:80px}
 .region{
   display:grid;grid-template-columns:230px 1fr;gap:36px;
@@ -719,8 +725,8 @@ footer{
       <a href="#services">服务体系</a>
       <a href="#channels">渠道网络</a>
       <a href="#entries">卖家入口</a>
-      <a href="insights.html">洞察中心</a>
-      <a href="data-platforms.html">数据目录</a>
+      <a href="insights.html">品牌洞察</a>
+      <a href="data-platforms.html">数据订阅</a>
       <a href="#process">入驻流程</a>
       <a href="#success">成功案例</a>
       <a href="#faq">常见问题</a>
@@ -920,10 +926,12 @@ footer{
       <p class="section-lead">以美国主流零售为主场，欧洲、中东、亚太、澳新与俄语区渠道并行——一个团队，管全部渠道的 listing、广告与定价。</p>
     </div>
 
-    <figure class="us-partners rv">
-      <img loading="lazy" src="assets/us-retail-partners.png" alt="美国主流零售合作伙伴 logo 墙">
-      <figcaption>US Retail Partners · 美国主流零售合作伙伴（部分）</figcaption>
-    </figure>
+    <div class="us-partners rv">
+      <div class="pw-caption">US Retail Partners · 美国主流零售合作伙伴（部分）</div>
+      <div class="pw-grid" role="list" aria-label="美国主流零售合作伙伴">
+        <span>Walmart</span><span>Sam's Club</span><span>Target</span><span>Costco</span><span>Best Buy</span><span>Macy's</span><span>Kohl's</span><span>Kroger</span><span>Publix</span><span>H-E-B</span><span>Meijer</span><span>Fred Meyer</span><span>TJ Maxx</span><span>Marshalls</span><span>JCPenney</span><span>Belk</span><span>Dollar General</span><span>Family Dollar</span><span>True Value</span><span>Walgreens</span>
+      </div>
+    </div>
 
     <div class="marquee rv" aria-label="全球渠道列表">
       <div class="marquee-track">
@@ -1495,7 +1503,7 @@ footer{
     <div class="mx-grid">
       <a class="mx-card rv" href="insights.html">
         <span class="mt">Insights</span>
-        <h3>洞察中心</h3>
+        <h3>品牌洞察</h3>
         <p>红人×品牌×内容三方洞察 + 众筹科技产品雷达，为口播与选品供弹药。</p>
       </a>
       <a class="mx-card rv" href="brand-growth.html">
@@ -1520,8 +1528,8 @@ footer{
       </a>
       <a class="mx-card rv" href="data-platforms.html">
         <span class="mt">Data</span>
-        <h3>零售数据平台目录</h3>
-        <p>59 个数据与增长工具导航：选品、定价、评论、广告与红人数据。</p>
+        <h3>业务数据订阅</h3>
+        <p>六条订阅线：选品与市场、定价促销、消费者评论、竞品动态、众筹信号、品牌声量。</p>
       </a>
     </div>
   </div>
@@ -1554,12 +1562,12 @@ footer{
         <div class="foot-col">
           <h4>延伸服务</h4>
           <a href="overview.html">全局业务总览</a>
-          <a href="insights.html">洞察中心</a>
+          <a href="insights.html">品牌洞察</a>
           <a href="brand-growth.html">品牌增长服务</a>
           <a href="compliance.html">合规与企业服务</a>
           <a href="systems.html">系统工具服务</a>
           <a href="exhibitions.html">展会服务</a>
-          <a href="data-platforms.html">零售数据目录</a>
+          <a href="data-platforms.html">业务数据订阅</a>
         </div>
       </div>
     </div>

@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>美国零售数据平台目录 · 59 个零售数据与增长工具速查（POS / 价格 / 消费者 / 库存）| insightmarketplac</title>
-<meta name="description" content="谁手里有美国零售数据、去哪买、怎么用——59 个平台按八大类整理：Retail Velocity、Crisp、Alloy.ai、Stackline、Profitero、Numerator、NielsenIQ、Datarade、Snowflake Marketplace、Toucan、Spreetail、Tradebyte、Brandsom、Cohere Commerce、Sapo、AtVenture 等，附「我想要…」快速索引与官网直达入口。">
-<meta name="keywords" content="零售数据平台,POS数据,沃尔玛销售数据,Target销售数据,消费者面板,Numerator,NielsenIQ,Profitero,Alloy.ai,Stackline,Retail Velocity,Crisp,数据市场,Datarade,Snowflake Marketplace">
+<title>业务数据订阅 · 选品 / 定价 / 消费者 / 竞品 / 众筹信号 / 品牌声量 | insightmarketplac</title>
+<meta name="description" content="insightmarketplac 业务数据订阅：六条订阅线——选品与市场、定价与促销、消费者与评论、竞品动态、众筹信号、品牌声量。数据 token（接口 / 数据包）、周期数据包与订阅报告三种形态交付，直接接入 ERP / CRM / 看板。数据源头不披露——你拿到的是结论与数据。">
+<meta name="keywords" content="业务数据订阅, 数据订阅服务, 数据token, 数据接口交付, 选品数据, 定价数据, 消费者洞察, 竞品监测, 众筹信号, 品牌声量, 数据周报, 数据包交付">
 <link rel="canonical" href="https://hdhaidong.github.io/supplier/data-platforms.html">
-<meta property="og:title" content="美国零售数据平台目录 · 59 个零售数据与增长工具速查">
-<meta property="og:description" content="自有 POS 数据、数字货架、消费者面板、数据市场——八大类 59 个平台，附「我想要…」快速索引。">
+<meta property="og:title" content="业务数据订阅 · 订阅结论，不碰源头">
+<meta property="og:description" content="六条业务数据订阅线，数据 token / 数据包 / 报告三种交付——接入你的系统，源头不披露。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://hdhaidong.github.io/supplier/data-platforms.html">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"美国零售数据平台目录","description":"59 个美国零售数据平台与工具，按八大类整理","numberOfItems":59}
+{"@context":"https://schema.org","@type":"Service","name":"insightmarketplac 业务数据订阅","description":"六条业务数据订阅线：选品与市场、定价与促销、消费者与评论、竞品动态、众筹信号、品牌声量。以数据 token（接口/数据包）、周期数据包与订阅报告交付，数据源头不披露。","provider":{"@type":"Organization","name":"insightmarketplac"}}
 </script>
 <style>
 :root{
@@ -46,7 +46,7 @@ a{color:inherit;text-decoration:none}
   background:radial-gradient(circle,rgba(232,163,61,.10) 0%,transparent 62%);pointer-events:none}
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.32em;color:var(--accent);text-transform:uppercase;margin-bottom:20px}
 h1{font-size:clamp(30px,4.6vw,52px);font-weight:700;letter-spacing:-.015em;line-height:1.18;max-width:820px}
-.hero-sub{margin-top:22px;color:var(--ink-dim);font-size:17px;max-width:720px}
+.hero-sub{margin-top:22px;color:var(--ink-dim);font-size:17px;max-width:760px}
 .hero-sub b{color:var(--ink);font-weight:600}
 .statrow{display:flex;gap:0;margin-top:42px;border:1px solid var(--rule);background:var(--bg-2);max-width:760px}
 .stat{flex:1;padding:18px 22px;border-left:1px solid var(--rule)}
@@ -55,82 +55,83 @@ h1{font-size:clamp(30px,4.6vw,52px);font-weight:700;letter-spacing:-.015em;line-
 .stat span{font-size:12.5px;color:var(--ink-faint);letter-spacing:.06em}
 @media(max-width:680px){.statrow{flex-wrap:wrap}.stat{flex:1 1 50%}.stat:nth-child(3){border-left:none;border-top:1px solid var(--rule)}.stat:nth-child(4){border-top:1px solid var(--rule)}}
 
-/* ---------- search ---------- */
-.searchbar{margin:34px 0 0;position:relative;max-width:640px}
-.searchbar input{width:100%;background:var(--bg-2);border:1px solid var(--rule);color:var(--ink);
-  font-family:var(--sans);font-size:15.5px;padding:15px 46px 15px 18px;border-radius:4px;outline:none;transition:border-color .25s}
-.searchbar input:focus{border-color:var(--rule-hi)}
-.searchbar input::placeholder{color:var(--ink-faint)}
-.searchbar .sico{position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--ink-faint);font-family:var(--mono);font-size:16px;pointer-events:none}
-#search-count{display:block;margin-top:10px;font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.06em}
-
-/* ---------- cat nav ---------- */
-.catnav{position:sticky;top:62px;z-index:40;background:rgba(11,14,19,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
-.catnav-in{display:flex;gap:10px;overflow-x:auto;padding:12px 28px;scrollbar-width:thin;max-width:1120px;margin:0 auto}
-.catnav-in::-webkit-scrollbar{height:4px}
-.catnav-in::-webkit-scrollbar-thumb{background:var(--bg-3);border-radius:2px}
-.chip{flex:0 0 auto;font-family:var(--mono);font-size:12.5px;color:var(--ink-dim);border:1px solid var(--rule);
-  padding:7px 14px;border-radius:99px;white-space:nowrap;transition:all .22s;cursor:pointer}
-.chip:hover{color:var(--ink);border-color:var(--rule-hi)}
-.chip.on{color:var(--bg);background:var(--accent);border-color:var(--accent);font-weight:600}
-
 /* ---------- section ---------- */
 section{padding:72px 0}
 .sec-eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.3em;color:var(--accent);text-transform:uppercase;margin-bottom:14px}
 h2{font-size:clamp(24px,3vw,34px);font-weight:700;letter-spacing:-.01em;line-height:1.25}
 .sec-sub{margin-top:14px;color:var(--ink-dim);max-width:700px;font-size:15.5px}
 
-/* ---------- quick index ---------- */
+/* ---------- subnav ---------- */
+.catnav{position:sticky;top:62px;z-index:40;background:rgba(11,14,19,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.catnav-in{display:flex;gap:10px;overflow-x:auto;padding:12px 28px;scrollbar-width:thin;max-width:1120px;margin:0 auto}
+.catnav-in::-webkit-scrollbar{height:4px}
+.catnav-in::-webkit-scrollbar-thumb{background:var(--bg-3);border-radius:2px}
+.chip{flex:0 0 auto;font-family:var(--mono);font-size:12.5px;color:var(--ink-dim);border:1px solid var(--rule);
+  padding:7px 14px;border-radius:99px;white-space:nowrap;transition:all .22s}
+.chip:hover{color:var(--ink);border-color:var(--rule-hi)}
+
+/* ---------- cards ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin-top:30px}
+.pcard{background:var(--bg-2);border:1px solid var(--rule);padding:22px 24px;border-radius:4px;
+  display:flex;flex-direction:column;gap:10px;transition:border-color .25s;position:relative}
+.pcard:hover{border-color:var(--rule-hi)}
+.p-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.p-name{font-size:17px;font-weight:700;letter-spacing:-.01em}
+.p-name .p-cn{display:block;font-size:12.5px;font-weight:400;color:var(--ink-faint);margin-top:3px}
+.p-num{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.14em;white-space:nowrap}
+.p-desc{font-size:13.5px;color:var(--ink-dim);line-height:1.65;flex:1}
+.p-tags{display:flex;flex-wrap:wrap;gap:6px}
+.p-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--ink-faint);border:1px solid var(--rule);padding:3px 9px;border-radius:2px;text-transform:uppercase}
+.pcard.is-hot{border-color:rgba(232,163,61,.4)}
+.pcard.is-hot::after{content:"常订";position:absolute;top:-9px;right:14px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  background:var(--accent);color:var(--bg);padding:2px 9px;border-radius:2px;font-weight:700}
+
+/* ---------- delivery table ---------- */
 .qi-table{margin-top:38px;border:1px solid var(--rule)}
 .qi-row{display:grid;grid-template-columns:minmax(220px,1.05fr) 1.5fr;gap:18px;padding:17px 22px;border-top:1px solid var(--rule);background:var(--bg-2);transition:background .2s}
 .qi-row:first-child{border-top:none}
 .qi-row:hover{background:var(--bg-3)}
 .qi-need{font-size:15px;font-weight:600}
-.qi-plats{display:flex;flex-wrap:wrap;gap:8px;align-content:center}
-.qi-p{font-family:var(--mono);font-size:12.5px;color:var(--accent);background:rgba(232,163,61,.08);
-  border:1px solid rgba(232,163,61,.22);padding:3px 11px;border-radius:99px;transition:all .2s;cursor:pointer}
-.qi-p:hover{background:rgba(232,163,61,.18);color:var(--accent-hi)}
+.qi-need .q-sub{display:block;font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.qi-plats{display:flex;flex-direction:column;justify-content:center;gap:4px}
+.qi-plats .q-line{font-size:13.5px;color:var(--ink-dim)}
+.qi-plats .q-line b{color:var(--ink);font-weight:600}
 @media(max-width:720px){.qi-row{grid-template-columns:1fr;gap:10px}}
 
-/* ---------- categories ---------- */
-.cat-block{padding:58px 0 0}
-.cat-head{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
-.cat-num{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.2em}
-.cat-desc{margin-top:12px;color:var(--ink-dim);font-size:15px;max-width:780px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin-top:30px}
-.pcard{background:var(--bg-2);border:1px solid var(--rule);padding:22px 24px;border-radius:4px;
-  display:flex;flex-direction:column;gap:10px;transition:border-color .25s,transform .25s;position:relative}
-.pcard:hover{border-color:var(--rule-hi)}
-.p-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
-.p-name{font-size:17px;font-weight:700;letter-spacing:-.01em}
-.p-name .p-cn{display:block;font-size:12.5px;font-weight:400;color:var(--ink-faint);margin-top:3px}
-.p-url{font-family:var(--mono);font-size:12.5px;color:var(--accent);white-space:nowrap;transition:color .2s}
-.p-url:hover{color:var(--accent-hi)}
-.p-desc{font-size:13.5px;color:var(--ink-dim);line-height:1.65;flex:1}
-.p-tags{display:flex;flex-wrap:wrap;gap:6px}
-.p-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--ink-faint);border:1px solid var(--rule);padding:3px 9px;border-radius:2px;text-transform:uppercase}
-.pcard.is-hot{border-color:rgba(232,163,61,.4)}
-.pcard.is-hot::after{content:"核心";position:absolute;top:-9px;right:14px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
-  background:var(--accent);color:var(--bg);padding:2px 9px;border-radius:2px;font-weight:700}
-.nolink{font-family:var(--mono);font-size:12.5px;color:var(--ink-faint);white-space:nowrap}
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.step{background:var(--bg-2);border:1px solid var(--rule);padding:22px;border-radius:4px}
+.step .n{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.2em}
+.step h4{font-size:16px;margin-top:10px}
+.step p{font-size:13px;color:var(--ink-dim);margin-top:8px;line-height:1.65}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
 
-/* ---------- cpg guys ---------- */
-.cpg{background:var(--bg-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.cpg-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:44px;margin-top:36px;align-items:start}
-@media(max-width:840px){.cpg-grid{grid-template-columns:1fr}}
-.cpg-host{display:flex;gap:16px;padding:20px;border:1px solid var(--rule);background:var(--bg);border-radius:4px}
-.cpg-host+.cpg-host{margin-top:14px}
-.cpg-ava{flex:0 0 52px;height:52px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--accent-hi),var(--accent) 55%,#8a5f1d);
-  display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:16px;font-weight:700;color:var(--bg)}
-.cpg-host b{display:block;font-size:16px}
-.cpg-host span{font-size:13px;color:var(--ink-dim);line-height:1.6;display:block;margin-top:2px}
-.cpg-facts{display:flex;flex-direction:column;gap:12px}
-.cpg-fact{display:flex;gap:16px;border:1px solid var(--rule);background:var(--bg);padding:16px 20px;border-radius:4px;align-items:baseline}
-.cpg-fact b{font-family:var(--mono);font-size:22px;color:var(--accent);min-width:56px}
-.cpg-fact span{font-size:13.5px;color:var(--ink-dim)}
-.cpg-link{display:inline-block;margin-top:26px;font-family:var(--mono);font-size:14px;color:var(--accent);
-  border:1px solid var(--rule-hi);padding:13px 26px;border-radius:3px;transition:all .22s}
-.cpg-link:hover{background:rgba(232,163,61,.12)}
+/* ---------- discipline ---------- */
+.disc-band{border:1px solid rgba(232,163,61,.3);background:rgba(232,163,61,.05);border-radius:4px;padding:30px 34px;margin-top:34px}
+.disc-band h3{font-family:var(--mono);font-size:13px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase}
+.disc-band p{margin-top:14px;color:var(--ink-dim);font-size:15px;max-width:860px}
+.disc-band b{color:var(--ink)}
+
+/* ---------- faq ---------- */
+.faq{margin-top:34px;border:1px solid var(--rule)}
+details{border-top:1px solid var(--rule);background:var(--bg-2)}
+details:first-child{border-top:none}
+summary{cursor:pointer;list-style:none;padding:19px 24px;font-size:15.5px;font-weight:600;transition:color .2s}
+summary::-webkit-details-marker{display:none}
+summary:hover{color:var(--accent)}
+details[open] summary{color:var(--accent)}
+details .a{padding:0 24px 20px;color:var(--ink-dim);font-size:14.5px;line-height:1.75;max-width:880px}
+details .a b{color:var(--ink)}
+
+/* ---------- related ---------- */
+.rel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.rel{border:1px solid var(--rule);background:var(--bg-2);padding:20px 22px;border-radius:4px;transition:border-color .25s}
+.rel:hover{border-color:var(--rule-hi)}
+.rel .rn{font-size:15px;font-weight:600}
+.rel .rz{display:block;font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);margin-top:6px;letter-spacing:.04em}
+@media(max-width:860px){.rel-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.rel-grid{grid-template-columns:1fr}}
 
 /* ---------- contact / footer ---------- */
 .contact{text-align:center}
@@ -145,12 +146,13 @@ footer{border-top:1px solid var(--rule);padding:34px 0 44px;color:var(--ink-fain
 .foot-brand em{font-style:normal;color:var(--accent)}
 footer a{color:var(--ink-faint);transition:color .2s}
 footer a:hover{color:var(--accent)}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap}
+.foot-links a{display:block}
 
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-.empty{display:none;margin-top:24px;border:1px dashed var(--rule);padding:36px;text-align:center;color:var(--ink-faint);font-size:14px}
 </style>
 </head>
 <body id="top">
@@ -159,589 +161,221 @@ footer a:hover{color:var(--accent)}
   <div class="wrap nav-in">
     <a class="brand" href="#top">insight<em>marketplac</em></a>
     <nav class="nav-links">
-      <a href="#index">快速索引</a>
-      <a href="#cat1">八大类目录</a>
-      <a href="#cpgguys">行业直播 / 媒体</a>
+      <a href="#subs">订阅线</a>
+      <a href="#delivery">交付形态</a>
+      <a href="#plans">订阅方式</a>
+      <a href="#faq">常见问题</a>
+      <a href="insights.html">品牌洞察</a>
       <a href="sell-on-oem-odm.html">卖家入驻</a>
-      <a href="sell-on/">47 平台入口</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow rv in">Retail Data Directory · 零售数据目录</div>
-    <h1 class="rv in">美国零售数据平台目录<br>谁有数据 · 去哪买 · 怎么用</h1>
-    <p class="hero-sub rv in">从 <b>Retail Velocity、Crisp</b> 的零售商 POS 直连数据，到 <b>Numerator、NielsenIQ</b> 的消费者面板，再到 <b>Datarade、Snowflake Marketplace</b> 的数据市场——<b>59 个平台按八大类整理</b>，每个都附官网直达入口，配一张「我想要…」快速索引。</p>
+    <div class="eyebrow rv in">Data Subscriptions · 业务数据订阅</div>
+    <h1 class="rv in">业务数据订阅<br>订阅结论 · 不碰源头</h1>
+    <p class="hero-sub rv in">你订阅的是<b>可执行的业务数据</b>——选品与市场、定价与促销、消费者与评论、竞品动态、众筹信号、品牌声量，六条订阅线按你的问题定义维度。<b>数据 token（接口 / 数据包）</b>按周 / 月交付，直接接入你的 ERP、CRM 或自有看板；<b>数据源头不披露</b>——你拿到的是结论与数据，不是转售的数据渠道。</p>
     <div class="statrow rv in">
-      <div class="stat"><b>8</b><span>数据类别</span></div>
-      <div class="stat"><b>59</b><span>平台与工具</span></div>
-      <div class="stat"><b>24</b><span>「我想要」场景</span></div>
-      <div class="stat"><b>100%</b><span>官网直达</span></div>
-    </div>
-    <div class="searchbar rv in">
-      <input type="search" id="q" placeholder="搜索平台 / 关键词，如：价格、库存、POS、消费者、沃尔玛…" autocomplete="off">
-      <span class="sico">⌕</span>
-      <span id="search-count">共 59 个平台</span>
+      <div class="stat"><b>6</b><span>订阅线</span></div>
+      <div class="stat"><b>3</b><span>交付形态 · token / 数据包 / 报告</span></div>
+      <div class="stat"><b>周 · 月</b><span>更新节奏 · 热点加更</span></div>
+      <div class="stat"><b>100%</b><span>数据源头不披露</span></div>
     </div>
   </div>
 </section>
 
 <nav class="catnav">
   <div class="catnav-in">
-    <a class="chip" href="#index">⌕ 快速索引</a>
-    <a class="chip" href="#cat1">一 · 自有零售数据</a>
-    <a class="chip" href="#cat2">二 · 数字货架 / 电商</a>
-    <a class="chip" href="#cat3">三 · 门店执行</a>
-    <a class="chip" href="#cat4">四 · 消费者面板</a>
-    <a class="chip" href="#cat5">五 · 数据市场</a>
-    <a class="chip" href="#cat6">六 · 营销与工具</a>
-    <a class="chip" href="#cat7">七 · AI / 供应链分析</a>
-    <a class="chip" href="#cat8">八 · 基础架构</a>
-    <a class="chip" href="#cpgguys">🎙 行业直播 / 媒体</a>
+    <a class="chip" href="#subs">六条订阅线</a>
+    <a class="chip" href="#delivery">交付形态</a>
+    <a class="chip" href="#plans">订阅方式</a>
+    <a class="chip" href="#process">订阅流程</a>
+    <a class="chip" href="#faq">常见问题</a>
   </div>
 </nav>
 
-<section id="index" style="padding-top:58px">
+<section id="subs" style="padding-top:58px">
   <div class="wrap">
-    <div class="sec-eyebrow rv">Quick Index</div>
-    <h2 class="rv">快速索引：按「我想要…」查</h2>
-    <p class="sec-sub rv">不知道平台名字？先说你要什么——点击平台名直达卡片。</p>
+    <div class="sec-eyebrow rv">What You Can Subscribe</div>
+    <h2 class="rv">六条订阅线，按问题选</h2>
+    <p class="sec-sub rv">每条线回答一类业务问题。订阅前先想清楚你要回答什么——我们按问题定义数据维度、更新频率与交付形态，不为用不上的字段付费。</p>
+    <div class="grid">
+      <article class="pcard is-hot rv">
+        <div class="p-top"><h3 class="p-name">选品与市场<span class="p-cn">SELECTION &amp; MARKET</span></h3><span class="p-num">Line 01</span></div>
+        <p class="p-desc">品类趋势、细分市场规模、增长信号与季节性——回答「做不做、什么时候做」，让选品从跟风变成排期。</p>
+        <div class="p-tags"><span class="p-tag">品类趋势</span><span class="p-tag">市场规模</span><span class="p-tag">增长信号</span></div>
+      </article>
+      <article class="pcard is-hot rv">
+        <div class="p-top"><h3 class="p-name">定价与促销<span class="p-cn">PRICING &amp; PROMO</span></h3><span class="p-num">Line 02</span></div>
+        <p class="p-desc">价格带分布、促销节奏、渠道价差——回答「卖多少钱、什么时候促」，定价从拍脑袋变成有依据。</p>
+        <div class="p-tags"><span class="p-tag">价格带</span><span class="p-tag">促销节奏</span><span class="p-tag">渠道价差</span></div>
+      </article>
+      <article class="pcard rv">
+        <div class="p-top"><h3 class="p-name">消费者与评论<span class="p-cn">CONSUMER VOICE</span></h3><span class="p-num">Line 03</span></div>
+        <p class="p-desc">评论主题与痛点提取、情感与需求信号——回答「改什么、说什么」，产品迭代与卖点口径都从真实声音里来。</p>
+        <div class="p-tags"><span class="p-tag">痛点提取</span><span class="p-tag">情感信号</span><span class="p-tag">需求挖掘</span></div>
+      </article>
+      <article class="pcard rv">
+        <div class="p-top"><h3 class="p-name">竞品动态<span class="p-cn">COMPETITOR MOVES</span></h3><span class="p-num">Line 04</span></div>
+        <p class="p-desc">上新节奏、定价变化、投放与渠道动作——回答「跟不跟、怎么差异化」，竞品的动作变成你的决策输入。</p>
+        <div class="p-tags"><span class="p-tag">上新监测</span><span class="p-tag">定价变化</span><span class="p-tag">渠道动作</span></div>
+      </article>
+      <article class="pcard rv">
+        <div class="p-top"><h3 class="p-name">众筹信号<span class="p-cn">CROWDFUNDING SIGNALS</span></h3><span class="p-num">Line 05</span></div>
+        <p class="p-desc">爆筹项目、达成速度、卖点结构——回答「下一个需求在哪」，提前半年看到品类答案（衔接品牌洞察·众筹雷达）。</p>
+        <div class="p-tags"><span class="p-tag">爆筹项目</span><span class="p-tag">达成速度</span><span class="p-tag">卖点结构</span></div>
+      </article>
+      <article class="pcard rv">
+        <div class="p-top"><h3 class="p-name">品牌声量<span class="p-cn">BRAND VOICE</span></h3><span class="p-num">Line 06</span></div>
+        <p class="p-desc">声量、情感、内容形式效能——回答「内容对 IP 的真实影响」，投放前摸底、投放后验证（衔接品牌洞察）。</p>
+        <div class="p-tags"><span class="p-tag">声量</span><span class="p-tag">情感</span><span class="p-tag">形式效能</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="delivery" style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-eyebrow rv">Delivery Formats</div>
+    <h2 class="rv">三种交付形态</h2>
+    <p class="sec-sub rv">同一个订阅，可以按你的团队结构选交付方式——技术团队接接口，分析团队进表格，决策者读报告。</p>
     <div class="qi-table rv">
-      <div class="qi-row"><div class="qi-need">沃尔玛 / Target 自己品牌的实体店销售数据</div><div class="qi-plats"><a class="qi-p" href="#p-retailvelocity">Retail Velocity</a><a class="qi-p" href="#p-crisp">Crisp</a><a class="qi-p" href="#p-snowmarket">Snowflake Marketplace</a></div></div>
-      <div class="qi-row"><div class="qi-need">Wayfair / Home Depot 上竞品的销售额</div><div class="qi-plats"><a class="qi-p" href="#p-alloy">Alloy.ai</a><a class="qi-p" href="#p-stackline">Stackline</a></div></div>
-      <div class="qi-row"><div class="qi-need">亚马逊上竞品每天的价格变动</div><div class="qi-plats"><a class="qi-p" href="#p-profitero">Profitero</a><a class="qi-p" href="#p-dataweave">DataWeave</a><a class="qi-p" href="#p-competera">Competera</a></div></div>
-      <div class="qi-row"><div class="qi-need">查产品需求和利润，个人就能买</div><div class="qi-plats"><a class="qi-p" href="#p-algopix">Algopix</a></div></div>
-      <div class="qi-row"><div class="qi-need">找消费者谁买了我的产品</div><div class="qi-plats"><a class="qi-p" href="#p-numerator">Numerator</a><a class="qi-p" href="#p-nielseniq">NielsenIQ</a><a class="qi-p" href="#p-spins">SPINS</a></div></div>
-      <div class="qi-row"><div class="qi-need">到处找有什么数据可用</div><div class="qi-plats"><a class="qi-p" href="#p-datarade">Datarade</a><a class="qi-p" href="#p-snowmarket">Snowflake Marketplace</a><a class="qi-p" href="#p-databricks">Databricks Marketplace</a></div></div>
-      <div class="qi-row"><div class="qi-need">门店陈列和货架管理</div><div class="qi-plats"><a class="qi-p" href="#p-insignia">Insignia Systems</a><a class="qi-p" href="#p-baycities">Bay Cities</a></div></div>
-      <div class="qi-row"><div class="qi-need">电商库存预测与优化</div><div class="qi-plats"><a class="qi-p" href="#p-flieber">Flieber</a><a class="qi-p" href="#p-askuity">Askuity</a></div></div>
-      <div class="qi-row"><div class="qi-need">家得宝供应商专用分析</div><div class="qi-plats"><a class="qi-p" href="#p-askuity">Askuity</a></div></div>
-      <div class="qi-row"><div class="qi-need">B2B 潜客名单与数据</div><div class="qi-plats"><a class="qi-p" href="#p-readycontacts">ReadyContacts</a><a class="qi-p" href="#p-pds">Positive Data Solutions</a></div></div>
-      <div class="qi-row"><div class="qi-need">采购数据分析</div><div class="qi-plats"><a class="qi-p" href="#p-procureanalytics">ProcureAnalytics</a></div></div>
-      <div class="qi-row"><div class="qi-need">视觉内容效果预测</div><div class="qi-plats"><a class="qi-p" href="#p-dragonfly">Dragonfly AI</a></div></div>
-      <div class="qi-row"><div class="qi-need">动态定价与促销优化</div><div class="qi-plats"><a class="qi-p" href="#p-revionics">Revionics</a><a class="qi-p" href="#p-competera">Competera</a></div></div>
-      <div class="qi-row"><div class="qi-need">搭建企业数据中台 / 仓库</div><div class="qi-plats"><a class="qi-p" href="#p-snowflake">Snowflake</a><a class="qi-p" href="#p-databricks">Databricks</a></div></div>
-      <div class="qi-row"><div class="qi-need">自己动手抓网页数据</div><div class="qi-plats"><a class="qi-p" href="#p-octoparse">Octoparse</a></div></div>
-      <div class="qi-row"><div class="qi-need">每天看美国零售行业新闻和风向</div><div class="qi-plats"><a class="qi-p" href="#omnitalk">Omni Talk</a></div></div>
-      <div class="qi-row"><div class="qi-need">把亚马逊账户全托管 / 投广告</div><div class="qi-plats"><a class="qi-p" href="#p-toucan">Toucan</a></div></div>
-      <div class="qi-row"><div class="qi-need">在美国线下零售找销售代表（Target / Menards）</div><div class="qi-plats"><a class="qi-p" href="#p-atventure">AtVenture</a></div></div>
-      <div class="qi-row"><div class="qi-need">库存被整批买断、立刻回款</div><div class="qi-plats"><a class="qi-p" href="#p-spreetail">Spreetail</a></div></div>
-      <div class="qi-row"><div class="qi-need">时尚品牌一次铺开欧洲 90+ 市场（含 Zalando）</div><div class="qi-plats"><a class="qi-p" href="#p-tradebyte">Tradebyte</a><a class="qi-p" href="#p-brandsom">Brandsom</a></div></div>
-      <div class="qi-row"><div class="qi-need">按 GMV 分成找代运营、不付高额固定费</div><div class="qi-plats"><a class="qi-p" href="#p-brandsom">Brandsom</a></div></div>
-      <div class="qi-row"><div class="qi-need">让美国独立零售买手发现并评估我的品牌</div><div class="qi-plats"><a class="qi-p" href="#p-cohere">Cohere Commerce</a></div></div>
-      <div class="qi-row"><div class="qi-need">进越南 / 东南亚市场，一套系统管 POS + Shopee / Lazada / TikTok Shop</div><div class="qi-plats"><a class="qi-p" href="#p-sapo">Sapo</a></div></div>
-      <div class="qi-row"><div class="qi-need">看竞品 App / 电商在投什么广告素材、买多少量</div><div class="qi-plats"><a class="qi-p" href="#p-insightrackr">Insightrackr</a></div></div>
-    </div>
-  </div>
-</section>
-
-<div id="cat1"></div>
-
-<section style="padding-top:26px">
-  <div class="wrap">
-    <div class="cat-block">
-      <div class="cat-head"><span class="cat-num rv">CATEGORY 01</span><h2 class="rv">核心专有零售数据平台 <span style="color:var(--ink-faint);font-weight:400;font-size:.6em">（自有数据 · 非转卖）</span></h2></div>
-      <p class="cat-desc rv">这些平台自己与零售商建立数据直连，供应商视角的销量与库存数据源头在这里——不是二道贩子。</p>
-      <div class="grid">
-        <article class="pcard rv is-hot" id="p-retailvelocity" data-k="retail velocity pos 沃尔玛 target 供应商 销售 库存">
-          <div class="p-top"><div class="p-name">Retail Velocity<span class="p-cn">零售商 POS 数据管道</span></div><a class="p-url" href="https://www.retailvelocity.com/" target="_blank" rel="noopener">retailvelocity.com ↗</a></div>
-          <p class="p-desc">沃尔玛、Target 等零售商的供应商每日 POS 数据管道——销量、库存、门店级明细，供应商看板的事实标准之一。</p>
-          <div class="p-tags"><span class="p-tag">POS 数据</span><span class="p-tag">供应商报表</span><span class="p-tag">实体零售</span></div>
-        </article>
-        <article class="pcard rv is-hot" id="p-crisp" data-k="crisp gocrisp pos 聚合 沃尔玛 kroger albertsons 库存 销售">
-          <div class="p-top"><div class="p-name">Crisp<span class="p-cn">零售 POS 数据聚合平台</span></div><a class="p-url" href="https://www.gocrisp.com/" target="_blank" rel="noopener">gocrisp.com ↗</a></div>
-          <p class="p-desc">聚合 40+ 零售商（Walmart、Target、Kroger、Albertsons 等）的 POS 与库存数据，SaaS 订阅制，品牌与供应商自助分析。</p>
-          <div class="p-tags"><span class="p-tag">POS 聚合</span><span class="p-tag">库存</span><span class="p-tag">订阅制</span></div>
-        </article>
-        <article class="pcard rv is-hot" id="p-alloy" data-k="alloy.ai alloy 全渠道 销售 供应链 lens ai 情报">
-          <div class="p-top"><div class="p-name">Alloy.ai<span class="p-cn">全渠道销售情报</span></div><a class="p-url" href="https://alloy.ai/" target="_blank" rel="noopener">alloy.ai ↗</a></div>
-          <p class="p-desc">全渠道销售数据与供应链情报平台，覆盖电商与实体店销售；新推 Lens AI 分析师，自然语言直接问数。</p>
-          <div class="p-tags"><span class="p-tag">全渠道</span><span class="p-tag">供应链</span><span class="p-tag">AI 问数</span></div>
-        </article>
-        <article class="pcard rv is-hot" id="p-stackline" data-k="stackline 电商 数据 广告 归因 北美">
-          <div class="p-top"><div class="p-name">Stackline<span class="p-cn">北美电商数据与分析</span></div><a class="p-url" href="https://stackline.com/" target="_blank" rel="noopener">stackline.com ↗</a></div>
-          <p class="p-desc">北美电商与零售数据平台，从品类销售到广告归因的全栈分析，品牌方监控竞品电商份额的主力工具。</p>
-          <div class="p-tags"><span class="p-tag">电商数据</span><span class="p-tag">广告归因</span><span class="p-tag">北美</span></div>
-        </article>
-        <article class="pcard rv" id="p-ecomeli" data-k="ecomeli 新兴 零售数据">
-          <div class="p-top"><div class="p-name">Ecomeli<span class="p-cn">新兴零售数据平台</span></div><span class="nolink">官网待确认</span></div>
-          <p class="p-desc">新兴零售数据平台，公开资料有限，暂无可靠注册入口——收录备查，欢迎补充。</p>
-          <div class="p-tags"><span class="p-tag">新兴</span><span class="p-tag">待核实</span></div>
-        </article>
-        <article class="pcard rv" id="p-1010data" data-k="1010data 交易数据 大规模 分析">
-          <div class="p-top"><div class="p-name">1010data<span class="p-cn">大规模交易数据分析</span></div><a class="p-url" href="https://www.1010data.com/1010data-platform/" target="_blank" rel="noopener">1010data.com ↗</a></div>
-          <p class="p-desc">老牌大规模零售交易数据分析平台，处理面板级、收据级海量数据，适合深度定制分析。</p>
-          <div class="p-tags"><span class="p-tag">交易数据</span><span class="p-tag">大规模</span></div>
-        </article>
+      <div class="qi-row">
+        <div class="qi-need"><span class="q-sub">Format 01</span>数据 token · API 接口</div>
+        <div class="qi-plats"><span class="q-line"><b>标准化字段按接口交付：</b>趋势信号、热度分值、选题卡结构化数据——你的系统按 token 拉取，权限按字段最小化开通。适合已有技术团队的客户。</span></div>
+      </div>
+      <div class="qi-row">
+        <div class="qi-need"><span class="q-sub">Format 02</span>周期数据包</div>
+        <div class="qi-plats"><span class="q-line"><b>CSV / Excel 按周 / 月固定节奏交付：</b>热点事件（爆筹、竞品大动作）不定期加更——分析团队直接进表，运营直接引用。</span></div>
+      </div>
+      <div class="qi-row">
+        <div class="qi-need"><span class="q-sub">Format 03</span>订阅报告</div>
+        <div class="qi-plats"><span class="q-line"><b>趋势简报 + 结论摘要 + 选题卡：</b>人话版，一页纸说清「发生了什么、该做什么」——适合决策者直接读。</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<div id="cat2"></div>
-<section style="padding-top:26px"><div class="wrap">
-  <div class="cat-block">
-    <div class="cat-head"><span class="cat-num rv">CATEGORY 02</span><h2 class="rv">数字货架与电商分析 <span style="color:var(--ink-faint);font-weight:400;font-size:.6em">（盯价格 · 促销 · 评论）</span></h2></div>
-    <p class="cat-desc rv">盯竞品在线上货架的一举一动：价格日变动、促销节奏、评论增量、内容合规。</p>
-    <div class="grid">
-      <article class="pcard rv is-hot" id="p-profitero" data-k="profitero 数字货架 价格 促销 评论 库存 内容">
-        <div class="p-top"><div class="p-name">Profitero<span class="p-cn">数字货架分析</span></div><a class="p-url" href="https://www.profitero.com/request-a-demo" target="_blank" rel="noopener">profitero.com ↗</a></div>
-        <p class="p-desc">700+ 电商站点的竞品价格、促销、库存、评论与产品页内容合规监控——「数字货架」品类的代表工具。</p>
-        <div class="p-tags"><span class="p-tag">价格监控</span><span class="p-tag">数字货架</span><span class="p-tag">内容合规</span></div>
-      </article>
-      <article class="pcard rv" id="p-dataweave" data-k="dataweave 价格 情报 产品数据 零售">
-        <div class="p-top"><div class="p-name">DataWeave<span class="p-cn">价格与产品情报</span></div><a class="p-url" href="https://dataweave.com/" target="_blank" rel="noopener">dataweave.com ↗</a></div>
-        <p class="p-desc">价格情报与产品数据平台，实时盯竞品价格变动与产品内容，零售商与品牌双向可用。</p>
-        <div class="p-tags"><span class="p-tag">价格情报</span><span class="p-tag">产品数据</span></div>
-      </article>
-      <article class="pcard rv" id="p-algopix" data-k="algopix 产品研究 需求 利润 个人 批量 amazon ebay walmart">
-        <div class="p-top"><div class="p-name">Algopix<span class="p-cn">产品研究（个人可买）</span></div><a class="p-url" href="https://algopix.com/features/amazon-ecommerce-product-research-tool-bulk/" target="_blank" rel="noopener">algopix.com ↗</a></div>
-        <p class="p-desc">查产品需求、利润与竞争度的研究工具，个人卖家即可订阅，支持 Amazon / eBay / Walmart 批量分析。</p>
-        <div class="p-tags"><span class="p-tag">产品研究</span><span class="p-tag">个人可买</span><span class="p-tag">批量</span></div>
-      </article>
-      <article class="pcard rv" id="p-competera" data-k="competera 动态定价 ai 价格优化">
-        <div class="p-top"><div class="p-name">Competera<span class="p-cn">AI 动态定价</span></div><a class="p-url" href="https://competera.ai/" target="_blank" rel="noopener">competera.ai ↗</a></div>
-        <p class="p-desc">企业级动态定价平台：AI 综合竞品价、库存与需求弹性，给出价格建议，连锁零售与大型品牌适用。</p>
-        <div class="p-tags"><span class="p-tag">动态定价</span><span class="p-tag">AI</span></div>
-      </article>
-      <article class="pcard rv" id="p-sito" data-k="sito mobile 位置 营销 数据 sitomobile">
-        <div class="p-top"><div class="p-name">Sito Mobile<span class="p-cn">位置与移动营销数据</span></div><a class="p-url" href="https://www.sitomobile.com/" target="_blank" rel="noopener">sitomobile.com ↗</a></div>
-        <p class="p-desc">位置数据与移动营销分析——用真实到店轨迹衡量广告与门店的引流效果。</p>
-        <div class="p-tags"><span class="p-tag">位置数据</span><span class="p-tag">到店归因</span></div>
-      </article>
-    </div>
-  </div>
-</div></section>
-
-<div id="cat3"></div>
-<section style="padding-top:26px"><div class="wrap">
-  <div class="cat-block">
-    <div class="cat-head"><span class="cat-num rv">CATEGORY 03</span><h2 class="rv">店内执行与货架数据 <span style="color:var(--ink-faint);font-weight:400;font-size:.6em">（线下实体店）</span></h2></div>
-    <p class="cat-desc rv">货架陈列是否到位、店内营销是否执行——线下门店的「最后一米」数据。</p>
-    <div class="grid">
-      <article class="pcard rv" id="p-insignia" data-k="insignia systems 门店 执行 货架 陈列 店内营销">
-        <div class="p-top"><div class="p-name">Insignia Systems<span class="p-cn">店内营销与货架执行</span></div><a class="p-url" href="https://insigniasystems.com/" target="_blank" rel="noopener">insigniasystems.com ↗</a></div>
-        <p class="p-desc">POS 触发的店内促销与货架执行方案——价格标签、店内媒体、货架陈列的落地与测量。</p>
-        <div class="p-tags"><span class="p-tag">门店执行</span><span class="p-tag">店内营销</span></div>
-      </article>
-      <article class="pcard rv" id="p-integratedsales" data-k="integrated sales integratedsales 店内 执行 零售 服务">
-        <div class="p-top"><div class="p-name">Integrated Sales<span class="p-cn">店内执行与零售服务</span></div><a class="p-url" href="https://integratedsales.org/" target="_blank" rel="noopener">integratedsales.org ↗</a></div>
-        <p class="p-desc">店内执行与零售数据服务——把品牌计划翻译成门店里真实发生的事。</p>
-        <div class="p-tags"><span class="p-tag">店内执行</span><span class="p-tag">零售服务</span></div>
-      </article>
-    </div>
-  </div>
-</div></section>
-
-<div id="cat4"></div>
-<section style="padding-top:26px"><div class="wrap">
-  <div class="cat-block">
-    <div class="cat-head"><span class="cat-num rv">CATEGORY 04</span><h2 class="rv">消费者真实购买行为 <span style="color:var(--ink-faint);font-weight:400;font-size:.6em">（面板 / 收据数据）</span></h2></div>
-    <p class="cat-desc rv">回答「谁买了我的产品」：消费者面板与收据级数据，穿透到家庭与人群画像。</p>
-    <div class="grid">
-      <article class="pcard rv is-hot" id="p-numerator" data-k="numerator 消费者 面板 收据 谁 买了 家庭 画像">
-        <div class="p-top"><div class="p-name">Numerator<span class="p-cn">消费者面板与收据数据</span></div><a class="p-url" href="https://www.numerator.com/" target="_blank" rel="noopener">numerator.com ↗</a></div>
-        <p class="p-desc">美国家庭购买面板 + 收据级数据——「谁买了我的产品、还买了什么、换了谁」，人群画像穿透最深的来源之一。</p>
-        <div class="p-tags"><span class="p-tag">消费者面板</span><span class="p-tag">收据数据</span></div>
-      </article>
-      <article class="pcard rv" id="p-nielseniq" data-k="nielseniq nielsen 尼尔森 零售测量 消费者 洞察">
-        <div class="p-top"><div class="p-name">NielsenIQ<span class="p-cn">零售测量与消费者洞察</span></div><a class="p-url" href="https://nielseniq.com/" target="_blank" rel="noopener">nielseniq.com ↗</a></div>
-        <p class="p-desc">百年零售测量与消费者洞察——市场份额、品类趋势、渠道切换的行业基准尺。</p>
-        <div class="p-tags"><span class="p-tag">零售测量</span><span class="p-tag">消费者洞察</span></div>
-      </article>
-      <article class="pcard rv" id="p-spins" data-k="spins 自然 健康 特色 产品 消费者 smb">
-        <div class="p-top"><div class="p-name">SPINS<span class="p-cn">自然与健康品类数据</span></div><a class="p-url" href="https://www.spins.com/audience/smb/" target="_blank" rel="noopener">spins.com ↗</a></div>
-        <p class="p-desc">自然、健康与特色产品市场的消费者与零售数据，含 SMB 版本——健康食品、营养品类的标准数据源。</p>
-        <div class="p-tags"><span class="p-tag">自然品类</span><span class="p-tag">健康产品</span></div>
-      </article>
-    </div>
-  </div>
-</div></section>
-
-<div id="cat5"></div>
-<section style="padding-top:26px"><div class="wrap">
-  <div class="cat-block">
-    <div class="cat-head"><span class="cat-num rv">CATEGORY 05</span><h2 class="rv">数据市场 <span style="color:var(--ink-faint);font-weight:400;font-size:.6em">（淘零散与补充数据）</span></h2></div>
-    <p class="cat-desc rv">不知道去哪找？先逛数据市场——搜索、比价、直接联系数据供应商。</p>
-    <div class="grid">
-      <article class="pcard rv" id="p-datarade" data-k="datarade 数据市场 比价 搜索 供应商">
-        <div class="p-top"><div class="p-name">Datarade<span class="p-cn">数据市场</span></div><a class="p-url" href="https://datarade.ai/" target="_blank" rel="noopener">datarade.ai ↗</a></div>
-        <p class="p-desc">数据界的外卖平台：按类目搜索全球数据供应商、查看样例、比价询价——「到处找有什么数据」的第一站。</p>
-        <div class="p-tags"><span class="p-tag">数据市场</span><span class="p-tag">比价</span></div>
-      </article>
-      <article class="pcard rv" id="p-snowmarket" data-k="snowflake marketplace 数据市场 walmart 数据集 app.snowflake">
-        <div class="p-top"><div class="p-name">Snowflake Marketplace<span class="p-cn">Snowflake 数据产品市场</span></div><a class="p-url" href="https://app.snowflake.com/marketplace" target="_blank" rel="noopener">app.snowflake.com ↗</a></div>
-        <p class="p-desc">数据云上的数据产品市场，可以直接搜到 Walmart 等零售数据集，订阅后免 ETL 即查。</p>
-        <div class="p-tags"><span class="p-tag">数据市场</span><span class="p-tag">零拷贝订阅</span></div>
-      </article>
-      <article class="pcard rv" id="p-databricks" data-k="databricks marketplace 数据 ai 市场 lakehouse">
-        <div class="p-top"><div class="p-name">Databricks Marketplace<span class="p-cn">数据与 AI 市场</span></div><a class="p-url" href="https://www.databricks.com/" target="_blank" rel="noopener">databricks.com ↗</a></div>
-        <p class="p-desc">Databricks 数据智能平台与市场——数据集、AI 模型与解决方案的另一大集散地。</p>
-        <div class="p-tags"><span class="p-tag">数据市场</span><span class="p-tag">Lakehouse</span></div>
-      </article>
-      <article class="pcard rv" id="p-exellius" data-k="exellius snowflake 市场服务 集成">
-        <div class="p-top"><div class="p-name">Exellius<span class="p-cn">Snowflake 市场数据服务</span></div><a class="p-url" href="https://www.exellius.com/marketplaces/snowflake-marketplace" target="_blank" rel="noopener">exellius.com ↗</a></div>
-        <p class="p-desc">帮你把数据产品上架 Snowflake Marketplace 或从市场集成数据源的专业服务。</p>
-        <div class="p-tags"><span class="p-tag">雪花市场</span><span class="p-tag">集成服务</span></div>
-      </article>
-    </div>
-  </div>
-</div></section>
-
-<div id="cat6"></div>
-<section style="padding-top:26px"><div class="wrap">
-  <div class="cat-block">
-    <div class="cat-head"><span class="cat-num rv">CATEGORY 06</span><h2 class="rv">其他相关工具 <span style="color:var(--ink-faint);font-weight:400;font-size:.6em">（营销 · 集成 · 建站）</span></h2></div>
-    <p class="cat-desc rv">数据之外支撑零售业务的工具链：营销自动化、B2B 潜客、市场搭建，以及代运营 / 渠道加速 / 销售代表 / 品牌撮合等平台与服务商。</p>
-    <div class="grid">
-      <article class="pcard rv" id="p-customerio" data-k="customer.io 营销自动化 客户旅程 邮件">
-        <div class="p-top"><div class="p-name">Customer.io<span class="p-cn">营销自动化</span></div><a class="p-url" href="https://customer.io/" target="_blank" rel="noopener">customer.io ↗</a></div>
-        <p class="p-desc">基于行为数据的营销自动化——邮件、推送、短信的客户旅程编排。</p>
-        <div class="p-tags"><span class="p-tag">营销自动化</span></div>
-      </article>
-      <article class="pcard rv" id="p-persistiq" data-k="persistiq 销售开发 sdr 自动化">
-        <div class="p-top"><div class="p-name">PersistIQ<span class="p-cn">销售开发自动化</span></div><a class="p-url" href="https://persistiq.com/" target="_blank" rel="noopener">persistiq.com ↗</a></div>
-        <p class="p-desc">销售开发（SDR）外联自动化——多触点邮件序列与线索跟进。</p>
-        <div class="p-tags"><span class="p-tag">销售开发</span></div>
-      </article>
-      <article class="pcard rv" id="p-insightrackr" data-k="insightrackr insightrackr.com 广告情报 移动营销 投放 素材 creative 竞品 广告 app 下载量 排行榜 媒体渠道 广告平台 出海 国内 中英文 双语 数据点 每日更新">
-        <div class="p-top"><div class="p-name">Insightrackr<span class="p-cn">移动广告投放情报（中英双语）</span></div><a class="p-url" href="https://www.insightrackr.com/" target="_blank" rel="noopener">insightrackr.com ↗</a></div>
-        <p class="p-desc">移动营销策略分析平台：实时追踪海内外 200+ 媒体渠道、160+ 广告平台的投放素材与买量策略，覆盖 148 国家 / 地区、183+ 应用类别，每日更新数亿级数据点——看竞品在投什么素材、投了多少量、下载排行如何变化，出海买量前的情报底盘。</p>
-        <div class="p-tags"><span class="p-tag">广告素材情报</span><span class="p-tag">买量分析</span><span class="p-tag">出海/国内</span></div>
-      </article>
-      <article class="pcard rv" id="p-sanity" data-k="sanity sanity.io 内容管理 cms 结构化">
-        <div class="p-top"><div class="p-name">Sanity<span class="p-cn">结构化内容管理</span></div><a class="p-url" href="https://www.sanity.io/" target="_blank" rel="noopener">sanity.io ↗</a></div>
-        <p class="p-desc">把产品内容当数据管理——一份结构化内容分发到电商、官网与渠道。</p>
-        <div class="p-tags"><span class="p-tag">内容管理</span></div>
-      </article>
-      <article class="pcard rv" id="p-marketplacer" data-k="marketplacer 市场平台 搭建 marketplace">
-        <div class="p-top"><div class="p-name">Marketplacer<span class="p-cn">市场平台搭建</span></div><a class="p-url" href="https://marketplacer.com/" target="_blank" rel="noopener">marketplacer.com ↗</a></div>
-        <p class="p-desc">把自己的网站做成多卖家市场（Marketplace）的搭建平台——SaaS 化的招商与分账。</p>
-        <div class="p-tags"><span class="p-tag">市场平台</span><span class="p-tag">搭建</span></div>
-      </article>
-      <article class="pcard rv" id="p-sell2usa" data-k="sell2usa 美国市场 进入 贸易">
-        <div class="p-top"><div class="p-name">Sell2USA<span class="p-cn">美国市场进入服务</span></div><a class="p-url" href="https://www.sell2usa.org/" target="_blank" rel="noopener">sell2usa.org ↗</a></div>
-        <p class="p-desc">帮外国供应商进入美国市场的贸易服务组织——对接买家与合规指导。</p>
-        <div class="p-tags"><span class="p-tag">市场进入</span></div>
-      </article>
-      <article class="pcard rv" id="p-readycontacts" data-k="readycontacts b2b 潜客 名单 数据">
-        <div class="p-top"><div class="p-name">ReadyContacts<span class="p-cn">B2B 潜客数据</span></div><a class="p-url" href="https://readycontacts.com/" target="_blank" rel="noopener">readycontacts.com ↗</a></div>
-        <p class="p-desc">B2B 潜客名单与公司联系人数据——按角色、行业、规模定向拉名单。</p>
-        <div class="p-tags"><span class="p-tag">B2B 数据</span><span class="p-tag">潜客名单</span></div>
-      </article>
-      <article class="pcard rv" id="p-pds" data-k="positive data solutions b2b 数据 定价">
-        <div class="p-top"><div class="p-name">Positive Data Solutions<span class="p-cn">B2B 数据服务</span></div><a class="p-url" href="https://www.positivedatasolutions.com/pricing" target="_blank" rel="noopener">positivedatasolutions.com ↗</a></div>
-        <p class="p-desc">B2B 数据与列表服务，按量定价透明——补潜客名单的实用选项。</p>
-        <div class="p-tags"><span class="p-tag">B2B 数据</span><span class="p-tag">按量定价</span></div>
-      </article>
-      <article class="pcard rv" id="p-cbinsights" data-k="cb insights 市场情报 研究 数据">
-        <div class="p-top"><div class="p-name">CB Insights<span class="p-cn">市场情报</span></div><a class="p-url" href="https://www.cbinsights.com/what-we-offer/data/" target="_blank" rel="noopener">cbinsights.com ↗</a></div>
-        <p class="p-desc">市场情报与研究数据——行业报告、公司数据库、投融资动态。</p>
-        <div class="p-tags"><span class="p-tag">市场情报</span></div>
-      </article>
-      <article class="pcard rv" id="p-datacluster" data-k="datacluster 数据 采集 定制 研究">
-        <div class="p-top"><div class="p-name">DataCluster<span class="p-cn">定制数据采集</span></div><a class="p-url" href="https://datacluster.com/pricing" target="_blank" rel="noopener">datacluster.com ↗</a></div>
-        <p class="p-desc">定制数据采集与研究服务——按你的需求定义字段去收数据。</p>
-        <div class="p-tags"><span class="p-tag">定制采集</span></div>
-      </article>
-      <article class="pcard rv" id="p-baycities" data-k="bay cities 包装 陈列 展示 零售">
-        <div class="p-top"><div class="p-name">Bay Cities<span class="p-cn">包装与陈列制造</span></div><a class="p-url" href="https://www.bay-cities.com/" target="_blank" rel="noopener">bay-cities.com ↗</a></div>
-        <p class="p-desc">包装、陈列与零售展示的设计制造——货架执行从图纸到门店落地。</p>
-        <div class="p-tags"><span class="p-tag">包装</span><span class="p-tag">陈列</span></div>
-      </article>
-      <article class="pcard rv" id="p-reachone" data-k="reachone marketing 营销服务">
-        <div class="p-top"><div class="p-name">ReachOne Marketing<span class="p-cn">营销服务</span></div><a class="p-url" href="https://reachonemarketing.com/" target="_blank" rel="noopener">reachonemarketing.com ↗</a></div>
-        <p class="p-desc">面向品牌与零售的营销服务商。</p>
-        <div class="p-tags"><span class="p-tag">营销服务</span></div>
-      </article>
-      <article class="pcard rv" id="p-ecrm" data-k="ecrm marketgate 采购 会议 b2b 零售">
-        <div class="p-top"><div class="p-name">eCRM MarketGate<span class="p-cn">零售采购会议</span></div><a class="p-url" href="https://ecrm.marketgate.com/" target="_blank" rel="noopener">ecrm.marketgate.com ↗</a></div>
-        <p class="p-desc">零售采购会议与 B2B 连接平台——按品类组织供应商与零售买家高效见面。</p>
-        <div class="p-tags"><span class="p-tag">采购会议</span><span class="p-tag">B2B</span></div>
-      </article>
-      <article class="pcard rv" id="p-mikmak" data-k="mikmak 电商 归因 购物行为">
-        <div class="p-top"><div class="p-name">MikMak<span class="p-cn">电商归因分析</span></div><a class="p-url" href="https://www.mikmak.com/" target="_blank" rel="noopener">mikmak.com ↗</a></div>
-        <p class="p-desc">广告到加购的电商归因——品牌投放背后的真实购物行为测量。</p>
-        <div class="p-tags"><span class="p-tag">电商归因</span></div>
-      </article>
-      <article class="pcard rv" id="p-octoparse" data-k="octoparse 网页 抓取 爬虫 无代码">
-        <div class="p-top"><div class="p-name">Octoparse<span class="p-cn">无代码网页抓取</span></div><a class="p-url" href="https://www.octoparse.com/pricing" target="_blank" rel="noopener">octoparse.com ↗</a></div>
-        <p class="p-desc">无代码网页抓取工具——点选式配置爬虫，抓竞品页面自己攒数据。</p>
-        <div class="p-tags"><span class="p-tag">网页抓取</span><span class="p-tag">无代码</span></div>
-      </article>
-      <article class="pcard rv" id="p-superordinary" data-k="superordinary 品牌 增长 加速">
-        <div class="p-top"><div class="p-name">Superordinary<span class="p-cn">品牌增长加速</span></div><a class="p-url" href="https://www.superordinary.co/" target="_blank" rel="noopener">superordinary.co ↗</a></div>
-        <p class="p-desc">面向消费品牌的增长与市场加速集团——美妆个护品牌出海常用伙伴。</p>
-        <div class="p-tags"><span class="p-tag">品牌加速</span></div>
-      </article>
-      <article class="pcard rv" id="p-namesilo" data-k="namesilo 域名 注册">
-        <div class="p-top"><div class="p-name">NameSilo<span class="p-cn">域名注册</span></div><a class="p-url" href="https://www.namesilo.com/" target="_blank" rel="noopener">namesilo.com ↗</a></div>
-        <p class="p-desc">低价域名注册与管理——建站的第一步。</p>
-        <div class="p-tags"><span class="p-tag">域名</span></div>
-      </article>
-      <article class="pcard rv" id="p-toucan" data-k="toucan toucanecommerce 亚马逊 代运营 agency 广告 dsp tiktok shop a+ 内容 listing 图片 英镑 定价 培训">
-        <div class="p-top"><div class="p-name">Toucan<span class="p-cn">亚马逊全托管代运营</span></div><a class="p-url" href="https://toucanecommerce.com/" target="_blank" rel="noopener">toucanecommerce.com ↗</a></div>
-        <p class="p-desc">全球全托管亚马逊代理 + Amazon Ads 高级合作伙伴（英国，英镑明码标价）：账户管理、Sponsored Ads / DSP 投放、A+ 内容与品牌旗舰店制作、TikTok Shop 激活与团队培训。</p>
-        <div class="p-tags"><span class="p-tag">亚马逊代运营</span><span class="p-tag">DSP 广告</span><span class="p-tag">TikTok Shop</span></div>
-      </article>
-      <article class="pcard rv" id="p-atventure" data-k="atventure atventureretailgroup 零售 销售 代表 target menards 亚马逊 明尼阿波利斯 线下 增长 服务商">
-        <div class="p-top"><div class="p-name">AtVenture Retail Group<span class="p-cn">线下零售销售代表</span></div><a class="p-url" href="https://atventureretailgroup.com/" target="_blank" rel="noopener">atventureretailgroup.com ↗</a></div>
-        <p class="p-desc">线下零售增长服务商：总部位于 Target 总部所在的明尼阿波利斯 downtown，西雅图团队服务 Amazon、威斯康星团队服务 Menards——帮品牌打通 Target / Amazon / Menards 客户关系与门店生意。</p>
-        <div class="p-tags"><span class="p-tag">Target</span><span class="p-tag">Amazon</span><span class="p-tag">Menards</span></div>
-      </article>
-      <article class="pcard rv is-hot" id="p-spreetail" data-k="spreetail sellsuccess 库存 买断 批发 渠道 分销 履约 仓储 prime 大件 重货 增长">
-        <div class="p-top"><div class="p-name">Spreetail<span class="p-cn">渠道加速与库存买断</span></div><a class="p-url" href="https://www.spreetail.com/" target="_blank" rel="noopener">spreetail.com ↗</a></div>
-        <p class="p-desc">「我们买你的库存」：批发买断 + 20+ 渠道分销 + 美英欧 9 个履约中心端到端履约——大件重货 Prime 级配送的代表玩家（首年平均 +40% 销售增长、99.8% 当日发货）。</p>
-        <div class="p-tags"><span class="p-tag">库存买断</span><span class="p-tag">20+ 渠道</span><span class="p-tag">履约网络</span></div>
-      </article>
-      <article class="pcard rv" id="p-tradebyte" data-k="tradebyte 欧洲 时尚 fashion 集成商 integrator 多渠道 市场集成 zalando about you zeos 商品目录 feed pim 类目 映射 ai gmv tb.360 基准 异常 预警 服装">
-        <div class="p-top"><div class="p-name">Tradebyte<span class="p-cn">欧洲时尚多渠道集成商</span></div><a class="p-url" href="https://www.tradebyte.com/" target="_blank" rel="noopener">tradebyte.com ↗</a></div>
-        <p class="p-desc">欧洲时尚与生活方式品类的市场集成商：商品目录上传一次，AI 自动适配 90+ 平台的规格与类目树（Zalando、ABOUT YOU 官方首选集成商，ZEOS 原生）——TB.360 全渠道 GMV 基准对比与实时异常预警，15+ 年时尚类目数据训练。</p>
-        <div class="p-tags"><span class="p-tag">90+ 渠道</span><span class="p-tag">Zalando 官方</span><span class="p-tag">TB.360 基准</span></div>
-      </article>
-      <article class="pcard rv" id="p-brandsom" data-k="brandsom 荷兰 欧洲市场 代运营 agency marketplace amazon bol.com zalando 托管 固定月费 gmv 抽成 绩效 乌得勒支 onitsuka tiger">
-        <div class="p-top"><div class="p-name">Brandsom<span class="p-cn">欧洲市场代运营（荷兰）</span></div><a class="p-url" href="https://www.brandsom.nl/" target="_blank" rel="noopener">brandsom.nl ↗</a></div>
-        <p class="p-desc">荷兰 marketplace 代运营：一支完整团队管 Amazon、Bol.com、Zalando，两种计费——Managed Performance（低固定费 + GMV 分成，€750/月起）或 Managed Vast（固定月费固定范围）。案例：Onitsuka Tiger 当年 GMV +340%、铺开 12 个欧洲市场。</p>
-        <div class="p-tags"><span class="p-tag">Bol.com</span><span class="p-tag">GMV 分成</span><span class="p-tag">欧洲市场</span></div>
-      </article>
-      <article class="pcard rv is-hot" id="p-cohere" data-k="cohere commerce coherecommerce 供应商情报 vendor intelligence 品牌发现 独立零售 independent retailers 买手 buyer 撮合 b2b 评分 cohere score 零售就绪 申请 追踪 vendor portal dashboard 报告 ai 评论分析">
-        <div class="p-top"><div class="p-name">Cohere Commerce<span class="p-cn">品牌×零售商撮合与供应商情报</span></div><a class="p-url" href="https://www.coherecommerce.com/vendor-portal-dashboard" target="_blank" rel="noopener">coherecommerce.com ↗</a></div>
-        <p class="p-desc">用 AI 供应商情报把消费品牌与独立零售商连起来——买手不再依赖展会与陌生开发：按品类 / 地理位置 / 自然语言搜品牌，视觉 + 数据双视图尽调、短名单持续监控、AI 生成可分享的供应商情报报告；品牌侧有 Cohere Score（8 维度 0–100 零售就绪评分）、零售商请求匹配、vendor portal 申请全流程追踪（状态一变即时通知，不再进黑箱）。</p>
-        <div class="p-tags"><span class="p-tag">AI 品牌发现</span><span class="p-tag">Cohere Score</span><span class="p-tag">申请追踪</span></div>
-      </article>
-      <article class="pcard rv" id="p-sapo" data-k="sapo sapo.vn 越南 东南亚 全渠道 omnichannel 零售管理 pos 收银 库存 进销存 电子发票 会计 报税 shopee lazada tiktok shop facebook 同步 headless commerce 直播 带货 chốt đơn sapo go 23 万 卖家">
-        <div class="p-top"><div class="p-name">Sapo<span class="p-cn">越南全渠道零售管理（越南语）</span></div><a class="p-url" href="https://www.sapo.vn/" target="_blank" rel="noopener">sapo.vn ↗</a></div>
-        <p class="p-desc">越南使用最广的全渠道零售管理平台（23 万卖家，Headless Commerce + AI）：POS 收银 + 多仓库存与 Shopee / Lazada / TikTok Shop / Facebook / 自建站实时同步，一套数据管销售、库存、发票、客户——再往深还有电子发票、会计自动记账与税务申报；Sapo Go 支持直播带货 + 自动接单。</p>
-        <div class="p-tags"><span class="p-tag">越南 No.1</span><span class="p-tag">POS + 市场同步</span><span class="p-tag">电子发票/报税</span></div>
-      </article>
-    </div>
-  </div>
-</div></section>
-
-<div id="cat7"></div>
-<section style="padding-top:26px"><div class="wrap">
-  <div class="cat-block">
-    <div class="cat-head"><span class="cat-num rv">CATEGORY 07</span><h2 class="rv">零售与供应链分析平台 <span style="color:var(--ink-faint);font-weight:400;font-size:.6em">（AI · 预测 · 情报）</span></h2></div>
-    <p class="cat-desc rv">在数据之上做决策：库存预测、定价优化、利润智能、采购分析。</p>
-    <div class="grid">
-      <article class="pcard rv" id="p-flieber" data-k="flieber 库存 预测 补货 电商">
-        <div class="p-top"><div class="p-name">Flieber<span class="p-cn">库存预测与补货</span></div><a class="p-url" href="https://www.flieber.com/" target="_blank" rel="noopener">flieber.com ↗</a></div>
-        <p class="p-desc">多渠道电商库存预测——算准补货时点，降低断货与积压两个方向的损耗。</p>
-        <div class="p-tags"><span class="p-tag">库存预测</span><span class="p-tag">补货</span></div>
-      </article>
-      <article class="pcard rv is-hot" id="p-askuity" data-k="askuity 家得宝 home depot 供应商 分析">
-        <div class="p-top"><div class="p-name">Askuity<span class="p-cn">家得宝供应商分析</span></div><a class="p-url" href="https://askuity.com/for-suppliers" target="_blank" rel="noopener">askuity.com ↗</a></div>
-        <p class="p-desc">Home Depot 供应商专用数据分析入口——供应商版的销售、库存与门店洞察。</p>
-        <div class="p-tags"><span class="p-tag">家得宝</span><span class="p-tag">供应商</span></div>
-      </article>
-      <article class="pcard rv" id="p-brand3p" data-k="brand3p 品牌 数据 第三方">
-        <div class="p-top"><div class="p-name">Brand3P<span class="p-cn">品牌数据平台</span></div><a class="p-url" href="https://brand3p.com/" target="_blank" rel="noopener">brand3p.com ↗</a></div>
-        <p class="p-desc">第三方品牌数据平台——品牌在多渠道表现的统一视图。</p>
-        <div class="p-tags"><span class="p-tag">品牌数据</span></div>
-      </article>
-      <article class="pcard rv" id="p-retailinsights" data-k="the retail insights 零售 分析 数据科学">
-        <div class="p-top"><div class="p-name">The Retail Insights<span class="p-cn">零售分析与数据科学</span></div><a class="p-url" href="https://theretailinsights.com/#solutions" target="_blank" rel="noopener">theretailinsights.com ↗</a></div>
-        <p class="p-desc">零售行业分析与数据科学服务——解决方案覆盖品类、定价与渠道。</p>
-        <div class="p-tags"><span class="p-tag">零售分析</span><span class="p-tag">数据科学</span></div>
-      </article>
-      <article class="pcard rv" id="p-bright" data-k="bright cpg 品类 利润 货架 分析">
-        <div class="p-top"><div class="p-name">Bright<span class="p-cn">CPG 品类与利润分析</span></div><a class="p-url" href="https://www.bright.cn/cp/start?id=hl_27fff628" target="_blank" rel="noopener">bright.cn ↗</a></div>
-        <p class="p-desc">面向 CPG 的品类、利润与货架分析——帮品牌看清钱在哪个 SKU 上赚的。</p>
-        <div class="p-tags"><span class="p-tag">CPG</span><span class="p-tag">品类分析</span></div>
-      </article>
-      <article class="pcard rv" id="p-diversebrands" data-k="diverse brands 品牌 渠道 服务">
-        <div class="p-top"><div class="p-name">Diverse Brands<span class="p-cn">品牌与渠道服务</span></div><a class="p-url" href="https://www.diverse-brands.com/services" target="_blank" rel="noopener">diverse-brands.com ↗</a></div>
-        <p class="p-desc">品牌孵化与渠道服务——从产品到货架的运营支撑。</p>
-        <div class="p-tags"><span class="p-tag">品牌服务</span></div>
-      </article>
-      <article class="pcard rv" id="p-dragonfly" data-k="dragonfly ai 视觉 内容 预测 眼动">
-        <div class="p-top"><div class="p-name">Dragonfly AI<span class="p-cn">视觉内容效果预测</span></div><a class="p-url" href="https://dragonflyai.co/" target="_blank" rel="noopener">dragonflyai.co ↗</a></div>
-        <p class="p-desc">AI 预测视觉内容的注意力效果——货架图、主图、广告上线前先测注意力热区。</p>
-        <div class="p-tags"><span class="p-tag">视觉预测</span><span class="p-tag">AI</span></div>
-      </article>
-      <article class="pcard rv" id="p-symphony" data-k="symphonyai retail cpg ai 零售 平台">
-        <div class="p-top"><div class="p-name">SymphonyAI Retail CPG<span class="p-cn">AI 零售平台</span></div><a class="p-url" href="https://www.symphonyai.com/retail-cpg/get-started/" target="_blank" rel="noopener">symphonyai.com ↗</a></div>
-        <p class="p-desc">面向零售与 CPG 的 AI 平台——品类管理、需求预测、门店执行一站式。</p>
-        <div class="p-tags"><span class="p-tag">AI 平台</span><span class="p-tag">CPG</span></div>
-      </article>
-      <article class="pcard rv" id="p-procureanalytics" data-k="procureanalytics 采购 数据 分析">
-        <div class="p-top"><div class="p-name">ProcureAnalytics<span class="p-cn">采购数据分析</span></div><a class="p-url" href="https://procureanalytics.com/" target="_blank" rel="noopener">procureanalytics.com ↗</a></div>
-        <p class="p-desc">采购侧的数据分析——花在供应商与物料上的钱，看得见结构。</p>
-        <div class="p-tags"><span class="p-tag">采购分析</span></div>
-      </article>
-      <article class="pcard rv" id="p-revionics" data-k="revionics 定价 促销 优化 markdown">
-        <div class="p-top"><div class="p-name">Revionics<span class="p-cn">定价与促销优化</span></div><a class="p-url" href="https://revionics.com/" target="_blank" rel="noopener">revionics.com ↗</a></div>
-        <p class="p-desc">零售定价、促销与降价（markdown）优化——价格生命周期管理老牌玩家。</p>
-        <div class="p-tags"><span class="p-tag">定价优化</span></div>
-      </article>
-      <article class="pcard rv" id="p-profitmind" data-k="profitmind 利润 智能 品类 增长">
-        <div class="p-top"><div class="p-name">Profitmind<span class="p-cn">利润智能分析</span></div><a class="p-url" href="https://www.profitmind.com/" target="_blank" rel="noopener">profitmind.com ↗</a></div>
-        <p class="p-desc">利润智能——找出品类里拖后腿的 SKU 与被低估的增长点。</p>
-        <div class="p-tags"><span class="p-tag">利润分析</span></div>
-      </article>
-      <article class="pcard rv" id="p-dataspark" data-k="dataspark 数据 分析 智能">
-        <div class="p-top"><div class="p-name">DataSpark<span class="p-cn">数据分析</span></div><a class="p-url" href="https://dataspark.co/" target="_blank" rel="noopener">dataspark.co ↗</a></div>
-        <p class="p-desc">数据分析与智能服务。</p>
-        <div class="p-tags"><span class="p-tag">数据分析</span></div>
-      </article>
-      <article class="pcard rv" id="p-globaloverview" data-k="global overview 数据 洞察 服务">
-        <div class="p-top"><div class="p-name">Global Overview<span class="p-cn">数据与洞察服务</span></div><a class="p-url" href="http://www.globaloverview.com/" target="_blank" rel="noopener">globaloverview.com ↗</a></div>
-        <p class="p-desc">数据与洞察服务商。</p>
-        <div class="p-tags"><span class="p-tag">数据洞察</span></div>
-      </article>
-    </div>
-  </div>
-</div></section>
-
-<div id="cat8"></div>
-<section style="padding-top:26px;padding-bottom:0"><div class="wrap">
-  <div class="cat-block">
-    <div class="cat-head"><span class="cat-num rv">CATEGORY 08</span><h2 class="rv">技术与基础架构平台</h2></div>
-    <p class="cat-desc rv">所有零售数据的承载底座——企业数据中台 / 仓库建在这两家之上。</p>
-    <div class="grid">
-      <article class="pcard rv" id="p-snowflake" data-k="snowflake 数据云 仓库 中台 共享">
-        <div class="p-top"><div class="p-name">Snowflake<span class="p-cn">数据云</span></div><a class="p-url" href="https://www.snowflake.com/" target="_blank" rel="noopener">snowflake.com ↗</a></div>
-        <p class="p-desc">数据云：存储、计算、共享与数据市场一体——零售数据中台最常见的底座。</p>
-        <div class="p-tags"><span class="p-tag">数据云</span><span class="p-tag">中台</span></div>
-      </article>
-      <article class="pcard rv" id="p-databricks2" data-k="databricks lakehouse 数据智能 ai 平台">
-        <div class="p-top"><div class="p-name">Databricks<span class="p-cn">数据智能平台</span></div><a class="p-url" href="https://www.databricks.com/" target="_blank" rel="noopener">databricks.com ↗</a></div>
-        <p class="p-desc">Lakehouse 数据智能平台——数据工程、分析与 AI 在同一底座。</p>
-        <div class="p-tags"><span class="p-tag">Lakehouse</span><span class="p-tag">AI</span></div>
-      </article>
-    </div>
-  </div>
-</div></section>
-
-<section id="cpgguys" class="cpg" style="padding-top:72px;padding-bottom:72px">
+<section id="plans" style="border-top:1px solid var(--rule)">
   <div class="wrap">
-    <div class="sec-eyebrow rv">Retail Livestream & Media · 行业直播与媒体</div>
-    <h2 class="rv">The CPG Guys —— 你要找的那档零售直播</h2>
-    <p class="sec-sub rv">你问的「MPG 还是 DPG、经常邀请零售人直播」——就是 <b style="color:var(--ink)">The CPG Guys</b>：美国 CPG 与零售圈更新最勤、高管出镜率最高的行业节目之一。</p>
-    <div class="cpg-grid">
-      <div>
-        <div class="cpg-host rv">
-          <div class="cpg-ava">SR</div>
-          <div><b>Sri Rajagopalan</b><span>CPG 电商与数字化行业权威，前 CVS Health 数字化高管——品牌、零售与供应链高管的常客主持。</span></div>
-        </div>
-        <div class="cpg-host rv">
-          <div class="cpg-ava">PB</div>
-          <div><b>Peter V.S. Bond</b><span>消费者忠诚度专家（Consumer Loyalty Guru）——零售会员、忠诚度与购物者营销方向。</span></div>
-        </div>
-        <a class="cpg-link rv" href="https://cpgguys.com/" target="_blank" rel="noopener">cpgguys.com ↗ 官网直达</a>
-      </div>
-      <div class="cpg-facts">
-        <div class="cpg-fact rv"><b>2×/周</b><span>每周更新两次：深度访谈 + Commerce Riff 行业快评</span></div>
-        <div class="cpg-fact rv"><b>OMNI</b><span>全渠道零售商业：电商、零售媒体、供应链、自有品牌</span></div>
-        <div class="cpg-fact rv"><b>C 级</b><span>常邀零售高管、品牌创始人与供应链负责人对谈</span></div>
-        <div class="cpg-fact rv"><b>FMCG</b><span>姊妹节目 FMCG Guys，同班人马另一条线</span></div>
-      </div>
-    </div>
-
-    <div id="omnitalk" style="margin-top:72px;padding-top:56px;border-top:1px solid var(--rule)">
-      <div class="cat-num rv" style="margin-bottom:12px">OMNI TALK · 零售行业媒体</div>
-      <h2 class="rv">Omni Talk —— 零售人每天看的行业头条</h2>
-      <p class="sec-sub rv">「The retailer news source for retailers, by retailers」——前 Target 高管主理、YouTube 订阅 25 万+，零售高管圈覆盖最广的英文行业媒体之一，也是跟进美国零售风向的日常信息源。2026 年 8 月新播客 GrocerTalk 全球杂货创新已首播。</p>
-      <div class="cpg-grid">
-        <div>
-          <div class="cpg-host rv">
-            <div class="cpg-ava">CW</div>
-            <div><b>Chris Walton</b><span>前 Target 高管、全渠道零售方向——Omni Talk 联合创始人，Fast Five 与 GrocerTalk 主持。</span></div>
-          </div>
-          <div class="cpg-host rv">
-            <div class="cpg-ava">AM</div>
-            <div><b>Anne Mezzenga</b><span>前 Target 采购高管——Omni Talk 联合创始人兼 CEO，行业访谈与快讯主持。</span></div>
-          </div>
-          <div class="cpg-host rv">
-            <div class="cpg-ava">BM</div>
-            <div><b>Ben Miller</b><span>杂货与零售科技分析师——GrocerTalk 联合主持，负责全球杂货创新线。</span></div>
-          </div>
-          <a class="cpg-link rv" href="https://omnitalk.blog/" target="_blank" rel="noopener">omnitalk.blog ↗ 官网直达</a>
-        </div>
-        <div class="cpg-facts">
-          <div class="cpg-fact rv"><b>254K</b><span>YouTube 订阅（Omni Talk Retail 频道）</span></div>
-          <div class="cpg-fact rv"><b>Fast Five®</b><span>每周行业五大事，高管圆桌快评</span></div>
-          <div class="cpg-fact rv"><b>NEW</b><span>GrocerTalk 已首播：全球杂货创新播客，Couche-Tard 收购 Żabka、Kroger 电商计划等大事件拆解</span></div>
-          <div class="cpg-fact rv"><b>每日</b><span>Retail Daily Minute 零售快讯 + 邮件通讯日更</span></div>
-          <div class="cpg-fact rv"><b>5IM</b><span>5 Insightful Minutes：5 分钟深访零售科技 CEO</span></div>
-          <div class="cpg-fact rv"><b>热议</b><span>近期话题：Kroger 收购 Giant Eagle、Walmart 测试 Symbotic 自动化、Amazon × AutoStore 合作、DoorDash 上线 Barnes & Noble</span></div>
-        </div>
-      </div>
+    <div class="sec-eyebrow rv">Plans</div>
+    <h2 class="rv">三档订阅</h2>
+    <p class="sec-sub rv">从标准起步，按命中率迭代——季度复盘后决定升档、调维度还是保持。</p>
+    <div class="grid">
+      <article class="pcard rv">
+        <div class="p-top"><h3 class="p-name">标准订阅<span class="p-cn">STANDARD</span></h3><span class="p-num">Plan A</span></div>
+        <p class="p-desc">固定品类 × 固定维度，周更起步——最快两周内交付第一期。先用标准维度验证价值，再决定要不要定制。</p>
+        <div class="p-tags"><span class="p-tag">固定品类</span><span class="p-tag">周更</span><span class="p-tag">快速起步</span></div>
+      </article>
+      <article class="pcard rv">
+        <div class="p-top"><h3 class="p-name">定制订阅<span class="p-cn">CUSTOM</span></h3><span class="p-num">Plan B</span></div>
+        <p class="p-desc">按你的问题定义维度、频率与深度——季度复盘命中率，滚动调整订阅口径，让数据跟着业务走。</p>
+        <div class="p-tags"><span class="p-tag">自定义维度</span><span class="p-tag">季度复盘</span><span class="p-tag">滚动迭代</span></div>
+      </article>
+      <article class="pcard rv">
+        <div class="p-top"><h3 class="p-name">API 接入<span class="p-cn">API ACCESS</span></h3><span class="p-num">Plan C</span></div>
+        <p class="p-desc">技术团队自助拉取——token 权限与字段按需开通，直接进你的数据管道。可配合系统工具服务做落地的看板搭建。</p>
+        <div class="p-tags"><span class="p-tag">自助拉取</span><span class="p-tag">字段权限</span><span class="p-tag">管道落地</span></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="contact">
+<section id="process" style="border-top:1px solid var(--rule)">
   <div class="wrap">
-    <div class="sec-eyebrow rv">Talk to us</div>
-    <h2 class="rv">找不到合适的数据源？我们可以帮你定位与采购</h2>
-    <p class="rv">从 POS 数据订阅、消费者面板采购，到用 Snowflake 搭自己的数据中台——告诉我们你想回答什么问题，我们帮你找到最省钱的路径。</p>
-    <a class="cta-mail rv" href="mailto:haidong.zhou@outlook.com?subject=%E9%9B%B6%E5%94%AE%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0%E5%92%A8%E8%AF%A2">haidong.zhou@outlook.com</a>
+    <div class="sec-eyebrow rv">How It Works</div>
+    <h2 class="rv">从问题到数据，四步</h2>
+    <p class="sec-sub rv">订阅不是开通即结束——问题定义、维度设计、持续交付、复盘迭代，一个闭环。</p>
+    <div class="steps">
+      <div class="step rv"><span class="n">STEP 1</span><h4>定义问题</h4><p>你说清要回答什么：选哪个品、定什么价、跟不跟竞品、内容影响多大。</p></div>
+      <div class="step rv"><span class="n">STEP 2</span><h4>定义维度</h4><p>我们把问题翻译成数据维度、更新节奏与交付形态，双方确认口径。</p></div>
+      <div class="step rv"><span class="n">STEP 3</span><h4>持续交付</h4><p>token / 数据包 / 报告按周期到位，直接进你的系统与工作流。</p></div>
+      <div class="step rv"><span class="n">STEP 4</span><h4>复盘迭代</h4><p>每季度回顾命中率——哪些维度帮到了决策、哪些可以砍掉，调整订阅。</p></div>
+    </div>
+    <div class="disc-band rv">
+      <h3>Data Discipline · 数据纪律</h3>
+      <p>我们提供<b>数据分析与数据 token</b>，不提供、也不披露<b>数据源头</b>——你拿到的是结论和可用数据，不是我们的供应链。自有监测网络 + 多源交叉验证 + 人工研判，是我们输出判断的方式；对接入方，token 权限按字段最小化开通。这条纪律适用于全部业务线。</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-eyebrow rv">FAQ</div>
+    <h2 class="rv">常见问题</h2>
+    <div class="faq rv">
+      <details>
+        <summary>什么是数据 token 交付？</summary>
+        <div class="a">把分析结果做成标准化的数据接口或周期性数据包：趋势信号、热度分值、选题卡结构化字段——你的系统按 token 拉取即可，<b>不需要采购原始数据源</b>，也不需要自己搭分析团队。适合已有技术团队但缺数据能力的客户。</div>
+      </details>
+      <details>
+        <summary>数据从哪里来？</summary>
+        <div class="a">不披露。自有监测网络与研究体系：多源交叉验证 + 人工研判，形成内部数据库后输出结论。数据源头是我们供应链的一部分，不对外——这也是我们能稳定交付而别人难以复制的原因。</div>
+      </details>
+      <details>
+        <summary>更新频率是怎样的？</summary>
+        <div class="a">标准订阅按周交付，定制订阅按约定频率；热点事件（爆筹项目、竞品大动作）不定期加更，保证你看到的是「正在发生的」而不是「上个月发生的」。</div>
+      </details>
+      <details>
+        <summary>能接入什么系统？</summary>
+        <div class="a">token 直接对接 ERP / CRM / BI 看板；也可以配合<b>系统工具服务</b>，由我们把数据管道与看板一起落地——你只看结论，不用碰集成。</div>
+      </details>
+      <details>
+        <summary>和品牌洞察是什么关系？</summary>
+        <div class="a">两条服务，可以独立订阅：<b>品牌洞察</b>回答「内容与 IP」问题——红人 × 品牌 × 内容三方洞察与众筹雷达的选题弹药；<b>业务数据订阅</b>回答「生意数据」问题——选品、定价、消费者、竞品的持续数据供给。</div>
+      </details>
+      <details>
+        <summary>怎么开始订阅？</summary>
+        <div class="a">邮件说明你的角色（工厂 / 品牌 / 渠道 / 创作者）与要回答的问题，我们回一份对应方向的数据维度建议与订阅方案。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-eyebrow rv">Related</div>
+    <h2 class="rv">配套能力</h2>
+    <div class="rel-grid rv">
+      <a class="rel" href="insights.html"><span class="rn">品牌洞察</span><span class="rz">红人 × 品牌 × 内容 · 众筹雷达</span></a>
+      <a class="rel" href="systems.html"><span class="rn">系统工具服务</span><span class="rz">ERP · WMS · CRM · AI AGENT</span></a>
+      <a class="rel" href="brand-growth.html"><span class="rn">品牌增长服务</span><span class="rz">红人 · 短剧 · 社媒 · 撮合</span></a>
+      <a class="rel" href="overview.html"><span class="rn">全局业务总览</span><span class="rz">一个系统的进化 · 四层架构</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-eyebrow rv">Start a Subscription</div>
+    <h2 class="rv">先订阅一个问题的答案</h2>
+    <p class="rv">邮件说明你的角色与要回答的问题——我们回一份对应方向的数据维度建议、样例口径与订阅方案。</p>
+    <a class="cta-mail rv" href="mailto:haidong.zhou@outlook.com?subject=业务数据订阅咨询（insightmarketplac）">haidong.zhou@outlook.com</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap foot-in">
-    <div>
-      <div class="foot-brand">insight<em>marketplac</em></div>
-      <div style="margin-top:6px">美国渠道公司 · 深圳运营中心 · 美国海外仓配中心</div>
-    </div>
-    <div style="text-align:right">
-      <div><a href="sell-on-oem-odm.html">工厂出海入驻</a> · <a href="sell-on-oem-odm-en.html">Sell on + OEM/ODM</a> · <a href="sell-on/">47 平台入驻入口</a> · <a href="oem-odm-onboarding-checklist/index.html">入驻资质清单</a></div>
-      <div style="margin-top:6px">© 2026 insightmarketplac — 零售数据目录持续更新</div>
+    <div class="foot-brand">insight<em>marketplac</em> · 业务数据订阅</div>
+    <div class="foot-links">
+      <a href="sell-on-oem-odm.html">卖家入驻</a>
+      <a href="insights.html">品牌洞察</a>
+      <a href="systems.html">系统工具服务</a>
+      <a href="overview.html">全局业务总览</a>
+      <a href="mailto:haidong.zhou@outlook.com">haidong.zhou@outlook.com</a>
     </div>
   </div>
 </footer>
 
 <script>
 (function(){
-  var cards = [].slice.call(document.querySelectorAll('.pcard'));
-  var q = document.getElementById('q');
-  var count = document.getElementById('search-count');
-  var emptyMsg = null;
-  var total = cards.length;
-
-  function normalize(s){return (s||'').toLowerCase().replace(/\s+/g,' ')}
-
-  q.addEventListener('input', function(){
-    var v = normalize(q.value.trim());
-    var shown = 0;
-    cards.forEach(function(c){
-      var k = normalize(c.getAttribute('data-k') + ' ' + c.textContent);
-      var ok = !v || k.indexOf(v) !== -1;
-      c.style.display = ok ? '' : 'none';
-      if(ok){shown++;}
-    });
-    count.textContent = v ? ('匹配 ' + shown + ' / ' + total + ' 个平台') : ('共 ' + total + ' 个平台');
-    if(!emptyMsg){
-      emptyMsg = document.createElement('div');
-      emptyMsg.className = 'empty';
-      emptyMsg.textContent = '没有匹配的平台——换个关键词试试，或直接邮件联系我们。';
-      var g = document.querySelector('.grid');
-      g.parentNode.insertBefore(emptyMsg, g.nextSibling);
-    }
-    emptyMsg.style.display = shown === 0 ? 'block' : 'none';
-  });
-
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){
       if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
     });
   },{threshold:.08,rootMargin:'0px 0px -30px 0px'});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
-
-  var chips = [].slice.call(document.querySelectorAll('.catnav-in .chip'));
-  var secs = chips.map(function(ch){return document.getElementById(ch.getAttribute('href').slice(1))});
-  var sio = new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){
-        var i = secs.indexOf(e.target);
-        if(i > -1){chips.forEach(function(c){c.classList.remove('on')});chips[i].classList.add('on');}
-      }
-    });
-  },{rootMargin:'-35% 0px -55% 0px'});
-  secs.forEach(function(s){if(s){sio.observe(s)}});
 })();
 </script>
 </body>
