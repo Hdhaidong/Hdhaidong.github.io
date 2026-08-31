@@ -64,6 +64,56 @@
 
 <section>
   <div class="wrap">
+    <h2>Architecture</h2>
+    <p class="lead">A local-first agent on the OpenWorker runtime — evidence discipline built into the pipeline, not bolted on.</p>
+    <figure class="arch">
+    <svg viewBox="0 0 960 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Amazon Product Scout architecture — a local-first OpenWorker agent producing evidence-tagged research">
+      <defs>
+        <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7c5cff"/></marker>
+      </defs>
+      <rect x="30" y="18" width="900" height="52" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="480" y="40" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Intent — one-off question or standing watch schedule</text>
+      <text x="480" y="58" text-anchor="middle" fill="#93a0ba" font-size="11">the seller asks, or the watch fires on its own cadence</text>
+      <line x1="480" y1="70" x2="480" y2="94" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#a1)"/>
+      <rect x="30" y="98" width="900" height="62" rx="10" fill="#161d2e" stroke="#38e0b0"/>
+      <text x="480" y="122" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">OpenWorker runtime · local-first</text>
+      <text x="480" y="142" text-anchor="middle" fill="#93a0ba" font-size="11">agent persona + manifest · read-only marketplace tools · no API keys · interactive-mode approvals</text>
+      <line x1="480" y1="160" x2="480" y2="184" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#a1)"/>
+      <rect x="30" y="188" width="286" height="56" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="173" y="212" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Niche scan</text>
+      <text x="173" y="230" text-anchor="middle" fill="#93a0ba" font-size="10.5">public signals → entry verdict</text>
+      <rect x="337" y="188" width="286" height="56" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="480" y="212" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">ASIN watch</text>
+      <text x="480" y="230" text-anchor="middle" fill="#93a0ba" font-size="10.5">standing monitoring → delta briefs</text>
+      <rect x="644" y="188" width="286" height="56" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="787" y="212" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Listing teardown</text>
+      <text x="787" y="230" text-anchor="middle" fill="#93a0ba" font-size="10.5">title / keywords / image strategy</text>
+      <line x1="173" y1="244" x2="380" y2="274" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#a1)"/>
+      <line x1="480" y1="244" x2="480" y2="274" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#a1)"/>
+      <line x1="787" y1="244" x2="580" y2="274" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#a1)"/>
+      <rect x="30" y="278" width="900" height="56" rx="10" fill="#161d2e" stroke="#7c5cff"/>
+      <text x="480" y="302" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Evidence store</text>
+      <text x="480" y="320" text-anchor="middle" fill="#93a0ba" font-size="11">every claim carries its source URL + date · estimates labeled as estimates</text>
+      <line x1="480" y1="334" x2="480" y2="358" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#a1)"/>
+      <rect x="30" y="362" width="900" height="52" rx="10" fill="#161d2e" stroke="#38e0b0"/>
+      <text x="480" y="384" text-anchor="middle" fill="#38e0b0" font-size="14" font-weight="600">Output — verdict cards · delta briefs · VOC-clustered product specs</text>
+      <text x="480" y="402" text-anchor="middle" fill="#93a0ba" font-size="11">read-only throughout: the agent never writes to the marketplace</text>
+    </svg>
+    <figcaption>Research passes land in the evidence store before any conclusion is drawn — the verdict cites its way down.</figcaption>
+    </figure>
+    <table class="lay">
+      <tr><th>Layer</th><th>Implementation</th></tr>
+      <tr><td>Host</td><td>OpenWorker — open-source, local-first AI coworker</td></tr>
+      <tr><td>Agent definition</td><td>Persona + manifest, contributed upstream as <a href="https://github.com/andrewyng/openworker/pull/592" target="_blank">PR #592</a></td></tr>
+      <tr><td>Tool surface</td><td>Read-only marketplace access — fetch and analyze, never write</td></tr>
+      <tr><td>Evidence discipline</td><td>Source URL + capture date attached to every claim; estimates explicitly flagged</td></tr>
+      <tr><td>Trust model</td><td>No API keys — runs on the operator's own model subscriptions</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>Why an agent, not a dashboard</h2>
     <p class="lead">Dashboards wait for questions. A scout goes looking.</p>
     <p style="color:var(--dim);max-width:720px">Amazon Product Scout is built as an OpenWorker coworker: it runs continuous research passes in the background, decides what changed and what matters, and reports findings — the way a junior analyst would after a morning of reading. The human stays on the decisions: which niche to enter, which product to build.</p>
