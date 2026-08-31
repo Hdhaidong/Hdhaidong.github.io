@@ -63,6 +63,76 @@
 
 <section>
   <div class="wrap">
+    <h2>Architecture</h2>
+    <p class="lead">Everything is an event — the timeline is the source of truth, and signals are derived, never hand-entered.</p>
+    <figure class="arch">
+    <svg viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agency CRM architecture — entities feed an event timeline, a signal engine derives renewal risk, views surface it">
+      <defs>
+        <marker id="c1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7c5cff"/></marker>
+      </defs>
+      <rect x="30" y="20" width="204" height="74" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="132" y="46" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Client</text>
+      <text x="132" y="66" text-anchor="middle" fill="#93a0ba" font-size="10.5">account identity</text>
+      <text x="132" y="82" text-anchor="middle" fill="#93a0ba" font-size="10.5">brand · segment · owner</text>
+      <rect x="264" y="20" width="204" height="74" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="366" y="46" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Engagement</text>
+      <text x="366" y="66" text-anchor="middle" fill="#93a0ba" font-size="10.5">contract scope</text>
+      <text x="366" y="82" text-anchor="middle" fill="#93a0ba" font-size="10.5">stage · value · dates</text>
+      <rect x="498" y="20" width="204" height="74" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="600" y="46" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Touchpoint</text>
+      <text x="600" y="66" text-anchor="middle" fill="#93a0ba" font-size="10.5">meeting · call · delivery</text>
+      <text x="600" y="82" text-anchor="middle" fill="#93a0ba" font-size="10.5">campaign · escalation</text>
+      <rect x="732" y="20" width="198" height="74" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="831" y="46" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Signal</text>
+      <text x="831" y="66" text-anchor="middle" fill="#93a0ba" font-size="10.5">derived — never</text>
+      <text x="831" y="82" text-anchor="middle" fill="#93a0ba" font-size="10.5">hand-entered</text>
+      <line x1="132" y1="94" x2="400" y2="140" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#c1)"/>
+      <line x1="366" y1="94" x2="440" y2="140" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#c1)"/>
+      <line x1="600" y1="94" x2="530" y2="140" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#c1)"/>
+      <line x1="831" y1="94" x2="560" y2="140" stroke="#93a0ba" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <rect x="30" y="144" width="900" height="62" rx="10" fill="#161d2e" stroke="#38e0b0"/>
+      <text x="480" y="170" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Event timeline — the source of truth</text>
+      <text x="480" y="192" text-anchor="middle" fill="#93a0ba" font-size="11">append-only history per client · context survives account handoffs · no editing the past</text>
+      <line x1="480" y1="206" x2="480" y2="232" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#c1)"/>
+      <rect x="30" y="236" width="900" height="74" rx="10" fill="#161d2e" stroke="#7c5cff"/>
+      <text x="480" y="262" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Signal engine — derives renewal risk from the timeline</text>
+      <text x="480" y="284" text-anchor="middle" fill="#93a0ba" font-size="11">engagement dips · escalated issues · scope drift · cadence breaks</text>
+      <text x="480" y="300" text-anchor="middle" fill="#93a0ba" font-size="11">scored ahead of renewal windows, not after the churn call</text>
+      <line x1="180" y1="310" x2="180" y2="340" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#c1)"/>
+      <line x1="480" y1="310" x2="480" y2="340" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#c1)"/>
+      <line x1="780" y1="310" x2="780" y2="340" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#c1)"/>
+      <rect x="30" y="344" width="286" height="70" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="173" y="370" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Pipeline view</text>
+      <text x="173" y="390" text-anchor="middle" fill="#93a0ba" font-size="10.5">prospect → active → renewal</text>
+      <text x="173" y="404" text-anchor="middle" fill="#93a0ba" font-size="10.5">staged how agency business moves</text>
+      <rect x="337" y="344" width="286" height="70" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="480" y="370" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Timeline view</text>
+      <text x="480" y="390" text-anchor="middle" fill="#93a0ba" font-size="10.5">one scroll per client</text>
+      <text x="480" y="404" text-anchor="middle" fill="#93a0ba" font-size="10.5">full context on pickup</text>
+      <rect x="644" y="344" width="286" height="70" rx="10" fill="#161d2e" stroke="#ffb454"/>
+      <text x="787" y="370" text-anchor="middle" fill="#ffb454" font-size="13" font-weight="600">Alerts view</text>
+      <text x="787" y="390" text-anchor="middle" fill="#93a0ba" font-size="10.5">early-warning flags from</text>
+      <text x="787" y="404" text-anchor="middle" fill="#93a0ba" font-size="10.5">the signal engine</text>
+      <rect x="30" y="438" width="900" height="44" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="480" y="456" text-anchor="middle" fill="#93a0ba" font-size="11">writes to the record pass the same manual-confirmation discipline as the operations platform —</text>
+      <text x="480" y="472" text-anchor="middle" fill="#93a0ba" font-size="11">relationship edits are deliberate acts, never side effects</text>
+    </svg>
+    <figcaption>Entities land as events; the timeline accumulates them; the signal engine reads it and pushes flags to the views.</figcaption>
+    </figure>
+    <table class="lay">
+      <tr><th>Component</th><th>Design</th></tr>
+      <tr><td>Entities</td><td>Client, engagement, touchpoint — every interaction lands as a timeline event</td></tr>
+      <tr><td>Event timeline</td><td>Append-only history per client; context survives account handoffs</td></tr>
+      <tr><td>Signal engine</td><td>Derives renewal risk from engagement dips, escalations, scope drift, cadence breaks</td></tr>
+      <tr><td>Views</td><td>Pipeline stages, contact timeline, early-warning alerts — three projections of one history</td></tr>
+      <tr><td>Write path</td><td>Manual confirmation on record edits, matching the operations platform's discipline</td></tr>
+      <tr><td>Position</td><td>Relationship layer beneath the <a href="/insightmarketplac/">insightmarketplac</a> operations platform</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>Positioning</h2>
     <p class="lead">The relationship layer of the agency stack.</p>
     <p style="color:var(--dim);max-width:720px">Agency CRM sits beneath <a href="/insightmarketplac/">insightmarketplac</a>'s operations partitions: the platform runs the campaigns, the CRM keeps the client. Together they cover the two things an agency can't afford to lose track of — the work and the relationship.</p>
