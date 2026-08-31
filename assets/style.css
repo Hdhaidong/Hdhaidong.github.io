@@ -44,3 +44,12 @@ footer .flinks{display:flex;gap:20px;flex-wrap:wrap;margin-top:8px}
 .pnext a{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 20px;font-size:14px;flex:1;min-width:200px}
 .pnext a:hover{text-decoration:none;border-color:var(--acc)}
 .pnext .dir{display:block;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.arch{margin:4px 0 26px}
+.arch svg{width:100%;height:auto;display:block;background:#0d1119;border:1px solid var(--line);border-radius:14px}
+.arch figcaption{font-size:12.5px;color:var(--dim);padding:10px 4px 0}
+table.lay{width:100%;border-collapse:collapse;margin-top:4px}
+table.lay th,table.lay td{border:1px solid var(--line);padding:10px 14px;font-size:13.5px;text-align:left;vertical-align:top}
+table.lay th{background:var(--card);color:var(--txt);font-weight:600;white-space:nowrap}
+table.lay td{color:var(--dim)}
+table.lay td:first-child{color:var(--txt);font-weight:600}
+table.lay code{background:#0a0e18;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:12.5px;color:var(--acc2)}
