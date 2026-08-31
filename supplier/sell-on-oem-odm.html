@@ -414,6 +414,19 @@ section{padding:130px 0}
 .entry:hover .entry-arr{transform:translateX(6px);color:var(--accent)}
 @media(max-width:960px){.entries{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.entries{grid-template-columns:1fr}}
+.entries-more{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  margin-top:26px;padding:24px 28px;border:1px solid rgba(232,163,61,.3);border-radius:12px;
+  background:linear-gradient(135deg,rgba(232,163,61,.08),rgba(232,163,61,.02));
+  text-decoration:none;transition:border-color .3s,transform .3s;
+}
+.entries-more:hover{border-color:var(--accent);transform:translateY(-2px)}
+.entries-more .em-main{display:grid;gap:5px;min-width:0}
+.entries-more .em-t{font-size:17px;font-weight:600;color:var(--ink)}
+.entries-more .em-d{font-size:13px;color:var(--ink-dim)}
+.entries-more .em-arr{font-family:var(--mono);font-size:20px;color:var(--accent);flex:none;transition:transform .3s}
+.entries-more:hover .em-arr{transform:translateX(6px)}
+@media(max-width:560px){.entries-more{padding:20px}}
 
 /* ---------- meet ---------- */
 #meet{background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)}
@@ -926,7 +939,7 @@ footer{
     <div class="sec-head rv">
       <p class="eyebrow">Direct Seller Entries</p>
       <h2>直达平台卖家入口</h2>
-      <p class="section-lead">想先自己开个店试试？36 个平台的官方卖家入口，一张网直达。货盘就绪后回来找我们——一份货盘，铺进全部渠道。</p>
+      <p class="section-lead">想先自己开个店试试？36 个平台的官方卖家入口，一张网直达；46 个平台专属入驻页，逐个讲透条件与费用。货盘就绪后回来找我们——一份货盘，铺进全部渠道。</p>
     </div>
 
     <div class="entries">
@@ -1075,6 +1088,14 @@ footer{
         <span class="entry-arr">→</span>
       </a>
     </div>
+
+    <a class="entries-more rv" href="sell-on/">
+      <span class="em-main">
+        <span class="em-t">46 个平台，一个一个看 — 平台专属入驻页</span>
+        <span class="em-d">每个平台一页：官方注册直达入口 + 入驻条件 + 费用结构 + 开店流程与常见问题。</span>
+      </span>
+      <span class="em-arr">→</span>
+    </a>
 
     <p class="channels-foot rv">* 入口均为各平台官方卖家 / 供应商站点；入驻资质、佣金与政策以各平台实际为准。美国部分零售渠道（Costco、Macy's、Lowe's 等）为买手制 / 邀请制，入口为其官方供应商申请页。Ozon / Wildberries 入口为俄语界面。</p>
   </div>
