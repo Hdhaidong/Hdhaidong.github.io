@@ -280,6 +280,17 @@ section{padding:130px 0}
   max-width:720px;
 }
 .model-note b{color:var(--ink);font-weight:600}
+.model-flow{margin-top:24px;display:grid;gap:9px}
+.model-flow .step{display:flex;gap:11px;align-items:baseline;font-size:13px;color:var(--ink-dim)}
+.model-flow .sn{font-family:var(--mono);font-size:10.5px;color:var(--accent);flex:none;letter-spacing:.08em}
+.models-table-wrap{margin-top:52px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.models-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:660px}
+.models-table th,.models-table td{padding:12px 14px;border-bottom:1px solid var(--hairline-soft);text-align:left;vertical-align:top}
+.models-table thead th{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--hairline)}
+.models-table thead th:first-child{color:var(--ink-faint)}
+.models-table tbody td:first-child{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink-faint);white-space:nowrap}
+.models-table tbody td{color:var(--ink-dim)}
+.models-table tbody td b{color:var(--ink);font-weight:600}
 @media(max-width:960px){
   .models-grid{grid-template-columns:1fr;border-left:none}
   .model{border-right:none;border-bottom:1px solid var(--hairline);padding:34px 0}
@@ -753,7 +764,7 @@ footer{
     <div class="sec-head rv">
       <p class="eyebrow">Cooperation Models</p>
       <h2>Three ways to partner.<br>From manufacturing to your own brand.</h2>
-      <p class="section-lead">Whether you're a factory with finished drawings or a brand ready to ride our channels into the US market, there's a model that fits. These three models cover the supply side — for our full business map (data intelligence, brand growth, systems, crowdfunding, trade shows), see the <a href="overview-en.html" style="color:var(--accent);font-weight:600">Business Overview</a>.</p>
+      <p class="section-lead">Whether you're a factory with finished drawings or a brand ready to ride our channels into the US market, there's a model that fits.</p>
     </div>
 
     <div class="models-grid">
@@ -761,11 +772,17 @@ footer{
         <div class="model-code">OEM</div>
         <div class="model-full">Original Equipment Manufacturer</div>
         <h3>Built to Spec</h3>
-        <p class="model-desc">Buyers order against your drawings and samples — you focus on production and quality control. International freight, customs, and final delivery are handled by us, end to end.</p>
+        <p class="model-desc">US buyers — retail chains, brands, importers — order against their own drawings and golden samples. You focus on production and quality control; we handle international freight, customs clearance, and final delivery to the buyer's distribution center.</p>
+        <div class="model-flow">
+          <div class="step"><span class="sn">01</span><span>Buyer signs off on samples from your line</span></div>
+          <div class="step"><span class="sn">02</span><span>PO issued against spec — you produce, inspect, pack</span></div>
+          <div class="step"><span class="sn">03</span><span>We clear customs and deliver to the buyer's DC</span></div>
+        </div>
         <dl>
-          <div><dt>Design</dt><dd>Buyer provides specs</dd></div>
-          <div><dt>Freight</dt><dd>Handled by us</dd></div>
-          <div><dt>US Stock</dt><dd>Not required</dd></div>
+          <div><dt>Design</dt><dd>Buyer provides specs &amp; samples</dd></div>
+          <div><dt>Inventory</dt><dd>No US stock required</dd></div>
+          <div><dt>Freight</dt><dd>FOB factory — we take over</dd></div>
+          <div><dt>Margin</dt><dd>Manufacturing margin</dd></div>
           <div><dt>Best for</dt><dd>Factories with stable capacity &amp; QC</dd></div>
         </dl>
       </article>
@@ -774,12 +791,18 @@ footer{
         <div class="model-code">ODM</div>
         <div class="model-full">Original Design Manufacturer</div>
         <h3>Your Catalog, White-Labeled</h3>
-        <p class="model-desc">Your own designs and catalog reach verified US buyers through the platform. We handle white-labeling and order fulfillment, so you capture both design and manufacturing margin.</p>
+        <p class="model-desc">Your own designs and catalog reach verified US buyers through the platform. We handle white-labeling, listing content, and order fulfillment — you capture both design and manufacturing margin, while US stock keeps delivery fast enough to win reorders.</p>
+        <div class="model-flow">
+          <div class="step"><span class="sn">01</span><span>Your catalog enters the verified-buyer pool</span></div>
+          <div class="step"><span class="sn">02</span><span>Buyers order on white-labeled programs</span></div>
+          <div class="step"><span class="sn">03</span><span>Stock ships from US warehouses</span></div>
+        </div>
         <dl>
-          <div><dt>Design</dt><dd>Yours — supplier-owned</dd></div>
-          <div><dt>Freight</dt><dd>Ships from US warehouse</dd></div>
-          <div><dt>US Stock</dt><dd>Inventory required</dd></div>
-          <div><dt>Best for</dt><dd>Brands with product development</dd></div>
+          <div><dt>Design</dt><dd>Yours — supplier-owned IP</dd></div>
+          <div><dt>Inventory</dt><dd>US warehouse stock required</dd></div>
+          <div><dt>Freight</dt><dd>Domestic, from US stock</dd></div>
+          <div><dt>Margin</dt><dd>Design + manufacturing</dd></div>
+          <div><dt>Best for</dt><dd>Factories with product development</dd></div>
         </dl>
       </article>
 
@@ -787,19 +810,42 @@ footer{
         <div class="model-code">OBM</div>
         <div class="model-full">Original Brand Manufacturer</div>
         <h3>Brand to Consumer</h3>
-        <p class="model-desc">Take your own brand direct to overseas consumers. Channels, co-operated retail, and brand marketing that turn manufacturing margin into durable brand premium.</p>
+        <p class="model-desc">Take your own brand direct to overseas consumers. We build and operate the channels — marketplaces, DTC storefronts, co-operated retail — and run the brand marketing that turns manufacturing margin into durable brand premium.</p>
+        <div class="model-flow">
+          <div class="step"><span class="sn">01</span><span>US trademark and brand assets locked first</span></div>
+          <div class="step"><span class="sn">02</span><span>We build and operate the brand's channels</span></div>
+          <div class="step"><span class="sn">03</span><span>Sales data feeds assortment &amp; marketing</span></div>
+        </div>
         <dl>
           <div><dt>Design</dt><dd>Full brand ownership</dd></div>
+          <div><dt>Inventory</dt><dd>US stock + brand license</dd></div>
           <div><dt>Freight</dt><dd>Coordinated network</dd></div>
-          <div><dt>US Stock</dt><dd>Stock + brand license</dd></div>
+          <div><dt>Margin</dt><dd>Brand premium on top</dd></div>
           <div><dt>Best for</dt><dd>Suppliers chasing brand premium</dd></div>
         </dl>
       </article>
     </div>
 
+    <div class="models-table-wrap rv">
+      <table class="models-table">
+        <thead>
+          <tr><th></th><th>OEM</th><th>ODM</th><th>OBM</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Who designs</td><td>The buyer — their specs, their drawings</td><td>You — supplier-owned designs</td><td>You — full brand ownership</td></tr>
+          <tr><td>US inventory</td><td>Not required</td><td>Required — US warehouse stock</td><td>Required — stock + brand license</td></tr>
+          <tr><td>Logistics</td><td>FOB factory; we import &amp; deliver</td><td>Ships domestic from US stock</td><td>Coordinated network</td></tr>
+          <tr><td>Your margin</td><td>Manufacturing</td><td>Design + manufacturing</td><td>Brand premium on top</td></tr>
+          <tr><td>Path to first order</td><td><b>Fastest</b> — sample to PO</td><td>Medium — catalog to program</td><td>Longest — brand to market</td></tr>
+          <tr><td>Risk you carry</td><td>Production &amp; QC</td><td>Design &amp; inventory</td><td>Brand investment</td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <p class="model-note rv">
       Inventory buyout: for verified catalogs, we cut a large wholesale PO upfront — <b>you get paid, we go to work</b>. Retail-side inventory and pricing risk sits with us.
       Logistics: <b>OEM partners deliver at the factory</b> — we handle international freight; ODM / OBM partners need stock in overseas warehouses.
+      The path is not one-way: most partners start at OEM, add ODM programs as their development matures, and graduate to OBM when the brand is ready — same channels, deeper margin at every step.
     </p>
   </div>
 </section>
