@@ -64,6 +64,65 @@
 
 <section>
   <div class="wrap">
+    <h2>Architecture</h2>
+    <p class="lead">One typed path from UI to database — tRPC types flow end-to-end, so the client can't call what the server doesn't have.</p>
+    <figure class="arch">
+    <svg viewBox="0 0 960 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SupaNuxt SaaS architecture — Nuxt3 frontend through tRPC and Nitro to Prisma and Supabase, with Stripe, auth and OpenAI alongside">
+      <defs>
+        <marker id="s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#7c5cff"/></marker>
+      </defs>
+      <rect x="30" y="20" width="620" height="66" rx="10" fill="#161d2e" stroke="#38e0b0"/>
+      <text x="340" y="46" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Nuxt3 frontend — Vue components · Pinia state · Tailwind UI</text>
+      <text x="340" y="68" text-anchor="middle" fill="#93a0ba" font-size="11">server-rendered app shell, typed API client generated from the server</text>
+      <line x1="340" y1="86" x2="340" y2="112" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#s1)"/>
+      <rect x="30" y="116" width="620" height="60" rx="10" fill="#161d2e" stroke="#7c5cff"/>
+      <text x="340" y="140" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">tRPC — typed API surface</text>
+      <text x="340" y="162" text-anchor="middle" fill="#93a0ba" font-size="11">end-to-end types: no schema drift, no hand-written client SDK</text>
+      <line x1="340" y1="176" x2="340" y2="202" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#s1)"/>
+      <rect x="30" y="206" width="620" height="60" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="340" y="230" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Nitro server — API routes · Stripe webhooks</text>
+      <text x="340" y="252" text-anchor="middle" fill="#93a0ba" font-size="11">server/ directory: procedure handlers and event endpoints</text>
+      <line x1="340" y1="266" x2="340" y2="292" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#s1)"/>
+      <rect x="30" y="296" width="620" height="60" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="340" y="320" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Prisma — schema, migrations, typed queries</text>
+      <text x="340" y="342" text-anchor="middle" fill="#93a0ba" font-size="11">the database's shape lives in code, versioned with the app</text>
+      <line x1="340" y1="356" x2="340" y2="382" stroke="#7c5cff" stroke-width="1.5" marker-end="url(#s1)"/>
+      <rect x="30" y="386" width="620" height="60" rx="10" fill="#161d2e" stroke="#38e0b0"/>
+      <text x="340" y="410" text-anchor="middle" fill="#e8edf7" font-size="14" font-weight="600">Supabase — Postgres · Auth · OAuth</text>
+      <text x="340" y="432" text-anchor="middle" fill="#93a0ba" font-size="11">managed Postgres behind Prisma; social login and sessions built in</text>
+      <rect x="690" y="20" width="240" height="66" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="810" y="46" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Supabase Auth</text>
+      <text x="810" y="68" text-anchor="middle" fill="#93a0ba" font-size="11">OAuth providers · sessions</text>
+      <line x1="690" y1="53" x2="654" y2="53" stroke="#93a0ba" stroke-width="1.5" marker-end="url(#s1)"/>
+      <rect x="690" y="140" width="240" height="66" rx="10" fill="#161d2e" stroke="#ffb454"/>
+      <text x="810" y="166" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">Stripe billing</text>
+      <text x="810" y="188" text-anchor="middle" fill="#93a0ba" font-size="11">plans · webhooks land in Nitro</text>
+      <line x1="690" y1="173" x2="654" y2="230" stroke="#ffb454" stroke-width="1.5" marker-end="url(#s1)"/>
+      <rect x="690" y="260" width="240" height="66" rx="10" fill="#161d2e" stroke="#232c44"/>
+      <text x="810" y="286" text-anchor="middle" fill="#e8edf7" font-size="13" font-weight="600">OpenAI</text>
+      <text x="810" y="308" text-anchor="middle" fill="#93a0ba" font-size="11">AI feature stubs — wire in your product</text>
+      <line x1="690" y1="293" x2="654" y2="146" stroke="#93a0ba" stroke-width="1.5" marker-end="url(#s1)"/>
+      <rect x="30" y="466" width="900" height="26" rx="8" fill="#161d2e" stroke="#232c44"/>
+      <text x="480" y="484" text-anchor="middle" fill="#93a0ba" font-size="11">workspace layout: projects/ per app · docs/ planning · deploy-ready out of the box</text>
+    </svg>
+    <figcaption>The main column is the typed path; auth, billing and AI hang off it at the layers they belong to.</figcaption>
+    </figure>
+    <table class="lay">
+      <tr><th>Layer</th><th>Tech</th><th>Role</th></tr>
+      <tr><td>UI</td><td>Nuxt3 · Vue · Tailwind</td><td>Server-rendered app shell and pages</td></tr>
+      <tr><td>State</td><td>Pinia</td><td>Client-side state management</td></tr>
+      <tr><td>API</td><td>tRPC</td><td>Typed client→server calls — no schema drift, no generated SDK</td></tr>
+      <tr><td>Server</td><td>Nitro</td><td>API routes, Stripe webhook handlers</td></tr>
+      <tr><td>Data</td><td>Prisma + Supabase Postgres</td><td>Schema, migrations, typed queries</td></tr>
+      <tr><td>Auth</td><td>Supabase Auth + OAuth</td><td>Social login, sessions, protected routes</td></tr>
+      <tr><td>Billing</td><td>Stripe</td><td>Plans, upgrades, subscription webhooks</td></tr>
+      <tr><td>AI</td><td>OpenAI</td><td>Integration stubs ready for product features</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>Stack</h2>
     <p class="lead">Boring, proven, and chosen to get out of your way.</p>
     <div class="chips">
