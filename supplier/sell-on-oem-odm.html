@@ -930,6 +930,36 @@ body.registered .nav-reg{display:none}
 }
 .incl-line{margin-top:22px;font-size:13px;color:var(--ink-faint);line-height:1.9;border:1px dashed var(--hairline);padding:14px 20px;border-radius:10px}
 .incl-line b{color:var(--ink)}
+.fee-block{margin-top:64px;border:1px solid var(--hairline);border-radius:16px;background:var(--bg-2);padding:44px 40px 36px}
+.fee-head{text-align:center;max-width:640px;margin:0 auto 8px}
+.fee-title{font-size:26px;font-weight:600;color:var(--ink);margin:6px 0 10px}
+.fee-sub{font-size:14px;color:var(--ink-faint);line-height:1.75}
+.fee-sub b{color:var(--ink)}
+.fee-detail{margin-top:34px}
+.fee-detail-cap{display:flex;align-items:center;gap:14px;margin:0 0 16px}
+.fee-detail-cap .cap-k{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+.fee-detail-cap .cap-line{flex:1;height:1px;background:var(--hairline-soft)}
+.fee-detail-cap .cap-r{font-size:11.5px;color:var(--ink-faint)}
+.fee-table{width:100%;border-collapse:collapse;font-size:13px}
+.fee-table th{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);text-align:left;padding:10px 12px;border-bottom:1px solid var(--hairline)}
+.fee-table td{padding:11px 12px;border-bottom:1px solid var(--hairline-soft);color:var(--ink-dim);line-height:1.6;vertical-align:top}
+.fee-table td:first-child{color:var(--ink);font-weight:500}
+.fee-table tbody tr:hover{background:rgba(232,163,61,.03)}
+.fee-note{margin-top:14px;font-size:12.5px;color:var(--ink-faint);line-height:1.7}
+.fee-note b{color:var(--ink)}
+.fee-lock{display:none;margin-top:22px;align-items:center;gap:18px;border:1px dashed rgba(232,163,61,.45);border-radius:12px;padding:18px 24px;background:rgba(232,163,61,.05)}
+.fee-lock .fl-ico{font-size:20px}
+.fee-lock .fl-txt{flex:1;display:flex;flex-direction:column;gap:3px}
+.fee-lock .fl-txt b{font-size:14px;color:var(--ink)}
+.fee-lock .fl-txt span{font-size:12px;color:var(--ink-faint)}
+body:not(.registered) .fee-detail{display:none}
+body:not(.registered) .fee-lock{display:flex}
+.sellon-strip{display:flex;align-items:center;gap:20px;margin-top:46px;border:1px solid var(--hairline);border-radius:12px;padding:18px 24px;background:var(--bg-2);flex-wrap:wrap}
+.sellon-strip .ss-txt{flex:1;min-width:240px;display:flex;flex-direction:column;gap:4px}
+.sellon-strip .ss-txt b{font-size:15px;color:var(--ink)}
+.sellon-strip .ss-txt span{font-size:12.5px;color:var(--ink-faint);line-height:1.6}
+@media(max-width:720px){.fee-block{padding:30px 20px}.fee-lock{flex-direction:column;text-align:center}}
+
 </style>
 
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"insightmarketplac","url":"https://hdhaidong.github.io/supplier/","description":"US channel company for supplier onboarding, brand growth, and data subscriptions.","mainEntityOfPage":{"@id":"https://hdhaidong.github.io/supplier/sell-on-oem-odm.html"}},{"@context":"https://schema.org","@type":"WebSite","name":"Sell on insightmarketplac","url":"https://hdhaidong.github.io/supplier/sell-on-oem-odm.html","inLanguage":"zh-CN"}]</script>
@@ -1056,6 +1086,11 @@ body.registered .nav-reg{display:none}
     </div>
 
     <p class="channels-foot rv">* 渠道清单为示意，实际合作渠道以洽谈签约为准。</p>
+    <div class="sellon-strip rv">
+      <div class="ss-txt"><b>想自己开店？</b><span>76 个平台官方卖家入驻直达——Amazon、Walmart、TikTok Shop、Temu、Shopee…按品类匹配开店路径</span></div>
+      <a class="btn-ghost" href="sell-on/index.html">浏览平台卖家入口 →</a>
+    </div>
+
   </div>
 </section>
 
@@ -1277,6 +1312,68 @@ body.registered .nav-reg{display:none}
       路径不是单向的：多数伙伴从 OEM 起步，产品开发成熟后叠加 ODM 方案，品牌准备就绪再升级 OBM——同一张渠道网络，每一步利润更深。
     </p>
 
+<!-- ================= FEE BLOCK (inside models) ================= -->
+    <div class="fee-block rv">
+      <div class="fee-head rv">
+        <p class="eyebrow">Pricing · 收费模式</p>
+        <h3 class="fee-title">卖出去再分，或一口价全包</h3>
+        <p class="fee-sub">按月合作，不签长约，两档随规模切换。每项服务的计费方式见下方明细表，<b>注册后解锁逐项收费与完整报价单</b>。</p>
+      </div>
+  <div class="price-grid">
+          <article class="price-card rv">
+            <h3 class="pc-name">分成档</h3>
+            <span class="pc-en">Flexible</span>
+            <div class="pc-price">$0<small> 基础月费</small></div>
+            <p class="pc-fee">+ 按销售额分成 · 比例按品类评估</p>
+            <p class="pc-desc">低门槛启动：先上渠道、先出单，卖出去才分——起步期成本最友好。</p>
+            <ul class="pc-list">
+              <li><b>零基础费：</b>货盘评估通过即可启动</li>
+              <li><b>风险共担：</b>我们把你的渠道当自己的生意运营</li>
+              <li><b>随时升级：</b>月销稳定后切固定档，成本更可控</li>
+            </ul>
+            <a class="btn-ghost" href="#meet">评估我的货盘 →</a>
+          </article>
+          <article class="price-card hot rv rv-d1">
+            <span class="pc-tag">推荐</span>
+            <h3 class="pc-name">固定档</h3>
+            <span class="pc-en">Flat Rate</span>
+            <div class="pc-price">$499<small> /月起</small></div>
+            <p class="pc-fee">无销售分成 · 无订单抽成</p>
+            <p class="pc-desc">成本可预测：适合月销 $5k+ 的稳定品牌，全托管推进，卖得越多边际越薄。</p>
+            <ul class="pc-list">
+              <li><b>一口价全包：</b>渠道 + 运营 + 营销 + 客服</li>
+              <li><b>优先资源：</b>红人排期、活动位与数据线优先</li>
+              <li><b>旺季不涨：</b>固定费不随大促流量波动</li>
+            </ul>
+            <a class="btn-primary" href="#meet">免费方案沟通 →</a>
+          </article>
+        </div>
+      <div class="fee-detail rv">
+        <div class="fee-detail-cap"><span class="cap-k">Per-Service Fees · 逐项收费</span><span class="cap-line"></span><span class="cap-r">注册后解锁完整报价</span></div>
+        <table class="fee-table">
+          <thead><tr><th>服务项</th><th>分成档</th><th>固定档</th></tr></thead>
+          <tbody>
+            <tr><td>渠道账号开设 · 店铺搭建</td><td>两档全含</td><td>两档全含</td></tr>
+            <tr><td>联合运营（选品 / 定价 / 广告）</td><td>按销售额分成，比例按品类评估</td><td>全含，不另收费</td></tr>
+            <tr><td>端到端仓配履约</td><td>按实际成本计费（头程 + 仓储 + 尾程）</td><td>按实际成本计费</td></tr>
+            <tr><td>红人营销投放</td><td>固定费 / 佣金分成 / 混合</td><td>案件制报价，享优先排期</td></tr>
+            <tr><td>网剧 / AI 短剧定制</td><td>按项目报价</td><td>按项目报价</td></tr>
+            <tr><td>Agent / ERP 定制开发</td><td>按需求评估报价</td><td>按需求评估报价</td></tr>
+            <tr><td>数据订阅（六条订阅线）</td><td>按订阅线与周期计费</td><td>按订阅线与周期计费</td></tr>
+            <tr><td>账号安全 · 数据周报 · 专属对接人</td><td>全含</td><td>全含</td></tr>
+          </tbody>
+        </table>
+        <p class="fee-note">具体单价、分成比例与报价单：<b>注册后 1 个工作日内发送</b>——附你的品类评估与适配档位建议。</p>
+      </div>
+      <div class="fee-lock">
+        <div class="fl-ico">🔓</div>
+        <div class="fl-txt"><b>逐项收费明细为注册用户可见</b><span>注册免费 · 报价单 1 个工作日内发送 · 含品类适配评估</span></div>
+        <button class="btn-primary" data-reg-open>注册解锁逐项收费 →</button>
+      </div>
+      <p class="incl-line rv">所有档位均包含：<b>20+ 渠道账号开设</b> · 联合运营 · 端到端仓配履约 · Agent 智能客服 · 账号安全维护 · 数据周报 · 红人资源对接 · 内容素材库 · 专属对接人（1 个工作日响应）</p>
+      <p class="price-note rv">OEM 库存买断合作不收任何服务费——PO 结算，工厂交货即收款。<br>两档收费适用于 ODM / OBM / 联合运营与营销服务。</p>
+    </div>
+
     <div class="models-extra rv">
       <p class="mx2-kicker">Beyond the Models</p>
       <h3 class="mx2-title">模式之外，两项定制能力<span>——把生意搬到系统上跑</span></h3>
@@ -1305,41 +1402,7 @@ body.registered .nav-reg{display:none}
         </article>
       </div>
     </div>
-    <div class="models-extra rv">
-      <p class="mx2-kicker">Pricing · 收费模式</p>
-      <h3 class="mx2-title">卖出去再分，或一口价全包<span>——按月合作，不签长约</span></h3>
-  <div class="price-grid">
-        <article class="price-card rv">
-          <h3 class="pc-name">分成档</h3>
-          <span class="pc-en">Flexible</span>
-          <div class="pc-price">$0<small> 基础月费</small></div>
-          <p class="pc-fee">+ 按销售额分成 · 比例按品类评估</p>
-          <p class="pc-desc">低门槛启动：先上渠道、先出单，卖出去才分——起步期成本最友好。</p>
-          <ul class="pc-list">
-            <li><b>零基础费：</b>货盘评估通过即可启动</li>
-            <li><b>风险共担：</b>我们把你的渠道当自己的生意运营</li>
-            <li><b>随时升级：</b>月销稳定后切固定档，成本更可控</li>
-          </ul>
-          <a class="btn-ghost" href="#meet">评估我的货盘 →</a>
-        </article>
-        <article class="price-card hot rv rv-d1">
-          <span class="pc-tag">推荐</span>
-          <h3 class="pc-name">固定档</h3>
-          <span class="pc-en">Flat Rate</span>
-          <div class="pc-price">$499<small> /月起</small></div>
-          <p class="pc-fee">无销售分成 · 无订单抽成</p>
-          <p class="pc-desc">成本可预测：适合月销 $5k+ 的稳定品牌，全托管推进，卖得越多边际越薄。</p>
-          <ul class="pc-list">
-            <li><b>一口价全包：</b>渠道 + 运营 + 营销 + 客服</li>
-            <li><b>优先资源：</b>红人排期、活动位与数据线优先</li>
-            <li><b>旺季不涨：</b>固定费不随大促流量波动</li>
-          </ul>
-          <a class="btn-primary" href="#meet">免费方案沟通 →</a>
-        </article>
-      </div>
-      <p class="incl-line rv">所有档位均包含：<b>20+ 渠道账号开设</b> · 联合运营 · 端到端仓配履约 · Agent 智能客服 · 账号安全维护 · 数据周报 · 红人资源对接 · 内容素材库 · 专属对接人（1 个工作日响应）</p>
-      <p class="price-note rv">OEM 库存买断合作不收任何服务费——PO 结算，工厂交货即收款。<br>两档收费适用于 ODM / OBM / 联合运营与营销服务。</p>
-    </div>
+    
   </div>
 </section>
 
@@ -1755,7 +1818,6 @@ body.registered .nav-reg{display:none}
   },{threshold:.12});
   document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
 
-
   
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll(".faq-item").forEach(function(item){
@@ -2063,7 +2125,7 @@ body.registered .nav-reg{display:none}
     {k:["入驻","开始","合作","申请","onboard","start"],
      a:function(){return "入驻三步走：<b>①</b> 准备营业执照与货盘资料；<b>②</b> 页面底部「申请入驻」表单提交；<b>③</b> 招商团队 1–3 个工作日联系你完成资质初审与选品沟通。也可以直接 "+link("#meet","预约一次 30 分钟会议")+" 当面聊。"}},
     {k:["收费","价格","多少钱","费用","pricing","cost"],
-     a:function(){return "两档收费，按月合作不签长约：<b>分成档</b>（$0 基础费 + 按销售额分成，起步期友好）和 <b>固定档</b>（$499/月起全包无抽成，适合月销 $5k+ 的稳定品牌）。OEM 库存买断不收服务费——PO 结算，交货即收款。详见 "+link("#models","合作模式区的收费模式")+"。"}},
+     a:function(){return "两档收费，按月合作不签长约：<b>分成档</b>（$0 基础费 + 按销售额分成，起步期友好）和 <b>固定档</b>（$499/月起全包无抽成，适合月销 $5k+ 的稳定品牌）。OEM 库存买断不收服务费——PO 结算，交货即收款。详见 "+link("#models","合作模式区的收费模式")+"。逐项收费明细注册后解锁——报价单 1 个工作日内发送。"}},
     {k:["oem","odm","obm","模式","区别","代工","贴牌","出海"],
      a:function(){return "一句话讲清三种模式：<b>OEM</b> 来图代工——他的图纸他的规格，工厂交货即收款；<b>ODM</b> 选款贴牌——你的设计 + 海外仓备货，赚设计+制造利润；<b>OBM</b> 品牌出海——自有品牌直达消费者，赚制造+品牌溢价。路径可递进：从 OEM 起步，成熟后升级。详见 "+link("#models","合作模式")+"。"}},
     {k:["渠道","平台","沃尔玛","walmart","amazon","亚马逊","店铺","开店","零售"],

@@ -935,6 +935,36 @@ body.registered .nav-reg{display:none}
 
 .incl-line{margin-top:22px;font-size:13px;color:var(--ink-faint);line-height:1.9;border:1px dashed var(--hairline);padding:14px 20px;border-radius:10px}
 .incl-line b{color:var(--ink)}
+.fee-block{margin-top:64px;border:1px solid var(--hairline);border-radius:16px;background:var(--bg-2);padding:44px 40px 36px}
+.fee-head{text-align:center;max-width:640px;margin:0 auto 8px}
+.fee-title{font-size:26px;font-weight:600;color:var(--ink);margin:6px 0 10px}
+.fee-sub{font-size:14px;color:var(--ink-faint);line-height:1.75}
+.fee-sub b{color:var(--ink)}
+.fee-detail{margin-top:34px}
+.fee-detail-cap{display:flex;align-items:center;gap:14px;margin:0 0 16px}
+.fee-detail-cap .cap-k{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;white-space:nowrap}
+.fee-detail-cap .cap-line{flex:1;height:1px;background:var(--hairline-soft)}
+.fee-detail-cap .cap-r{font-size:11.5px;color:var(--ink-faint)}
+.fee-table{width:100%;border-collapse:collapse;font-size:13px}
+.fee-table th{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);text-align:left;padding:10px 12px;border-bottom:1px solid var(--hairline)}
+.fee-table td{padding:11px 12px;border-bottom:1px solid var(--hairline-soft);color:var(--ink-dim);line-height:1.6;vertical-align:top}
+.fee-table td:first-child{color:var(--ink);font-weight:500}
+.fee-table tbody tr:hover{background:rgba(232,163,61,.03)}
+.fee-note{margin-top:14px;font-size:12.5px;color:var(--ink-faint);line-height:1.7}
+.fee-note b{color:var(--ink)}
+.fee-lock{display:none;margin-top:22px;align-items:center;gap:18px;border:1px dashed rgba(232,163,61,.45);border-radius:12px;padding:18px 24px;background:rgba(232,163,61,.05)}
+.fee-lock .fl-ico{font-size:20px}
+.fee-lock .fl-txt{flex:1;display:flex;flex-direction:column;gap:3px}
+.fee-lock .fl-txt b{font-size:14px;color:var(--ink)}
+.fee-lock .fl-txt span{font-size:12px;color:var(--ink-faint)}
+body:not(.registered) .fee-detail{display:none}
+body:not(.registered) .fee-lock{display:flex}
+.sellon-strip{display:flex;align-items:center;gap:20px;margin-top:46px;border:1px solid var(--hairline);border-radius:12px;padding:18px 24px;background:var(--bg-2);flex-wrap:wrap}
+.sellon-strip .ss-txt{flex:1;min-width:240px;display:flex;flex-direction:column;gap:4px}
+.sellon-strip .ss-txt b{font-size:15px;color:var(--ink)}
+.sellon-strip .ss-txt span{font-size:12.5px;color:var(--ink-faint);line-height:1.6}
+@media(max-width:720px){.fee-block{padding:30px 20px}.fee-lock{flex-direction:column;text-align:center}}
+
 </style>
 
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"insightmarketplac","url":"https://hdhaidong.github.io/supplier/","description":"US channel company for supplier onboarding, brand growth, and data subscriptions."},{"@context":"https://schema.org","@type":"WebSite","name":"Sell on insightmarketplac","url":"https://hdhaidong.github.io/supplier/sell-on-oem-odm-en.html","inLanguage":"en"}]</script>
@@ -1061,6 +1091,11 @@ body.registered .nav-reg{display:none}
     </div>
 
     <p class="channels-foot rv">* Channel list is illustrative; actual channels per signed agreement.</p>
+    <div class="sellon-strip rv">
+      <div class="ss-txt"><b>Want to open your own store?</b><span>Direct official seller onboarding for 76 global platforms — Amazon, Walmart, TikTok Shop, Temu, Shopee… match the path to your category</span></div>
+      <a class="btn-ghost" href="sell-on/index.html">Browse platform seller entries →</a>
+    </div>
+
   </div>
 </section>
 
@@ -1282,6 +1317,68 @@ body.registered .nav-reg{display:none}
       The path is not one-way: most partners start at OEM, add ODM programs as their development matures, and graduate to OBM when the brand is ready — same channels, deeper margin at every step.
     </p>
 
+<!-- ================= FEE BLOCK (inside models) ================= -->
+    <div class="fee-block rv">
+      <div class="fee-head rv">
+        <p class="eyebrow">Pricing · Fee Model</p>
+        <h3 class="fee-title">Share when you sell, or one flat rate</h3>
+        <p class="fee-sub">Monthly cooperation, no long-term lock, two tiers you switch as you scale. How every service is billed is laid out below — <b>register to unlock line-item fees and the full quote</b>.</p>
+      </div>
+  <div class="price-grid">
+          <article class="price-card rv">
+            <h3 class="pc-name">Revenue Share</h3>
+            <span class="pc-en">Flexible</span>
+            <div class="pc-price">$0<small> base monthly fee</small></div>
+            <p class="pc-fee">+ share of sales · rate assessed by category</p>
+            <p class="pc-desc">Lowest barrier to start: get on channels and selling first, share after it sells — the friendliest cost structure for your launch phase.</p>
+            <ul class="pc-list">
+              <li><b>Zero base fee:</b> pass the catalog review and you're live</li>
+              <li><b>Shared risk:</b> we run your channels like our own business</li>
+              <li><b>Upgrade anytime:</b> switch to the flat tier once monthly sales stabilize</li>
+            </ul>
+            <a class="btn-ghost" href="#meet">Assess my catalog →</a>
+          </article>
+          <article class="price-card hot rv rv-d1">
+            <span class="pc-tag">Recommended</span>
+            <h3 class="pc-name">Flat Rate</h3>
+            <span class="pc-en">All-Inclusive</span>
+            <div class="pc-price">$499<small> /month</small></div>
+            <p class="pc-fee">No revenue share · no per-order cut</p>
+            <p class="pc-desc">Predictable cost: built for stable brands doing $5k+ monthly, fully managed end to end — the more you sell, the thinner the marginal cost.</p>
+            <ul class="pc-list">
+              <li><b>One price, everything:</b> channels + operations + marketing + support</li>
+              <li><b>Priority resources:</b> first in line for influencer slots, event placement, and data lines</li>
+              <li><b>No peak-season spikes:</b> the flat fee doesn't move with holiday traffic</li>
+            </ul>
+            <a class="btn-primary" href="#meet">Free strategy call →</a>
+          </article>
+        </div>
+      <div class="fee-detail rv">
+        <div class="fee-detail-cap"><span class="cap-k">Per-Service Fees</span><span class="cap-line"></span><span class="cap-r">Full quote unlocks after registration</span></div>
+        <table class="fee-table">
+          <thead><tr><th>Service</th><th>Revenue Share tier</th><th>Flat Rate tier</th></tr></thead>
+          <tbody>
+            <tr><td>Channel account setup · storefront build</td><td>Included on both tiers</td><td>Included on both tiers</td></tr>
+            <tr><td>Joint operations (assortment / pricing / ads)</td><td>Revenue share on sales, rate by category</td><td>Included, no extra charge</td></tr>
+            <tr><td>End-to-end fulfillment</td><td>At actual cost (first-mile + storage + last-mile)</td><td>At actual cost</td></tr>
+            <tr><td>Influencer marketing campaigns</td><td>Fixed fee / commission / hybrid</td><td>Per-campaign quote, priority scheduling</td></tr>
+            <tr><td>Web drama / AI short-drama production</td><td>Quoted per project</td><td>Quoted per project</td></tr>
+            <tr><td>Agent / ERP custom builds</td><td>Quoted per requirements</td><td>Quoted per requirements</td></tr>
+            <tr><td>Data subscriptions (six lines)</td><td>Billed by line and cycle</td><td>Billed by line and cycle</td></tr>
+            <tr><td>Account security · weekly reports · dedicated contact</td><td>Included</td><td>Included</td></tr>
+          </tbody>
+        </table>
+        <p class="fee-note">Exact unit prices, share rates, and quotes: <b>sent within 1 business day of registration</b> — with your category assessment and recommended tier.</p>
+      </div>
+      <div class="fee-lock">
+        <div class="fl-ico">🔓</div>
+        <div class="fl-txt"><b>Per-service fees are visible to registered users</b><span>Registration is free · quote within 1 business day · includes category-fit assessment</span></div>
+        <button class="btn-primary" data-reg-open>Register to unlock per-service fees →</button>
+      </div>
+      <p class="incl-line rv">Included on both tiers: <b>20+ channel accounts opened</b> · joint operations · end-to-end fulfillment · Agent support desk · account security · weekly data reports · influencer matching · content asset library · dedicated contact (1 business day)</p>
+      <p class="price-note rv">OEM inventory buyout carries no service fee — PO settlement, paid on delivery at the factory.<br>The two tiers apply to ODM / OBM / joint operations and marketing services.</p>
+    </div>
+
     <div class="models-extra rv">
       <p class="mx2-kicker">Beyond the Models</p>
       <h3 class="mx2-title">Two Custom-Build Capabilities<span> — run the business on systems, not spreadsheets</span></h3>
@@ -1311,41 +1408,7 @@ body.registered .nav-reg{display:none}
       </div>
     </div>
 
-    <div class="models-extra rv">
-      <p class="mx2-kicker">Pricing · 收费模式</p>
-      <h3 class="mx2-title">Share after you sell, or one flat fee<span> — monthly engagement, no long-term lock-in</span></h3>
-  <div class="price-grid">
-        <article class="price-card rv">
-          <h3 class="pc-name">Revenue Share</h3>
-          <span class="pc-en">Flexible</span>
-          <div class="pc-price">$0<small> base monthly fee</small></div>
-          <p class="pc-fee">+ share of sales · rate assessed by category</p>
-          <p class="pc-desc">Lowest barrier to start: get on channels and selling first, share after it sells — the friendliest cost structure for your launch phase.</p>
-          <ul class="pc-list">
-            <li><b>Zero base fee:</b> pass the catalog review and you're live</li>
-            <li><b>Shared risk:</b> we run your channels like our own business</li>
-            <li><b>Upgrade anytime:</b> switch to the flat tier once monthly sales stabilize</li>
-          </ul>
-          <a class="btn-ghost" href="#meet">Assess my catalog →</a>
-        </article>
-        <article class="price-card hot rv rv-d1">
-          <span class="pc-tag">Recommended</span>
-          <h3 class="pc-name">Flat Rate</h3>
-          <span class="pc-en">All-Inclusive</span>
-          <div class="pc-price">$499<small> /month</small></div>
-          <p class="pc-fee">No revenue share · no per-order cut</p>
-          <p class="pc-desc">Predictable cost: built for stable brands doing $5k+ monthly, fully managed end to end — the more you sell, the thinner the marginal cost.</p>
-          <ul class="pc-list">
-            <li><b>One price, everything:</b> channels + operations + marketing + support</li>
-            <li><b>Priority resources:</b> first in line for influencer slots, event placement, and data lines</li>
-            <li><b>No peak-season spikes:</b> the flat fee doesn't move with holiday traffic</li>
-          </ul>
-          <a class="btn-primary" href="#meet">Free strategy call →</a>
-        </article>
-      </div>
-      <p class="incl-line rv">Included on both tiers: <b>20+ channel accounts opened</b> · joint operations · end-to-end fulfillment · Agent support desk · account security · weekly data reports · influencer matching · content asset library · dedicated contact (1 business day)</p>
-      <p class="price-note rv">OEM inventory buyout carries no service fee — PO settlement, paid on delivery at the factory.<br>The two tiers apply to ODM / OBM / joint operations and marketing services.</p>
-    </div>
+    
   </div>
 </section>
 
@@ -1761,7 +1824,6 @@ body.registered .nav-reg{display:none}
   },{threshold:.12});
   document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
 
-
   
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll(".faq-item").forEach(function(item){
@@ -2068,7 +2130,7 @@ body.registered .nav-reg{display:none}
     {k:["onboard","start","begin","apply","sell with","合作","入驻"],
      a:function(){return "Onboarding runs in three steps: <b>①</b> prepare your business license and catalog; <b>②</b> submit the <b>Apply to Sell</b> form at the bottom of this page; <b>③</b> our BD team reaches out within 1–3 business days for qualification review and assortment talk. You can also "+link("#meet","book a 30-minute meeting")+" right away."}},
     {k:["price","pricing","cost","fee","charge","how much","收费","价格"],
-     a:function(){return "Two tiers, monthly engagement, no long-term lock-in: <b>Revenue Share</b> ($0 base fee + a share of sales — friendliest for launch phase) and <b>Flat Rate</b> ($499/month all-in, no per-order cut, built for stable brands doing $5k+ monthly). OEM inventory buyout carries no service fee — PO settlement, paid on delivery. See "+link("#models","Pricing")+"."}},
+     a:function(){return "Two tiers, monthly engagement, no long-term lock-in: <b>Revenue Share</b> ($0 base fee + a share of sales — friendliest for launch phase) and <b>Flat Rate</b> ($499/month all-in, no per-order cut, built for stable brands doing $5k+ monthly). OEM inventory buyout carries no service fee — PO settlement, paid on delivery. See "+link("#models","Pricing")+". Per-service fee details unlock after registration — full quote within 1 business day."}},
     {k:["oem","odm","obm","model","difference","white label","private label","模式"],
      a:function(){return "The three models in one line each: <b>OEM</b> — build to your prints, your specs; paid at the factory on delivery. <b>ODM</b> — your design + our overseas warehouse stock; earn design + manufacturing margin. <b>OBM</b> — your own brand direct to consumers; earn manufacturing + brand premium. The path is progressive: start OEM, upgrade when ready. See "+link("#models","Models")+"."}},
     {k:["channel","platform","walmart","amazon","target","costco","store","retail","shelf","渠道"],
