@@ -153,6 +153,18 @@ footer a:hover{color:var(--accent)}
 .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.src-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.src-card{border:1px solid var(--rule);background:var(--bg-2);border-radius:4px;padding:24px 26px;display:flex;flex-direction:column;gap:12px}
+.src-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.src-top h3{font-size:19px;font-weight:600;color:var(--ink)}
+.src-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--rule);padding:5px 10px;border-radius:2px;white-space:nowrap}
+.src-desc{font-size:14px;color:var(--ink-dim);line-height:1.85}
+.src-desc b{color:var(--ink);font-weight:600}
+.src-meta{display:flex;gap:10px}
+.src-meta span{font-family:var(--mono);font-size:11px;color:var(--ink-faint);border:1px solid var(--rule);padding:3px 8px;border-radius:2px}
+.src-link{margin-top:auto;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent);text-decoration:none}
+.src-link:hover{color:var(--accent-hi)}
+@media(max-width:860px){.src-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body id="top">
@@ -329,6 +341,23 @@ footer a:hover{color:var(--accent)}
         <summary>怎么开始订阅？</summary>
         <div class="a">邮件说明你的角色（工厂 / 品牌 / 渠道 / 创作者）与要回答的问题，我们回一份对应方向的数据维度建议与订阅方案。</div>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRY SOURCES ================= -->
+<section id="sources" style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-eyebrow rv">Industry Sources</div>
+    <h2 class="rv">行业信息源</h2>
+    <p class="sec-sub rv">订阅线回答你的业务问题，这些<b>公开行业信息源</b>帮你看懂行业语境——工厂与供应商进美国零售市场前值得持续跟踪。仅作信息推荐，无商业关联。</p>
+    <div class="src-grid rv">
+      <article class="src-card">
+        <div class="src-top"><h3>RMW Commerce</h3><span class="src-tag">电商战略咨询 · 博客</span></div>
+        <p class="src-desc">Rick Watson 创立的电商战略咨询公司，20+ 年行业经验，服务品牌方与投资方的尽调、审计与增长规划。博客高频覆盖平台动向、供应链与 AI 对零售的影响——<b>进美国市场前建立行业语感的优质入口</b>。</p>
+        <div class="src-meta"><span>rmwcommerce.com</span><span>English</span></div>
+        <a class="src-link" href="https://www.rmwcommerce.com/" target="_blank" rel="noopener noreferrer">访问网站 ↗</a>
+      </article>
     </div>
   </div>
 </section>
