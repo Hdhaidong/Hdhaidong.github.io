@@ -70,7 +70,19 @@ h2{font-size:clamp(1.15rem,2.2vw,1.5rem);font-weight:700}
 .takeaway{margin-top:16px;padding:14px 18px;border-left:3px solid var(--accent);background:rgba(232,163,61,.06);border-radius:0 8px 8px 0;font-size:.88rem;color:var(--ink-dim)}
 .takeaway b{color:var(--accent)}
 .disc{margin-top:18px;padding:12px 16px;border:1px dashed var(--hairline);border-radius:8px;font-size:.78rem;color:var(--ink-faint)}
-.sub-box{border:1px solid rgba(232,163,61,.3);border-radius:14px;background:linear-gradient(160deg,rgba(232,163,61,.07),var(--bg-2));padding:32px}
+.sub-grid{display:grid;grid-template-columns:1fr 1.15fr;border:1px solid rgba(232,163,61,.3);border-radius:14px;overflow:hidden;background:var(--bg-2)}
+.sub-box{background:linear-gradient(160deg,rgba(232,163,61,.07),var(--bg-2));padding:32px}
+.mail{border-left:1px solid var(--hairline-soft);background:var(--bg-3);display:flex;flex-direction:column}
+.mail-top{padding:18px 24px;border-bottom:1px solid var(--hairline-soft);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.mail-tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(232,163,61,.4);border-radius:5px;padding:2px 8px}
+.mail-sub{font-size:.82rem;font-weight:600}
+.mail-body{padding:6px 24px;flex:1}
+.mail-item{padding:14px 0;border-bottom:1px dashed var(--hairline-soft)}
+.mail-item:last-child{border-bottom:none}
+.mi-k{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:5px}
+.mail-item p{font-size:.84rem;color:var(--ink-dim);line-height:1.65}
+.mail-item p b{color:var(--ink)}
+.mail-foot{padding:14px 24px;border-top:1px solid var(--hairline-soft);font-family:var(--mono);font-size:.68rem;color:var(--ink-faint);letter-spacing:.06em}
 .sub-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .sub-head h3{font-size:1.2rem;font-weight:700}
 .sub-box .dek2{color:var(--ink-dim);font-size:.92rem;margin-top:10px;max-width:640px}
@@ -122,7 +134,7 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
 .f-links .fk{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:8px}
 .f-links a{display:block;font-size:.8rem;color:var(--ink-dim);padding:2px 0}
 .f-links a:hover{color:var(--accent)}
-@media (max-width:800px){.stats{grid-template-columns:1fr 1fr}.svc-grid{grid-template-columns:1fr}.post-grid{grid-template-columns:1fr}.nums{grid-template-columns:1fr}}
+@media (max-width:800px){.stats{grid-template-columns:1fr 1fr}.svc-grid{grid-template-columns:1fr}.post-grid{grid-template-columns:1fr}.nums{grid-template-columns:1fr}.sub-grid{grid-template-columns:1fr}.mail{border-left:none;border-top:1px solid var(--hairline-soft)}}
 @media (max-width:560px){.wrap{padding:0 16px}.cta-band{padding:28px 18px}.f-links{text-align:left}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -233,17 +245,40 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
 
 <!-- ================= Subscribe ================= -->
 <div class="sec" id="subscribe"><div class="wrap">
-  <div class="sub-box">
-    <div class="sub-head">
-      <h3>订阅更新</h3>
-      <span class="chip">每周一封</span>
+  <div class="sub-grid">
+    <div class="sub-box">
+      <div class="sub-head">
+        <h3>订阅更新</h3>
+        <span class="chip">每周一封</span>
+      </div>
+      <p class="dek2">众筹周报、平台热招、展会档期——每周更新直接发到你邮箱。不发广告、不共享地址，随时退订。</p>
+      <form class="sub-form" id="subForm" novalidate>
+        <input type="email" id="subEmail" placeholder="your@email.com" autocomplete="email" aria-label="邮箱地址" required>
+        <button type="submit" class="btn btn-p">订阅</button>
+      </form>
+      <div class="sub-note" id="subNote">点击「订阅」会打开你的邮件客户端发一封确认邮件——<b>从你想接收更新的邮箱发出</b>即可；也可以直接邮件 <a href="mailto:haidong.zhou@outlook.com">haidong.zhou@outlook.com</a>。</div>
     </div>
-    <p class="dek2">众筹周报、平台热招、展会档期——每周更新直接发到你邮箱。不发广告、不共享地址，随时退订。</p>
-    <form class="sub-form" id="subForm" novalidate>
-      <input type="email" id="subEmail" placeholder="your@email.com" autocomplete="email" aria-label="邮箱地址" required>
-      <button type="submit" class="btn btn-p">订阅</button>
-    </form>
-    <div class="sub-note" id="subNote">点击「订阅」会打开你的邮件客户端发一封确认邮件——<b>从你想接收更新的邮箱发出</b>即可；也可以直接邮件 <a href="mailto:haidong.zhou@outlook.com">haidong.zhou@outlook.com</a>。</div>
+    <div class="mail" aria-label="本期邮件样例">
+      <div class="mail-top">
+        <span class="mail-tag">邮件样例</span>
+        <span class="mail-sub">众筹周报 · 第 36 期 · 2026-09-02</span>
+      </div>
+      <div class="mail-body">
+        <div class="mail-item">
+          <span class="mi-k">本周读数</span>
+          <p><b>AI 正在从「功能」变成「品类」</b>——iKKO MindOne 卡片 AI 手机 HK$1,152 万、Sleepal 睡眠灯 HK$255 万、Morpho UV 打印机 $940 万+，同一周、三个类目。</p>
+        </div>
+        <div class="mail-item">
+          <span class="mi-k">深度一篇</span>
+          <p><b>国产 AI 硬件，正在众筹集中出海</b>——从 $69 像素马克杯到 $1,299 3D 打印机，出海价格带第一次这么完整：ODM 转 OBM 的最低成本验证路径。</p>
+        </div>
+        <div class="mail-item">
+          <span class="mi-k">展会倒计时</span>
+          <p><b>High Point Market 秋季 · <span class="cd" data-s="2026-10-17" data-e="2026-10-21">距开幕 45 天</span></b>——全球最大家具展，十月见买家的最近窗口，展位与行程现在就该落定。</p>
+        </div>
+      </div>
+      <div class="mail-foot">6 个板块 · 3 分钟读完 · 每周一封</div>
+    </div>
   </div>
 </div></div>
 
@@ -345,6 +380,17 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
     window.location.href='mailto:haidong.zhou@outlook.com?subject='+subject+'&body='+body;
     note.innerHTML='已打开你的邮件客户端——发送这封邮件即完成订阅申请，之后每周更新会发到你这里。';
   });
+})();
+(function(){
+  var now=new Date();now.setHours(0,0,0,0);
+  var q=document.querySelectorAll('.cd');
+  for(var i=0;i<q.length;i++){
+    var el=q[i];
+    var s=new Date(el.getAttribute('data-s')+'T00:00:00');
+    var e=new Date(el.getAttribute('data-e')+'T23:59:59');
+    var d=Math.round((s-now)/864e5);
+    el.textContent=d>0?('距开幕 '+d+' 天'):(now<=e?'进行中':'已闭幕');
+  }
 })();
 </script>
 
