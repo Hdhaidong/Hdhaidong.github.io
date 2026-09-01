@@ -70,6 +70,19 @@ h2{font-size:clamp(1.15rem,2.2vw,1.5rem);font-weight:700}
 .takeaway{margin-top:16px;padding:14px 18px;border-left:3px solid var(--accent);background:rgba(232,163,61,.06);border-radius:0 8px 8px 0;font-size:.88rem;color:var(--ink-dim)}
 .takeaway b{color:var(--accent)}
 .disc{margin-top:18px;padding:12px 16px;border:1px dashed var(--hairline);border-radius:8px;font-size:.78rem;color:var(--ink-faint)}
+.sub-box{border:1px solid rgba(232,163,61,.3);border-radius:14px;background:linear-gradient(160deg,rgba(232,163,61,.07),var(--bg-2));padding:32px}
+.sub-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.sub-head h3{font-size:1.2rem;font-weight:700}
+.sub-box .dek2{color:var(--ink-dim);font-size:.92rem;margin-top:10px;max-width:640px}
+.sub-form{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.sub-form input{flex:1;min-width:220px;background:var(--bg-3);border:1px solid var(--hairline);border-radius:8px;padding:12px 16px;color:var(--ink);font-family:var(--mono);font-size:.88rem;outline:none;transition:border-color .2s}
+.sub-form input::placeholder{color:var(--ink-faint)}
+.sub-form input:focus{border-color:var(--accent)}
+.sub-form .btn{padding:12px 26px}
+.sub-note{margin-top:12px;font-size:.78rem;color:var(--ink-faint);line-height:1.6}
+.sub-note b{color:var(--ink-dim)}
+.sub-note a{font-family:var(--mono)}
+.sub-note.err{color:#E07A5F}
 .feat{border:1px solid rgba(232,163,61,.3);border-radius:14px;background:linear-gradient(160deg,rgba(232,163,61,.07),var(--bg-2));margin-bottom:16px}
 .feat-in{padding:30px}
 .feat .label{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin-bottom:12px}
@@ -131,6 +144,7 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
   <div class="cta-row">
     <a class="btn btn-p" href="#posts">读最新文章</a>
     <a class="btn btn-s" href="#cats">按分类看</a>
+    <a class="btn btn-s" href="#subscribe">订阅更新</a>
     <a class="btn btn-s" href="#results">合作业绩</a>
   </div>
   <div class="stats">
@@ -217,6 +231,22 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
   <div class="disc">博客内容引用数据来自公开众筹页面与公开行业信息，仅作信息推荐，无商业关联；内容版权归原平台与原作者所有。</div>
 </div></div>
 
+<!-- ================= Subscribe ================= -->
+<div class="sec" id="subscribe"><div class="wrap">
+  <div class="sub-box">
+    <div class="sub-head">
+      <h3>订阅更新</h3>
+      <span class="chip">每周一封</span>
+    </div>
+    <p class="dek2">众筹周报、平台热招、展会档期——每周更新直接发到你邮箱。不发广告、不共享地址，随时退订。</p>
+    <form class="sub-form" id="subForm" novalidate>
+      <input type="email" id="subEmail" placeholder="your@email.com" autocomplete="email" aria-label="邮箱地址" required>
+      <button type="submit" class="btn btn-p">订阅</button>
+    </form>
+    <div class="sub-note" id="subNote">点击「订阅」会打开你的邮件客户端发一封确认邮件——<b>从你想接收更新的邮箱发出</b>即可；也可以直接邮件 <a href="mailto:haidong.zhou@outlook.com">haidong.zhou@outlook.com</a>。</div>
+  </div>
+</div></div>
+
 <!-- ================= Results ================= -->
 <div class="sec" id="results"><div class="wrap">
   <div class="sec-head">
@@ -294,6 +324,27 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
   }
   var m=location.search.match(/[?&]cat=([a-z]+)/);
   if(m){for(var j=0;j<chips.length;j++){if(chips[j].getAttribute('data-f')===m[1]){chips[j].click();break}}}
+})();
+(function(){
+  var f=document.getElementById('subForm');
+  if(!f){return}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var input=document.getElementById('subEmail');
+    var note=document.getElementById('subNote');
+    var v=(input.value||'').trim();
+    note.classList.remove('err');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){
+      note.textContent='请输入有效的邮箱地址（如 name@company.com）。';
+      note.classList.add('err');
+      input.focus();
+      return;
+    }
+    var subject=encodeURIComponent('订阅博客更新 · '+v);
+    var body=encodeURIComponent('请把这个邮箱加入 insightmarketplac 博客的每周更新列表：\n\n'+v+'\n\n（每周一封：众筹周报、平台热招、展会档期；随时可退订）');
+    window.location.href='mailto:haidong.zhou@outlook.com?subject='+subject+'&body='+body;
+    note.innerHTML='已打开你的邮件客户端——发送这封邮件即完成订阅申请，之后每周更新会发到你这里。';
+  });
 })();
 </script>
 
