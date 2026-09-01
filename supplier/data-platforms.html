@@ -152,6 +152,7 @@ footer a:hover{color:var(--accent)}
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.12s}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 .src-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
 .src-card{border:1px solid var(--rule);background:var(--bg-2);border-radius:4px;padding:24px 26px;display:flex;flex-direction:column;gap:12px}
@@ -185,6 +186,45 @@ footer a:hover{color:var(--accent)}
 .vsx-col.us li::before{content:"✓";color:var(--accent)}
 .vsx-col.us li{color:var(--ink)}
 @media(max-width:760px){.why-grid{grid-template-columns:1fr}.vsx-grid{grid-template-columns:1fr}}
+
+/* ---------- agent demo ---------- */
+.demo{margin-top:34px;border:1px solid var(--rule);border-radius:12px;background:var(--bg-2);overflow:hidden}
+.demo-head{padding:18px 22px 14px;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.demo-badge{font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--bg);background:var(--accent);padding:3px 8px;border-radius:4px;font-weight:700}
+.demo-head h3{font-size:17px}
+.demo-head .demo-note{width:100%;font-size:12.5px;color:var(--ink-faint)}
+.demo-stage{padding:20px 22px;min-height:230px;display:flex;flex-direction:column;gap:14px}
+.demo-q,.demo-a{max-width:78%;padding:12px 16px;border-radius:10px;font-size:14px;line-height:1.75}
+.demo-q{align-self:flex-end;background:rgba(232,163,61,.14);border:1px solid rgba(232,163,61,.3);border-bottom-right-radius:2px}
+.demo-q:empty{display:none}
+.demo-a{align-self:flex-start;background:var(--bg-3);border:1px solid var(--rule);border-bottom-left-radius:2px}
+.demo-a .al{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--accent);display:block;margin-bottom:8px}
+.demo-a:empty{display:none}
+.demo-r{display:grid;gap:7px}
+.demo-r .dr{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:7px 10px;background:rgba(242,238,230,.025);border-radius:6px;font-size:13px;opacity:0;transform:translateY(6px);transition:all .45s ease}
+.demo-r .dr.on{opacity:1;transform:none}
+.demo-r .dr b{font-family:var(--mono);font-size:11px;color:var(--ink-dim);letter-spacing:.04em}
+.demo-r .dr .dv{color:var(--ink)}
+.demo-r .dr .dv i{display:block;font-style:normal;color:var(--ink-faint);font-size:12px}
+.demo-r .dr.final{background:rgba(232,163,61,.08)}
+.demo-r .dr.final b,.demo-r .dr.final .dv{color:var(--accent-hi)}
+.demo-caret{display:inline-block;width:7px;height:15px;background:var(--accent);vertical-align:-2px;animation:dblink 1s steps(1) infinite;margin-left:1px}
+@keyframes dblink{50%{opacity:0}}
+.demo-chips{padding:14px 22px 18px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:8px}
+.demo-chips button{font-family:inherit;font-size:12.5px;color:var(--ink-dim);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .2s}
+.demo-chips button:hover{border-color:var(--rule-hi);color:var(--ink)}
+.demo-chips button.on{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
+.scn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.scn{border:1px solid var(--rule);border-radius:10px;padding:20px;background:var(--bg-2)}
+.scn .sn{font-family:var(--mono);font-size:10.5px;color:var(--accent);letter-spacing:.16em}
+.scn h3{font-size:15.5px;margin:9px 0 8px}
+.scn p{font-size:13.5px;color:var(--ink-dim);line-height:1.85}
+.scn p b{color:var(--ink)}
+.inst{margin-top:26px;border:1px dashed var(--rule-hi);border-radius:10px;padding:20px 24px;display:grid;grid-template-columns:auto 1fr 1fr 1fr;gap:18px;align-items:start}
+.inst .ik{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--accent);writing-mode:vertical-rl;text-orientation:upright;padding-top:2px}
+.inst .ist h4{font-size:14px;margin-bottom:5px}
+.inst .ist p{font-size:12.5px;color:var(--ink-faint);line-height:1.75}
+@media(max-width:760px){.scn-grid{grid-template-columns:1fr}.inst{grid-template-columns:1fr}.inst .ik{writing-mode:horizontal-tb;text-orientation:unset}.demo-q,.demo-a{max-width:100%}.demo-r .dr{grid-template-columns:84px 1fr}}
 </style>
 </head>
 <body id="top">
@@ -360,6 +400,60 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="why-band rv">链路：<b>订阅线 → 数据 token → Agent → 报告 / 看板 / 工单</b>。Agent 跑在自有工具与边缘硬件上，也兼容你现有的 AI 助手与 ERP / CRM——token 是标准接口，权限按字段最小化开通，Agent 只碰被授权的数据。</div>
+
+    <div class="demo rv" id="agent-demo">
+      <div class="demo-head">
+        <span class="demo-badge">DEMO</span>
+        <h3>试一试：一句话调出报告</h3>
+        <p class="demo-note">点击下方任意一条问法，看 Agent 怎么回——报告数据为演示口径，真实订阅按 token 接入后，同样问法直接出报告。</p>
+      </div>
+      <div class="demo-stage">
+        <div class="demo-q" id="demoQ"></div>
+        <div class="demo-a" id="demoA"></div>
+      </div>
+      <div class="demo-chips" id="demoChips">
+        <button data-d="d1">这个类目下个季度还能进吗？</button>
+        <button data-d="d2">我的价格带在竞品里排第几？</button>
+        <button data-d="d3">买家最抱怨什么？</button>
+        <button data-d="d4">竞品上周动了什么？</button>
+        <button data-d="d5">众筹榜最近在冒头什么？</button>
+        <button data-d="d6">这周谁在提我们？</button>
+      </div>
+    </div>
+
+    <div class="scn-grid">
+      <div class="scn rv">
+        <span class="sn">SCENE 01 · 选品会</span>
+        <h3>周一晨会，当场出结论</h3>
+        <p>会议室里直接问：「<b>宠物加热垫 Q4 还能进吗</b>」——Agent 合并<b>选品线 + 众筹线</b>，当场回机会评分、季节性与风险清单。选品会从翻资料两小时，变成看结论三十分钟。</p>
+      </div>
+      <div class="scn rv rv-d1">
+        <span class="sn">SCENE 02 · 竞品异动</span>
+        <h3>降价当天，应对建议先到</h3>
+        <p>推送进来：「<b>竞品全线降 12%，跟不跟</b>」——Agent 调<b>定价线 + 竞品线</b>，回价格带分布与历史促销弹性：跟 5% 保毛利，同时换主图拉点击，用内容应对价格战。</p>
+      </div>
+      <div class="scn rv">
+        <span class="sn">SCENE 03 · 退货异动</span>
+        <h3>老板问为什么，答案带依据</h3>
+        <p>「<b>退货率为什么涨</b>」——Agent 跑<b>消费者评论线</b>，聚类出 Top3 抱怨与占比变化，产品迭代排期直接引用结论——不是拍脑袋，是数据口径。</p>
+      </div>
+    </div>
+
+    <div class="inst rv">
+      <span class="ik">落地路径</span>
+      <div class="ist">
+        <h4>装上 · 第 1 周</h4>
+        <p>开通订阅线，token 配置进 Agent——自有工具、边缘硬件或你现有的 AI 助手，字段按需授权。</p>
+      </div>
+      <div class="ist">
+        <h4>跑顺 · 第 1 个月</h4>
+        <p>问法定型，周报自动化——团队问什么、怎么问，口径沉淀成 Agent 技能。</p>
+      </div>
+      <div class="ist">
+        <h4>出结果 · 每季度</h4>
+        <p>命中率复盘——哪些结论帮到了决策、哪些维度该砍，数据跟着业务走。</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -542,6 +636,90 @@ footer a:hover{color:var(--accent)}
     });
   },{threshold:.08,rootMargin:'0px 0px -30px 0px'});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+})();
+</script>
+<script>
+(function(){
+  var DATA = {
+    d1:{line:'LINE 01 · 选品与市场', q:'这个类目下个季度还能进吗？', rows:[
+      ['机会评分','72 / 100','搜索量同比 +18%，需求前置'],
+      ['季节性','Q4 占全年 41%','备货节奏建议 8 月中旬'],
+      ['风险清单','头部品牌清库存','避开 $19.9 以下价格带'],
+      ['结论','可以进，走中价位差异化','避开低价混战',1]
+    ]},
+    d2:{line:'LINE 02 · 定价与促销', q:'我的价格带在竞品里排第几？', rows:[
+      ['你的位置','$39.99 · 中位偏上','竞品中位数 $34.99'],
+      ['促销窗口','黑五前 3 周','去年同期折扣深度 12%'],
+      ['渠道价差','独立站比亚马逊 +9%','可承接 5% 跟价空间'],
+      ['结论','建议守 $36.99–$41.99','跟折扣节奏，不跟定价',1]
+    ]},
+    d3:{line:'LINE 03 · 消费者与评论', q:'买家最抱怨什么？', rows:[
+      ['Top 1','续航 · 34%','近 90 天上升 5pt'],
+      ['Top 2','App 连接 · 22%','集中在安卓端'],
+      ['Top 3','说明书 · 15%','非英语母语用户为主'],
+      ['结论','改良优先级：续航 > App > 说明书','下一代先改续航',1]
+    ]},
+    d4:{line:'LINE 04 · 竞品动态', q:'竞品上周动了什么？', rows:[
+      ['上新','A 品牌 +2 SKU','均在 $29 价格带内'],
+      ['降价','B 品牌 −12%','距上次促销 87 天'],
+      ['换图','主图全换 ×2','场景图替换卖点'],
+      ['结论','跟降价不划算','换主图 + 评论文案应对',1]
+    ]},
+    d5:{line:'LINE 05 · 众筹信号', q:'众筹榜最近在冒头什么？', rows:[
+      ['本周爆筹','×3 个','与你品类相关 2 个'],
+      ['相似度最高','78%','达成 $210K / 12 天'],
+      ['卖点结构','便携 + 模块化','评论区高频词'],
+      ['结论','需求提前半年可见','纳入 Q1 选品池',1]
+    ]},
+    d6:{line:'LINE 06 · 品牌声量', q:'这周谁在提我们？', rows:[
+      ['提及','47 次 · 环比 +12','Reddit 21 / TikTok 15 / YouTube 11'],
+      ['情绪','正面 68%','高赞内容为开箱类'],
+      ['高峰','周三开箱视频','单条带动 9 次提及'],
+      ['结论','放大开箱合作','复制周三发布节奏',1]
+    ]}
+  };
+  var qBox = document.getElementById('demoQ');
+  var aBox = document.getElementById('demoA');
+  var chips = document.querySelectorAll('#demoChips button');
+  var timers = [];
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function clearAll(){
+    timers.forEach(function(t){clearTimeout(t)});
+    timers = [];
+    qBox.innerHTML = ''; aBox.innerHTML = '';
+    chips.forEach(function(b){b.classList.remove('on')});
+  }
+  function esc(s){
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function run(key){
+    var d = DATA[key]; if(!d) return;
+    clearAll();
+    chips.forEach(function(b){ if(b.getAttribute('data-d')===key) b.classList.add('on'); });
+    var caret = '<span class="demo-caret"></span>';
+    function typeQ(i){
+      qBox.innerHTML = esc(d.q.slice(0,i)) + caret;
+      if(i <= d.q.length){ timers.push(setTimeout(function(){typeQ(i+1)}, reduce?0:34)); }
+      else { timers.push(setTimeout(buildA, reduce?0:220)); }
+    }
+    function buildA(){
+      qBox.innerHTML = esc(d.q);
+      aBox.innerHTML = '<span class="al">AGENT · ' + esc(d.line) + '</span><div class="demo-r"></div>';
+      var holder = aBox.querySelector('.demo-r');
+      d.rows.forEach(function(r,j){
+        var row = document.createElement('div');
+        row.className = 'dr' + (r[3] ? ' final' : '');
+        row.innerHTML = '<b>' + esc(r[0]) + '</b><span class="dv">' + esc(r[1]) + (r[2] ? '<i>' + esc(r[2]) + '</i>' : '') + '</span>';
+        holder.appendChild(row);
+        timers.push(setTimeout(function(){ row.classList.add('on'); }, (reduce?0:120) + j*(reduce?0:190)));
+      });
+    }
+    typeQ(0);
+  }
+  chips.forEach(function(b){
+    b.addEventListener('click', function(){ run(b.getAttribute('data-d')); });
+  });
 })();
 </script>
 </body>
