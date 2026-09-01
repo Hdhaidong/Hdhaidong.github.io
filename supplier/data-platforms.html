@@ -165,6 +165,26 @@ footer a:hover{color:var(--accent)}
 .src-link{margin-top:auto;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent);text-decoration:none}
 .src-link:hover{color:var(--accent-hi)}
 @media(max-width:860px){.src-grid{grid-template-columns:1fr}}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.why-card{border:1px solid var(--rule);border-radius:10px;padding:22px;background:var(--bg-2)}
+.why-card .wn{font-family:var(--mono);font-size:10.5px;color:var(--accent);letter-spacing:.16em}
+.why-card h3{font-size:16px;margin:10px 0 8px}
+.why-card p{font-size:14px;color:var(--ink-dim);line-height:1.85}
+.why-band{margin-top:26px;padding:20px 26px;border:1px solid var(--rule);border-radius:10px;background:var(--bg-2);text-align:center;font-size:15.5px}
+.why-band b{color:var(--accent)}
+.vsx-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.vsx-col{border:1px solid var(--rule);border-radius:12px;padding:26px;background:var(--bg-2)}
+.vsx-col.us{border-color:var(--accent)}
+.vsx-col .vt{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:14px}
+.vsx-col.us .vt{color:var(--accent)}
+.vsx-col ul{list-style:none}
+.vsx-col li{font-size:14px;color:var(--ink-dim);padding:9px 0 9px 22px;position:relative;border-top:1px dashed var(--rule);line-height:1.75}
+.vsx-col li:first-child{border-top:none}
+.vsx-col li::before{position:absolute;left:0;font-weight:700}
+.vsx-col.diy-x li::before{content:"×";color:#C56A6A}
+.vsx-col.us li::before{content:"✓";color:var(--accent)}
+.vsx-col.us li{color:var(--ink)}
+@media(max-width:760px){.why-grid{grid-template-columns:1fr}.vsx-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body id="top">
@@ -199,6 +219,7 @@ footer a:hover{color:var(--accent)}
 
 <nav class="catnav">
   <div class="catnav-in">
+    <a class="chip" href="#why">为什么订阅</a>
     <a class="chip" href="#subs">六条订阅线</a>
     <a class="chip" href="#delivery">交付形态</a>
     <a class="chip" href="#plans">订阅方式</a>
@@ -206,6 +227,37 @@ footer a:hover{color:var(--accent)}
     <a class="chip" href="#faq">常见问题</a>
   </div>
 </nav>
+
+<section id="why" style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-eyebrow rv">Why Data · 机遇与痛点</div>
+    <h2 class="rv">同样一批货，差距在决策方式</h2>
+    <p class="sec-sub rv">有人靠感觉押注，有人按数据排期——上线时间、定价、卖点口径，每一次决策都在拉开差距。而大多数工厂的选品决策，还停留在四个困境里。</p>
+    <div class="why-grid">
+      <div class="why-card rv">
+        <span class="wn">PAIN 01</span>
+        <h3>信息是碎片，形成不了判断</h3>
+        <p>展会上扫一眼、朋友圈截图、供应商报价单——信息看过就忘，串不成「下个季度做什么」的结论。</p>
+      </div>
+      <div class="why-card rv">
+        <span class="wn">PAIN 02</span>
+        <h3>咨询报告贵，且不解决动作</h3>
+        <p>一份品类报告五位数起步，讲的是行业大势；看完还是不知道：涨价还是促销？上这个品还是砍那条线？</p>
+      </div>
+      <div class="why-card rv">
+        <span class="wn">PAIN 03</span>
+        <h3>后台数据一堆，缺的是「所以呢」</h3>
+        <p>平台后台能看到自己的销量曲线，看不到竞品在干什么、消费者在骂什么、价格带在往哪移。</p>
+      </div>
+      <div class="why-card rv">
+        <span class="wn">PAIN 04</span>
+        <h3>跟风永远慢半拍</h3>
+        <p>看到别人爆了才跟进，进场就是高点。众筹信号、社媒声量这些先行指标，没人替你盯着。</p>
+      </div>
+    </div>
+    <div class="why-band rv">订阅的不是数据，是<b>每周更新的决策依据</b>——六条线回答六类问题，问题变了维度跟着变。</div>
+  </div>
+</section>
 
 <section id="subs" style="padding-top:58px">
   <div class="wrap">
@@ -308,6 +360,33 @@ footer a:hover{color:var(--accent)}
     <div class="disc-band rv">
       <h3>Data Discipline · 数据纪律</h3>
       <p>我们提供<b>数据分析与数据 token</b>，不提供、也不披露<b>数据源头</b>——你拿到的是结论和可用数据，不是我们的供应链。自有监测网络 + 多源交叉验证 + 人工研判，是我们输出判断的方式；对接入方，token 权限按字段最小化开通。这条纪律适用于全部业务线。</p>
+    </div>
+  </div>
+</section>
+
+<section id="diy" style="border-top:1px solid var(--rule)">
+  <div class="wrap">
+    <div class="sec-eyebrow rv">DIY vs Subscription</div>
+    <h2 class="rv">自己买工具盯数据，还是订阅答案？</h2>
+    <div class="vsx-grid">
+      <div class="vsx-col diy-x rv">
+        <div class="vt">自己买工具 · DIY</div>
+        <ul>
+          <li>数据工具按席位付费，一年几万起，还要配专人天天盯</li>
+          <li>平台后台只能看到自己，看不见竞品、市场与消费者</li>
+          <li>买来的报告是死的——问题变了，报告不会跟着变</li>
+          <li>数据散在后台、Excel 和群里，没有一处汇成结论</li>
+        </ul>
+      </div>
+      <div class="vsx-col us rv">
+        <div class="vt">订阅线 · With Us</div>
+        <ul>
+          <li>按问题订阅，只为回答你问题的维度付费</li>
+          <li>六条线覆盖竞品动态、消费者声音、众筹信号——看见市场，不只是自己</li>
+          <li>周 / 月更新、热点加更，问题变了维度跟着调整</li>
+          <li>token 直接接入 ERP / CRM / 看板，结论直接落到动作</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
