@@ -940,6 +940,10 @@ body.registered .nav-reg{display:none}
 .fee-title{font-size:26px;font-weight:600;color:var(--ink);margin:6px 0 10px}
 .fee-sub{font-size:14px;color:var(--ink-faint);line-height:1.75}
 .fee-sub b{color:var(--ink)}
+.incl-wrap{margin-top:34px}
+.ig-card{border:1px solid var(--hairline);border-radius:10px;padding:16px 18px;background:var(--bg-3);display:flex;flex-direction:column;gap:6px}
+.ig-card b{font-size:13.5px;color:var(--ink);font-weight:600}
+.ig-card span{font-size:12px;color:var(--ink-faint);line-height:1.65}
 .fee-channels{margin-top:34px}
 .fee-channels .pw-grid{margin-bottom:2px}
 .fee-detail{margin-top:30px}
@@ -1384,7 +1388,20 @@ body:not(.registered) .fee-lock{display:flex}
         <div class="fl-txt"><b>Per-service fees are visible to registered users</b><span>Registration is free · quote within 1 business day · includes category-fit assessment</span></div>
         <button class="btn-primary" data-reg-open>Register to unlock per-service fees →</button>
       </div>
-      <p class="incl-line rv">Included on both tiers: <b>20+ channel accounts opened</b> · joint operations · end-to-end fulfillment · Agent support desk · account security · weekly data reports · influencer matching · content asset library · dedicated contact (1 business day)</p>
+      <div class="incl-wrap rv">
+        <div class="fee-detail-cap"><span class="cap-k">Included · On Both Tiers</span><span class="cap-line"></span><span class="cap-r">same standard on Revenue Share and Project</span></div>
+        <div class="incl-grid">
+          <div class="ig-card"><b>Channel Accounts</b><span>20+ retail and marketplace channels, opened and built out in one pass</span></div>
+          <div class="ig-card"><b>Joint Operations</b><span>assortment, pricing, and ads run by one team aligned to sales</span></div>
+          <div class="ig-card"><b>End-to-End Fulfillment</b><span>99.8% same-day ship · 85% next-day US coverage</span></div>
+          <div class="ig-card"><b>Agent Support Desk</b><span>routine questions answered automatically, humans on judgment calls</span></div>
+          <div class="ig-card"><b>Account Security</b><span>channel health monitoring, risk control, and appeals handled</span></div>
+          <div class="ig-card"><b>Weekly Data Reports</b><span>sales, inventory, and ad performance in one weekly view</span></div>
+          <div class="ig-card"><b>Influencer Matching</b><span>US creators matched by category, scheduling in-house</span></div>
+          <div class="ig-card"><b>Content Asset Library</b><span>assets, copy, and templates ready to use</span></div>
+          <div class="ig-card"><b>Dedicated Contact</b><span>one entry point for every service, 1-business-day response</span></div>
+        </div>
+      </div>
       <p class="price-note rv">OEM inventory buyout carries no service fee — PO settlement, paid on delivery at the factory.<br>Both tracks apply to ODM / OBM / joint operations and marketing services.</p>
     </div>
 

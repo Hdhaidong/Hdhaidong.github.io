@@ -935,6 +935,10 @@ body.registered .nav-reg{display:none}
 .fee-title{font-size:26px;font-weight:600;color:var(--ink);margin:6px 0 10px}
 .fee-sub{font-size:14px;color:var(--ink-faint);line-height:1.75}
 .fee-sub b{color:var(--ink)}
+.incl-wrap{margin-top:34px}
+.ig-card{border:1px solid var(--hairline);border-radius:10px;padding:16px 18px;background:var(--bg-3);display:flex;flex-direction:column;gap:6px}
+.ig-card b{font-size:13.5px;color:var(--ink);font-weight:600}
+.ig-card span{font-size:12px;color:var(--ink-faint);line-height:1.65}
 .fee-channels{margin-top:34px}
 .fee-channels .pw-grid{margin-bottom:2px}
 .fee-detail{margin-top:30px}
@@ -1379,7 +1383,20 @@ body:not(.registered) .fee-lock{display:flex}
         <div class="fl-txt"><b>逐项收费明细为注册用户可见</b><span>注册免费 · 报价单 1 个工作日内发送 · 含品类适配评估</span></div>
         <button class="btn-primary" data-reg-open>注册解锁逐项收费 →</button>
       </div>
-      <p class="incl-line rv">所有档位均包含：<b>20+ 渠道账号开设</b> · 联合运营 · 端到端仓配履约 · Agent 智能客服 · 账号安全维护 · 数据周报 · 红人资源对接 · 内容素材库 · 专属对接人（1 个工作日响应）</p>
+      <div class="incl-wrap rv">
+        <div class="fee-detail-cap"><span class="cap-k">Included · 所有档位均包含</span><span class="cap-line"></span><span class="cap-r">分成档 / 项目档 同一标准</span></div>
+        <div class="incl-grid">
+          <div class="ig-card"><b>渠道账号开设</b><span>20+ 主流零售与电商平台，开户与店铺搭建一次到位</span></div>
+          <div class="ig-card"><b>联合运营</b><span>选品、定价、广告一个团队统筹，节奏对齐销售目标</span></div>
+          <div class="ig-card"><b>端到端仓配履约</b><span>99.8% 当日出库 · 85% 美国次日达覆盖</span></div>
+          <div class="ig-card"><b>Agent 智能客服</b><span>常见问题自动应答，人工专注判断类事务</span></div>
+          <div class="ig-card"><b>账号安全维护</b><span>渠道账号健康度监控，风控与申诉处理</span></div>
+          <div class="ig-card"><b>数据周报</b><span>销售、库存、广告表现每周一报，趋势一眼可见</span></div>
+          <div class="ig-card"><b>红人资源对接</b><span>按品类匹配美国红人，排期与价格可控</span></div>
+          <div class="ig-card"><b>内容素材库</b><span>素材、文案与视觉模板随取随用</span></div>
+          <div class="ig-card"><b>专属对接人</b><span>一个入口对接全部服务，1 个工作日响应</span></div>
+        </div>
+      </div>
       <p class="price-note rv">OEM 库存买断合作不收任何服务费——PO 结算，工厂交货即收款。<br>两种方式适用于 ODM / OBM / 联合运营与营销服务。</p>
     </div>
 
