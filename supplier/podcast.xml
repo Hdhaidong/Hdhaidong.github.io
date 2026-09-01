@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Product Hub</title>
+<link>https://hdhaidong.github.io/supplier/podcast.html</link>
+<language>zh-cn</language>
+<copyright>Copyright 2026 insightmarketplac</copyright>
+<description>面向出海工厂的每周音频节目——三个固定板块：Product 产品（众筹爆品与 AI 硬件信号）、Agent 智能体（业绩与一线应用）、Impact 营销 Agent（AI 营销打法）。内容自产，RSS 自托管分发。</description>
+<itunes:author>insightmarketplac</itunes:author>
+<itunes:summary>面向出海工厂的每周音频节目——Product 产品 / Agent 智能体 / Impact 营销 Agent 三个固定板块。内容自产，RSS 全平台分发。</itunes:summary>
+<itunes:owner>
+<itunes:name>insightmarketplac</itunes:name>
+<itunes:email>haidong.zhou@outlook.com</itunes:email>
+</itunes:owner>
+<itunes:category text="Technology"/>
+<itunes:category text="Business"/>
+<itunes:explicit>false</itunes:explicit>
+</channel>
+</rss>
