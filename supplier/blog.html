@@ -70,20 +70,30 @@ h2{font-size:clamp(1.15rem,2.2vw,1.5rem);font-weight:700}
 .takeaway{margin-top:16px;padding:14px 18px;border-left:3px solid var(--accent);background:rgba(232,163,61,.06);border-radius:0 8px 8px 0;font-size:.88rem;color:var(--ink-dim)}
 .takeaway b{color:var(--accent)}
 .disc{margin-top:18px;padding:12px 16px;border:1px dashed var(--hairline);border-radius:8px;font-size:.78rem;color:var(--ink-faint)}
-.v-show{display:grid;grid-template-columns:1.5fr 1fr;gap:14px}
-.vcol{display:flex;flex-direction:column;gap:14px}
-.vcard{border:1px solid var(--hairline-soft);border-radius:12px;background:var(--bg-2);display:block;overflow:hidden;transition:border-color .2s}
-.vcard:hover{border-color:rgba(232,163,61,.45);text-decoration:none}
-.vthumb{position:relative;display:block;background:var(--bg-3)}
-.vthumb img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;opacity:.82;transition:opacity .2s}
-.vcard:hover .vthumb img{opacity:1}
-.vthumb .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,rgba(11,14,19,.08),rgba(11,14,19,.38))}
-.vthumb .play::before{content:"";display:block;width:0;height:0;border-left:20px solid rgba(244,186,96,.95);border-top:12px solid transparent;border-bottom:12px solid transparent;filter:drop-shadow(0 2px 10px rgba(0,0,0,.55))}
-.vcard:hover .play::before{border-left-color:#FFD98F}
-.vbody{padding:14px 18px 16px}
-.vbody .vt{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;display:block}
-.vbody h3{font-size:.96rem;font-weight:700;margin:7px 0 5px;color:var(--ink);line-height:1.45}
-.vbody p{font-size:.8rem;color:var(--ink-dim)}
+.vhead{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.vcaro{position:relative;border:1px solid var(--hairline-soft);border-radius:12px;overflow:hidden;background:var(--bg-2);transition:border-color .2s}
+.vcaro:hover{border-color:rgba(232,163,61,.4)}
+.vtrack{display:flex;transition:transform .55s cubic-bezier(.25,.6,.3,1)}
+.vslide{flex:0 0 100%;min-width:100%;display:grid;grid-template-columns:1.25fr 1fr;background:var(--bg-2)}
+.vslide:hover{text-decoration:none}
+.vslide .vthumb{position:relative;background:var(--bg-3);min-height:230px;overflow:hidden}
+.vslide .vthumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;transition:opacity .2s}
+.vslide:hover .vthumb img{opacity:1}
+.vthumb .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,rgba(11,14,19,.06),rgba(11,14,19,.4))}
+.vthumb .play::before{content:"";display:block;width:0;height:0;border-left:22px solid rgba(244,186,96,.95);border-top:13px solid transparent;border-bottom:13px solid transparent;filter:drop-shadow(0 2px 10px rgba(0,0,0,.55))}
+.vslide:hover .play::before{border-left-color:#FFD98F}
+.vslide .vbody{padding:26px 30px;display:flex;flex-direction:column;justify-content:center}
+.vslide .vt{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;display:block}
+.vslide h3{font-size:1.08rem;font-weight:700;margin:8px 0 6px;color:var(--ink);line-height:1.4}
+.vslide p{font-size:.86rem;color:var(--ink-dim)}
+.vslide .go{font-family:var(--mono);font-size:.7rem;color:var(--accent);margin-top:14px;display:inline-block}
+.vnav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:1px solid var(--hairline);background:rgba(11,14,19,.72);color:var(--ink);font-size:1.15rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3;backdrop-filter:blur(4px);transition:border-color .2s,color .2s;padding:0}
+.vnav:hover{border-color:var(--accent);color:var(--accent)}
+.vnav.prev{left:14px}
+.vnav.next{right:14px}
+.vdots{position:absolute;bottom:14px;right:18px;display:flex;gap:7px;z-index:3}
+.vdot{width:9px;height:9px;border-radius:50%;border:1px solid rgba(232,163,61,.55);background:transparent;cursor:pointer;padding:0;transition:background .2s}
+.vdot.on{background:var(--accent);border-color:var(--accent)}
 .sub-grid{display:grid;grid-template-columns:1fr 1.15fr;border:1px solid rgba(232,163,61,.3);border-radius:14px;overflow:hidden;background:var(--bg-2)}
 .sub-box{background:linear-gradient(160deg,rgba(232,163,61,.07),var(--bg-2));padding:32px}
 .mail{border-left:1px solid var(--hairline-soft);background:var(--bg-3);display:flex;flex-direction:column}
@@ -148,7 +158,7 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
 .f-links .fk{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:8px}
 .f-links a{display:block;font-size:.8rem;color:var(--ink-dim);padding:2px 0}
 .f-links a:hover{color:var(--accent)}
-@media (max-width:800px){.stats{grid-template-columns:1fr 1fr}.svc-grid{grid-template-columns:1fr}.post-grid{grid-template-columns:1fr}.nums{grid-template-columns:1fr}.v-show{grid-template-columns:1fr}.sub-grid{grid-template-columns:1fr}.mail{border-left:none;border-top:1px solid var(--hairline-soft)}}
+@media (max-width:800px){.stats{grid-template-columns:1fr 1fr}.svc-grid{grid-template-columns:1fr}.post-grid{grid-template-columns:1fr}.nums{grid-template-columns:1fr}.vslide{grid-template-columns:1fr}.vslide .vthumb{min-height:0;aspect-ratio:16/9}.vslide .vbody{padding:18px 20px}.vnav{width:34px;height:34px;font-size:1rem}.sub-grid{grid-template-columns:1fr}.mail{border-left:none;border-top:1px solid var(--hairline-soft)}}
 @media (max-width:560px){.wrap{padding:0 16px}.cta-band{padding:28px 18px}.f-links{text-align:left}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -258,26 +268,30 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
   <div class="disc">博客内容引用数据来自公开众筹页面与公开行业信息，仅作信息推荐，无商业关联；内容版权归原平台与原作者所有。</div>
 </div></div>
 
-<!-- ================= Video showcase ================= -->
+<!-- ================= Video showcase (carousel) ================= -->
 <div class="sec" id="videos"><div class="wrap">
-  <div class="sec-head">
-    <h2>科技视频 · 一线观察</h2>
-    <p>精选自公开行业媒体 Omni Talk（YouTube 频道 Omni Talk Retail · 25 万+ 订阅）——零售商的动作就是订单的方向：无人机配送改物流、语音 AI 改点单、货架感知改补货。</p>
+  <div class="sec-head vhead">
+    <div>
+      <h2>科技视频 · 一线观察</h2>
+      <p>精选自公开行业媒体 Omni Talk（YouTube 频道 Omni Talk Retail · 25 万+ 订阅）——零售商的动作就是订单的方向：无人机配送改物流、语音 AI 改点单、货架感知改补货。</p>
+    </div>
+    <a class="btn btn-p" style="font-size:.85rem;padding:10px 22px;flex-shrink:0" href="#subscribe">订阅更新</a>
   </div>
-  <div class="v-show">
-    <a class="vcard" href="https://www.youtube.com/watch?v=tuM8YvXOQiI" target="_blank" rel="noopener">
-      <div class="vthumb">
-        <img src="https://i.ytimg.com/vi/tuM8YvXOQiI/hqdefault.jpg" alt="GrocerTalk 首播视频画面" loading="lazy" width="480" height="360">
-        <span class="play" aria-hidden="true"></span>
-      </div>
-      <div class="vbody">
-        <span class="vt">GrocerTalk 首播 · 2026-08-19</span>
-        <h3>Couche-Tard 收购 Żabka、Kroger 电商计划、AI 购物助手</h3>
-        <p>全球零售并购、外卖与处方药联动、AI 助手进购物车——零售数字化的最新一公里。</p>
-      </div>
-    </a>
-    <div class="vcol">
-      <a class="vcard" href="https://www.youtube.com/watch?v=-F7f2EFXG9k" target="_blank" rel="noopener">
+  <div class="vcaro" id="vcaro" aria-roledescription="轮播" aria-label="科技视频精选">
+    <div class="vtrack" id="vtrack">
+      <a class="vslide" href="https://www.youtube.com/watch?v=tuM8YvXOQiI" target="_blank" rel="noopener">
+        <div class="vthumb">
+          <img src="https://i.ytimg.com/vi/tuM8YvXOQiI/hqdefault.jpg" alt="GrocerTalk 首播视频画面" loading="lazy" width="480" height="360">
+          <span class="play" aria-hidden="true"></span>
+        </div>
+        <div class="vbody">
+          <span class="vt">GrocerTalk 首播 · 2026-08-19</span>
+          <h3>Couche-Tard 收购 Żabka、Kroger 电商计划、AI 购物助手</h3>
+          <p>全球零售并购、外卖与处方药联动、AI 助手进购物车——零售数字化的最新一公里。</p>
+          <span class="go">在 YouTube 观看 →</span>
+        </div>
+      </a>
+      <a class="vslide" href="https://www.youtube.com/watch?v=-F7f2EFXG9k" target="_blank" rel="noopener">
         <div class="vthumb">
           <img src="https://i.ytimg.com/vi/-F7f2EFXG9k/hqdefault.jpg" alt="Fast Five 视频画面" loading="lazy" width="480" height="360">
           <span class="play" aria-hidden="true"></span>
@@ -286,9 +300,10 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
           <span class="vt">Fast Five · 2026-07-16</span>
           <h3>Walmart 无人机、Taco Bell 语音 AI、Wayfair 的豪赌</h3>
           <p>三件事都在改「订单从哪来、怎么交付」的底层逻辑。</p>
+          <span class="go">在 YouTube 观看 →</span>
         </div>
       </a>
-      <a class="vcard" href="https://www.youtube.com/watch?v=cZvou7yN4zA" target="_blank" rel="noopener">
+      <a class="vslide" href="https://www.youtube.com/watch?v=cZvou7yN4zA" target="_blank" rel="noopener">
         <div class="vthumb">
           <img src="https://i.ytimg.com/vi/cZvou7yN4zA/hqdefault.jpg" alt="5 Insightful Minutes 视频画面" loading="lazy" width="480" height="360">
           <span class="play" aria-hidden="true"></span>
@@ -297,8 +312,16 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
           <span class="vt">5 Insightful Minutes · 2026-06-11</span>
           <h3>最大的 AI 错误：等完美数据</h3>
           <p>别等数据完美才上 AI——先用起来、边跑边补，正是 Agent 提业绩的正确姿势。</p>
+          <span class="go">在 YouTube 观看 →</span>
         </div>
       </a>
+    </div>
+    <button class="vnav prev" id="vprev" type="button" aria-label="上一个视频">‹</button>
+    <button class="vnav next" id="vnext" type="button" aria-label="下一个视频">›</button>
+    <div class="vdots" id="vdots">
+      <button class="vdot on" type="button" aria-label="第 1 条视频"></button>
+      <button class="vdot" type="button" aria-label="第 2 条视频"></button>
+      <button class="vdot" type="button" aria-label="第 3 条视频"></button>
     </div>
   </div>
   <div class="note">视频精选自公开行业媒体 Omni Talk，仅作信息推荐，无商业关联，版权归原平台与原作者所有——<a href="blog/retail-tech-videos.html">全部六条视频与「为什么值得工厂看」→</a></div>
@@ -452,6 +475,39 @@ footer{margin-top:64px;border-top:1px solid var(--hairline-soft);padding:44px 0 
     var d=Math.round((s-now)/864e5);
     el.textContent=d>0?('距开幕 '+d+' 天'):(now<=e?'进行中':'已闭幕');
   }
+})();
+(function(){
+  var caro=document.getElementById('vcaro');
+  if(!caro){return}
+  var track=document.getElementById('vtrack');
+  var slides=track.children,n=slides.length;
+  var dots=document.querySelectorAll('.vdot');
+  var idx=0,timer=null,DELAY=6000;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(i){
+    idx=(i+n)%n;
+    track.style.transform='translateX(-'+(idx*100)+'%)';
+    for(var k=0;k<dots.length;k++){dots[k].classList.toggle('on',k===idx)}
+  }
+  function start(){if(reduce||timer){return}timer=setInterval(function(){go(idx+1)},DELAY)}
+  function stop(){if(timer){clearInterval(timer);timer=null}}
+  document.getElementById('vprev').addEventListener('click',function(){stop();go(idx-1);start()});
+  document.getElementById('vnext').addEventListener('click',function(){stop();go(idx+1);start()});
+  for(var d=0;d<dots.length;d++){
+    (function(i){dots[i].addEventListener('click',function(){stop();go(i);start()})})(d);
+  }
+  caro.addEventListener('mouseenter',stop);
+  caro.addEventListener('mouseleave',start);
+  caro.addEventListener('focusin',stop);
+  caro.addEventListener('focusout',start);
+  var sx=null;
+  caro.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;stop()},{passive:true});
+  caro.addEventListener('touchend',function(e){
+    if(sx!==null){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){go(dx<0?idx+1:idx-1)}}
+    sx=null;start();
+  },{passive:true});
+  document.addEventListener('visibilitychange',function(){document.hidden?stop():start()});
+  go(0);start();
 })();
 </script>
 
