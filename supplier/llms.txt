@@ -7,7 +7,8 @@
 - [供应商入驻主页（中文）](https://hdhaidong.github.io/supplier/sell-on-oem-odm.html): OEM/ODM/OBM 合作模式、收费模式（非收费项与按项次收费）、渠道加速、品牌营销、红人营销。
 - [Supplier Onboarding (English)](https://hdhaidong.github.io/supplier/sell-on-oem-odm-en.html): English version — cooperation models, fee model, channels, brand marketing, influencer marketing.
 - [业务总览](https://hdhaidong.github.io/supplier/overview.html): 产品层 × 服务层全局结构，工厂出海 / 品牌增长 / 数据分发三条客户路径。
-- [热点雷达](https://hdhaidong.github.io/supplier/radar.html): 每周更新的内容板块：热点产品与众筹分析（AI 硬件 / AI 营销 / Agent 业绩）、平台季度热招品类、国外主力展会档期（High Point / CES / NRF / Ambiente / MAGIC）、Omni Talk 零售科技视频精选与合作业绩动态。
+- [热点雷达](https://hdhaidong.github.io/supplier/radar.html): 已升级为博客，跳转至 blog.html。
+- [博客](https://hdhaidong.github.io/supplier/blog.html): 每周更新的内容板块：热点产品与众筹分析（AI 硬件 / AI 营销 / Agent 业绩）、平台季度热招品类、国外主力展会档期、Omni Talk 零售科技视频精选与合作业绩动态。含分类筛选（AI 硬件 / Agent 业绩 / AI 营销 / 众筹周报 / 平台热招 / 展会动态 / 科技视频）与 8 篇独立文章：国产 AI 硬件众筹出海（$334 万+ 3D 打印机、价格带与路径）、口袋 AI 超算 307 万美元（本地跑 Agent）、裸眼 3D 显示器 30 分钟 1000%、Cosori 先测后上发布模型、众筹周报、平台季度热招 2026 Q3、国外展会档期（High Point / CES / NRF / LV Market / Ambiente / MAGIC）、零售科技视频精选。
 - [Business Overview (English)](https://hdhaidong.github.io/supplier/overview-en.html): English overview.
 
 ## 服务线
@@ -52,4 +53,4 @@
 
 ## 站点地图
 
-- [sitemap.xml](https://hdhaidong.github.io/supplier/sitemap.xml): 全部 92 个 URL。
+- [sitemap.xml](https://hdhaidong.github.io/supplier/sitemap.xml): 全部 100 个 URL。
