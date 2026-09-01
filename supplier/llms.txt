@@ -52,4 +52,4 @@
 
 ## 站点地图
 
-- [sitemap.xml](https://hdhaidong.github.io/supplier/sitemap.xml): 全部 89 个 URL。
+- [sitemap.xml](https://hdhaidong.github.io/supplier/sitemap.xml): 全部 92 个 URL。
