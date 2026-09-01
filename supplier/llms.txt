@@ -19,6 +19,7 @@
 - [展会服务](https://hdhaidong.github.io/supplier/exhibitions.html): 12+ 行业展会日历与买家邀约服务。
 - [OEM/ODM 入驻资质清单](https://hdhaidong.github.io/supplier/oem-odm-onboarding-checklist/index.html): 工厂入驻资质自查清单。
 - [口播文案库](https://hdhaidong.github.io/supplier/voice-scripts.html): 获客短视频口播脚本：8 个主题 × 15s/30s/60s 三档时长共 24 条成稿，含开头 3 秒钩子与结尾动作钩子。
+- [品牌进货架](https://hdhaidong.github.io/supplier/retail-shelf.html): 品牌侧北美零售渠道拓展：品牌诊断（免费）→ 渠道匹配 → 申请准备 → 买手对接；渠道申请按项次报价，无订阅制。
 
 ## 76 个平台卖家入驻入口（常见平台）
 
