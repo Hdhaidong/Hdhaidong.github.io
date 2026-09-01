@@ -14,6 +14,7 @@
 </itunes:owner>
 <itunes:category text="Technology"/>
 <itunes:category text="Business"/>
+<itunes:image href="https://hdhaidong.github.io/supplier/podcast/cover/cover.jpg"/>
 <itunes:explicit>false</itunes:explicit>
 <item>
 <title>第 2 期：12.6 万行代码零手写——Agent 开始替公司干活</title>
