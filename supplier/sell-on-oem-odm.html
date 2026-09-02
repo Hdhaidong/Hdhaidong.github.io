@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sell on insightmarketplac — 供应商入驻 · OEM / ODM / OBM 合作</title>
-<meta name="description" content="工厂怎么进入美国渠道？insightmarketplac 供应商入驻：OEM / ODM / OBM 三种合作模式与 Agent / ERP 定制，品牌营销（社媒 · 内容 · 数据资产）与红人营销专区，非收费项全包含、收费项按项次计费，20+ 全球渠道与端到端仓配履约。注册免费解锁完整服务目录。">
+<meta name="description" content="工厂怎么进入美国渠道？insightmarketplac 供应商入驻：三条客户路径（工厂出海 · 品牌增长 · 数据与分销）进入四层系统 × 七大服务线；OEM / ODM / OBM 合作与 Agent / ERP 定制，非收费项全包含、收费项按项次计费，20+ 全球渠道与端到端仓配履约。注册免费解锁完整服务目录。">
 <meta name="keywords" content="供应商入驻, OEM 合作, ODM 代工, OBM 自有品牌, 美国渠道公司, 工厂出海, 品牌营销, 红人营销, 仓配履约, sell on marketplace, supplier onboarding">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0E13'/%3E%3Ctext x='16' y='21' font-family='Consolas,monospace' font-size='13' font-weight='700' fill='%23E8A33D' text-anchor='middle'%3Eim%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://hdhaidong.github.io/supplier/sell-on-oem-odm.html">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="en" href="https://hdhaidong.github.io/supplier/sell-on-oem-odm-en.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sell on insightmarketplac — 供应商入驻 · OEM / ODM / OBM 合作">
-<meta property="og:description" content="工厂怎么进入美国渠道？OEM / ODM / OBM 供应商入驻——非收费项全包含，收费项按项次计费；品牌营销与红人营销双引擎，20+ 全球渠道，注册免费解锁完整服务目录。">
+<meta property="og:description" content="工厂怎么进入美国渠道？三条客户路径（工厂出海 · 品牌增长 · 数据与分销）进入四层系统 × 七大服务线——非收费项全包含，收费项按项次计费；OEM / ODM / OBM 合作，20+ 全球渠道，注册免费解锁完整服务目录。">
 <meta property="og:url" content="https://hdhaidong.github.io/supplier/sell-on-oem-odm.html">
 <meta property="og:image" content="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20container%20port%20at%20dusk%2C%20towering%20gantry%20cranes%20and%20stacked%20shipping%20containers%2C%20deep%20navy%20twilight%20sky%2C%20warm%20amber%20terminal%20lights%20reflecting%20on%20wet%20ground%2C%20cinematic%20wide%20shot%2C%20moody%20industrial%20atmosphere%2C%20high%20detail&image_size=landscape_16_9">
 <meta property="og:locale" content="zh_CN">
@@ -337,7 +337,6 @@ section{padding:130px 0}
 }
 
 /* ---------- channels ---------- */
-.channels-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
 .marquee{
   overflow:hidden;
   margin-top:58px;
@@ -768,7 +767,7 @@ footer{
 @media(max-width:760px){.mx2-grid{grid-template-columns:1fr}}
 
 /* ---------- marketing & influencer (public) ---------- */
-#marketing,#influencer{border-top:1px solid var(--hairline-soft)}
+#path-factory,#path-brand{border-top:1px solid var(--hairline-soft)}
 .mkt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 .mkt-card{border:1px solid var(--hairline);background:var(--bg-2);padding:34px 32px;position:relative;overflow:hidden;transition:border-color .35s,transform .35s}
 .mkt-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
@@ -967,9 +966,66 @@ body:not(.registered) .fee-lock{display:flex}
 .sellon-strip .ss-txt span{font-size:12.5px;color:var(--ink-faint);line-height:1.6}
 @media(max-width:720px){.fee-block{padding:30px 20px}.fee-lock{flex-direction:column;text-align:center}}
 
+/* ---------- paths router ---------- */
+.paths-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.path-card{display:flex;flex-direction:column;border:1px solid var(--hairline);background:var(--bg-2);padding:30px 28px;position:relative;overflow:hidden;transition:border-color .25s,transform .25s;color:inherit}
+.path-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.path-card:hover::before{width:100%}
+.path-card:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.path-card .pn{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+.path-card h3{font-size:24px;font-weight:600;margin:12px 0 2px}
+.path-card .pz{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.path-card p{color:var(--ink-dim);font-size:14px;margin-top:14px;line-height:1.75}
+.path-card p b{color:var(--ink);font-weight:600}
+.path-card .pc-go{margin-top:auto;padding-top:20px;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;color:var(--accent)}
+.paths-note{margin-top:36px;border-left:2px solid var(--accent);padding-left:18px;color:var(--ink-faint);font-size:13.5px;line-height:1.85;max-width:860px}
+.paths-note b{color:var(--ink-dim);font-weight:600}
+
+/* ---------- path flow strip ---------- */
+.pflow{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:30px}
+.pflow .pnode{border:1px solid var(--hairline);background:var(--bg-2);padding:8px 15px;font-size:13px;color:var(--ink-dim);white-space:nowrap}
+.pflow .parr{color:var(--accent);font-family:var(--mono);font-size:12px}
+
+/* ---------- sub-block head inside path sections ---------- */
+.sub-head{margin:70px 0 42px;padding-top:46px;border-top:1px solid var(--hairline-soft)}
+.sub-head .sk{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-faint)}
+.sub-head h3{font-size:clamp(22px,3vw,30px);font-weight:600;margin:12px 0 12px}
+.sub-head p{color:var(--ink-dim);font-size:15px;max-width:900px;line-height:1.85}
+
+/* ---------- path-data cards ---------- */
+.pd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pd-card{display:flex;flex-direction:column;border:1px solid var(--hairline);background:var(--bg-2);padding:32px 28px;position:relative;overflow:hidden;transition:border-color .25s,transform .25s;color:inherit}
+.pd-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.pd-card:hover::before{width:100%}
+.pd-card:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.pd-card .pk{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+.pd-card h3{font-size:21px;font-weight:600;margin:12px 0 6px}
+.pd-card > p{color:var(--ink-dim);font-size:14px;line-height:1.7}
+.pd-card ul{list-style:none;margin-top:18px;border-top:1px solid var(--hairline-soft);padding-top:16px;display:grid;gap:10px}
+.pd-card li{font-size:13px;color:var(--ink-dim);padding-left:16px;position:relative;line-height:1.65}
+.pd-card li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:1px;background:var(--accent)}
+.pd-card .pd-go{margin-top:auto;padding-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--accent)}
+.data-note{margin-top:34px;border:1px solid var(--hairline-soft);background:var(--bg-2);padding:18px 24px;font-size:13.5px;color:var(--ink-dim);line-height:1.8}
+.data-note b{color:var(--ink);font-weight:600}
+
+/* ---------- four-layer system ---------- */
+.sys-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:52px}
+.sys-card{border:1px solid var(--hairline);background:var(--bg);padding:26px 22px;position:relative}
+.sys-card .sl{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--ink-faint);text-transform:uppercase}
+.sys-card .sl b{color:var(--accent);font-weight:600;margin-right:6px}
+.sys-card h3{font-size:19px;font-weight:600;margin:10px 0 8px}
+.sys-card p{font-size:13px;color:var(--ink-dim);line-height:1.7}
+.sys-flow{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--ink-dim);letter-spacing:.04em}
+.sys-flow b{color:var(--accent);font-weight:600}
+.sys-lines{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sys-lines .sll{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--ink-faint);text-transform:uppercase;margin-right:6px}
+.sys-lines span{border:1px solid var(--hairline);background:var(--bg);padding:7px 15px;font-size:13px;color:var(--ink-dim)}
+@media(max-width:1000px){.paths-grid{grid-template-columns:1fr}.pd-grid{grid-template-columns:1fr}.sys-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.sys-grid{grid-template-columns:1fr}.sub-head{margin:52px 0 34px;padding-top:34px}}
+
 </style>
 
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"insightmarketplac","url":"https://hdhaidong.github.io/supplier/","description":"US channel company for supplier onboarding, brand growth, and data subscriptions.","mainEntityOfPage":{"@id":"https://hdhaidong.github.io/supplier/sell-on-oem-odm.html"}},{"@context":"https://schema.org","@type":"WebSite","name":"Sell on insightmarketplac","url":"https://hdhaidong.github.io/supplier/sell-on-oem-odm.html","inLanguage":"zh-CN"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"insightmarketplac","url":"https://hdhaidong.github.io/supplier/","description":"US channel company. Supplier onboarding through three customer paths — factory go-global, brand growth, data and distribution — running on a four-layer system with seven service lines. OEM/ODM/OBM cooperation, non-charged items included, charged items per occurrence.","mainEntityOfPage":{"@id":"https://hdhaidong.github.io/supplier/sell-on-oem-odm.html"}},{"@context":"https://schema.org","@type":"WebSite","name":"Sell on insightmarketplac","url":"https://hdhaidong.github.io/supplier/sell-on-oem-odm.html","inLanguage":"zh-CN"}]</script>
 </head>
 <body>
 
@@ -978,11 +1034,11 @@ body:not(.registered) .fee-lock{display:flex}
   <div class="wrap nav">
     <a class="brand" href="#top">insight<em>marketplac</em></a>
     <nav class="nav-links">
-      <a href="#channels">渠道加速</a>
-      <a href="#marketing">品牌营销</a>
-      <a href="#influencer">红人营销</a>
-      <a href="blog.html">博客</a>
+      <a href="#path-factory">工厂出海</a>
+      <a href="#path-brand">品牌增长</a>
+      <a href="#path-data">数据与分销</a>
       <a href="#models">合作模式</a>
+      <a href="blog.html">博客</a>
       <a href="#directory">全部业务</a>
       <a href="#meet">预约会议</a>
     </nav>
@@ -1008,11 +1064,11 @@ body:not(.registered) .fee-lock{display:flex}
       <span class="wordmark">insight<em>marketplac</em></span>
     </h1>
     <p class="hero-sub">
-      以美国为主场、覆盖五大洲的渠道网络。我们<strong>买下你的库存、扩张你的渠道、端到端负责仓配履约</strong>——平台入驻、联合运营、账号安全维护、品牌推广，一个屋顶下全部搞定。
+      三条客户路径——<strong>工厂出海 · 品牌增长 · 数据与分销</strong>——跑在同一套四层系统 × 七大服务线上。我们<strong>买下你的库存、扩张你的渠道、端到端负责仓配履约</strong>：平台入驻、联合运营、账号安全维护、品牌推广，一个屋顶下全部搞定。
     </p>
     <div class="hero-actions">
       <a class="btn-primary" href="#apply">申请入驻 <span class="arr">→</span></a>
-      <a class="btn-ghost" href="#models">查看 OEM / ODM / OBM 合作模式</a>
+      <a class="btn-ghost" href="#paths">先看三条客户路径 ↓</a>
     </div>
     <div class="hero-stats">
       <div class="stat"><div class="num">40<i>%</i></div><div class="lbl">品牌首年平均销售增长</div></div>
@@ -1023,15 +1079,61 @@ body:not(.registered) .fee-lock{display:flex}
   </div>
 </section>
 
-<!-- ================= CHANNELS ================= -->
-<section id="channels">
+<!-- ================= THREE PATHS ROUTER ================= -->
+<section id="paths">
   <div class="wrap">
-    <div class="channels-head rv">
-      <div>
-        <p class="eyebrow">Channel Acceleration</p>
-        <h2>渠道加速<br>深耕美国 · 覆盖全球</h2>
+    <div class="sec-head rv">
+      <p class="eyebrow">Three Customer Paths</p>
+      <h2>三条客户路径<br>先选你要走的路</h2>
+      <p class="section-lead">渠道管卖、数据管选、内容管声量——三条主线拧在同一套四层系统上。先判断你在哪个阶段，再看对应的业务组合。</p>
+    </div>
+    <div class="paths-grid">
+      <a class="path-card rv" href="#path-factory">
+        <span class="pn">Path A</span>
+        <h3>工厂出海</h3>
+        <span class="pz">Factory → Market</span>
+        <p>OEM / ODM 工厂从「卖货给渠道」升级到「做品牌进渠道」。<b>黄金三角：渠道 × 合规 × 系统</b>——第一年在渠道里活下来，第三年让渠道来找你。</p>
+        <span class="pc-go">展开路径 A →</span>
+      </a>
+      <a class="path-card rv rv-d1" href="#path-brand">
+        <span class="pn">Path B</span>
+        <h3>品牌增长</h3>
+        <span class="pz">Brand → Voice</span>
+        <p>已有渠道、缺声量的品牌方。<b>洞察决定打哪里，红人与短剧打出声量</b>——用数据摸底避免预算盲投，用复盘体系把一次性投放变成品牌资产。</p>
+        <span class="pc-go">展开路径 B →</span>
+      </a>
+      <a class="path-card rv rv-d2" href="#path-data">
+        <span class="pn">Path C</span>
+        <h3>数据与分销</h3>
+        <span class="pz">Data → Distribution</span>
+        <p>创作者 / 选品团队 / 渠道商。<b>数据先行，动作跟上</b>——拿选题弹药、提前半年看需求、对爆筹产品卡位；数据线直接变现，不依赖重服务交付。</p>
+        <span class="pc-go">展开路径 C →</span>
+      </a>
+    </div>
+    <p class="paths-note rv"><b>路径即漏斗：</b>三条路径不是三个客群的切分，而是同一批客户的不同阶段——工厂走完路径 A 的后期，自然进入路径 B（品牌增长）；路径 C 的数据能力，同时服务 A 的选品与 B 的声量决策。</p>
+  </div>
+</section>
+
+<!-- ================= PATH A · FACTORY GO-GLOBAL ================= -->
+<section id="path-factory">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Path A · Factory → Market</p>
+      <h2>工厂出海<br>从卖货给渠道，到做品牌进渠道</h2>
+      <p class="section-lead">OEM / ODM 工厂，第一年在渠道里活下来，第三年让渠道来找你。黄金三角：渠道 × 合规 × 系统——三件事一起做，出海的路径才走得通。</p>
+      <div class="pflow rv" role="list" aria-label="工厂出海路径">
+        <span class="pnode">资质清单自查</span><span class="parr">→</span>
+        <span class="pnode">合规主体（公司 / 商标 / VAT）</span><span class="parr">→</span>
+        <span class="pnode">76 平台入驻</span><span class="parr">→</span>
+        <span class="pnode">ERP / WMS / CRM 系统</span><span class="parr">→</span>
+        <span class="pnode">展会见买家</span><span class="parr">→</span>
+        <span class="pnode">品牌增长转型</span>
       </div>
-      <p class="section-lead">以美国主流零售为主场，欧洲、中东、亚太、澳新与俄语区渠道并行——一个团队，管全部渠道的入驻开户、listing 优化、站内广告、活动位排期与定价；新渠道评估、对接与铺开节奏也从这里走。货盘就绪，直接铺进渠道。全球 80% 以上的 CPG 消费发生在线下实体货架——线上起量只是第一步，进主流零售的货架，才是真正的市场。</p>
+    </div>
+    <div class="sub-head rv">
+      <p class="sk">Channel Network · 渠道网络</p>
+      <h3>深耕美国，覆盖全球</h3>
+      <p>以美国主流零售为主场，欧洲、中东、亚太、澳新与俄语区渠道并行——一个团队，管全部渠道的入驻开户、listing 优化、站内广告、活动位排期与定价；新渠道评估、对接与铺开节奏也从这里走。货盘就绪，直接铺进渠道。全球 80% 以上的 CPG 消费发生在线下实体货架——线上起量只是第一步，进主流零售的货架，才是真正的市场。</p>
     </div>
 
     <div class="us-partners rv">
@@ -1102,13 +1204,25 @@ body:not(.registered) .fee-lock{display:flex}
   </div>
 </section>
 
-<!-- ================= MARKETING (public) ================= -->
-<section id="marketing">
+<!-- ================= PATH B · BRAND GROWTH ================= -->
+<section id="path-brand">
   <div class="wrap">
     <div class="sec-head rv">
-      <p class="eyebrow">Brand Marketing</p>
-      <h2>品牌营销</h2>
-      <p class="section-lead">品牌侧四项自有能力——社媒 · 内容 · Agent · 数据资产——交付四项成果：品牌运营、网站、社媒、售后优化。从建品牌到复购，一条链路闭环，把制造红利做成品牌资产。</p>
+      <p class="eyebrow">Path B · Brand → Voice</p>
+      <h2>品牌增长<br>洞察决定打哪里，声量打出复利</h2>
+      <p class="section-lead">已有渠道、缺声量的品牌方——用数据摸底避免预算盲投，用红人与短剧打出声量，用复盘体系把一次性投放变成品牌资产。</p>
+      <div class="pflow rv" role="list" aria-label="品牌增长路径">
+        <span class="pnode">数据洞察 · 声量摸底</span><span class="parr">→</span>
+        <span class="pnode">红人营销投放</span><span class="parr">→</span>
+        <span class="pnode">AI 短剧定制</span><span class="parr">→</span>
+        <span class="pnode">社媒矩阵运营</span><span class="parr">→</span>
+        <span class="pnode">三层影响复盘</span>
+      </div>
+    </div>
+    <div class="sub-head rv">
+      <p class="sk">Brand Marketing · 品牌营销</p>
+      <h3>四项自有能力，交付四项成果</h3>
+      <p>社媒 · 内容 · Agent · 数据资产——交付品牌运营、网站、社媒、售后优化四项成果。从建品牌到复购，一条链路闭环，把制造红利做成品牌资产。</p>
     </div>
     <div class="mkt-chain-cap rv">
       <span class="cap-k">Four Outcomes</span>
@@ -1230,6 +1344,102 @@ body:not(.registered) .fee-lock{display:flex}
   </div>
 </section>
 
+<!-- ================= PATH C · DATA & DISTRIBUTION ================= -->
+<section id="path-data">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Path C · Data → Distribution</p>
+      <h2>数据与分销<br>数据先行，动作跟上</h2>
+      <p class="section-lead">创作者拿选题弹药、选品团队提前半年看需求、渠道商对爆筹产品卡位——数据线直接变现，不依赖重服务交付。</p>
+      <div class="pflow rv" role="list" aria-label="数据与分销路径">
+        <span class="pnode">众筹雷达发现新品</span><span class="parr">→</span>
+        <span class="pnode">热度研判 + 卖点拆解</span><span class="parr">→</span>
+        <span class="pnode">数据 token 接入客户系统</span><span class="parr">→</span>
+        <span class="pnode">分销渠道对接</span>
+      </div>
+    </div>
+    <div class="pd-grid">
+      <a class="pd-card rv" href="insights.html">
+        <span class="pk">Insights · 品牌洞察</span>
+        <h3>红人 × 品牌 × 内容三方洞察</h3>
+        <p>看清一个品类在社媒上的真实声量结构，再决定预算往哪里放。</p>
+        <ul>
+          <li><b>三方洞察：</b>红人 · 品牌 · 内容交叉研判</li>
+          <li><b>众筹雷达：</b>新品发现 · 热度跟踪</li>
+          <li><b>洞察报告：</b>按问题交付结论，不交付过程</li>
+        </ul>
+        <span class="pd-go">查看品牌洞察 →</span>
+      </a>
+      <a class="pd-card rv rv-d1" href="data-platforms.html">
+        <span class="pk">Data · 数据订阅</span>
+        <h3>六条订阅线 × 数据 token</h3>
+        <p>选品、定价、消费者、竞对、众筹信号、品牌声量——订阅线按需组合，token 直供你的系统。</p>
+        <ul>
+          <li><b>六条线：</b>选品 / 定价 / 消费者 / 竞对 / 众筹信号 / 品牌声量</li>
+          <li><b>交付：</b>订阅报告 + 数据 token 接入</li>
+          <li><b>闭环：</b>token 装进 Agent，一句话调数据</li>
+        </ul>
+        <span class="pd-go">查看数据订阅 →</span>
+      </a>
+      <a class="pd-card rv rv-d2" href="radar.html">
+        <span class="pk">Radar · 热点雷达</span>
+        <h3>平台热招 × 展会档期</h3>
+        <p>平台季度热招品类与国外主力展会档期——动作卡在节奏前面。</p>
+        <ul>
+          <li><b>热招品类：</b>平台季度选品方向</li>
+          <li><b>展会档期：</b>主力展会自动倒计时</li>
+          <li><b>已合作业绩：</b>渠道合作成效参考</li>
+        </ul>
+        <span class="pd-go">查看热点雷达 →</span>
+      </a>
+    </div>
+    <div class="data-note rv"><b>数据纪律（全业务线通用）：</b>我们提供数据分析与数据 token，不提供、也不披露数据源头——你拿到的是结论和可用数据，不是我们的供应链。自有监测网络 + 多源交叉验证 + 人工研判，是我们输出判断的方式。</div>
+    <div class="pub-cta rv">
+      <a class="btn-ghost" href="#" data-reg-open>注册解锁完整服务目录 →</a>
+      <a class="btn-ghost" href="#meet">直接预约聊聊 →</a>
+      <span class="reg-note">注册免费 · 1 个工作日内跟进</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUR-LAYER SYSTEM ================= -->
+<section id="system" style="background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">One System · Four Layers</p>
+      <h2>四层系统，一条产线</h2>
+      <p class="section-lead">三条路径跑在同一套自底向上生长的系统上——不是服务清单，是有产能闭环的系统：每接一单，下层产能就增厚一分。</p>
+    </div>
+    <div class="sys-grid">
+      <div class="sys-card rv">
+        <p class="sl"><b>L1</b>Edge · 硬件层</p>
+        <h3>算力与物理边界</h3>
+        <p>工业网关 · 端侧推理 · 物理门禁——数据不出域的场景，直接在端侧跑分析。</p>
+      </div>
+      <div class="sys-card rv rv-d1">
+        <p class="sl"><b>L2</b>Agents · 智能体层</p>
+        <h3>研究型数字员工</h3>
+        <p>选品发现 · 竞品情报 · 社交聆听 · 自动报告——生产数据洞察与数据 token。</p>
+      </div>
+      <div class="sys-card rv rv-d2">
+        <p class="sl"><b>L3</b>Platform · 平台层</p>
+        <h3>业务沉淀为客户资产</h3>
+        <p>12 个业务分区 · 62 个页面 · ERP / WMS / CRM 底座——交付过程沉淀为可复用资产。</p>
+      </div>
+      <div class="sys-card rv rv-d3">
+        <p class="sl"><b>L4</b>Services · 服务层</p>
+        <h3>七大服务线交付</h3>
+        <p>每条线可独立交付，按客户阶段组合成解决方案——面向客户的最终形态。</p>
+      </div>
+    </div>
+    <p class="sys-flow rv">能力流向（自下而上单向依赖）：<b>硬件算力</b> → <b>智能体产能</b> → <b>平台沉淀</b> → <b>服务交付</b>——同一套数据与流程贯穿四层，业务结论互相咬合。</p>
+    <div class="sys-lines rv">
+      <span class="sll">Seven Lines · 七大服务线</span>
+      <span>渠道入驻</span><span>数据洞察</span><span>系统工具</span><span>品牌增长</span><span>众筹分销</span><span>合规与企业</span><span>展会服务</span>
+    </div>
+  </div>
+</section>
+
 <!-- ================= MODELS ================= -->
 <section id="models">
   <div class="wrap">
@@ -1340,7 +1550,7 @@ body:not(.registered) .fee-lock{display:flex}
         </div>
       </div>
       <div class="fee-channels rv">
-        <div class="fee-detail-cap"><span class="cap-k">Channels Included · 合作渠道</span><span class="cap-line"></span><span class="cap-r">完整渠道网络见「渠道加速」</span></div>
+        <div class="fee-detail-cap"><span class="cap-k">Channels Included · 合作渠道</span><span class="cap-line"></span><span class="cap-r">完整渠道网络见「工厂出海」</span></div>
         <div class="pw-grid" role="list" aria-label="合作渠道（部分）">
           <span>Walmart</span><span>Sam&#39;s Club</span><span>Target</span><span>Costco</span><span>Best Buy</span><span>Macy&#39;s</span><span>Kohl&#39;s</span><span>Kroger</span><span>Amazon</span><span>TikTok Shop</span><span>Zalando</span><span>Otto</span><span>bol</span><span>Allegro</span><span>noon</span><span>Shopee</span><span>Lazada</span><span>Wildberries</span><span>Ozon</span>
         </div>
@@ -1433,7 +1643,7 @@ body:not(.registered) .fee-lock{display:flex}
     <div class="sec-head rv">
       <p class="eyebrow">One Platform · All Lines</p>
       <h2>全部业务，一个入口</h2>
-      <p class="section-lead">主页只放主线，其余业务在各自服务页展开——高聚合、低耦合，按你要走的路径点进去看细节。</p>
+      <p class="section-lead">主页只放三条路径与四层系统，七大服务线在各自服务页展开——高聚合、低耦合，按你要走的路径点进去看细节。</p>
     </div>
     <div class="mx-grid">
       <a class="mx-card rv" href="insights.html">
@@ -1521,9 +1731,11 @@ body:not(.registered) .fee-lock{display:flex}
         <div class="field">
           <label for="t-topic">会议主题</label>
           <select id="t-topic" name="topic">
-            <option value="OEM 合作">OEM 合作</option>
-            <option value="ODM 合作">ODM 合作</option>
-            <option value="OBM 品牌出海">OBM 品牌出海</option>
+            <option value="工厂出海 · OEM 合作">工厂出海 · OEM 合作</option>
+            <option value="工厂出海 · ODM 合作">工厂出海 · ODM 合作</option>
+            <option value="工厂出海 · OBM 品牌出海">工厂出海 · OBM 品牌出海</option>
+            <option value="品牌增长 · 红人 / 短剧 / 社媒">品牌增长 · 红人 / 短剧 / 社媒</option>
+            <option value="数据与分销 · 数据订阅 / 数据 token">数据与分销 · 数据订阅 / 数据 token</option>
             <option value="渠道分销 / 货盘买断">渠道分销 / 货盘买断</option>
             <option value="仓储物流方案">仓储物流方案</option>
             <option value="其他">其他</option>
@@ -1703,10 +1915,11 @@ body:not(.registered) .fee-lock{display:flex}
           <a href="#meet">预约会议</a>
         </div>
         <div class="foot-col">
-          <h4>平台</h4>
-          <a href="#channels">渠道网络</a>
-          <a href="#marketing">品牌营销</a>
-          <a href="#influencer">红人营销</a>
+          <h4>三条路径</h4>
+          <a href="#path-factory">工厂出海</a>
+          <a href="#path-brand">品牌增长</a>
+          <a href="#path-data">数据与分销</a>
+          <a href="#system">四层系统</a>
           <a href="sell-on/index.html">卖家入口</a>
           <a href="insights.html">品牌洞察</a>
           <a href="data-platforms.html">数据订阅</a>
@@ -2165,10 +2378,12 @@ body:not(.registered) .fee-lock{display:flex}
      a:function(){return "分两类：非收费项（渠道账号开设、账号安全、数据周报等基础服务）不单独收费；收费项按项次计费——联合运营按销售额分成、仓配按实际成本、红人投放按案件报价。OEM 库存买断不收服务费——PO 结算，交货即收款。详见 "+link("#models","合作模式区的收费模式")+"。逐项收费明细注册后解锁——报价单 1 个工作日内发送。"}},
     {k:["oem","odm","obm","模式","区别","代工","贴牌","出海"],
      a:function(){return "一句话讲清三种模式：<b>OEM</b> 来图代工——他的图纸他的规格，工厂交货即收款；<b>ODM</b> 选款贴牌——你的设计 + 海外仓备货，赚设计+制造利润；<b>OBM</b> 品牌出海——自有品牌直达消费者，赚制造+品牌溢价。路径可递进：从 OEM 起步，成熟后升级。详见 "+link("#models","合作模式")+"。"}},
+    {k:["路径","阶段","工厂出海","品牌增长","数据与分销","四层","架构","我是","适合"],
+     a:function(){return "先看你在哪个阶段：<b>路径 A 工厂出海</b>——OEM/ODM 工厂从卖货到做品牌，黄金三角渠道×合规×系统；<b>路径 B 品牌增长</b>——已有渠道缺声量，洞察定打法、红人与短剧出声量；<b>路径 C 数据与分销</b>——创作者/选品团队/渠道商，数据先行。三条路径跑在同一套四层系统（硬件·智能体·平台·服务）上。详见 "+link("#paths","三条客户路径")+" 与 "+link("#system","四层系统")+"。"}},
     {k:["渠道","平台","沃尔玛","walmart","amazon","亚马逊","店铺","开店","零售"],
-     a:function(){return "20+ 渠道网络：美国主流零售为主场（Walmart、Target、Costco、Best Buy 等），欧洲、中东、亚太、澳新与俄语区并行。一个团队管全部渠道的 listing、广告与定价。详见 "+link("#channels","渠道加速")+"。"}},
+     a:function(){return "20+ 渠道网络：美国主流零售为主场（Walmart、Target、Costco、Best Buy 等），欧洲、中东、亚太、澳新与俄语区并行。一个团队管全部渠道的 listing、广告与定价。详见 "+link("#path-factory","工厂出海 · 渠道网络")+"。"}},
     {k:["红人","网红","kol","influencer","达人","博主","营销","社媒","instagram","youtube","内容","短剧","网剧","ugc"],
-     a:function(){return "红人营销按品类匹配美国红人：头部造声量、腰部做转化、尾部铺内容矩阵，自有经纪资源池排期价格可控。品牌营销板块用四项自有能力（社媒·内容·Agent·数据资产）交付四项成果：品牌运营、网站、社媒、售后优化。详见 "+link("#influencer","红人营销")+" 与 "+link("#marketing","品牌营销")+"。"}},
+     a:function(){return "红人营销按品类匹配美国红人：头部造声量、腰部做转化、尾部铺内容矩阵，自有经纪资源池排期价格可控。品牌营销板块用四项自有能力（社媒·内容·Agent·数据资产）交付四项成果：品牌运营、网站、社媒、售后优化。详见 "+link("#influencer","红人营销")+" 与 "+link("#path-brand","品牌增长")+"。"}},
     {k:["数据","订阅","报告","token","情报","洞察"],
      a:function(){return "业务数据订阅六条线：选品与市场、定价与促销、消费者与评论、竞品动态、众筹信号、品牌声量——按类目/平台/价格/国家细分，以数据 token、周期数据包或订阅报告交付。完整目录见 "+link("data-platforms.html","数据订阅服务页")+"。"}},
     {k:["agent","智能体","机器人","erp","系统","定制","软件"],

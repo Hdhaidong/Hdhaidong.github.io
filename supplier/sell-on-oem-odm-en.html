@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sell on insightmarketplac — OEM / ODM / OBM Supplier Onboarding</title>
-<meta name="description" content="How do factories sell into US channels? insightmarketplac onboards OEM / ODM / OBM suppliers: free core services included, paid items billed per service, 20+ global channels, brand and influencer marketing, end-to-end fulfillment. Register free to unlock the full catalog.">
+<meta name="description" content="How do factories sell into US channels? insightmarketplac onboarding: three customer paths — Factory Go-Global, Brand Growth, Data & Distribution — into a four-layer system × seven service lines. OEM / ODM / OBM cooperation with Agent / ERP customization; free core services included, paid items billed per occurrence, 20+ global channels, end-to-end fulfillment. Register free to unlock the full catalog.">
 <meta name="keywords" content="OEM supplier, ODM manufacturing, OBM, supplier onboarding, sell on marketplace, US channel company, factory to brand, influencer marketing for factories, end-to-end fulfillment">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0E13'/%3E%3Ctext x='16' y='21' font-family='Consolas,monospace' font-size='13' font-weight='700' fill='%23E8A33D' text-anchor='middle'%3Eim%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://hdhaidong.github.io/supplier/sell-on-oem-odm-en.html">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="zh" href="https://hdhaidong.github.io/supplier/sell-on-oem-odm.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sell on insightmarketplac — OEM / ODM / OBM Supplier Onboarding">
-<meta property="og:description" content="How do factories sell into US channels? Free core services, paid items billed per service, 20+ global channels, brand and influencer marketing, end-to-end fulfillment — register free.">
+<meta property="og:description" content="How do factories sell into US channels? Three customer paths — Factory Go-Global, Brand Growth, Data & Distribution — into a four-layer system × seven service lines: free core services included, paid items billed per occurrence; OEM / ODM / OBM cooperation, 20+ global channels. Register free to unlock the full catalog.">
 <meta property="og:url" content="https://hdhaidong.github.io/supplier/sell-on-oem-odm-en.html">
 <meta property="og:image" content="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=photorealistic%20container%20port%20at%20dusk%2C%20towering%20gantry%20cranes%20and%20stacked%20shipping%20containers%2C%20deep%20navy%20twilight%20sky%2C%20warm%20amber%20terminal%20lights%20reflecting%20on%20wet%20ground%2C%20cinematic%20wide%20shot%2C%20moody%20industrial%20atmosphere%2C%20high%20detail&image_size=landscape_16_9">
 <meta property="og:locale" content="en_US">
@@ -972,9 +972,66 @@ body:not(.registered) .fee-lock{display:flex}
 .sellon-strip .ss-txt span{font-size:12.5px;color:var(--ink-faint);line-height:1.6}
 @media(max-width:720px){.fee-block{padding:30px 20px}.fee-lock{flex-direction:column;text-align:center}}
 
+/* ---------- paths router ---------- */
+.paths-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.path-card{display:flex;flex-direction:column;border:1px solid var(--hairline);background:var(--bg-2);padding:30px 28px;position:relative;overflow:hidden;transition:border-color .25s,transform .25s;color:inherit}
+.path-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.path-card:hover::before{width:100%}
+.path-card:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.path-card .pn{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+.path-card h3{font-size:24px;font-weight:600;margin:12px 0 2px}
+.path-card .pz{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase}
+.path-card p{color:var(--ink-dim);font-size:14px;margin-top:14px;line-height:1.75}
+.path-card p b{color:var(--ink);font-weight:600}
+.path-card .pc-go{margin-top:auto;padding-top:20px;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;color:var(--accent)}
+.paths-note{margin-top:36px;border-left:2px solid var(--accent);padding-left:18px;color:var(--ink-faint);font-size:13.5px;line-height:1.85;max-width:860px}
+.paths-note b{color:var(--ink-dim);font-weight:600}
+
+/* ---------- path flow strip ---------- */
+.pflow{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:30px}
+.pflow .pnode{border:1px solid var(--hairline);background:var(--bg-2);padding:8px 15px;font-size:13px;color:var(--ink-dim);white-space:nowrap}
+.pflow .parr{color:var(--accent);font-family:var(--mono);font-size:12px}
+
+/* ---------- sub-block head inside path sections ---------- */
+.sub-head{margin:70px 0 42px;padding-top:46px;border-top:1px solid var(--hairline-soft)}
+.sub-head .sk{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-faint)}
+.sub-head h3{font-size:clamp(22px,3vw,30px);font-weight:600;margin:12px 0 12px}
+.sub-head p{color:var(--ink-dim);font-size:15px;max-width:900px;line-height:1.85}
+
+/* ---------- path-data cards ---------- */
+.pd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pd-card{display:flex;flex-direction:column;border:1px solid var(--hairline);background:var(--bg-2);padding:32px 28px;position:relative;overflow:hidden;transition:border-color .25s,transform .25s;color:inherit}
+.pd-card::before{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.pd-card:hover::before{width:100%}
+.pd-card:hover{border-color:rgba(232,163,61,.35);transform:translateY(-3px)}
+.pd-card .pk{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+.pd-card h3{font-size:21px;font-weight:600;margin:12px 0 6px}
+.pd-card > p{color:var(--ink-dim);font-size:14px;line-height:1.7}
+.pd-card ul{list-style:none;margin-top:18px;border-top:1px solid var(--hairline-soft);padding-top:16px;display:grid;gap:10px}
+.pd-card li{font-size:13px;color:var(--ink-dim);padding-left:16px;position:relative;line-height:1.65}
+.pd-card li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:1px;background:var(--accent)}
+.pd-card .pd-go{margin-top:auto;padding-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--accent)}
+.data-note{margin-top:34px;border:1px solid var(--hairline-soft);background:var(--bg-2);padding:18px 24px;font-size:13.5px;color:var(--ink-dim);line-height:1.8}
+.data-note b{color:var(--ink);font-weight:600}
+
+/* ---------- four-layer system ---------- */
+.sys-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:52px}
+.sys-card{border:1px solid var(--hairline);background:var(--bg);padding:26px 22px;position:relative}
+.sys-card .sl{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--ink-faint);text-transform:uppercase}
+.sys-card .sl b{color:var(--accent);font-weight:600;margin-right:6px}
+.sys-card h3{font-size:19px;font-weight:600;margin:10px 0 8px}
+.sys-card p{font-size:13px;color:var(--ink-dim);line-height:1.7}
+.sys-flow{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--ink-dim);letter-spacing:.04em}
+.sys-flow b{color:var(--accent);font-weight:600}
+.sys-lines{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sys-lines .sll{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--ink-faint);text-transform:uppercase;margin-right:6px}
+.sys-lines span{border:1px solid var(--hairline);background:var(--bg);padding:7px 15px;font-size:13px;color:var(--ink-dim)}
+@media(max-width:1000px){.paths-grid{grid-template-columns:1fr}.pd-grid{grid-template-columns:1fr}.sys-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.sys-grid{grid-template-columns:1fr}.sub-head{margin:52px 0 34px;padding-top:34px}}
+
 </style>
 
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"insightmarketplac","url":"https://hdhaidong.github.io/supplier/","description":"US channel company for supplier onboarding, brand growth, and data subscriptions."},{"@context":"https://schema.org","@type":"WebSite","name":"Sell on insightmarketplac","url":"https://hdhaidong.github.io/supplier/sell-on-oem-odm-en.html","inLanguage":"en"}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"insightmarketplac","url":"https://hdhaidong.github.io/supplier/","description":"US channel company. Supplier onboarding through three customer paths — factory go-global, brand growth, data and distribution — running on a four-layer system with seven service lines. OEM/ODM/OBM cooperation, non-charged items included, charged items per occurrence."},{"@context":"https://schema.org","@type":"WebSite","name":"Sell on insightmarketplac","url":"https://hdhaidong.github.io/supplier/sell-on-oem-odm-en.html","inLanguage":"en"}]</script>
 </head>
 <body>
 
@@ -983,9 +1040,9 @@ body:not(.registered) .fee-lock{display:flex}
   <div class="wrap nav">
     <a class="brand" href="#top">insight<em>marketplac</em></a>
     <nav class="nav-links">
-      <a href="#channels">Channels</a>
-      <a href="#marketing">Brand Marketing</a>
-      <a href="#influencer">Influencer</a>
+      <a href="#path-factory">Factory Go-Global</a>
+      <a href="#path-brand">Brand Growth</a>
+      <a href="#path-data">Data & Distribution</a>
       <a href="#models">Models</a>
       <a href="#directory">All Lines</a>
       <a href="#meet">Book a Meeting</a>
@@ -1012,11 +1069,11 @@ body:not(.registered) .fee-lock{display:flex}
       <span class="wordmark">insight<em>marketplac</em></span>
     </h1>
     <p class="hero-sub">
-      America's retail shelves first — then 20+ channels across five continents. We <strong>buy your inventory, scale your channels, and handle fulfillment end-to-end</strong> — onboarding, channel operations, account security, and brand marketing, all under one roof.
+      Three customer paths — <strong>Factory Go-Global · Brand Growth · Data & Distribution</strong> — running on one four-layer system × seven service lines. We <strong>buy your inventory, scale your channels, and handle fulfillment end-to-end</strong>: onboarding, channel operations, account security, and brand marketing, all under one roof.
     </p>
     <div class="hero-actions">
       <a class="btn-primary" href="#apply">Apply to Sell <span class="arr">→</span></a>
-      <a class="btn-ghost" href="#models">Explore OEM / ODM / OBM Models</a>
+      <a class="btn-ghost" href="#paths">See the three customer paths ↓</a>
     </div>
     <div class="hero-stats">
       <div class="stat"><div class="num">40<i>%</i></div><div class="lbl">Avg. year-1 sales growth</div></div>
@@ -1027,15 +1084,61 @@ body:not(.registered) .fee-lock{display:flex}
   </div>
 </section>
 
-<!-- ================= CHANNELS ================= -->
-<section id="channels">
+<!-- ================= THREE PATHS ROUTER ================= -->
+<section id="paths">
   <div class="wrap">
-    <div class="channels-head rv">
-      <div>
-        <p class="eyebrow">Global Channel Network</p>
-        <h2>US First. Global Reach.</h2>
+    <div class="sec-head rv">
+      <p class="eyebrow">Three Customer Paths</p>
+      <h2>Three customer paths.<br>Pick yours first.</h2>
+      <p class="section-lead">Channels sell, data selects, content amplifies — three main lines wound onto one four-layer system. Find your stage first, then the business combination that matches it.</p>
+    </div>
+    <div class="paths-grid">
+      <a class="path-card rv" href="#path-factory">
+        <span class="pn">Path A</span>
+        <h3>Factory Go-Global</h3>
+        <span class="pz">Factory → Market</span>
+        <p>OEM / ODM factories moving from "selling to channels" to "building brands into channels." <b>The golden triangle: channels × compliance × systems</b> — survive the channels in year one, have the channels come to you by year three.</p>
+        <span class="pc-go">Open Path A →</span>
+      </a>
+      <a class="path-card rv rv-d1" href="#path-brand">
+        <span class="pn">Path B</span>
+        <h3>Brand Growth</h3>
+        <span class="pz">Brand → Voice</span>
+        <p>Brands with channels but no voice. <b>Insights decide where to strike; influencers and short dramas create the volume</b> — data baselines prevent blind spend, and a review system turns one-off campaigns into brand equity.</p>
+        <span class="pc-go">Open Path B →</span>
+      </a>
+      <a class="path-card rv rv-d2" href="#path-data">
+        <span class="pn">Path C</span>
+        <h3>Data & Distribution</h3>
+        <span class="pz">Data → Distribution</span>
+        <p>Creators / assortment teams / channel buyers. <b>Data first, action follows</b> — topic ammunition, demand six months ahead, positioning against breakout crowdfunding products; the data line monetizes directly, no heavy service delivery required.</p>
+        <span class="pc-go">Open Path C →</span>
+      </a>
+    </div>
+    <p class="paths-note rv"><b>Paths are a funnel:</b> the three paths aren't three customer segments — they're stages of the same customers. A factory that finishes the late stage of Path A naturally enters Path B (brand growth); Path C's data capability serves both A's assortment decisions and B's voice decisions.</p>
+  </div>
+</section>
+
+<!-- ================= PATH A · FACTORY GO-GLOBAL ================= -->
+<section id="path-factory">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Path A · Factory → Market</p>
+      <h2>Factory Go-Global<br>From selling to channels to building a brand into them</h2>
+      <p class="section-lead">OEM / ODM factories — survive the channels in year one, have the channels come to you by year three. The golden triangle: channels × compliance × systems — all three at once, or the go-global path doesn't hold.</p>
+      <div class="pflow rv" role="list" aria-label="Factory go-global path">
+        <span class="pnode">Qualification checklist</span><span class="parr">→</span>
+        <span class="pnode">Compliance entity (company / trademark / VAT)</span><span class="parr">→</span>
+        <span class="pnode">76 platform entries</span><span class="parr">→</span>
+        <span class="pnode">ERP / WMS / CRM systems</span><span class="parr">→</span>
+        <span class="pnode">Meet buyers at trade shows</span><span class="parr">→</span>
+        <span class="pnode">Brand-growth transition</span>
       </div>
-      <p class="section-lead">US major retail as home turf — with channels running in parallel across Europe, META, Asia-Pacific, ANZ, and the CIS. One team runs every channel's onboarding, listing optimization, in-platform ads, event-slot scheduling, and pricing — new channel evaluation, negotiation, and rollout also live here. Over 80% of global CPG sales happen on physical retail shelves — scaling online is step one; getting on the shelves of major retailers is the real market.</p>
+    </div>
+    <div class="sub-head rv">
+      <p class="sk">Channel Network</p>
+      <h3>US first. Global reach.</h3>
+      <p>US major retail as home turf — with channels running in parallel across Europe, META, Asia-Pacific, ANZ, and the CIS. One team runs every channel's onboarding, listing optimization, in-platform ads, event-slot scheduling, and pricing — new channel evaluation, negotiation, and rollout also live here. Over 80% of global CPG sales happen on physical retail shelves — scaling online is step one; getting on the shelves of major retailers is the real market.</p>
     </div>
 
     <div class="us-partners rv">
@@ -1106,13 +1209,25 @@ body:not(.registered) .fee-lock{display:flex}
   </div>
 </section>
 
-<!-- ================= MARKETING (public) ================= -->
-<section id="marketing">
+<!-- ================= PATH B · BRAND GROWTH ================= -->
+<section id="path-brand">
   <div class="wrap">
     <div class="sec-head rv">
-      <p class="eyebrow">Brand Marketing</p>
-      <h2>Brand Marketing</h2>
-      <p class="section-lead">Four brand-side in-house capabilities — Social · Content · Agents · Data assets — delivering four outcomes: brand operations, website, social, and after-sales optimization. From building the brand to driving repeat purchase, one closed loop that turns manufacturing margin into brand equity.</p>
+      <p class="eyebrow">Path B · Brand → Voice</p>
+      <h2>Brand Growth<br>Insights pick the target, voice compounds the gains</h2>
+      <p class="section-lead">Brands with channels but no voice — data baselines prevent blind spend, influencers and short dramas create the volume, and a review system turns one-off campaigns into brand equity.</p>
+      <div class="pflow rv" role="list" aria-label="Brand growth path">
+        <span class="pnode">Data insights · voice baseline</span><span class="parr">→</span>
+        <span class="pnode">Influencer campaigns</span><span class="parr">→</span>
+        <span class="pnode">AI short-drama production</span><span class="parr">→</span>
+        <span class="pnode">Social matrix operations</span><span class="parr">→</span>
+        <span class="pnode">Three-layer impact review</span>
+      </div>
+    </div>
+    <div class="sub-head rv">
+      <p class="sk">Brand Marketing</p>
+      <h3>Four in-house capabilities, four delivered outcomes</h3>
+      <p>Social · Content · Agents · Data assets — delivering brand operations, website, social, and after-sales optimization. From building the brand to driving repeat purchase, one closed loop that turns manufacturing margin into brand equity.</p>
     </div>
     <div class="mkt-chain-cap rv">
       <span class="cap-k">Four Outcomes</span>
@@ -1230,6 +1345,102 @@ body:not(.registered) .fee-lock{display:flex}
     <div class="pub-cta rv">
       <a class="btn-ghost" href="#meet">Book an influencer-strategy call →</a>
       <span class="reg-note">Bring your catalog — we'll map the right play on the spot</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PATH C · DATA & DISTRIBUTION ================= -->
+<section id="path-data">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Path C · Data → Distribution</p>
+      <h2>Data & Distribution<br>Data first, action follows</h2>
+      <p class="section-lead">Creators get topic ammunition, assortment teams see demand six months ahead, channel buyers position against breakout crowdfunding products — the data line monetizes directly, no heavy service delivery required.</p>
+      <div class="pflow rv" role="list" aria-label="Data and distribution path">
+        <span class="pnode">Crowdfunding radar spots new products</span><span class="parr">→</span>
+        <span class="pnode">Heat analysis + selling-point breakdown</span><span class="parr">→</span>
+        <span class="pnode">Data tokens wired into your systems</span><span class="parr">→</span>
+        <span class="pnode">Distribution channel matchmaking</span>
+      </div>
+    </div>
+    <div class="pd-grid">
+      <a class="pd-card rv" href="insights.html">
+        <span class="pk">Insights</span>
+        <h3>Brand Insights</h3>
+        <p>See the real voice structure of a category across social before deciding where the budget goes.</p>
+        <ul>
+          <li><b>Triple insights:</b> influencer × brand × content cross-analysis</li>
+          <li><b>Crowdfunding radar:</b> new-product discovery · heat tracking</li>
+          <li><b>Insight reports:</b> conclusions delivered per question, not process</li>
+        </ul>
+        <span class="pd-go">See Brand Insights →</span>
+      </a>
+      <a class="pd-card rv rv-d1" href="data-platforms.html">
+        <span class="pk">Data</span>
+        <h3>Six subscription lines × data tokens</h3>
+        <p>Assortment, pricing, consumers, competitors, crowdfunding signals, brand voice — lines combined on demand, tokens delivered straight into your systems.</p>
+        <ul>
+          <li><b>Six lines:</b> assortment / pricing / consumers / competitors / crowdfunding signals / brand voice</li>
+          <li><b>Delivery:</b> subscription reports + data-token integration</li>
+          <li><b>Closed loop:</b> tokens loaded into Agents — data on one sentence</li>
+        </ul>
+        <span class="pd-go">See Data Subscriptions →</span>
+      </a>
+      <a class="pd-card rv rv-d2" href="radar.html">
+        <span class="pk">Radar</span>
+        <h3>Hot Categories × Show Calendar</h3>
+        <p>Platform quarterly hot-recruitment categories and major international trade-show calendars — actions ahead of the rhythm.</p>
+        <ul>
+          <li><b>Hot categories:</b> platform quarterly assortment directions</li>
+          <li><b>Show calendar:</b> auto-countdowns to major exhibitions</li>
+          <li><b>Track record:</b> cooperation performance reference</li>
+        </ul>
+        <span class="pd-go">See the Hot Radar →</span>
+      </a>
+    </div>
+    <div class="data-note rv"><b>Data discipline (all business lines):</b> we deliver data analysis and data tokens — we do not provide or disclose data sources. What you get is conclusions and usable data, not our supply chain. A proprietary monitoring network + multi-source cross-validation + human review is how we produce our judgments.</div>
+    <div class="pub-cta rv">
+      <a class="btn-ghost" href="#" data-reg-open>Register to unlock the full service catalog →</a>
+      <a class="btn-ghost" href="#meet">Book a meeting directly →</a>
+      <span class="reg-note">Free registration · follow-up within 1 business day</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUR-LAYER SYSTEM ================= -->
+<section id="system" style="background:var(--bg-2);border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">One System · Four Layers</p>
+      <h2>Four layers, one production line</h2>
+      <p class="section-lead">The three paths run on one system that grew bottom-up — not a service list, but a system with a production closed loop: every order thickens the capacity of the layers beneath.</p>
+    </div>
+    <div class="sys-grid">
+      <div class="sys-card rv">
+        <p class="sl"><b>L1</b>Edge</p>
+        <h3>Compute & physical boundary</h3>
+        <p>Industrial gateways · on-device inference · physical approve gates — scenarios where data must not leave the domain run the analysis at the edge.</p>
+      </div>
+      <div class="sys-card rv rv-d1">
+        <p class="sl"><b>L2</b>Agents</p>
+        <h3>Research digital workers</h3>
+        <p>Assortment discovery · competitor intelligence · social listening · automated reports — producing data insights and data tokens.</p>
+      </div>
+      <div class="sys-card rv rv-d2">
+        <p class="sl"><b>L3</b>Platform</p>
+        <h3>Business accrued as customer assets</h3>
+        <p>12 business sections · 62 pages · ERP / WMS / CRM backbone — delivery settles into reusable assets instead of scattered spreadsheets.</p>
+      </div>
+      <div class="sys-card rv rv-d3">
+        <p class="sl"><b>L4</b>Services</p>
+        <h3>Seven service lines delivered</h3>
+        <p>Each line delivers independently and combines by customer stage — the final shape customers see.</p>
+      </div>
+    </div>
+    <p class="sys-flow rv">Capability flow (bottom-up, one-way dependencies): <b>edge compute</b> → <b>agent capacity</b> → <b>platform accrual</b> → <b>service delivery</b> — one dataset and workflow across all four layers, which is why conclusions cross-check.</p>
+    <div class="sys-lines rv">
+      <span class="sll">Seven Lines</span>
+      <span>Channel entry</span><span>Data insights</span><span>Systems & tools</span><span>Brand growth</span><span>Crowdfunding distribution</span><span>Compliance & enterprise</span><span>Trade shows</span>
     </div>
   </div>
 </section>
@@ -1438,7 +1649,7 @@ body:not(.registered) .fee-lock{display:flex}
     <div class="sec-head rv">
       <p class="eyebrow">One Platform · All Lines</p>
       <h2>All Lines, One Entry</h2>
-      <p class="section-lead">The homepage carries the main lines only; every other business lives on its own service page — high cohesion, low coupling. Follow your path and click through for the details.</p>
+      <p class="section-lead">The homepage carries the three paths and the four-layer system; the seven service lines live on their own pages — high cohesion, low coupling. Follow your path and click through for the details.</p>
     </div>
     <div class="mx-grid">
       <a class="mx-card rv" href="insights.html">
@@ -1521,12 +1732,14 @@ body:not(.registered) .fee-lock{display:flex}
         <div class="field">
           <label for="t-topic">Meeting topic</label>
           <select id="t-topic" name="topic">
-            <option value="OEM partnership">OEM partnership</option>
-            <option value="ODM partnership">ODM partnership</option>
-            <option value="OBM brand expansion">OBM brand expansion</option>
-            <option value="Channel distribution / inventory buyout">Channel distribution / inventory buyout</option>
-            <option value="Warehousing & fulfillment">Warehousing & fulfillment</option>
-            <option value="Other">Other</option>
+            <option value="Factory Go-Global · OEM partnership">Factory Go-Global · OEM partnership</option>
+ <option value="Factory Go-Global · ODM partnership">Factory Go-Global · ODM partnership</option>
+ <option value="Factory Go-Global · OBM brand expansion">Factory Go-Global · OBM brand expansion</option>
+ <option value="Brand Growth · influencers / dramas / social">Brand Growth · influencers / dramas / social</option>
+ <option value="Data & Distribution · subscriptions / data tokens">Data & Distribution · subscriptions / data tokens</option>
+ <option value="Channel distribution / inventory buyout">Channel distribution / inventory buyout</option>
+ <option value="Warehousing & fulfillment">Warehousing & fulfillment</option>
+ <option value="Other">Other</option>
           </select>
         </div>
         <div class="field">
@@ -1703,10 +1916,11 @@ body:not(.registered) .fee-lock{display:flex}
           <a href="#meet">Book a Meeting</a>
         </div>
         <div class="foot-col">
-          <h4>Platform</h4>
-          <a href="#channels">Channels</a>
-          <a href="#marketing">Brand Marketing</a>
-          <a href="#influencer">Influencer</a>
+          <h4>Three Paths</h4>
+          <a href="#path-factory">Factory Go-Global</a>
+          <a href="#path-brand">Brand Growth</a>
+          <a href="#path-data">Data & Distribution</a>
+          <a href="#system">Four-Layer System</a>
           <a href="sell-on/index.html">Seller Entries</a>
           <a href="insights.html">Brand Insights</a>
           <a href="data-platforms.html">Data Subscriptions</a>
@@ -2163,10 +2377,12 @@ body:not(.registered) .fee-lock{display:flex}
      a:function(){return "Two groups: free items (channel account setup, account security, weekly reports, and other core services) carry no separate charge; paid items are billed per service — joint operations via revenue share, fulfillment at actual cost, influencer campaigns quoted per campaign. OEM inventory buyout carries no service fee — PO settlement, paid on delivery. See "+link("#models","Pricing")+". Per-service fee details unlock after registration — full quote within 1 business day."}},
     {k:["oem","odm","obm","model","difference","white label","private label","模式"],
      a:function(){return "The three models in one line each: <b>OEM</b> — build to your prints, your specs; paid at the factory on delivery. <b>ODM</b> — your design + our overseas warehouse stock; earn design + manufacturing margin. <b>OBM</b> — your own brand direct to consumers; earn manufacturing + brand premium. The path is progressive: start OEM, upgrade when ready. See "+link("#models","Models")+"."}},
+    {k:["path","stage","factory go-global","brand growth","data & distribution","four layers","i am a","fit"],
+     a:function(){return "Find your stage first: <b>Path A Factory Go-Global</b> — OEM/ODM factories moving from selling to building a brand; the golden triangle of channels × compliance × systems. <b>Path B Brand Growth</b> — brands with channels but no voice; insights set the play, influencers and dramas create volume. <b>Path C Data & Distribution</b> — creators, assortment teams, channel buyers; data first. All three run on one four-layer system (edge · agents · platform · services). See "+link("#paths","Three Customer Paths")+" and "+link("#system","the Four-Layer System")+"."}},
     {k:["channel","platform","walmart","amazon","target","costco","store","retail","shelf","渠道"],
-     a:function(){return "A 20+ channel network: US mainstream retail as home ground (Walmart, Target, Costco, Best Buy and more), with Europe, META, APAC, ANZ, and the CIS running in parallel. One team runs listing, ads, and pricing across every channel. See "+link("#channels","Channel Acceleration")+"."}},
+     a:function(){return "A 20+ channel network: US mainstream retail as home ground (Walmart, Target, Costco, Best Buy and more), with Europe, META, APAC, ANZ, and the CIS running in parallel. One team runs listing, ads, and pricing across every channel. See "+link("#path-factory","Factory Go-Global · Channel Network")+"."}},
     {k:["influencer","creator","kol","ugc","social","tiktok","instagram","youtube","marketing","content","drama","series","红人"],
-     a:function(){return "Influencer marketing matches US creators by category: top-tier for reach, mid-tier for conversion, long-tail for content volume — with an in-house talent pool for controllable scheduling and rates. Brand marketing runs on four in-house capabilities — social, content, agents, data assets — delivering four outcomes: brand operations, website, social, after-sales optimization. See "+link("#influencer","Influencer Marketing")+" and "+link("#marketing","Brand Marketing")+"."}},
+     a:function(){return "Influencer marketing matches US creators by category: top-tier for reach, mid-tier for conversion, long-tail for content volume — with an in-house talent pool for controllable scheduling and rates. Brand marketing runs on four in-house capabilities — social, content, agents, data assets — delivering four outcomes: brand operations, website, social, after-sales optimization. See "+link("#influencer","Influencer Marketing")+" and "+link("#path-brand","Brand Growth")+"."}},
     {k:["data","subscription","report","token","insight","intelligence","数据"],
      a:function(){return "Data subscriptions run six lines: assortment & markets, pricing & promotions, consumers & reviews, competitor moves, crowdfunding signals, and brand voice — sliced by category / platform / price band / country, delivered as data tokens, recurring packs, or reports. The full catalog lives on the "+link("data-platforms.html","Data Subscriptions service page")+"."}},
     {k:["agent","ai","bot","erp","wms","crm","system","software","custom","智能体"],
