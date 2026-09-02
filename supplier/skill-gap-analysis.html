@@ -145,6 +145,7 @@ footer .fine { font-family:var(--font-mono); font-size:.7rem; color:var(--faint)
   <a href="#platforms">⑤ 平台覆盖对照</a>
   <a href="#gaps">⑥ 缺口与优先级</a>
   <a href="#verdict">⑦ 结论</a>
+  <a href="#log">⑧ 执行日志</a>
 </nav>
 
 <!-- ============ 1. OVERVIEW ============ -->
@@ -342,10 +343,49 @@ footer .fine { font-family:var(--font-mono); font-size:.7rem; color:var(--faint)
   <div class="callout"><b>一个自建视角：</b>P0 / P1 缺口多数在技能市场无现成供给（众筹、TikTok Shop、视觉、红人）——这恰好符合「自建系统、避免第三方中介」的原则：缺口即产品机会，先以本地工作流形式自建（如 AdPilot 先例），跑通后再决定是否对外供给。</div>
 </section>
 
+<!-- ============ 8. EXECUTION LOG ============ -->
+<section id="log">
+  <div class="sn">Section 08 · Execution Log</div>
+  <h2>八、执行日志（P0 第一批落地）</h2>
+  <p class="lead">2026-09-02：缺口分析定稿当日启动 P0 三项补齐。自建优先，全部以 agent-skills 本地工作流形式交付。</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>日期</th><th>对应缺口</th><th>动作</th><th>交付物</th><th>状态</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><b>2026-09-02</b></td>
+        <td>Gap 01 · P0<br>众筹平台数据</td>
+        <td>验证 Kickstarter discover JSON 公开通道可免登录直读；搭建本地提取工作流</td>
+        <td><b>agent-skills/crowdfunding-signal/</b>：extract-ks.ps1（提取脚本）+ README.md（每周 3 分钟运行手册）+ output/ 首期样例（2026-09-02，12 个在筹项目 CSV + 周报 HTML 片段，与博客周报 .num/.kv/.vv 结构一致）</td>
+        <td><span class="rate s">已落地</span></td>
+      </tr>
+      <tr>
+        <td><b>2026-09-02</b></td>
+        <td>Gap 02 · P0<br>TikTok Shop 数据</td>
+        <td>四条获取路径评估（官方开放平台 API / 公开自采集 / 付费 API / SaaS 平台），产出自建优先三步走</td>
+        <td><b>tiktok-shop-data-evaluation.html</b>（内部 noindex）：Step 1 官方 API 授权店铺运营（0 成本，月内）→ Step 2 竞对 URL 级追踪（1–2 月）→ Step 3 全市场数据触发式评估（≥2 个付费需求才启动，原则例外需用户批准）</td>
+        <td><span class="rate m">评估完成</span></td>
+      </tr>
+      <tr>
+        <td><b>2026-09-02</b></td>
+        <td>Gap 03 · P0<br>产品视觉类技能</td>
+        <td>自建本地视觉规划工作台：填 8 个产品字段，一键产出主图 / A+ / 视频三组制作提示词</td>
+        <td><b>agent-skills/product-visual-studio/</b>：index.html（单文件本地工具，noindex）+ README.md。产出：主图七宫格（含即用生成提示词）、A+ 五模块、15s / 30s 短视频脚本、8 条上架合规自查清单</td>
+        <td><span class="rate s">已落地</span></td>
+      </tr>
+    </tbody>
+  </table></div>
+  <ul class="plain">
+    <li><b>对外口径：</b>三件交付物均为内部能力——众筹周报片段进入博客周报素材管线；产品视觉工作台为交付侧工具（视觉资产按项次计费）；TikTok 评估结论指导 Step 1 官方通道申报，均不在公开站露面。</li>
+    <li><b>下一步（P0 收尾）：</b>radar 周报接入 crowdfunding-signal 周度输出；TikTok Shop 官方开放平台应用注册启动。</li>
+    <li><b>再下一步（P1 排期）：</b>红人发现管理 → 欧洲渠道数据（Otto / Allegro / eBay）→ 线下零售替代源 → AI 短剧工作流。</li>
+  </ul>
+</section>
+
 <footer>
   <div class="fine">
-    insightmarketplac · 技能库业务映射与缺口分析 · 内部参考 · 2026-09-02<br>
+    insightmarketplac · 技能库业务映射与缺口分析 · 内部参考 · 2026-09-02（执行日志更新：P0 第一批落地）<br>
     本页 noindex / nofollow，不进 sitemap 与 llms.txt，不提交 IndexNow；供应商与数据源信息仅限内部使用。<br>
+    关联文档：<a href="tiktok-shop-data-evaluation.html">TikTok Shop 数据路径评估</a>（Gap 02 产出）· <a href="system-map.html">系统总图</a>。<br>
     数据来源：Agent 技能市场在架清单（131 项，2026-09-02 快照）× 业务梳理报告框架（三路径 × 七服务线 × 数据六线）× 76 入驻平台页清单 × 19 合作渠道墙。
   </div>
 </footer>
