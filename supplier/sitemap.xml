@@ -169,6 +169,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hdhaidong.github.io/supplier/walmart.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hdhaidong.github.io/supplier/creators.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hdhaidong.github.io/supplier/factory-to-shelf.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hdhaidong.github.io/supplier/register.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hdhaidong.github.io/supplier/sell-on/amazon/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
