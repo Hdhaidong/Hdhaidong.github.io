@@ -3,109 +3,386 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>insightmarketplac — Supplier Onboarding · OEM / ODM / OBM</title>
-<meta name="description" content="insightmarketplac — US channel company. Supplier onboarding: from the factory floor to America's retail shelves. OEM / ODM / OBM partnerships, inventory buyout, 20+ channels.">
-<meta name="google-site-verification" content="NEG-9fZmPWPjy2hk_50DnurFr1lGdHzrtEBFo1LXp_M">
+<title>insightmarketplac — 从中国工厂，到美国主流零售货架</title>
+<meta name="description" content="insightmarketplac 美国渠道公司：买下你的库存、扩张你的渠道、端到端负责仓配履约。工厂免费注册建数字档案，买家一键索样海外仓直发。20+ 渠道、直播带货、红人选品、数据订阅、合规出海，一个屋顶下全部搞定。">
+<meta name="keywords" content="美国渠道,供应商入驻,工厂出海,OEM,ODM,OBM,渠道入驻,直播带货,Whatnot,红人选品,数据订阅,海外仓,合规出海,买手匹配">
+<link rel="canonical" href="https://hdhaidong.github.io/supplier/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="insightmarketplac — 从中国工厂，到美国主流零售货架">
+<meta property="og:description" content="买下你的库存、扩张你的渠道、端到端负责仓配履约。工厂免费注册，买家一键索样。">
+<meta property="og:url" content="https://hdhaidong.github.io/supplier/">
+<meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B0E13'/%3E%3Ctext x='16' y='21' font-family='Consolas,monospace' font-size='13' font-weight='700' fill='%23E8A33D' text-anchor='middle'%3Eim%3C/text%3E%3C/svg%3E">
 <style>
-:root{
-  --bg:#0B0E13;
-  --ink:#F2EEE6;
-  --ink-dim:#A7ADB8;
-  --accent:#E8A33D;
-  --hairline:rgba(242,238,230,.12);
-  --sans:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
-  --mono:"SF Mono","Cascadia Code",Consolas,"Courier New",monospace;
-}
+:root{--bg:#0B0E13;--bg-2:#10141B;--bg-3:#151A23;--ink:#F2EEE6;--ink-dim:#A7ADB8;--ink-faint:#6E7683;--accent:#E8A33D;--accent-hi:#F4BA60;--hairline:rgba(242,238,230,.12);--hairline-soft:rgba(242,238,230,.07);--sans:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;--mono:"SF Mono","Cascadia Code",Consolas,"Courier New",monospace}
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-  min-height:100vh;display:flex;align-items:center;justify-content:center;
-  background:var(--bg);color:var(--ink);font-family:var(--sans);
-  padding:32px;
-}
-.gate{width:100%;max-width:640px;text-align:center}
-.mark{
-  font-family:var(--mono);font-size:clamp(30px,6vw,46px);font-weight:700;
-  letter-spacing:.02em;
-}
-.mark em{font-style:normal;color:var(--accent)}
-.kicker{
-  font-family:var(--mono);font-size:12px;letter-spacing:.32em;
-  text-transform:uppercase;color:var(--accent);margin-top:18px;
-}
-.desc{color:var(--ink-dim);font-size:15px;line-height:1.8;margin-top:10px}
-.choices{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:44px}
-.choice{
-  display:block;padding:26px 20px;border:1px solid var(--hairline);
-  background:rgba(242,238,230,.02);transition:background .3s,border-color .3s;
-}
-.choice:hover{background:rgba(242,238,230,.06);border-color:var(--accent)}
-.choice .lang{
-  font-family:var(--mono);font-size:17px;font-weight:700;color:var(--ink);
-}
-.choice:hover .lang{color:var(--accent)}
-.choice .sub{
-  font-family:var(--mono);font-size:11px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--ink-dim);margin-top:8px;display:block;
-}
-.auto{
-  font-family:var(--mono);font-size:11.5px;color:var(--ink-dim);
-  letter-spacing:.06em;margin-top:34px;line-height:1.9;
-}
-.auto b{color:var(--accent);font-weight:600}
-.foot{
-  font-family:var(--mono);font-size:11px;color:var(--ink-dim);
-  letter-spacing:.1em;margin-top:44px;padding-top:22px;
-  border-top:1px solid var(--hairline);
-}
-@media(max-width:560px){
-  .choices{grid-template-columns:1fr}
-  body{padding:20px}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.top{border-bottom:1px solid var(--hairline-soft);background:rgba(11,14,19,.92);position:sticky;top:0;z-index:40;backdrop-filter:blur(10px)}
+.top-in{max-width:1000px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand .mk{font-weight:700;font-size:1rem}
+.brand .mk em{font-style:normal;color:var(--accent)}
+.top-nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.82rem}
+.top-nav a{color:var(--ink-dim)}
+.top-nav a:hover{color:var(--accent);text-decoration:none}
+.top-right{display:flex;align-items:center;gap:14px}
+.top-right .en{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--ink-faint)}
+.top-right .en:hover{color:var(--accent)}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;font-size:.92rem;transition:all .18s}
+.btn-p{background:var(--accent);color:#141414}
+.btn-p:hover{background:var(--accent-hi);text-decoration:none;transform:translateY(-1px)}
+.btn-s{border:1px solid var(--hairline);color:var(--ink-dim)}
+.btn-s:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.hero{padding:72px 0 52px;position:relative;overflow:hidden;border-bottom:1px solid var(--hairline-soft)}
+.hero::before{content:"";position:absolute;top:-160px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(232,163,61,.08),transparent 65%);pointer-events:none}
+.eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;margin-bottom:14px}
+h1{font-size:clamp(1.9rem,4.5vw,2.7rem);line-height:1.22;letter-spacing:-.01em}
+h1 .hl{color:var(--accent)}
+.hero-sub{color:var(--ink-dim);max-width:680px;margin:18px 0 28px;font-size:1.02rem}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline-soft);border:1px solid var(--hairline-soft);border-radius:12px;overflow:hidden;margin-top:40px}
+.stat{background:var(--bg-2);padding:20px 22px}
+.stat .k{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:6px}
+.stat .v{font-size:.84rem;color:var(--ink-dim)}
+.stat b{color:var(--accent);font-size:1.2rem;margin-right:4px}
+section{padding:72px 0;border-bottom:1px solid var(--hairline-soft)}
+section:nth-of-type(even){background:var(--bg-2)}
+.sec-head{margin-bottom:36px}
+.sec-head .eyebrow{margin-bottom:10px}
+h2{font-size:clamp(1.35rem,3vw,1.8rem);letter-spacing:-.01em;line-height:1.3}
+.sec-sub{color:var(--ink-dim);margin-top:10px;max-width:640px;font-size:.95rem}
+.flows{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.flow{border:1px solid var(--hairline-soft);border-radius:14px;background:var(--bg);padding:26px 26px 20px}
+.flow.f-factory{border-color:rgba(232,163,61,.35)}
+.flow-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.flow-head h3{font-size:1.05rem}
+.flow-head .tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(232,163,61,.35);border-radius:99px;padding:4px 10px}
+.flow ol{list-style:none;counter-reset:fs;display:grid;gap:2px}
+.flow ol li{counter-increment:fs;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--hairline-soft)}
+.flow ol li:last-child{border-bottom:none}
+.flow ol li::before{content:counter(fs,decimal-leading-zero);font-family:var(--mono);font-size:.72rem;color:var(--accent);font-weight:700}
+.flow ol b{display:block;font-size:.92rem}
+.flow ol span{font-size:.8rem;color:var(--ink-dim)}
+.flow-more{margin-top:14px;font-size:.82rem}
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.path{border:1px solid var(--hairline-soft);border-radius:14px;background:var(--bg);padding:26px;display:flex;flex-direction:column;transition:border-color .18s}
+.path:hover{border-color:var(--accent)}
+.path .pl{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
+.path h3{font-size:1.1rem;margin:8px 0 10px}
+.path p{font-size:.86rem;color:var(--ink-dim);flex:1}
+.path .plink{margin-top:16px;font-size:.82rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.svc{border:1px solid var(--hairline-soft);border-radius:14px;background:var(--bg);padding:22px;display:flex;flex-direction:column;transition:border-color .18s}
+.svc:hover{border-color:var(--accent)}
+.svc .ic{font-size:1.3rem;margin-bottom:10px}
+.svc h3{font-size:.98rem;margin-bottom:6px}
+.svc h3 .en{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:3px}
+.svc p{font-size:.82rem;color:var(--ink-dim);flex:1}
+.svc .plink{margin-top:12px;font-size:.78rem}
+.net-band{display:grid;grid-template-columns:1fr;gap:20px}
+.net-img{border:1px solid var(--hairline-soft);border-radius:14px;overflow:hidden;background:var(--bg)}
+.net-img img{display:block;width:100%;height:auto}
+.net-regions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.nreg{border:1px solid var(--hairline);border-radius:99px;padding:8px 18px;font-size:.82rem;color:var(--ink-dim)}
+.nreg b{color:var(--ink);font-weight:600;margin-right:6px}
+.net-cta{text-align:center;margin-top:22px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{border:1px solid var(--hairline-soft);border-radius:14px;background:var(--bg);padding:26px}
+.panel h3{font-size:1.02rem;margin-bottom:14px}
+.panel h3 .en{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;display:block;margin-bottom:3px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--hairline);border-radius:8px;padding:7px 14px;font-size:.78rem;color:var(--ink-dim)}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.content-list{display:grid;gap:12px;margin-top:4px}
+.c-item{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px dashed var(--hairline-soft)}
+.c-item:last-child{border-bottom:none}
+.c-item .ct{font-size:.9rem;font-weight:600}
+.c-item .cm{font-family:var(--mono);font-size:.64rem;color:var(--ink-faint);letter-spacing:.08em;white-space:nowrap}
+.reg-duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.reg-card{border:1px solid rgba(232,163,61,.35);border-radius:16px;background:var(--bg);padding:34px 28px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.reg-card .ric{font-size:2rem;margin-bottom:12px}
+.reg-card h3{font-size:1.15rem;margin-bottom:8px}
+.reg-card p{font-size:.86rem;color:var(--ink-dim);margin-bottom:20px}
+.reg-card .btn{width:max-content}
+.reg-note{text-align:center;margin-top:22px;font-size:.8rem;color:var(--ink-faint)}
+footer{padding:56px 0 40px;background:var(--bg)}
+.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.f-brand .mk{font-weight:700;font-size:1.05rem}
+.f-brand .mk em{font-style:normal;color:var(--accent)}
+.f-brand p{font-size:.8rem;color:var(--ink-faint);margin-top:10px;max-width:300px}
+.fk{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:12px}
+.f-links a{display:block;font-size:.82rem;color:var(--ink-dim);padding:4px 0}
+.f-links a:hover{color:var(--accent);text-decoration:none}
+.f-bottom{margin-top:40px;padding-top:20px;border-top:1px solid var(--hairline-soft);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.72rem;color:var(--ink-faint)}
+@media(max-width:860px){
+  .flows,.paths,.svc-grid,.duo,.reg-duo,.f-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .top-nav{order:3;width:100%}
 }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"insightmarketplac","description":"美国渠道公司：渠道、数据、内容三位一体的品牌出海网络","url":"https://hdhaidong.github.io/supplier/"}
+</script>
 </head>
 <body>
-<div class="gate">
-  <div class="mark">insight<em>marketplac</em></div>
-  <p class="kicker">Supplier Onboarding</p>
-  <p class="desc">从中国工厂，到美国主流零售货架。<br>From the factory floor to America's retail shelves.</p>
 
-  <div class="choices">
-    <a class="choice" id="link-zh" href="sell-on-oem-odm.html">
-      <span class="lang">中文</span>
-      <span class="sub">OEM / ODM / OBM 入驻</span>
-    </a>
-    <a class="choice" id="link-en" href="sell-on-oem-odm-en.html">
-      <span class="lang">English</span>
-      <span class="sub">Sell on Marketplace</span>
-    </a>
+<div class="top"><div class="top-in">
+  <div class="brand">
+    <span class="mk">insight<em>marketplac</em></span>
   </div>
+  <nav class="top-nav">
+    <a href="sell-on-oem-odm.html">渠道</a>
+    <a href="whatnot.html">直播</a>
+    <a href="creators.html">创作者</a>
+    <a href="data-platforms.html">数据</a>
+    <a href="blog.html">内容</a>
+  </nav>
+  <div class="top-right">
+    <a class="en" href="sell-on-oem-odm-en.html">EN →</a>
+    <a class="btn btn-p" style="font-size:.8rem;padding:9px 18px" href="register.html">免费注册 →</a>
+  </div>
+</div></div>
 
-  <p class="auto">正在检测语言，<b><span id="countdown">3</span></b> 秒后自动进入 <b id="target">中文版</b>。点击上方任一语言可立即进入。</p>
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">US Channel Company · 美国渠道公司</div>
+  <h1>从中国工厂，<br>到<span class="hl">美国主流零售货架</span></h1>
+  <p class="hero-sub">买下你的库存、扩张你的渠道、端到端负责仓配履约——平台入驻、联合运营、品牌推广，一个屋顶下全部搞定。样品展厅 × 供应商网络 × AI 买手分析：工厂直接注册建数字档案，买家一键索样、海外仓直发。</p>
+  <div class="cta-row">
+    <a class="btn btn-p" href="register.html">工厂免费注册</a>
+    <a class="btn btn-s" href="register.html">买家注册</a>
+    <a class="btn btn-s" href="sell-on-oem-odm.html#paths">看三条客户路径</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="k">Growth</div><div class="v"><b>40%</b>品牌首年平均销售增长</div></div>
+    <div class="stat"><div class="k">Fulfillment</div><div class="v"><b>99.8%</b>订单当日出库</div></div>
+    <div class="stat"><div class="k">Coverage</div><div class="v"><b>85%</b>美国次日达覆盖</div></div>
+    <div class="stat"><div class="k">In Stock</div><div class="v"><b>97%</b>常备库存现货率</div></div>
+  </div>
+</div></div>
 
-  <p class="foot">© 2026 insightmarketplac · 美国渠道公司 · US Channel Company</p>
+<section id="flows"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">01 · Module Flows</div>
+    <h2>两条流程，一个系统</h2>
+    <p class="sec-sub">工厂从注册到铺货五步，买家从注册到下单四步——全部在线完成，顾问邮件跟进。</p>
+  </div>
+  <div class="flows">
+    <div class="flow f-factory">
+      <div class="flow-head">
+        <h3>🏭 工厂流程</h3>
+        <span class="tag">Factory · 5 Steps</span>
+      </div>
+      <ol>
+        <li><div><b>注册建档</b><span>免费建立数字档案 Digital Sell Sheet</span></div></li>
+        <li><div><b>样品上架</b><span>样品进展厅，AI 生成社媒内容测款</span></div></li>
+        <li><div><b>买手匹配</b><span>按品类 / 价格 / 认证匹配渠道与买手</span></div></li>
+        <li><div><b>索样谈判</b><span>买手在线索样，海外仓 1 日内寄出</span></div></li>
+        <li><div><b>批量铺货</b><span>签约下单，工厂到货架全链路履约</span></div></li>
+      </ol>
+      <div class="flow-more"><a href="register.html">工厂免费注册 →</a></div>
+    </div>
+    <div class="flow">
+      <div class="flow-head">
+        <h3>🛒 买家流程</h3>
+        <span class="tag">Buyer · 4 Steps</span>
+      </div>
+      <ol>
+        <li><div><b>注册账号</b><span>邮箱验证，分钟级开通</span></div></li>
+        <li><div><b>浏览样品</b><span>按品类 / 价格 / 认证筛选样品展厅</span></div></li>
+        <li><div><b>在线索样</b><span>一键索样，海外仓直发到门</span></div></li>
+        <li><div><b>签约下单</b><span>小单试销到批量补货，一条链路</span></div></li>
+      </ol>
+      <div class="flow-more"><a href="register.html">买家免费注册 →</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="paths"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">02 · Growth Paths</div>
+    <h2>三条客户路径，先选你的阶段</h2>
+    <p class="sec-sub">渠道卖货、数据选品、内容放大——三条主线绕在同一个四层系统上。</p>
+  </div>
+  <div class="paths">
+    <div class="path">
+      <span class="pl">Path A</span>
+      <h3>工厂出海</h3>
+      <p>从卖货给渠道，到做品牌进渠道。渠道 × 合规 × 系统黄金三角一起做，出海路径才走得通。</p>
+      <a class="plink" href="sell-on-oem-odm.html#paths">看完整路径 →</a>
+    </div>
+    <div class="path">
+      <span class="pl">Path B</span>
+      <h3>品牌增长</h3>
+      <p>洞察决定打哪里，声量打出复利。数据摸底避免预算盲投，红人与短剧打出声量。</p>
+      <a class="plink" href="sell-on-oem-odm.html#paths">看完整路径 →</a>
+    </div>
+    <div class="path">
+      <span class="pl">Path C</span>
+      <h3>数据与分销</h3>
+      <p>订阅结论、不碰源头。六条数据订阅线按问题选，答案直接进决策。</p>
+      <a class="plink" href="sell-on-oem-odm.html#paths">看完整路径 →</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="modules"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">03 · Service Modules</div>
+    <h2>一个屋顶下，全部搞定</h2>
+    <p class="sec-sub">六大服务模块独立可用、组合更强——按你所在阶段自由搭配。</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc">
+      <div class="ic">🛒</div>
+      <h3><span class="en">Channel Onboarding</span>渠道入驻</h3>
+      <p>20+ 渠道一个团队全管：入驻开户、listing 优化、站内广告、活动位排期与定价。</p>
+      <a class="plink" href="sell-on-oem-odm.html">了解渠道加速 →</a>
+    </div>
+    <div class="svc">
+      <div class="ic">📺</div>
+      <h3><span class="en">Live Shopping</span>直播带货</h3>
+      <p>Whatnot 主播网络：直播拍卖、一口价闪购、抽奖引流三种玩法，货盘免费诊断。</p>
+      <a class="plink" href="whatnot.html">看直播频道 →</a>
+    </div>
+    <div class="svc">
+      <div class="ic">🎬</div>
+      <h3><span class="en">Creator Commerce</span>红人选品</h3>
+      <p>创作者联盟带货：免费样品 + 佣金任务，红人视频长尾出货。</p>
+      <a class="plink" href="creators.html">看红人频道 →</a>
+    </div>
+    <div class="svc">
+      <div class="ic">📊</div>
+      <h3><span class="en">Data Subscription</span>数据订阅</h3>
+      <p>选品机会、定价对标、竞品监控、众筹信号——六条订阅线，订阅结论不碰源头。</p>
+      <a class="plink" href="data-platforms.html">看数据订阅 →</a>
+    </div>
+    <div class="svc">
+      <div class="ic">📦</div>
+      <h3><span class="en">Fulfillment</span>仓配履约</h3>
+      <p>海外仓直发：订单当日出库 99.8%、次日达覆盖 85%、常备库存现货率 97%。</p>
+      <a class="plink" href="sell-on-oem-odm.html#apply">咨询履约方案 →</a>
+    </div>
+    <div class="svc">
+      <div class="ic">🛡️</div>
+      <h3><span class="en">Compliance</span>合规出海</h3>
+      <p>公司注册、商标域名、VAT、海关 Bond、税务与 EPR——合规主体一步建齐。</p>
+      <a class="plink" href="compliance.html">看合规清单 →</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="network"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">04 · Channel Network</div>
+    <h2>深耕美国，覆盖全球</h2>
+    <p class="sec-sub">以美国主流零售为主场，欧洲、中东、亚太渠道并行——全球 80% 以上的 CPG 消费发生在线下实体货架。</p>
+  </div>
+  <div class="net-band">
+    <div class="net-img">
+      <img src="assets/us-retail-partners.png" alt="美国主流零售合作伙伴（部分）" loading="lazy">
+    </div>
+    <div class="net-regions">
+      <div class="nreg"><b>北美</b>核心主场</div>
+      <div class="nreg"><b>欧洲</b>Amazon · Zalando · Otto</div>
+      <div class="nreg"><b>中东</b>noon · Trendyol</div>
+      <div class="nreg"><b>亚太</b>Shopee · Lazada · TikTok Shop</div>
+      <div class="nreg"><b>俄语区</b>Wildberries · Ozon</div>
+    </div>
+    <div class="net-cta">
+      <a class="btn btn-s" href="sell-on/index.html">看 77 个平台入驻地图 →</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="data-content"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">05 · Data & Content</div>
+    <h2>数据进决策，内容放大声量</h2>
+    <p class="sec-sub">数据订阅给答案，博客与播客给认知——决策快半步，声量大一圈。</p>
+  </div>
+  <div class="duo">
+    <div class="panel">
+      <h3><span class="en">Data Lines</span>六条数据订阅线</h3>
+      <div class="chips">
+        <a class="chip" href="data-platforms.html">选品机会</a>
+        <a class="chip" href="data-platforms.html">定价对标</a>
+        <a class="chip" href="data-platforms.html">竞品监控</a>
+        <a class="chip" href="data-platforms.html">众筹信号</a>
+        <a class="chip" href="data-platforms.html">类目热度</a>
+        <a class="chip" href="data-platforms.html">渠道榜单</a>
+      </div>
+      <p style="font-size:.82rem;color:var(--ink-dim);margin-top:16px">数据装进 Agent，一句话调出报告——<a href="data-platforms.html">看订阅模式与定价</a>。</p>
+    </div>
+    <div class="panel">
+      <h3><span class="en">Latest Content</span>最新内容</h3>
+      <div class="content-list">
+        <a class="c-item" href="blog.html"><span class="ct">出海博客</span><span class="cm">BLOG</span></a>
+        <a class="c-item" href="podcast.html"><span class="ct">渠道播客</span><span class="cm">PODCAST</span></a>
+        <a class="c-item" href="insights.html"><span class="ct">行业洞察</span><span class="cm">INSIGHTS</span></a>
+        <a class="c-item" href="exhibitions.html"><span class="ct">展会日历</span><span class="cm">EXHIBITIONS</span></a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="join"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">06 · Join</div>
+    <h2>免费注册，两条入口</h2>
+    <p class="sec-sub">10 分钟完成注册，开启美国货架之旅——工厂建档被买手发现，买家开通精准匹配。</p>
+  </div>
+  <div class="reg-duo">
+    <div class="reg-card">
+      <div class="ric">🏭</div>
+      <h3>工厂 / 厂商</h3>
+      <p>免费建立数字档案，被 12,000+ 美国零售买手主动发现；买家一键索样，海外仓直发。</p>
+      <a class="btn btn-p" href="register.html">工厂免费注册 →</a>
+    </div>
+    <div class="reg-card">
+      <div class="ric">🛒</div>
+      <h3>买家 / 零售商</h3>
+      <p>免费注册账号，按品类 / 价格 / 认证筛选样品展厅，在线索样、签约下单。</p>
+      <a class="btn btn-p" href="register.html">买家免费注册 →</a>
+    </div>
+  </div>
+  <p class="reg-note">已有明确需求？直接邮件 <a href="mailto:haidong.zhou@outlook.com">haidong.zhou@outlook.com</a>，顾问 48 小时内回复。</p>
+</div></section>
+
+<footer><div class="wrap"><div class="f-grid">
+  <div class="f-brand">
+    <span class="mk">insight<em>marketplac</em></span>
+    <p>美国渠道公司 · 深圳运营中心 —— 渠道、数据、内容三位一体的品牌出海网络。</p>
+  </div>
+  <div class="f-links">
+    <div class="fk">Channels</div>
+    <a href="sell-on-oem-odm.html">渠道入驻</a>
+    <a href="whatnot.html">Whatnot 直播频道</a>
+    <a href="walmart.html">Walmart 频道</a>
+    <a href="creators.html">红人选品频道</a>
+  </div>
+  <div class="f-links">
+    <div class="fk">Business</div>
+    <a href="factory-to-shelf.html">美国渠道业务</a>
+    <a href="data-platforms.html">数据订阅</a>
+    <a href="compliance.html">合规出海</a>
+    <a href="sell-on/index.html">77 平台入驻地图</a>
+  </div>
+  <div class="f-links">
+    <div class="fk">Join</div>
+    <a href="register.html">工厂注册</a>
+    <a href="register.html">买家注册</a>
+    <a href="blog.html">博客</a>
+    <a href="podcast.html">播客</a>
+  </div>
 </div>
+<div class="f-bottom">
+  <span>© 2026 insightmarketplac · 美国渠道公司 · US Channel Company</span>
+  <span>English: <a href="sell-on-oem-odm-en.html">Sell on insightmarketplac</a></span>
+</div>
+</div></footer>
 
-<script>
-(function(){
-  "use strict";
-  var ZH="sell-on-oem-odm.html",EN="sell-on-oem-odm-en.html";
-  var lang=(navigator.language||navigator.userLanguage||"zh").toLowerCase();
-  var target=lang.indexOf("zh")===0?ZH:EN;
-  document.getElementById("target").textContent=target===ZH?"中文版":"English";
-
-  var n=3,cd=document.getElementById("countdown");
-  var timer=setInterval(function(){
-    n--;
-    if(n<=0){clearInterval(timer);window.location.href=target;return}
-    cd.textContent=String(n);
-  },1000);
-
-  document.addEventListener("click",function(ev){
-    var a=ev.target.closest("a.choice");
-    if(a){clearInterval(timer)}
-  },true);
-})();
-</script>
 </body>
 </html>
