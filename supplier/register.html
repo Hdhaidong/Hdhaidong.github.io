@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>免费注册 · 工厂建档 · 买家开通 | insightmarketplac</title>
-<meta name="description" content="insightmarketplac 免费注册入口：工厂/厂商直接注册，免费建立数字档案被 12,000+ 美国零售买手发现；买家免费注册，精准匹配供应商与海外仓快速索样。注册免费，48 小时完成审核建档。">
+<meta name="description" content="insightmarketplac 免费注册入口：工厂/厂商直接注册，免费建立数字档案被 12,000+ 美国零售买手发现；买家免费注册，精准匹配供应商与海外仓快速索样。四步合作流程：材料准备、合作申请、资质审核（初审+复审）、开始合作，注册免费，48 小时完成审核建档。">
 <meta name="keywords" content="工厂注册, 供应商入驻, 买家注册, 免费建档, Digital Sell Sheet, 买手检索库, OEM, ODM, OBM, 供应商匹配">
 <link rel="canonical" href="https://hdhaidong.github.io/supplier/register.html">
 <meta property="og:type" content="website">
@@ -63,7 +63,7 @@ section:nth-of-type(even){background:var(--bg-2)}
 .form-msg.show{display:block}
 .form-msg.ok{border:1px solid rgba(125,184,138,.4);color:#9FD0AA;background:rgba(125,184,138,.07)}
 .form-msg.err{border:1px solid rgba(197,106,106,.4);color:#D98F8F;background:rgba(197,106,106,.07)}
-.after-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.after-steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .after{border:1px solid var(--hairline-soft);border-radius:12px;padding:22px;background:var(--bg)}
 .after .sn{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
 .after h3{font-size:.96rem;margin:8px 0 6px}
@@ -162,6 +162,16 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
         </select>
       </div>
     </div>
+    <div class="f-row">
+      <div class="f-group">
+        <label>统一社会信用代码</label>
+        <input type="text" name="license" placeholder="营业执照 18 位信用代码（选填）" maxlength="18">
+      </div>
+      <div class="f-group">
+        <label>法人代表</label>
+        <input type="text" name="legal" placeholder="与营业执照一致（选填）" maxlength="40">
+      </div>
+    </div>
     <div class="f-group">
       <label>主营品类（可多选）<span class="req">*</span></label>
       <div class="f-check">
@@ -196,9 +206,29 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
         <label><input type="checkbox" name="channels" value="其他">其他</label>
       </div>
     </div>
+    <div class="f-row">
+      <div class="f-group">
+        <label>电商平台经验</label>
+        <div class="f-check">
+          <label><input type="radio" name="ecexp" value="有" checked>有</label>
+          <label><input type="radio" name="ecexp" value="无">无</label>
+        </div>
+      </div>
+      <div class="f-group">
+        <label>已运营平台（可多选）</label>
+        <div class="f-check">
+          <label><input type="checkbox" name="ecplatforms" value="Amazon">Amazon</label>
+          <label><input type="checkbox" name="ecplatforms" value="Walmart">Walmart</label>
+          <label><input type="checkbox" name="ecplatforms" value="eBay">eBay</label>
+          <label><input type="checkbox" name="ecplatforms" value="TikTok Shop">TikTok Shop</label>
+          <label><input type="checkbox" name="ecplatforms" value="Wayfair">Wayfair</label>
+          <label><input type="checkbox" name="ecplatforms" value="Temu">Temu</label>
+        </div>
+      </div>
+    </div>
     <div class="f-group">
       <label>工厂简介 / 优势（选填）</label>
-      <textarea name="note" placeholder="认证资质（BSCI/ISO/UL…）、主打产品、出口经验、代表客户…" maxlength="400"></textarea>
+      <textarea name="note" placeholder="认证资质（BSCI/ISO/UL…）、主打产品、出口经验、代表客户、海外仓能力…&#10;营业执照照片、工厂图片与产品资料可在顾问回复邮件中附上，有助加快审核。" maxlength="400"></textarea>
     </div>
     <button type="submit" class="btn btn-p">提交注册 · 免费建档</button>
     <div class="reg-benefits">
@@ -283,25 +313,30 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
 
 <section><div class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">What Happens Next</div>
-    <h2>提交之后的三步</h2>
-    <p class="sec-sub">注册提交后，顾问通过邮件与您确认信息并完成建档——全程免费。</p>
+    <div class="eyebrow">Cooperation Flow</div>
+    <h2>四步合作流程</h2>
+    <p class="sec-sub">从材料准备到开始合作，全程免费——顾问通过邮件与您确认信息并完成建档。</p>
   </div>
   <div class="after-steps">
     <div class="after">
       <span class="sn">Step 01</span>
-      <h3>审核建档（48h）</h3>
-      <p>顾问核对资质与品类，为工厂建立数字档案（Digital Sell Sheet）：OEM/ODM/OBM 能力、认证、MOQ、交期。</p>
+      <h3>材料准备</h3>
+      <p>准备营业执照（统一社会信用代码）、主营品类、电商平台经验与目标渠道——表单里全部问到，10 分钟填完。</p>
     </div>
     <div class="after">
       <span class="sn">Step 02</span>
-      <h3>进入检索库</h3>
-      <p>档案进入买手检索库，12,000+ 美国零售买手按品类 / 价格带 / 认证精准筛选，主动发现您。</p>
+      <h3>合作申请</h3>
+      <p>提交注册表单，信息自动生成邮件直发顾问；营业执照照片与工厂图片可在回复邮件中附上，加快审核。</p>
     </div>
     <div class="after">
       <span class="sn">Step 03</span>
-      <h3>索样 / 匹配 / 挂样</h3>
-      <p>买家在线索样谈判；工厂同步可把样品挂进<a href="creators.html">网红选品池</a>，让 20,000+ 创作者选品带货。</p>
+      <h3>资质审核（48h）</h3>
+      <p>初审核对资料真实性，复审评估合作能力；通过即为工厂建立数字档案（Digital Sell Sheet）：OEM/ODM/OBM 能力、认证、MOQ、交期。进度可随时邮件查询。</p>
+    </div>
+    <div class="after">
+      <span class="sn">Step 04</span>
+      <h3>开始合作</h3>
+      <p>顾问邮件联系您确认合作细节，进入磨合期；档案进入 12,000+ 买手检索库被主动发现，样品同步可挂进<a href="creators.html">网红选品池</a>，让 20,000+ 创作者选品带货。</p>
     </div>
   </div>
 </div></section>
@@ -392,9 +427,13 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
       lines.push("手机 / WhatsApp：" + (f.get("phone") || "未填写"));
       lines.push("工厂所在地：" + (f.get("country") || ""));
       lines.push("工厂规模：" + (f.get("size") || "未选择"));
+      lines.push("统一社会信用代码：" + (f.get("license") || "未填写"));
+      lines.push("法人代表：" + (f.get("legal") || "未填写"));
       lines.push("主营品类：" + (checked(form, "categories") || "未选择"));
       lines.push("合作模式：" + (form.querySelector('[name="model"]:checked') ? form.querySelector('[name="model"]:checked').value : "OEM"));
       lines.push("目标渠道：" + (checked(form, "channels") || "未选择"));
+      lines.push("电商平台经验：" + (form.querySelector('[name="ecexp"]:checked') ? form.querySelector('[name="ecexp"]:checked').value : "未选择"));
+      lines.push("已运营平台：" + (checked(form, "ecplatforms") || "未选择"));
       lines.push("工厂简介 / 优势：" + (f.get("note") || "未填写"));
     } else {
       lines.push("姓名：" + (f.get("firstName") || "") + " " + (f.get("lastName") || ""));
