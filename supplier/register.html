@@ -63,6 +63,10 @@ section:nth-of-type(even){background:var(--bg-2)}
 .form-msg.show{display:block}
 .form-msg.ok{border:1px solid rgba(125,184,138,.4);color:#9FD0AA;background:rgba(125,184,138,.07)}
 .form-msg.err{border:1px solid rgba(197,106,106,.4);color:#D98F8F;background:rgba(197,106,106,.07)}
+.f-group.has-err input[type=text],.f-group.has-err input[type=email],.f-group.has-err select,.f-group.has-err textarea{border-color:rgba(197,106,106,.65)}
+.f-group.has-err .f-check label{border-color:rgba(197,106,106,.5)}
+.f-group .err-msg{display:none;font-size:.74rem;color:#D98F8F;margin-top:6px;line-height:1.5}
+.f-group.has-err .err-msg{display:block}
 .after-steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .after{border:1px solid var(--hairline-soft);border-radius:12px;padding:22px;background:var(--bg)}
 .after .sn{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
@@ -448,11 +452,94 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
     return "mailto:" + MAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   }
 
+  /* ---------- 校验规则 ---------- */
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var USCC_RE = /^[0-9A-Z]{18}$/;
+  var PHONE_RE = /^\+?[\d][\d\s\-()]{5,23}$/;
+
+  function req(v) { return v !== ""; }
+  function emailOk(v) { return EMAIL_RE.test(v); }
+  function phoneOk(v) { return v === "" || PHONE_RE.test(v); }
+
+  var RULES = {
+    supplier: [
+      { name: "company", msg: "请填写公司 / 工厂名称", check: req },
+      { name: "name", msg: "请填写联系人姓名", check: req },
+      { name: "email", msg: "请填写有效邮箱，如 name@factory.com", check: emailOk },
+      { name: "country", msg: "请填写工厂所在地，如：广东佛山", check: req },
+      { name: "license", msg: "统一社会信用代码应为 18 位数字或大写字母（选填可留空）", check: function (v) { return v === "" || USCC_RE.test(v.toUpperCase()); } },
+      { name: "phone", msg: "手机号格式不正确，支持 +86 138 xxxx xxxx 等国际格式", check: phoneOk },
+      { name: "categories", msg: "请至少选择一个主营品类", check: req }
+    ],
+    buyer: [
+      { name: "firstName", msg: "请填写 First Name", check: req },
+      { name: "lastName", msg: "请填写 Last Name", check: req },
+      { name: "email", msg: "请填写有效邮箱，如 you@company.com", check: emailOk },
+      { name: "country", msg: "请选择国家 / 地区", check: req },
+      { name: "phone", msg: "电话格式不正确，支持 +1 555 000 0000 格式", check: phoneOk }
+    ]
+  };
+
+  function setErr(el, msg) {
+    var g = el.closest(".f-group"); if (!g) return;
+    g.classList.add("has-err");
+    var m = g.querySelector(".err-msg");
+    if (!m) { m = document.createElement("div"); m.className = "err-msg"; g.appendChild(m); }
+    m.textContent = msg;
+    el.setAttribute("aria-invalid", "true");
+  }
+
+  function clearErr(el) {
+    var g = el.closest(".f-group"); if (!g) return;
+    g.classList.remove("has-err");
+    el.removeAttribute("aria-invalid");
+  }
+
+  function clearAllErr(form) {
+    form.querySelectorAll(".has-err").forEach(function (g) { g.classList.remove("has-err"); });
+    form.querySelectorAll("[aria-invalid]").forEach(function (el) { el.removeAttribute("aria-invalid"); });
+  }
+
+  function validate(form, rules) {
+    var first = null, count = 0;
+    rules.forEach(function (r) {
+      var el = form.querySelector('[name="' + r.name + '"]');
+      if (!el) return;
+      var v = (el.type === "checkbox" || el.type === "radio")
+        ? (form.querySelector('[name="' + r.name + '"]:checked') ? "x" : "")
+        : el.value.trim();
+      if (!r.check(v)) { setErr(el, r.msg); count++; if (!first) first = el; }
+    });
+    return { ok: count === 0, first: first, count: count };
+  }
+
   function bind(form, role, msgId) {
+    ["input", "change"].forEach(function (evt) {
+      form.addEventListener(evt, function (e) { if (e.target && e.target.name) clearErr(e.target); });
+    });
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (!form.reportValidity()) return;
+      clearAllErr(form);
       var msg = document.getElementById(msgId);
+      var res = validate(form, RULES[role]);
+      if (!res.ok) {
+        if (res.first) {
+          res.first.scrollIntoView({ behavior: "smooth", block: "center" });
+          res.first.focus({ preventScroll: true });
+        }
+        msg.className = "form-msg show err";
+        msg.textContent = "✕ 还有 " + res.count + " 处信息需要修正——请检查标红字段后重新提交。";
+        return;
+      }
+      ["company", "name", "country"].forEach(function (n) {
+        var el = form.querySelector('[name="' + n + '"]');
+        if (el) el.value = el.value.trim();
+      });
+      var lic = form.querySelector('[name="license"]');
+      if (lic) lic.value = lic.value.trim().toUpperCase();
+      if (form.dataset.busy === "1") return;
+      form.dataset.busy = "1";
+      setTimeout(function () { form.dataset.busy = ""; }, 2500);
       var link = buildMail(form, role);
       msg.className = "form-msg show ok";
       msg.textContent = "✓ 注册信息已生成邮件——请在打开的邮件窗口中点击发送，顾问将在 1 个工作日内回复确认。";
