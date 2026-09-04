@@ -16,7 +16,7 @@
 </script>
 <style>
 :root{
-  --bg:#0B0E13; --bg-2:#10141B; --bg-3:#151A23;
+  --bg:#000000; --bg-2:#0A0A0A; --bg-3:#111111;
   --ink:#F2EEE6; --ink-dim:#A7ADB8; --ink-faint:#6E7683;
   --accent:#E8A33D; --accent-hi:#F4BA60;
   --rule:rgba(242,238,230,.08); --rule-hi:rgba(232,163,61,.35);
@@ -31,7 +31,7 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
 
 /* ---------- nav ---------- */
-.nav{position:sticky;top:0;z-index:50;background:rgba(11,14,19,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
 .brand{font-family:var(--mono);font-size:17px;letter-spacing:.02em}
 .brand em{font-style:normal;color:var(--accent)}
@@ -62,7 +62,7 @@ h2{font-size:clamp(24px,3vw,34px);font-weight:700;letter-spacing:-.01em;line-hei
 .sec-sub{margin-top:14px;color:var(--ink-dim);max-width:700px;font-size:15.5px}
 
 /* ---------- subnav ---------- */
-.catnav{position:sticky;top:62px;z-index:40;background:rgba(11,14,19,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.catnav{position:sticky;top:62px;z-index:40;background:rgba(0,0,0,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
 .catnav-in{display:flex;gap:10px;overflow-x:auto;padding:12px 28px;scrollbar-width:thin;max-width:1120px;margin:0 auto}
 .catnav-in::-webkit-scrollbar{height:4px}
 .catnav-in::-webkit-scrollbar-thumb{background:var(--bg-3);border-radius:2px}
