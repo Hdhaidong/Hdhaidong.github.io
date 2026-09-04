@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>美国渠道业务总览 · 从工厂到货架 · 样品展厅 × 供应商网络 × AI 买手分析 | insightmarketplac</title>
-<meta name="description" content="insightmarketplac 美国渠道业务总览：从中国工厂到美国主流零售货架。三条客户路径（工厂出海 / 品牌增长 / 数据与分销）、35+ 渠道 12,000+ 验证买手、OEM/ODM/OBM 三种合作模式、ECRM 买手对接与 AI 选品分析。注册建档免费，服务按项次报价。">
-<meta name="keywords" content="从工厂到货架, 美国渠道, 供应商网络, 买手对接, ECRM, OEM, ODM, OBM, 库存买断, AI 选品分析, Digital Sell Sheet, 美国零售货架">
+<meta name="description" content="insightmarketplac 美国渠道业务总览：从中国工厂到美国主流零售货架。三条客户路径（工厂出海 / 品牌增长 / 数据与分销）、样品展厅一键索样、供应商网络、达人选品池三大专区、广告任务市场、OEM/ODM/OBM 合作模式、ECRM 买手对接、AI 选品分析与订阅套餐。注册建档免费。">
+<meta name="keywords" content="从工厂到货架, 美国渠道, 样品展厅, 供应商网络, 买手对接, ECRM, OEM, ODM, OBM, 库存买断, AI 选品分析, Digital Sell Sheet, 达人选品池, 广告任务市场, 美国零售货架">
 <link rel="canonical" href="https://hdhaidong.github.io/supplier/factory-to-shelf.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="美国渠道业务总览 · 从工厂到货架 | insightmarketplac">
@@ -56,6 +56,7 @@ h2{font-size:clamp(1.35rem,3vw,1.8rem);letter-spacing:-.01em;line-height:1.3}
 .step h3{font-size:.94rem;margin:8px 0 4px}
 .step .en{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:8px}
 .step p{font-size:.8rem;color:var(--ink-dim)}
+.steps.quad{grid-template-columns:repeat(4,1fr)}
 .paths{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .path{border:1px solid var(--hairline-soft);border-radius:12px;padding:28px;background:var(--bg);display:flex;flex-direction:column}
 .path.badge-c{border-color:var(--accent)}
@@ -72,12 +73,51 @@ h2{font-size:clamp(1.35rem,3vw,1.8rem);letter-spacing:-.01em;line-height:1.3}
 .chip{border:1px solid var(--hairline);border-radius:999px;padding:8px 18px;font-size:.82rem;color:var(--ink-dim)}
 .chip:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
 .chip.gold{border-color:var(--accent);color:var(--accent)}
+.fsteps{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0}
+.fsteps .fs{border:1px solid var(--hairline);border-radius:8px;padding:7px 12px;font-size:.74rem;color:var(--ink-dim);background:var(--bg-2);line-height:1.45}
+.fsteps i{color:var(--accent);font-style:normal;font-size:.8rem}
+.path ul{list-style:none;margin-top:6px}
+.path li{font-size:.8rem;padding:7px 0 7px 20px;position:relative;border-top:1px dashed var(--hairline-soft);color:var(--ink-dim)}
+.path li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
 .funnel-note{margin-top:22px;padding:16px 22px;border-left:2px solid var(--accent);background:var(--bg);border-radius:0 10px 10px 0;font-size:.88rem;color:var(--ink-dim)}
 .marquee-wrap{overflow:hidden;border-top:1px solid var(--hairline-soft);border-bottom:1px solid var(--hairline-soft);background:var(--bg-2);padding:18px 0;position:relative}
 .marquee{display:flex;gap:34px;white-space:nowrap;width:max-content;animation:slide 46s linear infinite}
 .marquee span{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;color:var(--ink-faint)}
 .marquee b{color:var(--accent);margin-right:8px}
 @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.fchip{border:1px solid var(--hairline);border-radius:999px;background:none;padding:8px 18px;font-family:var(--sans);font-size:.82rem;color:var(--ink-dim);cursor:pointer;transition:all .18s}
+.fchip:hover{border-color:var(--accent);color:var(--accent)}
+.fchip.active{background:var(--accent);border-color:var(--accent);color:#141414;font-weight:600}
+.samples{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.sample{border:1px solid var(--hairline-soft);border-radius:12px;background:var(--bg);padding:18px;display:flex;flex-direction:column;transition:transform .2s,border-color .25s}
+.sample:hover{transform:translateY(-3px);border-color:rgba(232,163,61,.35)}
+.sample .fig{background:var(--bg-3);border-radius:10px;padding:14px;margin-bottom:14px}
+.sample .fig svg{width:100%;height:auto;display:block}
+.sample h4{font-size:.92rem;margin-bottom:8px}
+.sample h4 .cat{display:inline-block;font-size:.62rem;font-family:var(--mono);color:var(--accent);border:1px solid rgba(232,163,61,.35);border-radius:999px;padding:1px 9px;margin-left:8px;vertical-align:2px;letter-spacing:.06em}
+.smeta{display:flex;flex-wrap:wrap;gap:5px 12px;font-size:.72rem;color:var(--ink-faint);margin-bottom:12px;flex:1}
+.smeta b{color:var(--ink-dim);font-weight:600}
+.sfoot{display:flex;justify-content:space-between;align-items:center;border-top:1px dashed var(--hairline-soft);padding-top:10px;font-size:.72rem;color:var(--ink-faint)}
+.sfoot .sm-btn{background:none;border:1px solid var(--accent);color:var(--accent);border-radius:7px;padding:5px 12px;font-size:.72rem;cursor:pointer;font-family:var(--sans);font-weight:600;transition:all .18s}
+.sfoot .sm-btn:hover{background:var(--accent);color:#141414}
+.sups{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sup{border:1px solid var(--hairline-soft);border-radius:12px;background:var(--bg);padding:20px;transition:transform .2s,border-color .25s}
+.sup:hover{transform:translateY(-3px);border-color:rgba(232,163,61,.35)}
+.sup .stop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px}
+.sup h4{font-size:.95rem}
+.sup .loc{font-size:.72rem;color:var(--ink-faint);margin-top:2px}
+.sup .verify{font-size:.66rem;color:#9FD0AA;border:1px solid rgba(125,184,138,.4);border-radius:999px;padding:2px 10px;white-space:nowrap}
+.stags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.tpill{font-size:.64rem;font-family:var(--mono);border:1px solid rgba(232,163,61,.4);color:var(--accent);border-radius:999px;padding:2px 10px;letter-spacing:.04em}
+.tpill.g{border-color:var(--hairline);color:var(--ink-faint)}
+.sspecs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.sspec{border:1px solid var(--hairline-soft);border-radius:8px;padding:8px 10px;text-align:center}
+.sspec span{display:block;font-size:.6rem;font-family:var(--mono);color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px}
+.sspec b{font-size:.82rem}
+.sline{font-size:.76rem;color:var(--ink-dim);border-top:1px dashed var(--hairline-soft);padding-top:10px}
+.sec-cta{text-align:center;margin-top:36px}
+.sec-cta p{margin-top:12px;font-size:12.5px;color:var(--ink-faint)}
 .regions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
 .region{border:1px solid var(--hairline-soft);border-radius:12px;padding:20px 22px;background:var(--bg)}
 .region h3{font-size:.95rem;margin-bottom:8px}
@@ -91,6 +131,47 @@ h2{font-size:clamp(1.35rem,3vw,1.8rem);letter-spacing:-.01em;line-height:1.3}
 .chan h3{font-size:1.05rem;margin-bottom:8px;color:var(--ink)}
 .chan p{font-size:.85rem;color:var(--ink-dim);flex:1}
 .chan .go{margin-top:14px;font-size:.82rem;color:var(--accent);border-top:1px dashed var(--hairline-soft);padding-top:12px}
+.chan.wide{grid-column:1 / -1}
+.ptabs{display:flex;gap:0;border:1px solid var(--hairline);border-radius:10px;overflow:hidden;max-width:420px;margin-bottom:26px;background:var(--bg)}
+.ptab{flex:1;padding:10px 14px;background:none;border:none;color:var(--ink-faint);font-family:var(--sans);font-size:.85rem;font-weight:600;cursor:pointer;transition:all .18s}
+.ptab:hover{color:var(--ink-dim)}
+.ptab.active{background:var(--accent);color:#141414}
+.pool-panel{display:none}
+.pool-panel.active{display:block}
+.pool-lead{font-size:.85rem;color:var(--ink-dim);margin-bottom:18px}
+.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.prod{border:1px solid var(--hairline-soft);border-radius:12px;background:var(--bg);padding:20px;display:flex;flex-direction:column}
+.prod .ptop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:12px}
+.prod h5{font-size:.92rem;line-height:1.45}
+.prod h5 small{display:block;font-size:.7rem;color:var(--ink-faint);font-weight:400;margin-top:2px}
+.free-tag{display:inline-block;font-size:.6rem;font-family:var(--mono);color:var(--accent);border:1px solid rgba(232,163,61,.5);border-radius:999px;padding:2px 9px;letter-spacing:.08em;white-space:nowrap}
+.free-tag.nw{color:#9FD0AA;border-color:rgba(125,184,138,.5)}
+.free-tag.cl{color:#D98F8F;border-color:rgba(197,106,106,.5)}
+.comm-vs{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;color:var(--ink-faint);margin-bottom:12px}
+.comm-vs s{opacity:.75}
+.comm-vs i{font-style:normal;color:var(--ink-faint);font-size:.7rem;font-family:var(--mono)}
+.comm-vs .yc{color:var(--accent);font-size:.9rem}
+.pmeta{display:flex;flex-wrap:wrap;gap:5px 14px;font-size:.74rem;color:var(--ink-faint);margin-bottom:12px;flex:1}
+.pmeta b{color:var(--ink-dim);font-weight:600}
+.pmeta s.was{opacity:.6}
+.pmeta .earn{color:var(--accent)}
+.brand-row{font-size:.76rem;color:var(--ink-dim);border-top:1px dashed var(--hairline-soft);padding-top:10px;margin-bottom:12px}
+.brand-row .star{color:var(--accent);margin-right:4px}
+.prods .btn-s{align-self:flex-start;padding:8px 18px;font-size:.78rem;cursor:pointer}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tcard{border:1px solid var(--hairline-soft);border-radius:12px;background:var(--bg);padding:20px;display:flex;flex-direction:column}
+.tcard .ttop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px}
+.tcard h5{font-size:.95rem;line-height:1.4}
+.tcard .tbrand{font-size:.72rem;color:var(--ink-faint);margin-top:3px}
+.tcard .bonus{border:1px solid rgba(232,163,61,.4);border-radius:10px;padding:8px 14px;text-align:center;white-space:nowrap}
+.tcard .bonus b{display:block;color:var(--accent);font-size:1.05rem}
+.tcard .bonus span{font-size:.6rem;font-family:var(--mono);color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em}
+.tcard>p{font-size:.8rem;color:var(--ink-dim);flex:1}
+.tbar{height:5px;border-radius:99px;background:var(--bg-3);overflow:hidden;margin:14px 0 8px}
+.tbar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-hi))}
+.tmeta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.72rem;color:var(--ink-faint);margin-bottom:14px}
+.tmeta b{color:var(--ink-dim)}
+.tgrid .btn-s{align-self:flex-start;padding:8px 18px;font-size:.78rem;cursor:pointer}
 .models{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .model{border:1px solid var(--hairline-soft);border-radius:12px;padding:26px;background:var(--bg);display:flex;flex-direction:column}
 .model.reco{border-color:var(--accent)}
@@ -108,6 +189,7 @@ td{padding:12px 16px;border-bottom:1px solid var(--hairline-soft);color:var(--in
 td b{color:var(--ink)}
 tr:last-child td{border-bottom:none}
 .buyout{margin-top:20px;padding:16px 22px;border-left:2px solid var(--accent);background:var(--bg);border-radius:0 10px 10px 0;font-size:.88rem;color:var(--ink-dim)}
+.path-note{margin-top:14px;text-align:center;font-size:.8rem;color:var(--ink-faint)}
 .ecrm{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .ecrm-col{border:1px solid var(--hairline-soft);border-radius:12px;padding:26px;background:var(--bg)}
 .ecrm-col .vt{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
@@ -116,24 +198,43 @@ tr:last-child td{border-bottom:none}
 .ecrm-col li{font-size:.85rem;padding:8px 0 8px 22px;position:relative;border-top:1px dashed var(--hairline-soft);color:var(--ink-dim)}
 .ecrm-col li:first-of-type{border-top:none}
 .ecrm-col li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.ecrm-steps{margin-top:28px}
+.ecrm-steps .step p{font-size:.78rem}
 .ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .ai{border:1px solid var(--hairline-soft);border-radius:12px;padding:26px;background:var(--bg);display:flex;flex-direction:column}
 .ai .at{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;margin-bottom:12px}
 .ai h3{font-size:1.02rem;margin-bottom:8px}
 .ai p{font-size:.85rem;color:var(--ink-dim);flex:1}
 .ai .go{margin-top:14px;font-size:.8rem;color:var(--accent);border-top:1px dashed var(--hairline-soft);padding-top:12px}
-.fee-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.fee-card{border:1px solid var(--hairline-soft);border-radius:12px;padding:28px;background:var(--bg)}
-.fee-card.free{border-color:var(--accent)}
-.fc-tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.fee-card h3{font-size:1.12rem;margin:10px 0 4px}
-.fc-price{font-size:.85rem;color:var(--ink-dim);margin-bottom:16px}
-.fc-price b{color:var(--accent)}
-.fee-card ul{list-style:none}
-.fee-card li{font-size:.87rem;padding:8px 0 8px 24px;position:relative;border-top:1px dashed var(--hairline-soft);color:var(--ink-dim)}
-.fee-card li:first-of-type{border-top:none}
-.fee-card li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
-.fee-note{margin-top:22px;padding:16px 22px;border-left:2px solid var(--accent);background:var(--bg);border-radius:0 10px 10px 0;font-size:.88rem;color:var(--ink-dim)}
+.analyzer{margin-top:28px;border:1px solid var(--hairline-soft);border-radius:14px;background:var(--bg);padding:28px}
+.analyzer h4{font-size:1.05rem;margin-bottom:6px}
+.analyzer .hint{font-size:.85rem;color:var(--ink-faint);margin-bottom:18px}
+.an-form{display:grid;grid-template-columns:1fr auto auto;gap:10px;margin-bottom:20px}
+.an-form input,.an-form select{background:var(--bg-3);border:1px solid var(--hairline);border-radius:8px;color:var(--ink);font-family:var(--sans);font-size:.9rem;padding:11px 14px;outline:none}
+.an-form input:focus,.an-form select:focus{border-color:var(--accent)}
+.an-result{display:none;grid-template-columns:1fr 1fr;gap:14px}
+.an-result.show{display:grid}
+.an-block{border:1px solid var(--hairline-soft);border-radius:10px;padding:18px;background:var(--bg-2)}
+.an-block.full{grid-column:1 / -1}
+.an-block .lb{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+.an-block p{font-size:.85rem;color:var(--ink-dim)}
+.an-block ul{list-style:none}
+.an-block li{font-size:.84rem;color:var(--ink-dim);padding:4px 0 4px 18px;position:relative}
+.an-block li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
+.an-tags{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:8px}
+.an-note{margin-top:16px;font-size:.76rem;color:var(--ink-faint)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price-card{border:1px solid var(--hairline-soft);border-radius:12px;padding:28px;background:var(--bg);display:flex;flex-direction:column}
+.price-card.reco{border-color:var(--accent)}
+.price-card .plan{font-size:.88rem;font-weight:600;margin-bottom:14px}
+.price-card .price{font-family:var(--mono);font-size:2rem;font-weight:700;color:var(--accent)}
+.price-card .price small{font-size:.85rem;color:var(--ink-faint);font-weight:400}
+.price-card .total{font-size:.78rem;color:var(--ink-faint);margin-bottom:18px}
+.price-card ul{list-style:none;flex:1;margin-bottom:20px}
+.price-card li{font-size:.83rem;padding:7px 0 7px 22px;position:relative;border-top:1px dashed var(--hairline-soft);color:var(--ink-dim)}
+.price-card li:first-of-type{border-top:none}
+.price-card li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.price-note{margin-top:22px;padding:16px 22px;border-left:2px solid var(--accent);background:var(--bg);border-radius:0 10px 10px 0;font-size:.88rem;color:var(--ink-dim)}
 .faq details{border:1px solid var(--hairline-soft);border-radius:10px;margin-bottom:10px;background:var(--bg)}
 .faq summary{padding:15px 20px;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;position:relative}
 .faq summary::after{content:"+";position:absolute;right:20px;color:var(--accent);font-weight:400}
@@ -152,31 +253,76 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
 .f-links a{font-size:.84rem;color:var(--ink-dim)}
 .f-links a:hover{color:var(--accent)}
 .f-links .fc{font-size:.84rem}
+.chat-fab{position:fixed;right:26px;bottom:26px;width:56px;height:56px;border-radius:50%;background:var(--accent);color:#141414;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(0,0,0,.45);z-index:60;transition:transform .18s}
+.chat-fab:hover{transform:scale(1.07)}
+.chat-panel{position:fixed;right:26px;bottom:94px;width:min(360px,calc(100vw - 40px));max-height:520px;background:var(--bg-2);border:1px solid var(--hairline);border-radius:16px;display:none;flex-direction:column;overflow:hidden;z-index:60;box-shadow:0 18px 50px rgba(0,0,0,.55)}
+.chat-panel.show{display:flex}
+.chat-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--hairline-soft);background:var(--bg-3)}
+.chat-head .dot{width:8px;height:8px;border-radius:50%;background:#9FD0AA;box-shadow:0 0 8px rgba(125,184,138,.7)}
+.chat-head b{font-size:.9rem}
+.chat-head .st{font-family:var(--mono);font-size:.58rem;color:#9FD0AA;letter-spacing:.12em;margin-left:auto}
+.chat-body{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:200px;max-height:300px}
+.chat-body .msg{max-width:86%;padding:10px 14px;border-radius:12px;font-size:.84rem;line-height:1.55;white-space:pre-wrap}
+.chat-body .bot{background:var(--bg-3);border:1px solid var(--hairline-soft);color:var(--ink-dim);align-self:flex-start;border-bottom-left-radius:4px}
+.chat-body .user{background:var(--accent);color:#141414;align-self:flex-end;border-bottom-right-radius:4px}
+.chat-quick{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px;border-top:1px solid var(--hairline-soft)}
+.chat-quick button{background:none;border:1px solid var(--hairline);border-radius:999px;color:var(--ink-dim);font-size:.72rem;padding:5px 12px;cursor:pointer;font-family:var(--sans);transition:all .18s}
+.chat-quick button:hover{border-color:var(--accent);color:var(--accent)}
+.chat-input{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--hairline-soft)}
+.chat-input input{flex:1;background:var(--bg-3);border:1px solid var(--hairline);border-radius:8px;color:var(--ink);font-family:var(--sans);font-size:.85rem;padding:9px 12px;outline:none}
+.chat-input input:focus{border-color:var(--accent)}
+.chat-input button{background:var(--accent);color:#141414;border:none;border-radius:8px;width:42px;cursor:pointer;font-size:1rem}
+.modal-mask{position:fixed;inset:0;background:rgba(5,7,10,.72);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:70;padding:20px}
+.modal-mask.show{display:flex}
+.modal{background:var(--bg-2);border:1px solid var(--hairline);border-radius:16px;padding:28px;width:min(440px,100%);position:relative}
+.modal .m-close{position:absolute;top:14px;right:14px;background:none;border:none;color:var(--ink-faint);font-size:1rem;cursor:pointer}
+.modal h4{font-size:1.05rem;margin-bottom:6px}
+.modal .m-sub{font-size:.82rem;color:var(--ink-faint);margin-bottom:18px}
+.modal .f-group{margin-bottom:14px}
+.modal label{display:block;font-size:.8rem;color:var(--ink-dim);margin-bottom:6px;font-weight:600}
+.modal input,.modal textarea{width:100%;background:var(--bg-3);border:1px solid var(--hairline);border-radius:8px;color:var(--ink);font-family:var(--sans);font-size:.9rem;padding:10px 13px;outline:none}
+.modal input:focus,.modal textarea:focus{border-color:var(--accent)}
+.modal textarea{resize:vertical;min-height:70px}
+.form-msg{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:.84rem;display:none}
+.form-msg.show{display:block}
+.form-msg.ok{border:1px solid rgba(125,184,138,.4);color:#9FD0AA;background:rgba(125,184,138,.07)}
 @media(max-width:900px){
 .steps{grid-template-columns:repeat(2,1fr)}
+.steps.quad{grid-template-columns:repeat(2,1fr)}
 .paths{grid-template-columns:1fr}
 .regions{grid-template-columns:1fr 1fr}
 .chans{grid-template-columns:1fr}
 .models{grid-template-columns:1fr}
 .ai-grid{grid-template-columns:1fr}
 .ecrm{grid-template-columns:1fr}
+.samples{grid-template-columns:repeat(2,1fr)}
+.sups{grid-template-columns:1fr 1fr}
+.prods{grid-template-columns:1fr 1fr}
+.tgrid{grid-template-columns:1fr}
+.price-grid{grid-template-columns:1fr}
+.an-result.show{grid-template-columns:1fr}
+.an-form{grid-template-columns:1fr}
+.an-form .btn-p{width:100%}
 }
 @media(max-width:760px){
 .stats{grid-template-columns:repeat(2,1fr)}
 .net-stats{grid-template-columns:repeat(2,1fr)}
-.fee-grid{grid-template-columns:1fr}
 .regions{grid-template-columns:1fr}
 .cta-row .btn{width:100%;text-align:center}
+.samples{grid-template-columns:1fr}
+.sups{grid-template-columns:1fr}
+.prods{grid-template-columns:1fr}
+.sspecs{grid-template-columns:repeat(3,1fr)}
 }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"insightmarketplac 美国渠道业务","description":"从中国工厂到美国主流零售货架：三条客户路径、35+ 渠道 12,000+ 验证买手、OEM/ODM/OBM 合作模式、ECRM 买手对接与 AI 选品分析。注册建档免费。","provider":{"@type":"Organization","name":"insightmarketplac"}}
+{"@context":"https://schema.org","@type":"Service","name":"insightmarketplac 美国渠道业务","description":"从中国工厂到美国主流零售货架：三条客户路径、样品展厅、供应商网络、达人选品池、广告任务市场、35+ 渠道 12,000+ 验证买手、OEM/ODM/OBM 合作模式、ECRM 买手对接与 AI 选品分析。注册建档免费。","provider":{"@type":"Organization","name":"insightmarketplac"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"你们是哪里的公司？","acceptedAnswer":{"@type":"Answer","text":"insightmarketplac 是美国渠道公司，专注帮中国工厂把产品铺进美国主流零售货架。深圳设运营中心，美国设海外仓配中心，本地团队深谙零售买手文化。"}},
-{"@type":"Question","name":"工厂注册收费吗？","acceptedAnswer":{"@type":"Answer","text":"工厂注册、建立数字档案、上架样品全部免费。只有选择渠道代入驻、买手引荐等增值服务时才按服务项次收费。"}},
-{"@type":"Question","name":"买家怎么索样？","acceptedAnswer":{"@type":"Answer","text":"注册后在样品展厅看到心仪产品，发起索样即可。美国海外仓会在 1 个工作日内联系您安排寄样，部分区域支持次日达。"}},
+{"@type":"Question","name":"工厂注册收费吗？","acceptedAnswer":{"@type":"Answer","text":"工厂注册、建立数字档案、上架样品全部免费。只有选择渠道代申请套餐或买手引荐等增值服务时才收费。"}},
+{"@type":"Question","name":"买家怎么索样？","acceptedAnswer":{"@type":"Answer","text":"在样品展厅看到心仪产品，点击「索样」留下邮箱即可。美国海外仓会在 1 个工作日内联系您安排寄样，部分区域支持次日达。"}},
 {"@type":"Question","name":"没有美国团队也能做 OBM 吗？","acceptedAnswer":{"@type":"Answer","text":"可以。我们提供品牌注册、AI 内容冷启动、网红带货到渠道铺货的全链路服务，北美本地团队负责买手沟通与合规审查。"}},
 {"@type":"Question","name":"AI 分析的数据来源是什么？","acceptedAnswer":{"@type":"Answer","text":"AI 模型会结合产品参数、社媒内容表现（TikTok 等平台互动数据）与渠道买手偏好三类数据，为网红选品和买手决策生成分析报告。"}}
 ]}
@@ -201,10 +347,10 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
     <a class="btn btn-s" href="#paths">看三条客户路径</a>
   </div>
   <div class="stats">
-    <div class="stat"><div class="k">Channels</div><div class="v"><b>35+</b>主流零售与电商渠道</div></div>
-    <div class="stat"><div class="k">Buyers</div><div class="v"><b>12,000+</b>验证买手网络</div></div>
-    <div class="stat"><div class="k">Creators</div><div class="v"><b>20,000+</b>创作者每日选品</div></div>
-    <div class="stat"><div class="k">Retention</div><div class="v"><b>97%</b>客户复购率</div></div>
+    <div class="stat"><div class="k">Growth</div><div class="v"><b>40%</b>品牌首年平均销售增长</div></div>
+    <div class="stat"><div class="k">Fulfillment</div><div class="v"><b>99.8%</b>订单当日出库</div></div>
+    <div class="stat"><div class="k">Delivery</div><div class="v"><b>85%</b>美国次日达覆盖</div></div>
+    <div class="stat"><div class="k">Inventory</div><div class="v"><b>97%</b>常备库存现货率</div></div>
   </div>
 </div></div>
 
@@ -259,14 +405,26 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
       <div class="bd">Path A</div>
       <div class="mode">工厂出海</div>
       <h3>从卖货给渠道，到做品牌进渠道</h3>
-      <p>OEM / ODM 工厂——第一年在渠道里活下来，第三年让渠道来找你。黄金三角：渠道 × 合规 × 系统，三件事一起做，出海路径才走得通。资质清单自查 → 合规主体 → 77 平台入驻 → ERP / WMS / CRM 系统 → 展会见买家。</p>
+      <p>OEM / ODM 工厂——第一年在渠道里活下来，第三年让渠道来找你。黄金三角：渠道 × 合规 × 系统，三件事一起做，出海路径才走得通。</p>
+      <div class="fsteps"><span class="fs">资质清单自查</span><i>→</i><span class="fs">合规主体<br>公司 / 商标 / VAT</span><i>→</i><span class="fs">77 平台入驻</span><i>→</i><span class="fs">ERP / WMS /<br>CRM 系统</span><i>→</i><span class="fs">展会见买家</span></div>
+      <ul>
+        <li>渠道网络——深耕美国、覆盖全球，20+ 渠道一个团队全管</li>
+        <li>合规主体——公司注册、商标域名、VAT、海关 Bond、税务与 EPR</li>
+        <li>系统工具——ERP / WMS / CRM / AI Agent，订单库存一体打通</li>
+      </ul>
       <div class="go"><a href="sell-on-oem-odm.html#path-factory">查看 Path A 完整路径 →</a></div>
     </div>
     <div class="path">
       <div class="bd">Path B</div>
       <div class="mode">品牌增长</div>
       <h3>洞察决定打哪里，声量打出复利</h3>
-      <p>已有渠道、缺声量的品牌方——用数据摸底避免预算盲投，用红人与短剧打出声量，用复盘体系把一次性投放变成品牌资产。数据洞察 → 红人营销投放 → AI 短剧定制 → 社媒矩阵运营 → 三层影响复盘。</p>
+      <p>已有渠道、缺声量的品牌方——用数据摸底避免预算盲投，用红人与短剧打出声量，用复盘体系把一次性投放变成品牌资产。</p>
+      <div class="fsteps"><span class="fs">数据洞察<br>声量摸底</span><i>→</i><span class="fs">红人营销投放</span><i>→</i><span class="fs">AI 短剧定制</span><i>→</i><span class="fs">社媒矩阵运营</span><i>→</i><span class="fs">三层影响复盘</span></div>
+      <ul>
+        <li>四项自有能力——社媒 · 内容 · Agent · 数据资产</li>
+        <li>四项成果——品牌运营、网站、社媒、售后优化</li>
+        <li>红人 × 品牌 × 内容三方洞察，众筹新品雷达与洞察报告</li>
+      </ul>
       <div class="go"><a href="brand-growth.html">查看 Path B 品牌增长 →</a></div>
     </div>
   </div>
@@ -290,9 +448,129 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
   </div>
 </div>
 
+<section id="samples"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">03 · Sample Showroom</div>
+    <h2>样品展厅</h2>
+    <p class="sec-sub">在售样品按品类陈列。买家看到即可<b>一键索样</b>，美国海外仓直发；工厂注册后可免费上架自己的样品。</p>
+  </div>
+  <div class="filter-bar" id="filterBar">
+    <button class="fchip active" data-cat="all" type="button">全部</button>
+    <button class="fchip" data-cat="家具" type="button">家具</button>
+    <button class="fchip" data-cat="户外" type="button">户外庭院</button>
+    <button class="fchip" data-cat="健身" type="button">健身运动</button>
+    <button class="fchip" data-cat="厨卫" type="button">厨卫</button>
+    <button class="fchip" data-cat="照明" type="button">照明</button>
+    <button class="fchip" data-cat="汽配" type="button">汽配</button>
+    <button class="fchip" data-cat="宠物" type="button">宠物</button>
+    <button class="fchip" data-cat="玩具" type="button">玩具</button>
+  </div>
+  <div class="samples" id="sampleGrid">
+    <div class="sample" data-cat="家具">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><rect x="18" y="30" width="84" height="8" rx="2" stroke="#E8A33D" stroke-width="2.5"/><path d="M30 38v36M90 38v36M30 54h60" stroke="#E8A33D" stroke-width="2.5"/><rect x="44" y="18" width="32" height="12" rx="2" stroke="#E8A33D" stroke-width="2" opacity=".6"/></svg></div>
+      <h4>电动升降茶几<span class="cat">家具</span></h4>
+      <div class="smeta"><span>MOQ <b>100 件</b></span><span>交期 <b>35 天</b></span><span>零售带 <b>$49-89</b></span></div>
+      <div class="sfoot"><span class="mode">ODM · 铭轩家居</span><button class="sm-btn" data-sample="电动升降茶几" data-sup="铭轩家居" type="button">索样 →</button></div>
+    </div>
+    <div class="sample" data-cat="户外">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><rect x="30" y="46" width="60" height="30" rx="3" stroke="#E8A33D" stroke-width="2.5"/><path d="M40 46V36M60 46V26M80 46V32" stroke="#E8A33D" stroke-width="2.5" stroke-linecap="round"/><path d="M60 26c-4-8 2-14 8-12-2 6-4 8-8 12zM60 26c4-8-2-14-8-12 2 6 4 8 8 12z" stroke="#E8A33D" stroke-width="2"/><path d="M38 60h44" stroke="#E8A33D" stroke-width="2" opacity=".5"/></svg></div>
+      <h4>模块化种植箱<span class="cat">户外</span></h4>
+      <div class="smeta"><span>MOQ <b>500 件</b></span><span>交期 <b>30 天</b></span><span>零售带 <b>$19-35</b></span></div>
+      <div class="sfoot"><span class="mode">ODM · 越洋户外</span><button class="sm-btn" data-sample="模块化种植箱" data-sup="越洋户外" type="button">索样 →</button></div>
+    </div>
+    <div class="sample" data-cat="健身">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><path d="M22 45h76" stroke="#E8A33D" stroke-width="4" stroke-linecap="round"/><rect x="30" y="30" width="14" height="30" rx="3" stroke="#E8A33D" stroke-width="2.5"/><rect x="76" y="30" width="14" height="30" rx="3" stroke="#E8A33D" stroke-width="2.5"/><path d="M40 22v6M80 22v6M40 62v6M80 62v6" stroke="#E8A33D" stroke-width="2" opacity=".6"/></svg></div>
+      <h4>六角哑铃套装<span class="cat">健身</span></h4>
+      <div class="smeta"><span>MOQ <b>200 套</b></span><span>交期 <b>40 天</b></span><span>零售带 <b>$89-199</b></span></div>
+      <div class="sfoot"><span class="mode">OEM · 海威运动</span><button class="sm-btn" data-sample="六角哑铃套装" data-sup="海威运动" type="button">索样 →</button></div>
+    </div>
+    <div class="sample" data-cat="厨卫">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><path d="M30 34h34a10 10 0 0110 10v6" stroke="#E8A33D" stroke-width="2.5" stroke-linecap="round"/><path d="M74 50h8v14h-8z" fill="#E8A33D" opacity=".85"/><rect x="56" y="64" width="10" height="16" rx="2" stroke="#E8A33D" stroke-width="2"/><path d="M64 34v-8h10" stroke="#E8A33D" stroke-width="2.5" stroke-linecap="round"/><path d="M28 80c6-4 10-10 10-16" stroke="#E8A33D" stroke-width="2" opacity=".5"/></svg></div>
+      <h4>抽拉式智能龙头<span class="cat">厨卫</span></h4>
+      <div class="smeta"><span>MOQ <b>300 件</b></span><span>交期 <b>25 天</b></span><span>零售带 <b>$39-69</b></span></div>
+      <div class="sfoot"><span class="mode">ODM · 卫浴联盟</span><button class="sm-btn" data-sample="抽拉式智能龙头" data-sup="卫浴联盟" type="button">索样 →</button></div>
+    </div>
+    <div class="sample" data-cat="照明">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><path d="M52 30h16l8 18H44z" stroke="#E8A33D" stroke-width="2.5"/><path d="M60 48v28M60 76H44M60 76h16" stroke="#E8A33D" stroke-width="2.5" stroke-linecap="round"/><path d="M50 22l-4-6M70 22l4-6M40 26l-6-4M80 26l6-4" stroke="#E8A33D" stroke-width="2" opacity=".55" stroke-linecap="round"/></svg></div>
+      <h4>北欧落地灯<span class="cat">照明</span></h4>
+      <div class="smeta"><span>MOQ <b>1000 件</b></span><span>交期 <b>25 天</b></span><span>零售带 <b>$29-59</b></span></div>
+      <div class="sfoot"><span class="mode">OBM · 晶亮照明</span><button class="sm-btn" data-sample="北欧落地灯" data-sup="晶亮照明" type="button">索样 →</button></div>
+    </div>
+    <div class="sample" data-cat="汽配">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><rect x="24" y="26" width="72" height="40" rx="4" stroke="#E8A33D" stroke-width="2.5"/><path d="M36 26v40M60 26v40M84 26v40" stroke="#E8A33D" stroke-width="2"/><path d="M24 42h72" stroke="#E8A33D" stroke-width="2" opacity=".5"/><circle cx="42" cy="74" r="7" stroke="#E8A33D" stroke-width="2.5"/><circle cx="78" cy="74" r="7" stroke="#E8A33D" stroke-width="2.5"/></svg></div>
+      <h4>车载后备箱收纳<span class="cat">汽配</span></h4>
+      <div class="smeta"><span>MOQ <b>500 件</b></span><span>交期 <b>30 天</b></span><span>零售带 <b>$15-25</b></span></div>
+      <div class="sfoot"><span class="mode">OEM · 驰佳汽配</span><button class="sm-btn" data-sample="车载后备箱收纳" data-sup="驰佳汽配" type="button">索样 →</button></div>
+    </div>
+    <div class="sample" data-cat="宠物">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><ellipse cx="60" cy="52" rx="34" ry="14" stroke="#E8A33D" stroke-width="2.5"/><path d="M26 52v14c0 6 8 10 34 10s34-4 34-10V52" stroke="#E8A33D" stroke-width="2.5"/><path d="M60 38v-8M46 40l-6-6M74 40l6-6" stroke="#E8A33D" stroke-width="2" stroke-linecap="round" opacity=".6"/></svg></div>
+      <h4>不锈钢宠物碗架<span class="cat">宠物</span></h4>
+      <div class="smeta"><span>MOQ <b>300 件</b></span><span>交期 <b>20 天</b></span><span>零售带 <b>$12-22</b></span></div>
+      <div class="sfoot"><span class="mode">ODM · 萌宠家居</span><button class="sm-btn" data-sample="不锈钢宠物碗架" data-sup="萌宠家居" type="button">索样 →</button></div>
+    </div>
+    <div class="sample" data-cat="玩具">
+      <div class="fig"><svg viewBox="0 0 120 90" fill="none"><rect x="30" y="48" width="26" height="26" rx="3" stroke="#E8A33D" stroke-width="2.5"/><rect x="60" y="48" width="26" height="26" rx="3" stroke="#E8A33D" stroke-width="2.5" opacity=".65"/><rect x="45" y="18" width="26" height="26" rx="3" stroke="#E8A33D" stroke-width="2.5"/><circle cx="58" cy="31" r="3" fill="#E8A33D"/></svg></div>
+      <h4>磁力积木套装<span class="cat">玩具</span></h4>
+      <div class="smeta"><span>MOQ <b>1000 套</b></span><span>交期 <b>30 天</b></span><span>零售带 <b>$19-39</b></span></div>
+      <div class="sfoot"><span class="mode">ODM · 智玩玩具</span><button class="sm-btn" data-sample="磁力积木套装" data-sup="智玩玩具" type="button">索样 →</button></div>
+    </div>
+  </div>
+  <p class="path-note" style="margin-top:22px">※ 展厅为演示数据结构；正式版按在档工厂实时上架更新，注册后可见完整样品库与库存深度。</p>
+</div></section>
+
+<section id="suppliers"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">04 · Supplier Network</div>
+    <h2>供应商展示 · 工厂直接注册</h2>
+    <p class="sec-sub">每一张工厂档案都是一张数字名片：OEM/ODM/OBM 能力、认证资质、MOQ、交期一目了然，买手按品类精准检索。注册免费，无中间商。</p>
+  </div>
+  <div class="sups">
+    <div class="sup">
+      <div class="stop"><div><h4>铭轩家居制造</h4><div class="loc">广东佛山 · 家具</div></div><span class="verify">✓ 已验厂</span></div>
+      <div class="stags"><span class="tpill">OEM</span><span class="tpill">ODM</span><span class="tpill g">BSCI</span><span class="tpill g">ISO9001</span></div>
+      <div class="sspecs"><div class="sspec"><span>MOQ</span><b>100 件</b></div><div class="sspec"><span>交期</span><b>35 天</b></div><div class="sspec"><span>年限</span><b>12 年</b></div></div>
+      <div class="sline">📦 已供 Wayfair · Home Depot · <a href="register.html">查看档案 →</a></div>
+    </div>
+    <div class="sup">
+      <div class="stop"><div><h4>越洋户外用品</h4><div class="loc">浙江宁波 · 户外庭院</div></div><span class="verify">✓ 已验厂</span></div>
+      <div class="stags"><span class="tpill">OEM</span><span class="tpill">ODM</span><span class="tpill g">BSCI</span></div>
+      <div class="sspecs"><div class="sspec"><span>MOQ</span><b>500 件</b></div><div class="sspec"><span>交期</span><b>30 天</b></div><div class="sspec"><span>年限</span><b>9 年</b></div></div>
+      <div class="sline">📦 已供 Overstock · Lowe's · <a href="register.html">查看档案 →</a></div>
+    </div>
+    <div class="sup">
+      <div class="stop"><div><h4>海威运动器材</h4><div class="loc">山东青岛 · 健身</div></div><span class="verify">✓ 已验厂</span></div>
+      <div class="stags"><span class="tpill">OEM</span><span class="tpill g">SEDEX</span></div>
+      <div class="sspecs"><div class="sspec"><span>MOQ</span><b>200 套</b></div><div class="sspec"><span>交期</span><b>40 天</b></div><div class="sspec"><span>年限</span><b>7 年</b></div></div>
+      <div class="sline">📦 已供 Amazon VC · <a href="register.html">查看档案 →</a></div>
+    </div>
+    <div class="sup">
+      <div class="stop"><div><h4>晶亮照明科技</h4><div class="loc">浙江台州 · 照明</div></div><span class="verify">✓ 已验厂</span></div>
+      <div class="stags"><span class="tpill">ODM</span><span class="tpill">OBM</span><span class="tpill g">ETL</span><span class="tpill g">UL</span></div>
+      <div class="sspecs"><div class="sspec"><span>MOQ</span><b>1000 件</b></div><div class="sspec"><span>交期</span><b>25 天</b></div><div class="sspec"><span>年限</span><b>15 年</b></div></div>
+      <div class="sline">📦 已供 Costco · Target · <a href="register.html">查看档案 →</a></div>
+    </div>
+    <div class="sup">
+      <div class="stop"><div><h4>萌宠家居用品</h4><div class="loc">广东广州 · 宠物</div></div><span class="verify">✓ 已验厂</span></div>
+      <div class="stags"><span class="tpill">ODM</span><span class="tpill g">ISO9001</span></div>
+      <div class="sspecs"><div class="sspec"><span>MOQ</span><b>300 件</b></div><div class="sspec"><span>交期</span><b>20 天</b></div><div class="sspec"><span>年限</span><b>6 年</b></div></div>
+      <div class="sline">📦 已供 Chewy · Petco · <a href="register.html">查看档案 →</a></div>
+    </div>
+    <div class="sup">
+      <div class="stop"><div><h4>智玩玩具厂</h4><div class="loc">浙江义乌 · 玩具</div></div><span class="verify">✓ 已验厂</span></div>
+      <div class="stags"><span class="tpill">OEM</span><span class="tpill">ODM</span><span class="tpill g">ICTI</span><span class="tpill g">BSCI</span></div>
+      <div class="sspecs"><div class="sspec"><span>MOQ</span><b>1000 套</b></div><div class="sspec"><span>交期</span><b>30 天</b></div><div class="sspec"><span>年限</span><b>11 年</b></div></div>
+      <div class="sline">📦 已供 Target · Walmart · <a href="register.html">查看档案 →</a></div>
+    </div>
+  </div>
+  <div class="sec-cta">
+    <a class="btn btn-p" href="register.html">把我的工厂挂上来 →</a>
+    <p>已有 680+ 工厂在档 · 每周新增 40+</p>
+  </div>
+</div></section>
+
 <section id="network"><div class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">03 · Channel Network</div>
+    <div class="eyebrow">05 · Channel Network</div>
     <h2>全球渠道网络 · 一个团队管全部渠道</h2>
     <p class="sec-sub">以美国主流零售为主场，欧洲、中东、亚太、澳新与俄语区并行——入驻开户、listing 优化、站内广告、活动位排期与定价统一管理。全球 80% 以上的 CPG 消费发生在线下实体货架：线上起量只是第一步，进主流零售的货架才是真正的市场。</p>
   </div>
@@ -314,7 +592,7 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
 
 <section id="channels"><div class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">04 · Channel Hub</div>
+    <div class="eyebrow">06 · Channel Hub</div>
     <h2>渠道频道 · 按渠道看打法</h2>
     <p class="sec-sub">每个渠道一套专属打法：Walmart 的 3P/1P 双路径、Whatnot 的直播拍卖、创作者频道的选品带货——点进频道页看完整攻略。</p>
   </div>
@@ -337,20 +615,278 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
       <p>20,000+ 创作者每日选品：热销榜、佣金对比、免费索样——上传产品即进入达人带货池。</p>
       <div class="go">进入频道 →</div>
     </a>
-    <a class="chan" href="sell-on-oem-odm.html">
+    <a class="chan wide" href="sell-on-oem-odm.html">
       <div class="ct">Supplier Onboarding</div>
       <h3>供应商入驻通道</h3>
-      <p>非收费项全包含、收费按项次计费：渠道账号开设、Agent 智能客服、数据周报等七项零费用；联合运营、仓配履约、红人投放等按项计费——OEM 库存买断不收服务费。</p>
+      <p>非收费项全包含、收费按项次计费：渠道账号开设、Agent 智能客服、账号安全维护、数据周报、红人资源对接、内容素材库、专属对接人七项零费用；联合运营、端到端仓配履约、红人营销投放、网剧 / AI 短剧、Agent / ERP 定制、数据订阅按项计费——OEM 库存买断不收服务费，工厂交货即收款。</p>
       <div class="go">申请入驻（免费注册）→</div>
     </a>
   </div>
 </div></section>
 
+<section id="pool"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">07 · Product Pool</div>
+    <h2>达人选品池 · 三大专区</h2>
+    <p class="sec-sub">免费样品先测款、新品上架抢首发、清仓特卖捡高佣——20,000+ 创作者每天在池子里挑货，每个商品带佣金、28 天销量、评分与在售店铺。</p>
+  </div>
+  <div class="ptabs" id="poolTabs">
+    <button class="ptab active" data-pool="free" type="button">免费样品</button>
+    <button class="ptab" data-pool="new" type="button">新品上架</button>
+    <button class="ptab" data-pool="clearance" type="button">清仓特卖</button>
+  </div>
+  <div class="pool-panel active" data-panel="free">
+    <p class="pool-lead">开放免费索样的样品集合：达人按粉丝量与内容质量申请，工厂逐一审批——新品测款冷启动的第一站。</p>
+    <div class="prods">
+      <div class="prod">
+        <div class="ptop"><h5>维 C 提亮精华 30ml<small>Glow Vitamin C Serum · 7 天焕亮</small></h5><span class="free-tag">FREE SAMPLE</span></div>
+        <div class="comm-vs"><s>公开 25%</s><i>vs</i><b class="yc">平台 27%</b></div>
+        <div class="pmeta"><span>价格 <b>$24.99</b></span><span>每单预估收益 <b class="earn">$6.75</b></span><span>28 天销量 <b>3,420</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>ModernShade 美妆 · 评分 <b>4.8 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>记忆棉减压枕<small>Ultra Comfort · 曲线承托</small></h5><span class="free-tag">FREE SAMPLE</span></div>
+        <div class="comm-vs"><s>公开 18%</s><i>vs</i><b class="yc">平台 21%</b></div>
+        <div class="pmeta"><span>价格 <b>$39.99</b></span><span>每单预估收益 <b class="earn">$8.40</b></span><span>28 天销量 <b>5,100</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Covered Outdoor · 评分 <b>4.6 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>智能护眼台灯 Pro<small>Smart LED Desk Lamp · 无级调光</small></h5><span class="free-tag">FREE SAMPLE</span></div>
+        <div class="comm-vs"><s>公开 22%</s><i>vs</i><b class="yc">平台 25%</b></div>
+        <div class="pmeta"><span>价格 <b>$34.99</b></span><span>每单预估收益 <b class="earn">$8.75</b></span><span>28 天销量 <b>2,890</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Slypadan · 评分 <b>4.7 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>有机抹茶粉 100g<small>Organic Matcha · 仪式感冲泡</small></h5><span class="free-tag">FREE SAMPLE</span></div>
+        <div class="comm-vs"><s>公开 30%</s><i>vs</i><b class="yc">平台 32%</b></div>
+        <div class="pmeta"><span>价格 <b>$19.99</b></span><span>每单预估收益 <b class="earn">$6.40</b></span><span>28 天销量 <b>7,800</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>ModernShade · 评分 <b>4.9 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>便携榨汁杯 USB-C<small>Portable Blender · 一杯随行</small></h5><span class="free-tag">FREE SAMPLE</span></div>
+        <div class="comm-vs"><s>公开 20%</s><i>vs</i><b class="yc">平台 23%</b></div>
+        <div class="pmeta"><span>价格 <b>$27.99</b></span><span>每单预估收益 <b class="earn">$6.44</b></span><span>28 天销量 <b>6,200</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Covered Outdoor · 评分 <b>4.4 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>竹纤维砧板三件套<small>Bamboo Cutting Board · 抑菌防霉</small></h5><span class="free-tag">FREE SAMPLE</span></div>
+        <div class="comm-vs"><s>公开 28%</s><i>vs</i><b class="yc">平台 30%</b></div>
+        <div class="pmeta"><span>价格 <b>$22.99</b></span><span>每单预估收益 <b class="earn">$6.90</b></span><span>28 天销量 <b>4,500</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>ModernShade · 评分 <b>4.7 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+    </div>
+  </div>
+  <div class="pool-panel" data-panel="new">
+    <p class="pool-lead">刚上架的新品首发区：达人抢首发内容、抢先出爆款视频。品牌让利 + 平台补贴，新品佣金通常更高。</p>
+    <div class="prods">
+      <div class="prod">
+        <div class="ptop"><h5>香薰精油扩香仪<small>Aromatherapy Diffuser · 助眠氛围</small></h5><span class="free-tag nw">NEW</span></div>
+        <div class="comm-vs"><s>公开 24%</s><i>vs</i><b class="yc">平台 27%</b></div>
+        <div class="pmeta"><span>价格 <b>$32.99</b></span><span>每单预估收益 <b class="earn">$8.90</b></span><span>28 天销量 <b>3,100</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>ModernShade · 评分 <b>4.6 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>迷你高清投影仪<small>Mini Projector HD 1080P · 露营影院</small></h5><span class="free-tag nw">NEW</span></div>
+        <div class="comm-vs"><s>公开 20%</s><i>vs</i><b class="yc">平台 23%</b></div>
+        <div class="pmeta"><span>价格 <b>$89.99</b></span><span>每单预估收益 <b class="earn">$20.70</b></span><span>28 天销量 <b>1,800</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Slypadan · 评分 <b>4.2 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>防蓝光电竞眼镜<small>Anti-Blue Light · 长时佩戴不酸</small></h5><span class="free-tag nw">NEW</span></div>
+        <div class="comm-vs"><s>公开 35%</s><i>vs</i><b class="yc">平台 38%</b></div>
+        <div class="pmeta"><span>价格 <b>$15.99</b></span><span>每单预估收益 <b class="earn">$6.08</b></span><span>28 天销量 <b>8,900</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Slypadan · 评分 <b>4.3 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>不锈钢保温杯 32oz<small>Water Bottle · 24 小时冷保</small></h5><span class="free-tag nw">NEW</span></div>
+        <div class="comm-vs"><s>公开 12%</s><i>vs</i><b class="yc">平台 15%</b></div>
+        <div class="pmeta"><span>价格 <b>$18.99</b></span><span>每单预估收益 <b class="earn">$2.85</b></span><span>28 天销量 <b>15,600</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Covered Outdoor · 评分 <b>4.8 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>瑜伽垫加宽防滑款<small>Yoga Mat Premium · 云感回弹</small></h5><span class="free-tag nw">NEW</span></div>
+        <div class="comm-vs"><s>公开 16%</s><i>vs</i><b class="yc">平台 19%</b></div>
+        <div class="pmeta"><span>价格 <b>$25.99</b></span><span>每单预估收益 <b class="earn">$4.94</b></span><span>28 天销量 <b>9,200</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Covered Outdoor · 评分 <b>4.5 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>无线蓝牙耳机 X1<small>Wireless Earbuds · 32 小时续航</small></h5><span class="free-tag nw">NEW</span></div>
+        <div class="comm-vs"><s>公开 15%</s><i>vs</i><b class="yc">平台 18%</b></div>
+        <div class="pmeta"><span>价格 <b>$29.99</b></span><span>每单预估收益 <b class="earn">$5.40</b></span><span>28 天销量 <b>12,400</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Slypadan · 评分 <b>4.5 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+    </div>
+  </div>
+  <div class="pool-panel" data-panel="clearance">
+    <p class="pool-lead">高佣清仓货盘：库存出清需求匹配高佣金激励，达人清仓专场带货，去库存还能赚曝光。</p>
+    <div class="prods">
+      <div class="prod">
+        <div class="ptop"><h5>便携榨汁杯 USB-C<small>Portable Blender · 清仓最后 800 件</small></h5><span class="free-tag cl">CLEARANCE</span></div>
+        <div class="comm-vs"><s>公开 20%</s><i>vs</i><b class="yc">平台 23%</b></div>
+        <div class="pmeta"><span>价格 <b>$19.99</b> <s class="was">$27.99</s></span><span>每单预估收益 <b class="earn">$6.44</b></span><span>28 天销量 <b>6,200</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Covered Outdoor · 评分 <b>4.4 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>防蓝光电竞眼镜<small>Anti-Blue Light · 清仓最后 300 件</small></h5><span class="free-tag cl">CLEARANCE</span></div>
+        <div class="comm-vs"><s>公开 35%</s><i>vs</i><b class="yc">平台 38%</b></div>
+        <div class="pmeta"><span>价格 <b>$12.99</b> <s class="was">$15.99</s></span><span>每单预估收益 <b class="earn">$6.08</b></span><span>28 天销量 <b>8,900</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>Slypadan · 评分 <b>4.3 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>北欧风餐边柜<small>Sideboard · 样品柜直降</small></h5><span class="free-tag cl">CLEARANCE</span></div>
+        <div class="comm-vs"><s>公开 14%</s><i>vs</i><b class="yc">平台 17%</b></div>
+        <div class="pmeta"><span>价格 <b>$99.00</b> <s class="was">$129.00</s></span><span>每单预估收益 <b class="earn">$16.99</b></span><span>28 天销量 <b>640</b></span><span>在售 <b>Wayfair</b></span></div>
+        <div class="brand-row"><span class="star">★</span>铭轩家居 · 评分 <b>4.5 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>折叠户外桌椅套装<small>Camping Set · 断码清仓</small></h5><span class="free-tag cl">CLEARANCE</span></div>
+        <div class="comm-vs"><s>公开 18%</s><i>vs</i><b class="yc">平台 22%</b></div>
+        <div class="pmeta"><span>价格 <b>$69.99</b> <s class="was">$89.99</s></span><span>每单预估收益 <b class="earn">$15.40</b></span><span>28 天销量 <b>1,200</b></span><span>在售 <b>Walmart.com</b></span></div>
+        <div class="brand-row"><span class="star">★</span>越洋户外 · 评分 <b>4.6 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>宠物自动喂食器<small>Smart Feeder · 老款清仓</small></h5><span class="free-tag cl">CLEARANCE</span></div>
+        <div class="comm-vs"><s>公开 16%</s><i>vs</i><b class="yc">平台 20%</b></div>
+        <div class="pmeta"><span>价格 <b>$49.99</b> <s class="was">$59.99</s></span><span>每单预估收益 <b class="earn">$9.99</b></span><span>28 天销量 <b>2,300</b></span><span>在售 <b>Chewy</b></span></div>
+        <div class="brand-row"><span class="star">★</span>萌宠家居 · 评分 <b>4.4 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+      <div class="prod">
+        <div class="ptop"><h5>氛围感月球灯 Pro<small>Moon Lamp · 包装升级前清仓</small></h5><span class="free-tag cl">CLEARANCE</span></div>
+        <div class="comm-vs"><s>公开 16%</s><i>vs</i><b class="yc">平台 20%</b></div>
+        <div class="pmeta"><span>价格 <b>$24.99</b> <s class="was">$29.99</s></span><span>每单预估收益 <b class="earn">$5.99</b></span><span>28 天销量 <b>7,900</b></span><span>在售 <b>Amazon</b></span></div>
+        <div class="brand-row"><span class="star">★</span>晶亮照明 · 评分 <b>4.7 / 5</b></div>
+        <a class="btn btn-s" href="register.html?tab=buyer">加入选品库</a>
+      </div>
+    </div>
+  </div>
+  <div class="sec-cta"><a class="btn btn-s" href="creators.html">进入网红选品频道 · 看完整选品池 →</a></div>
+  <p class="path-note" style="margin-top:18px">※ 选品池为演示数据结构；正式版按平台实时商品池更新，注册达人后可见完整选品库与库存深度。</p>
+</div></section>
+
+<section id="tasks"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">08 · Ad Task Market</div>
+    <h2>广告任务市场 · 接单就有奖金</h2>
+    <p class="sec-sub">品牌发布内容任务，达人接单拍摄：完成即拿固定奖金（$40-$100），挂车成交再赚佣金——任务要求、奖金、名额与截止日期全透明。</p>
+  </div>
+  <div class="tgrid">
+    <div class="tcard">
+      <div class="ttop"><div><h5>春季护肤种草大赛</h5><div class="tbrand">ModernShade · 维 C 提亮精华 30ml</div></div><div class="bonus"><b>$50</b><span>固定奖金</span></div></div>
+      <p>拍摄 60 秒 TikTok / Reels，把维 C 提亮精华融入日常护肤 Routine，展示 7 天使用前后对比。</p>
+      <div class="tbar"><i style="width:45%"></i></div>
+      <div class="tmeta"><span><b>45</b> / 100 已报名</span><span>佣金 <b>30%</b></span><span>截止 <b>4 月 15 日</b></span></div>
+      <a class="btn btn-s" href="register.html?tab=buyer">接任务 →</a>
+    </div>
+    <div class="tcard">
+      <div class="ttop"><div><h5>居家舒适感挑战</h5><div class="tbrand">Covered Outdoor · 记忆棉减压枕</div></div><div class="bonus"><b>$75</b><span>固定奖金</span></div></div>
+      <p>开箱实测记忆棉减压枕，重点展示回弹曲线与睡感变化，口播引导直播间同款。</p>
+      <div class="tbar"><i style="width:56%"></i></div>
+      <div class="tmeta"><span><b>28</b> / 50 已报名</span><span>佣金 <b>22%</b></span><span>截止 <b>4 月 20 日</b></span></div>
+      <a class="btn btn-s" href="register.html?tab=buyer">接任务 →</a>
+    </div>
+    <div class="tcard">
+      <div class="ttop"><div><h5>科技桌面 Setup 巡礼</h5><div class="tbrand">Slypadan · 智能护眼台灯 Pro</div></div><div class="bonus"><b>$60</b><span>固定奖金</span></div></div>
+      <p>把智能护眼台灯拍进桌面 Setup 视频，演示无级调光与定时模式，收尾挂购物车。</p>
+      <div class="tbar"><i style="width:78%"></i></div>
+      <div class="tmeta"><span><b>62</b> / 80 已报名</span><span>佣金 <b>25%</b></span><span>截止 <b>4 月 10 日</b></span></div>
+      <a class="btn btn-s" href="register.html?tab=buyer">接任务 →</a>
+    </div>
+    <div class="tcard">
+      <div class="ttop"><div><h5>健康晨间 Routine</h5><div class="tbrand">ModernShade · 有机抹茶粉 100g</div></div><div class="bonus"><b>$40</b><span>固定奖金</span></div></div>
+      <p>把有机抹茶粉拍进晨间仪式感视频：冲泡过程 + 口感实测 + 一周精神状态分享。</p>
+      <div class="tbar"><i style="width:74%"></i></div>
+      <div class="tmeta"><span><b>89</b> / 120 已报名</span><span>佣金 <b>35%</b></span><span>截止 <b>5 月 1 日</b></span></div>
+      <a class="btn btn-s" href="register.html?tab=buyer">接任务 →</a>
+    </div>
+    <div class="tcard">
+      <div class="ttop"><div><h5>夏日户外好物清单</h5><div class="tbrand">Covered Outdoor · 便携榨汁杯 USB-C</div></div><div class="bonus"><b>$100</b><span>固定奖金</span></div></div>
+      <p>夏日出行场景合辑，便携榨汁杯出镜 15 秒以上，突出 USB-C 快充与静音搅打。</p>
+      <div class="tbar"><i style="width:25%"></i></div>
+      <div class="tmeta"><span><b>15</b> / 60 已报名</span><span>佣金 <b>20%</b></span><span>截止 <b>5 月 15 日</b></span></div>
+      <a class="btn btn-s" href="register.html?tab=buyer">接任务 →</a>
+    </div>
+    <div class="tcard">
+      <div class="ttop"><div><h5>电竞装备真机实测</h5><div class="tbrand">Slypadan · 防蓝光电竞眼镜</div></div><div class="bonus"><b>$80</b><span>固定奖金</span></div></div>
+      <p>游戏党实测防蓝光电竞眼镜：佩戴对比、眩光测试，评论区置顶购买链接。</p>
+      <div class="tbar"><i style="width:57%"></i></div>
+      <div class="tmeta"><span><b>34</b> / 60 已报名</span><span>佣金 <b>28%</b></span><span>截止 <b>4 月 28 日</b></span></div>
+      <a class="btn btn-s" href="register.html?tab=buyer">接任务 →</a>
+    </div>
+  </div>
+  <div class="sec-cta"><a class="btn btn-s" href="creators.html#tasks">看完整任务市场与结算规则 →</a></div>
+  <p class="path-note" style="margin-top:18px">※ 任务市场为演示数据结构；正式版任务奖金、名额与结算规则以品牌实时发布为准。</p>
+</div></section>
+
+<section id="ai"><div class="wrap">
+  <div class="sec-head">
+    <div class="eyebrow">09 · AI Engine</div>
+    <h2>AI 选品 · 产品分析 · 买手社媒分析</h2>
+    <p class="sec-sub">调用 AI 模型，把产品数据、社媒内容与渠道偏好放在一起分析——给网红选品、给买手出报告。</p>
+  </div>
+  <div class="ai-grid">
+    <div class="ai">
+      <div class="at">Creator Matching</div>
+      <h3>网红选品匹配</h3>
+      <p>20,000+ 创作者每日浏览选品。上传产品与佣金设置，创作者自动带货；AI 视频混剪无需寄样，先测内容再起量。</p>
+      <div class="go"><a href="creators.html">进入网红选品频道 →</a></div>
+    </div>
+    <div class="ai">
+      <div class="at">Product Analytics</div>
+      <h3>产品分析报告</h3>
+      <p>AI 模型结合产品数据与内容表现，输出选品判断：渠道适配、定价带、差异化卖点与社媒打法，一键成报告。</p>
+      <div class="go"><a href="insights.html">看品牌洞察服务 →</a></div>
+    </div>
+    <div class="ai">
+      <div class="at">Buyer Insight</div>
+      <h3>买手社媒分析</h3>
+      <p>结合产品与社媒表现，为零售买手生成「产品 + 社媒」联合分析：趋势热度、内容资产、客群画像，让买手更快拍板。</p>
+      <div class="go"><a href="retail-shelf.html">看品牌进货架服务 →</a></div>
+    </div>
+  </div>
+  <div class="analyzer">
+    <h4>现场试一试 · AI 选品分析</h4>
+    <p class="hint">输入任意产品，AI 立即生成渠道适配判断、社媒营销角度与给买手的推荐话术。</p>
+    <div class="an-form">
+      <input type="text" id="anProduct" placeholder="产品名称，如：电动升降茶几 / 户外储能电源" maxlength="60">
+      <select id="anCategory">
+        <option value="">选择品类</option>
+        <option>家具</option><option>户外</option><option>健身</option><option>厨卫</option>
+        <option>照明</option><option>汽配</option><option>宠物</option><option>玩具</option><option>其他</option>
+      </select>
+      <button class="btn btn-p" id="anBtn" type="button" style="border:none;cursor:pointer">开始分析</button>
+    </div>
+    <div class="an-result" id="anResult">
+      <div class="an-block"><div class="lb">渠道适配判断</div><p id="anFit"></p></div>
+      <div class="an-block"><div class="lb">社媒 / 达人角度</div><ul id="anAngles"></ul></div>
+      <div class="an-block full"><div class="lb">给买手的话</div><p id="anPitch"></p></div>
+      <div class="an-tags" id="anTags"></div>
+    </div>
+    <p class="an-note">※ 演示版分析在浏览器本地生成示例结构；正式版接入 AI 模型，输出结合实时数据的完整报告。</p>
+  </div>
+</div></section>
+
 <section id="models"><div class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">05 · Cooperation Models</div>
+    <div class="eyebrow">10 · Cooperation Models</div>
     <h2>OEM / ODM / OBM 三种合作模式</h2>
-    <p class="sec-sub">无论您是找代工的买家、想贴牌的品牌，还是想做出海自有品牌的工厂，都能在这里找到对应路径。</p>
+    <p class="sec-sub">无论您是找代工的买家、想贴牌的品牌，还是想做出海自有品牌的工厂，都能在这里找到对应路径。完整服务线与库存买断细则见<a href="sell-on-oem-odm.html#models">工厂侧渠道加速服务</a>。</p>
   </div>
   <div class="models">
     <div class="model">
@@ -398,11 +934,12 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
     </table>
   </div>
   <div class="buyout"><b>库存买断：</b>对验证通过的优质货盘，我们以大额批发采购订单（PO）一次性买断——<b>你先收款，我们开工</b>，零售端的库存与价格风险由我们承担。OEM 库存买断合作不收任何服务费。路径不是单向的：多数伙伴从 OEM 起步，产品开发成熟后叠加 ODM，品牌就绪再升级 OBM——同一张渠道网络，每一步利润更深。</div>
+  <p class="path-note">供应链升级路径：OEM → ODM → OBM（利润与门槛依次提高）</p>
 </div></section>
 
 <section id="ecrm"><div class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">06 · Buyer Connect · ECRM</div>
+    <div class="eyebrow">11 · Buyer Connect · ECRM</div>
     <h2>买手对接：线上发现 + 线下会谈</h2>
     <p class="sec-sub">告别石沉大海的冷邮件。买手主动搜索您的档案、直接索样谈判；线下每年数百场品类对接会精准匹配。</p>
   </div>
@@ -426,67 +963,84 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
       </ul>
     </div>
   </div>
-</div></section>
-
-<section id="ai"><div class="wrap">
-  <div class="sec-head">
-    <div class="eyebrow">07 · AI Engine</div>
-    <h2>AI 选品 · 产品分析 · 买手社媒分析</h2>
-    <p class="sec-sub">调用 AI 模型，把产品数据、社媒内容与渠道偏好放在一起分析——给网红选品、给买手出报告。</p>
-  </div>
-  <div class="ai-grid">
-    <div class="ai">
-      <div class="at">Creator Matching</div>
-      <h3>网红选品匹配</h3>
-      <p>20,000+ 创作者每日浏览选品。上传产品与佣金设置，创作者自动带货；AI 视频混剪无需寄样，先测内容再起量。</p>
-      <div class="go"><a href="creators.html">进入网红选品频道 →</a></div>
+  <div class="steps quad ecrm-steps">
+    <div class="step">
+      <span class="sn">Step 1</span>
+      <h3>注册建档</h3>
+      <div class="en">Register</div>
+      <p>工厂或买家免费注册，10 分钟完成。</p>
     </div>
-    <div class="ai">
-      <div class="at">Product Analytics</div>
-      <h3>产品分析报告</h3>
-      <p>AI 模型结合产品数据与内容表现，输出选品判断：渠道适配、定价带、差异化卖点与社媒打法，一键成报告。</p>
-      <div class="go"><a href="insights.html">看品牌洞察服务 →</a></div>
+    <div class="step">
+      <span class="sn">Step 2</span>
+      <h3>AI 匹配</h3>
+      <div class="en">Match</div>
+      <p>品类 × 渠道 × 认证三维匹配，只推有戏的。</p>
     </div>
-    <div class="ai">
-      <div class="at">Buyer Insight</div>
-      <h3>买手社媒分析</h3>
-      <p>结合产品与社媒表现，为零售买手生成「产品 + 社媒」联合分析：趋势热度、内容资产、客群画像，让买手更快拍板。</p>
-      <div class="go"><a href="retail-shelf.html">看品牌进货架服务 →</a></div>
+    <div class="step">
+      <span class="sn">Step 3</span>
+      <h3>索样 / 会谈</h3>
+      <div class="en">Connect</div>
+      <p>在线索样或线下对接会面对面。</p>
+    </div>
+    <div class="step">
+      <span class="sn">Step 4</span>
+      <h3>上架铺货</h3>
+      <div class="en">Shelf</div>
+      <p>签约下单，从工厂到美国货架履约。</p>
     </div>
   </div>
 </div></section>
 
 <section id="pricing"><div class="wrap">
   <div class="sec-head">
-    <div class="eyebrow">08 · Pricing</div>
-    <h2>注册建档免费，服务按项次报价</h2>
-    <p class="sec-sub">注册、建档、进检索库全部免费——先被买手发现，再决定购买哪些服务项次，每一项花在哪、值不值，全部透明。</p>
+    <div class="eyebrow">12 · Pricing</div>
+    <h2>服务套餐 · 按承诺周期定价</h2>
+    <p class="sec-sub">订阅制，周期越长越优惠。注册建档免费，套餐覆盖申请流程与材料准备。</p>
   </div>
-  <div class="fee-grid">
-    <div class="fee-card free">
-      <span class="fc-tag">Free · 非收费项</span>
-      <h3>注册建档</h3>
-      <div class="fc-price"><b>免费</b> · 48 小时完成审核建档</div>
+  <div class="price-grid">
+    <div class="price-card">
+      <div class="plan">快速启动 · 3 个月</div>
+      <div class="price">$400<small>/月</small></div>
+      <div class="total">共 $1,200</div>
       <ul>
-        <li>数字档案（Digital Sell Sheet）建立，进入买手检索库</li>
-        <li>样品上架展厅 + 挂进网红选品池</li>
-        <li>热销榜与数据周报查看权限</li>
-        <li>OEM 库存买断：不收任何服务费</li>
+        <li>品牌评估与档案建立</li>
+        <li>AI 渠道匹配</li>
+        <li>辅助资料准备</li>
+        <li>代申请 10-15 个渠道</li>
+        <li>全程咨询与入驻指导</li>
       </ul>
+      <a class="btn btn-s" href="register.html" style="text-align:center">选择此方案</a>
     </div>
-    <div class="fee-card">
-      <span class="fc-tag">Per Item · 收费项</span>
-      <h3>渠道与运营服务</h3>
-      <div class="fc-price"><b>按项次报价</b> · 评估后 1 个工作日内发送报价单</div>
+    <div class="price-card reco">
+      <div class="plan">系统开拓 · 6 个月</div>
+      <div class="price">$350<small>/月</small></div>
+      <div class="total">共 $2,100</div>
       <ul>
-        <li>渠道代入驻（77 个平台，材料预审 + 提交 + 跟进）</li>
-        <li>联合运营与端到端仓配履约</li>
-        <li>红人营销投放与 AI 内容量产</li>
-        <li>买手引荐、展会对接与数据订阅</li>
+        <li>品牌评估与档案建立</li>
+        <li>AI 渠道匹配</li>
+        <li>辅助资料准备</li>
+        <li>代申请 25-40 个渠道</li>
+        <li>Readiness Audit 费用减免</li>
+        <li>全程咨询与入驻指导</li>
       </ul>
+      <a class="btn btn-p" href="register.html" style="text-align:center">选择此方案</a>
+    </div>
+    <div class="price-card">
+      <div class="plan">全渠道深耕 · 12 个月</div>
+      <div class="price">$300<small>/月</small></div>
+      <div class="total">共 $3,600</div>
+      <ul>
+        <li>品牌评估与档案建立</li>
+        <li>AI 渠道匹配</li>
+        <li>代申请 50+ 渠道</li>
+        <li>Readiness Audit 免费</li>
+        <li>免费买手引荐机会</li>
+        <li>全程咨询与入驻指导</li>
+      </ul>
+      <a class="btn btn-s" href="register.html" style="text-align:center">选择此方案</a>
     </div>
   </div>
-  <div class="fee-note"><b>说明：</b>注册建档永远免费，先被买手发现再决定是否购买服务项次。无订阅制、不捆绑套餐；服务涵盖申请流程与材料准备，不保证渠道录取结果——我们承诺的是材料质量、流程纪律与数据透明。完整服务目录见<a href="sell-on-oem-odm.html">工厂侧渠道加速服务</a>。</div>
+  <div class="price-note">服务涵盖申请流程与材料准备，不保证渠道录取结果 · 无试用期，承诺即开始。另有七项基础服务（渠道账号开设、Agent 智能客服、账号安全维护、数据周报、红人资源对接、内容素材库、专属对接人）永久零费用，单项增值服务按项次报价——完整目录见<a href="sell-on-oem-odm.html">工厂侧渠道加速服务</a>。</div>
 </div></section>
 
 <section class="faq" id="faq"><div class="wrap">
@@ -500,11 +1054,11 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
   </details>
   <details>
     <summary>工厂注册收费吗？</summary>
-    <div class="fa-body">工厂注册、建立数字档案、上架样品全部免费。只有选择渠道代入驻、买手引荐等增值服务时才按<a href="sell-on-oem-odm.html">服务项次</a>收费。</div>
+    <div class="fa-body">工厂注册、建立数字档案、上架样品全部免费。只有选择渠道代申请套餐、买手引荐等增值服务时才产生费用——套餐见上方「服务套餐」，单项按项次计费的完整目录见<a href="sell-on-oem-odm.html">工厂侧渠道加速服务</a>。</div>
   </details>
   <details>
     <summary>买家怎么索样？</summary>
-    <div class="fa-body">注册后在样品展厅看到心仪产品，发起索样即可。美国海外仓会在 1 个工作日内联系您安排寄样，部分区域支持次日达——<a href="register.html?tab=buyer">买家注册入口</a>。</div>
+    <div class="fa-body">在样品展厅看到心仪产品，点击「索样」留下邮箱即可。美国海外仓会在 1 个工作日内联系您安排寄样，部分区域支持次日达——<a href="register.html?tab=buyer">买家注册入口</a>。</div>
   </details>
   <details>
     <summary>没有美国团队也能做 OBM 吗？</summary>
@@ -522,6 +1076,7 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
   <div class="cta-row" style="justify-content:center">
     <a class="btn btn-p" href="register.html">工厂 / 厂商注册</a>
     <a class="btn btn-s" href="register.html?tab=buyer">买家注册</a>
+    <a class="btn btn-s" href="sell-on-oem-odm.html#meet">预约 30 分钟会议</a>
   </div>
 </div></div>
 
@@ -531,20 +1086,244 @@ footer{padding:40px 0;border-top:1px solid var(--hairline-soft)}
     <p>美国渠道公司 · 深圳运营中心 —— 渠道、数据、内容三位一体的品牌出海网络。</p>
   </div>
   <div class="f-links">
+    <div class="fk">Platform</div>
+    <a href="#samples">样品展厅</a>
+    <a href="#suppliers">供应商网络</a>
+    <a href="#channels">渠道频道</a>
+    <a href="#pool">达人选品池</a>
+    <a href="#pricing">服务套餐</a>
+  </div>
+  <div class="f-links">
     <div class="fk">Channels</div>
     <a href="walmart.html">Walmart 频道</a>
     <a href="whatnot.html">Whatnot 直播频道</a>
     <a href="creators.html">网红选品频道</a>
     <a href="factory-to-shelf.html">美国渠道业务</a>
+    <a href="register.html">免费注册建档</a>
   </div>
   <div class="f-links">
     <div class="fk">Services</div>
     <a href="sell-on/">77 个平台入驻</a>
     <a href="sell-on-oem-odm.html">工厂侧渠道加速</a>
     <a href="brand-growth.html">品牌增长服务</a>
+    <a href="blog.html">博客 · 内容中心</a>
     <span class="fc" style="color:var(--accent)">haidong.zhou@outlook.com</span>
   </div>
 </div></div></footer>
+
+<button class="chat-fab" id="chatFab" aria-label="AI 客服" type="button">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 01-8 8H5l-2 2V12a8 8 0 0116 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="12" r="0.6" fill="currentColor"/><circle cx="13" cy="12" r="0.6" fill="currentColor"/><circle cx="17" cy="12" r="0.6" fill="currentColor"/></svg>
+</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <span class="dot"></span>
+    <b>AI 客服 · Shelf 助手</b>
+    <span class="st">ONLINE</span>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-quick" id="chatQuick">
+    <button data-q="怎么收费？" type="button">怎么收费？</button>
+    <button data-q="OEM、ODM、OBM 有什么区别？" type="button">OEM/ODM/OBM 区别</button>
+    <button data-q="工厂怎么注册？" type="button">工厂怎么注册？</button>
+    <button data-q="买家怎么索样？" type="button">怎么索样？</button>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="输入您的问题…" maxlength="300">
+    <button id="chatSend" aria-label="发送" type="button">➤</button>
+  </div>
+</div>
+
+<div class="modal-mask" id="sampleModal">
+  <div class="modal">
+    <button class="m-close" id="sampleClose" aria-label="关闭" type="button">✕</button>
+    <h4 id="smTitle">索样 · 样品名称</h4>
+    <p class="m-sub">留下邮箱，美国海外仓将在 1 个工作日内联系您安排寄样。</p>
+    <div class="f-group">
+      <label>工作邮箱 <span style="color:var(--accent)">*</span></label>
+      <input type="email" id="smEmail" placeholder="you@company.com">
+    </div>
+    <div class="f-group">
+      <label>备注（公司 / 渠道 / 数量）</label>
+      <textarea id="smNote" placeholder="如：ACME Trading · Target 供货商 · 2 件"></textarea>
+    </div>
+    <button class="btn btn-p" style="width:100%;border:none;cursor:pointer" id="smSubmit" type="button">提交索样请求</button>
+    <div class="form-msg" id="smMsg"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  // 样品展厅品类筛选
+  var filterBar = document.getElementById("filterBar");
+  var grid = document.getElementById("sampleGrid");
+  if (filterBar && grid) {
+    filterBar.addEventListener("click", function (e) {
+      var btn = e.target.closest(".fchip");
+      if (!btn) return;
+      filterBar.querySelectorAll(".fchip").forEach(function (c) { c.classList.remove("active"); });
+      btn.classList.add("active");
+      var cat = btn.getAttribute("data-cat");
+      grid.querySelectorAll(".sample").forEach(function (card) {
+        var show = cat === "all" || card.getAttribute("data-cat") === cat;
+        card.style.display = show ? "" : "none";
+      });
+    });
+  }
+
+  // 选品池 Tab 切换
+  var poolTabs = document.getElementById("poolTabs");
+  if (poolTabs) {
+    poolTabs.addEventListener("click", function (e) {
+      var btn = e.target.closest(".ptab");
+      if (!btn) return;
+      poolTabs.querySelectorAll(".ptab").forEach(function (t) { t.classList.remove("active"); });
+      btn.classList.add("active");
+      var key = btn.getAttribute("data-pool");
+      document.querySelectorAll(".pool-panel").forEach(function (p) {
+        p.classList.toggle("active", p.getAttribute("data-panel") === key);
+      });
+    });
+  }
+
+  // AI 选品分析（演示版 · 本地生成）
+  var anBtn = document.getElementById("anBtn");
+  if (anBtn) {
+    anBtn.addEventListener("click", function () {
+      var product = document.getElementById("anProduct").value.trim();
+      var category = document.getElementById("anCategory").value || "其他";
+      if (!product) { document.getElementById("anProduct").focus(); return; }
+      var fit = {
+        家具: "适配中高客单渠道：Wayfair / Home Depot 线上货架优先，其次 Walmart.com 大件专区。建议海外仓备货、走 WFS 或大件尾程，展示「场景图 + 组装时长」是转化关键。",
+        户外: "季节性强：Q1-Q2 布局、Q3 收尾。Home Depot / Lowe's / Amazon 户外类目皆可，建议组合装提升客单，短视频优先拍「开箱 + 使用场景」。",
+        健身: "TikTok Shop 冲量型类目：达人视频带货为主，Amazon 跟进评论资产。注意季节（1-2 月新年决心季 + 5-6 月夏季）双高峰备货。",
+        厨卫: "适合 Walmart / Target 线上先行 + 家装渠道（Home Depot）跟进。强调认证（NSF/UL）与安装便利性，买手关注退货率——说明卡与安装视频必备。",
+        照明: "认证门槛（UL/ETL）是硬门槛，通过后 Costco / Amazon / Wayfair 皆可。直播拍卖适合氛围灯类，限量色号玩法溢价明显。",
+        汽配: "适配 Amazon 汽车类目（车型适配表是核心资产）+ 汽配连锁。退货率控制靠精准适配查询，内容端做「安装对比」视频最有效。",
+        宠物: "Chewy / Amazon / Walmart 宠物区皆可，达人选品池高转化类目。建议免费索样开 green light，宠物出镜内容天然高互动。",
+        玩具: "Target / Walmart 玩具区 + Whatnot 直播（收藏款溢价）。注意 ICTI 认证与 CPSIA 合规，节假日（Q4）提前 90 天备货。",
+        其他: "先做渠道适配测试：Amazon 起量验证评论 → Walmart 吃无月租红利 → 达人视频放大。若客单 $30+ 且有差异化卖点，可同步尝试 Whatnot 直播专场。"
+      };
+      var angles = [
+        "开箱惊喜 + 第一眼质感对比（前后景打光反差）",
+        "使用场景 30 天实测 vlog（真实性即转化）",
+        "价格锚点：同功能大牌 vs 工厂直供差价拆解",
+        "评论区互动钩子：「猜多少钱」结尾引导"
+      ];
+      var pitch = "这是一款 " + category + "类目的「" + product + "」：差异化卖点清晰、供应链为工厂直供、支持海外仓直发与退货逆向物流。按 " + category + " 类目当前货架缺口与社媒讨论热度，建议先小批量上架测试 4-6 周，凭周转数据再谈扩单与陈列位。",
+        tags = [category, "工厂直供", "海外仓直发", "样品可索", "数据周报"];
+      document.getElementById("anFit").textContent = fit[category] || fit["其他"];
+      var ul = document.getElementById("anAngles");
+      ul.innerHTML = "";
+      angles.forEach(function (t) { var li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
+      document.getElementById("anPitch").textContent = pitch;
+      var tg = document.getElementById("anTags");
+      tg.innerHTML = "";
+      tags.forEach(function (t) { var span = document.createElement("span"); span.className = "tpill"; span.textContent = t; tg.appendChild(span); });
+      document.getElementById("anResult").classList.add("show");
+    });
+  }
+
+  // 索样弹窗（mailto 静态提交）
+  var modal = document.getElementById("sampleModal");
+  var smMsg = document.getElementById("smMsg");
+  function openModal(name, sup) {
+    document.getElementById("smTitle").textContent = "索样 · " + name;
+    document.getElementById("smTitle").setAttribute("data-product", name);
+    document.getElementById("smTitle").setAttribute("data-sup", sup);
+    smMsg.className = "form-msg";
+    modal.classList.add("show");
+  }
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest("[data-sample]");
+    if (btn && modal) openModal(btn.getAttribute("data-sample"), btn.getAttribute("data-sup"));
+  });
+  if (modal) {
+    document.getElementById("sampleClose").addEventListener("click", function () { modal.classList.remove("show"); });
+    modal.addEventListener("click", function (e) { if (e.target === modal) modal.classList.remove("show"); });
+    document.getElementById("smSubmit").addEventListener("click", function () {
+      var email = document.getElementById("smEmail").value.trim();
+      if (!email) { document.getElementById("smEmail").focus(); return; }
+      var t = document.getElementById("smTitle");
+      var subject = "【insightmarketplac】索样请求 · " + t.getAttribute("data-product");
+      var body = "索样请求\n\n样品：" + t.getAttribute("data-product") + "\n供应商：" + t.getAttribute("data-sup") +
+        "\n工作邮箱：" + email + "\n备注：" + (document.getElementById("smNote").value || "未填写") +
+        "\n\n—— 来自 insightmarketplac 样品展厅（supplier/factory-to-shelf.html）";
+      window.location.href = "mailto:haidong.zhou@outlook.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      smMsg.className = "form-msg show ok";
+      smMsg.textContent = "✓ 索样信息已生成邮件——请在打开的邮件窗口中点击发送，海外仓将在 1 个工作日内联系您。";
+    });
+  }
+
+  // AI 客服（演示版 · 本地知识库）
+  var fab = document.getElementById("chatFab");
+  var panel = document.getElementById("chatPanel");
+  var chatBody = document.getElementById("chatBody");
+  var chatInput = document.getElementById("chatInput");
+  var chatSend = document.getElementById("chatSend");
+  var chatQuick = document.getElementById("chatQuick");
+  function el(cls, text) {
+    var d = document.createElement("div");
+    d.className = "msg " + cls;
+    d.textContent = text;
+    return d;
+  }
+  function scrollBottom() { chatBody.scrollTop = chatBody.scrollHeight; }
+  function greet() {
+    if (chatBody.children.length) return;
+    chatBody.appendChild(el("bot", "您好，我是 Shelf AI 助手（演示版）\n关于样品展厅、工厂注册、OEM/ODM/OBM 合作、买手对接或服务套餐，都可以问我。"));
+    scrollBottom();
+  }
+  function reply(q) {
+    var s = q.toLowerCase();
+    if (s.indexOf("收费") > -1 || s.indexOf("价格") > -1 || s.indexOf("多少钱") > -1) {
+      return "注册建档永久免费（数字档案 + 样品上架 + 进检索库全部 $0）。\n\n收费只有两类：\n① 渠道代申请套餐（订阅制）：3 个月 $400/月、6 个月 $350/月、12 个月 $300/月——周期越长越优惠；\n② 单项增值服务按项次报价（联合运营、仓配履约、红人投放等），评估后 1 个工作日内出报价单。\n\n详见页面「服务套餐」板块或 sell-on-oem-odm.html。";
+    }
+    if (s.indexOf("oem") > -1 || s.indexOf("odm") > -1 || s.indexOf("obm") > -1) {
+      return "三种合作模式：\n\n· OEM 来图代工——买家出图纸，您只管生产与品控，无需备货，赚制造利润；\n· ODM 选款贴牌——您的自有设计直达海外买家，需备货入海外仓，赚设计 + 制造双重利润（最多人选）；\n· OBM 品牌出海——自有品牌直达消费者，赚品牌溢价，门槛也最高。\n\n多数伙伴从 OEM 起步，成熟后叠加 ODM，品牌就绪再升级 OBM。详见页面「合作模式」板块。";
+    }
+    if (s.indexOf("注册") > -1) {
+      return "工厂注册 10 分钟搞定，永久免费：\n\n① 打开 register.html，填公司名称、联系人、邮箱与主营品类；\n② 48 小时内顾问完成审核建档（Digital Sell Sheet）；\n③ 档案进入买手检索库，12,000+ 美国零售买手按品类精准筛选；\n④ 样品可免费上架展厅，同步挂进网红选品池。\n\n点页面右上角「免费注册建档」即可开始。";
+    }
+    if (s.indexOf("索样") > -1 || s.indexOf("样品") > -1) {
+      return "买家索样很简单：\n\n① 在「样品展厅」按品类筛到心仪产品；\n② 点「索样」留下工作邮箱与备注；\n③ 美国海外仓 1 个工作日内联系您安排寄样，部分区域次日达。\n\n注册买家账号（register.html?tab=buyer）后还可追踪物流单号。";
+    }
+    if (s.indexOf("买手") > -1) {
+      return "买手对接走 ECRM 双通道：\n\n· 线上——数字档案进入检索库，买手按品类 / 价格带 / 认证主动筛选，感兴趣直接发起对话；\n· 线下——每年数百场品类专场对接会，按品类 × 能力 × 买手目标三方匹配，每场 3 个预约会谈，专属 CSM 陪跑。\n\n详见页面「买手对接」板块。";
+    }
+    return "这个问题演示版答不全 😅 建议：\n\n① 直接邮件 haidong.zhou@outlook.com（1 个工作日内回复）；\n② 或先注册建档，顾问会主动联系您：register.html";
+  }
+  if (fab && panel) {
+    fab.addEventListener("click", function () {
+      var show = panel.classList.toggle("show");
+      fab.innerHTML = show
+        ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>'
+        : '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 01-8 8H5l-2 2V12a8 8 0 0116 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="12" r="0.6" fill="currentColor"/><circle cx="13" cy="12" r="0.6" fill="currentColor"/><circle cx="17" cy="12" r="0.6" fill="currentColor"/></svg>';
+      if (show) greet();
+    });
+    function ask(q) {
+      if (!q.trim()) return;
+      chatBody.appendChild(el("user", q));
+      scrollBottom();
+      var typing = el("bot", "正在思考…");
+      chatBody.appendChild(typing);
+      scrollBottom();
+      setTimeout(function () {
+        typing.textContent = reply(q);
+        scrollBottom();
+      }, 600);
+    }
+    chatSend.addEventListener("click", function () { ask(chatInput.value); chatInput.value = ""; });
+    chatInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { ask(chatInput.value); chatInput.value = ""; }
+    });
+    if (chatQuick) {
+      chatQuick.addEventListener("click", function (e) {
+        if (e.target.matches("button")) ask(e.target.getAttribute("data-q"));
+      });
+    }
+  }
+})();
+</script>
 
 </body>
 </html>
